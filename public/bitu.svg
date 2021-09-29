@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="633" height="174" viewBox="0 0 633 174">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7b24d;
+        stroke: #000;
+        stroke-width: 7.41px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Lorem_Ipsum" data-name="Lorem Ipsum" class="cls-1" d="M0,10l432,1Z"/>
+  <path id="Line_1" data-name="Line 1" class="cls-1" d="M622,161L428,10Z"/>
+</svg>

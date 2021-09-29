@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@klizan/react-form-input-validation": "^1.0.0",
+    "axios": "^0.21.4",
+    "bootstrap": "^5.1.0",
+    "next": "11.1.2",
+    "next-redux-wrapper": "^7.0.5",
+    "nextjs-progressbar": "0.0.11",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-cookies": "^0.1.1",
+    "react-dom": "17.0.2",
+    "react-form-input-validation": "^2.0.5",
+    "react-loader-spinner": "^4.0.0",
+    "react-notifications": "^1.7.2",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.39.2",
+    "simple-react-validator": "^1.6.1"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2"
+  }
+}
