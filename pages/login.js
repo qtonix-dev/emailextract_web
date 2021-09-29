@@ -48,7 +48,7 @@ export class login extends Component {
                     cookie.save('qtonixemailextractweb_userid', response.data.user._id, { path: '/',expires });
                     cookie.save('qtonixemailextractweb_userlogin',true, { path: '/',expires })
 
-                    window.location = process.env.appURL;
+                    window.location.href = process.env.appURL;
 
                 }else{
                     alert('Please check your email and password')
