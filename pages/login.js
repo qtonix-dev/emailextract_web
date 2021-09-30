@@ -49,7 +49,7 @@ export class login extends Component {
                     cookie.save('qtonixemailextractweb_userlogin',true, { path: '/',expires })
 
                     
-					window.location.replace(process.env.appURL);
+					window.location.assign(process.env.appURL);
 
                 }else{
                     alert('Please check your email and password')
