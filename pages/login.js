@@ -35,7 +35,7 @@ export class login extends Component {
             .then(response=>{
 
                 if(response.data.response){
-                    console.log(response.data.user)
+                    console.log(response.data)
 
                     cookie.remove('qtonixemailextractweb_userdata', { path: '/' })
                     cookie.remove('qtonixemailextractweb_userlogin', { path: '/' })
@@ -48,9 +48,10 @@ export class login extends Component {
                     cookie.save('qtonixemailextractweb_userid', response.data.user._id, { path: '/',expires });
                     cookie.save('qtonixemailextractweb_userlogin',true, { path: '/',expires })
 
-                    
-					window.location.assign(process.env.appURL);
+                
 
+					window.location.assign(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
+                    
                 }else{
                     alert('Please check your email and password')
                 }
