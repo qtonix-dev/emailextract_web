@@ -10,8 +10,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <link rel="stylesheet" type="text/css" href="http://html.texbeat.com/deski/deski/css/style.css" />
-		<link rel="stylesheet" type="text/css" href="http://html.texbeat.com/deski/deski/css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="/responsive.css" />
         </Head>
         <body>
           <Main />
