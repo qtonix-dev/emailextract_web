@@ -2,8 +2,30 @@
 //     background-color: aqua;
 // }
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 @import '_buttons.scss';
 @import '_login.scss';
+
+
+
+.form_error_field{
+    border-bottom: 2px solid red !important;
+}
+.form_success_field{
+    border-bottom: 2px solid rgb(0, 255, 42) !important;
+}
+
+.form_error_message{
+    color: #ff5722;
+    margin-top: 5px;
+    // float: right;
+    font-weight: 400;
+    font-family: 'Rubik';
+}
+
+
 
 
 .text-fade1{
