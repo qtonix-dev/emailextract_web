@@ -1,8 +1,34 @@
 import React, { Component } from 'react'
-import Link from 'next/link'
+import { HiMenu } from "react-icons/hi";
+import NavItems from './NavItems'
 
 export default class Header extends Component {
+
+    constructor(props){
+        super(props)
+        this.state={
+            hideMobileMenu:true
+        }
+        this.showHideNavbar=this.showHideNavbar.bind(this)
+    }
+
+    componentDidMount(){
+        this.setState({hideMobileMenu:false})
+    }
+
+
+    showHideNavbar(){
+        if(this.state.hideMobileMenu){
+            this.setState({hideMobileMenu:false})
+        }else{
+            this.setState({hideMobileMenu:true})
+        }
+    }
+
+
+
     render() {
+        console.log(this.state.hideMobileMenu)
         return (
             <>
                {/* ===================================================
@@ -44,49 +70,26 @@ export default class Header extends Component {
                             <div className="logo"><a href="index-doc.html"><img src="images/logo/deski_01.svg" alt="" /></a></div>
                             <nav id="mega-menu-holder" className="navbar navbar-expand-lg">
                                 <div className="container nav-container">
-                                <button className="navbar-toggler navbar-toggler-right" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <i className="flaticon-menu-of-three-lines" />
+                                <button className="navbar-toggler navbar-toggler-right" type="button" onClick={this.showHideNavbar}>
+                                    <HiMenu />
                                 </button>
-                                {/* <div className="navbar-collapse collapse show" id="navbarSupportedContent"> */}
-                                <div className="navbar-collapse collapse" id="navbarSupportedContent">
-
-                                    <div className="d-lg-flex justify-content-between align-items-center">
-                                    <ul className="navbar-nav">
-                                        <li className="nav-item dropdown position-static active">
-                                            <Link href='/'><a className="nav-link">Home</a></Link>
-                                        </li>
-
-                                        <li className="nav-item dropdown position-static">
-                                            <Link href='/pricing'><a className="nav-link">Pricing</a></Link>
-                                        </li>
-
-                                        <li className="nav-item dropdown position-static ">
-                                            <Link href='/contactus'><a className="nav-link">Contact</a></Link>
-                                        </li>
-
-                                        
-                                        
-                                    </ul>
-                                    <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
-                                        <li>
-                                        <a href="login.html" className="signIn-action d-flex align-items-center">
-                                            <img src="images/icon/52.svg" alt="" />
-                                            <span>Login</span>
-                                        </a>
-                                        </li>
-                                        <li>
-                                        <a href="sign-up.html" className="signUp-action d-flex align-items-center">
-                                            <span>Getting Started</span>
-                                            <img src="images/icon/53.svg" alt="" />
-                                        </a>
-                                        </li>
-                                    </ul>
-                                    </div>
+                                
+                                {this.state.hideMobileMenu
+                                ?
+                                <div className="navbar-collapse collapse show">
+                                    <NavItems />
                                 </div>
+                                :
+                                <div className="navbar-collapse collapse">
+                                    <NavItems />
+                                </div>
+                                }
+
+                                
                                 </div> 
                             </nav>
                             </div>
-                        </div> {/* /.theme-main-menu */} 
+                        </div> 
             </>
         )
     }

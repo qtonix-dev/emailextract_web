@@ -1,0 +1,85 @@
+.search-filter-form form {
+    height: 64px;
+}
+.search-filter-form button {
+    width: 60px;
+    background: #0495fd;
+}
+.search-filter-form input {
+    color: #0495fd;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.addme{
+    
+    font-size: 15px;
+
+}
+
+.notfindemailshome{
+    background-color: white;
+    -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.findemailshome{
+    background-color: white;
+    -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 30px;
+
+    &_verified{
+
+            
+        color: #4caf50;
+        float: right;
+    }
+
+    &_notverified{
+
+            
+        color:#e91e63;
+        float: right;
+    }
+
+
+    h6{
+        img{
+            height: 70px;
+        }
+
+        span{
+            float: right;
+    background-color: #e8e8e8;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+        }
+        
+    }
+
+
+
+    p{
+        margin-left: 11px;
+        line-height: 31px;
+
+        
+    }
+
+    h5{
+        font-size: 16px;
+    margin-left: 10px;
+    margin-top: 33px;
+    }
+}

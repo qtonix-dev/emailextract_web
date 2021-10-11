@@ -4,11 +4,11 @@ import $ from "jquery";
 import SimpleReactValidator from 'simple-react-validator';
 import axios from 'axios'
 import cookie from 'react-cookies'
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import Link from 'next/link'
+
 
 export default class login extends Component {
-
-
 
     constructor(props){
       super(props)
@@ -34,10 +34,9 @@ export default class login extends Component {
  
         if (this.validator.allValid()){
           $("#myForm :input").prop('readonly', true);
+          
           this.setState({formLoading:true})
-
           // console.log(this.state)
-
 
           axios.post(`${process.env.backendURL}/user/login`,this.state)
             .then(response=>{

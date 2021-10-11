@@ -11,6 +11,8 @@
 
 @import '_buttons.scss';
 @import '_login.scss';
+@import '_home.scss';
+
 
 
 
@@ -30,6 +32,37 @@
     font-weight: 400;
     font-family: 'Rubik';
 }
+
+
+
+
+///////////////////////////
+.styles_faq-row-wrapper__3vA1D{
+    background-color: #f0f8ff00 !important;
+}
+.styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
+    border-bottom: none !important;
+}
+section.faq-row.styles_faq-row__2YF3c {
+    background-color: white;
+    margin-top: 15px;
+    padding: 12px 30px;
+}
+.row-title.closed.styles_row-title__1YiiY.styles_closed__39w54.styles_no-tabfocus__1HmyD {
+    font-family: Rubik, sans-serif;
+    font-size: 22px;
+    color: #3d3d3d;
+    font-weight: 400;
+}
+.styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY{
+    font-family: Rubik, sans-serif !important;
+    font-size: 22px !important;
+    color: #3d3d3d !important;
+    font-weight: 400 !important;
+}
+
+
+///////////////////////////
 
 
 
