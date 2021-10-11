@@ -22,11 +22,7 @@ import {createWrapper} from 'next-redux-wrapper'
 import store from '../store/store'
 import { ToastContainer } from 'react-toastify';
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-// import '../public/css/style.css'
-// import '../public/css/responsive.css'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../scss/main.scss'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
