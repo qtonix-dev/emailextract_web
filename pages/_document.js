@@ -17,7 +17,7 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
 
-          <script async src="/vendor/jquery.min.js" />
+          {/* <script async src="/vendor/jquery.min.js" />
           <script async src="/vendor/popper.js/popper.min.js" />
           <script async src="/vendor/bootstrap/js/bootstrap.min.js" />
           <script async src="/vendor/mega-menu/assets/js/custom.js" />
@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <script async src="/vendor/jquery.appear.js" />
           <script async src="/vendor/jquery.countTo.js" />
           <script async src="/vendor/slick/slick.min.js" />
-          <script async src="/js/theme.js" />
+          <script async src="/js/theme.js" /> */}
         </body>
       </Html>
     )

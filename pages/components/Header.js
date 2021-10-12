@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { HiMenu } from "react-icons/hi";
 import NavItems from './NavItems'
+import $ from 'jquery'
 
 export default class Header extends Component {
 
@@ -14,6 +15,15 @@ export default class Header extends Component {
 
     componentDidMount(){
         this.setState({hideMobileMenu:false})
+
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+              $('.theme-main-menu').addClass('navbarshrink');
+            } else {
+              $('.theme-main-menu').removeClass('navbarshrink');
+            }
+          });
     }
 
 
@@ -31,40 +41,6 @@ export default class Header extends Component {
         console.log(this.state.hideMobileMenu)
         return (
             <>
-               {/* ===================================================
-                                        Loading Transition
-                                    ==================================================== */}
-                        {/* <section>
-                            <div id="preloader">
-                            <div id="ctn-preloader" className="ctn-preloader">
-                                <div className="animation-preloader">
-                                <div className="spinner" />
-                                <div className="txt-loading">
-                                    <span data-text-preloader="D" className="letters-loading">
-                                    D
-                                    </span>
-                                    <span data-text-preloader="E" className="letters-loading">
-                                    E
-                                    </span>
-                                    <span data-text-preloader="S" className="letters-loading">
-                                    S
-                                    </span>
-                                    <span data-text-preloader="K" className="letters-loading">
-                                    K
-                                    </span>
-                                    <span data-text-preloader="I" className="letters-loading">
-                                    I
-                                    </span>
-                                </div>
-                                </div>	
-                            </div>
-                            </div>
-                        </section> */}
-                        {/* 
-                                    =============================================
-                                        Theme Main Menu
-                                    ============================================== 
-                                    */}
                         <div className="theme-main-menu sticky-menu theme-menu-three">
                             <div className="d-flex align-items-center justify-content-center">
                             <div className="logo"><a><img src="/images/logo-b.png" alt="" className="w-25" /></a></div>
