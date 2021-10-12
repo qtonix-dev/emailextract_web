@@ -355,7 +355,7 @@ export class pricing extends Component {
 </div>
 
 
-{
+
 
  
             </Body>
