@@ -5,7 +5,7 @@ import SimpleReactValidator from 'simple-react-validator';
 import axios from 'axios'
 import { toast } from 'react-toastify';
 import Router from 'next/router'
-
+import Link from 'next/link'
 
 export class register extends Component {
 
@@ -119,8 +119,8 @@ export class register extends Component {
                     </div>
                     <div className="form-wrapper">
                     <div className="d-flex justify-content-between">
-                        <div className="logo"><a href="index.html"><img src="images/logo/deski_01.svg" alt="" /></a></div>
-                        <a href="index.html" className="font-rubik go-back-button">Go to home</a>
+                        <div className="logo"><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></div>
+                        <Link href='/'><a className="font-rubik go-back-button">Go to home</a></Link>
                     </div>
                     <form onSubmit={this.handleSubmit} className="user-data-form mt-30" id="myForm">
                         <h2>Join with thousands of startup!</h2>
@@ -130,21 +130,21 @@ export class register extends Component {
                         <div className="col-12">
                             <div className="input-group-meta mb-50">
                             <label>Full Name</label>
-                            <input type="text" placeholder="Melvin Carlson" name="name" value={this.state.name} onChange={this.handleChange} />
+                            <input type="text" placeholder="Enter Full Name" name="name" value={this.state.name} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('name', this.state.name, 'required')}</h6>
                             </div>
                         </div>
                         <div className="col-6">
                             <div className="input-group-meta mb-50">
                             <label>Email</label>
-                            <input type="email" placeholder="" name="email" value={this.state.email} onChange={this.handleChange} />
+                            <input type="email" placeholder="Enter Email" name="email" value={this.state.email} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                             </div>
                         </div>
                         <div className="col-6">
                             <div className="input-group-meta mb-50">
                             <label>Company</label>
-                            <input type="text" placeholder="" name="company" value={this.state.company} onChange={this.handleChange} />
+                            <input type="text" placeholder="Enter Company" name="company" value={this.state.company} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('company', this.state.company, 'required')}</h6>
                             </div>
                         </div>
@@ -159,7 +159,7 @@ export class register extends Component {
                         <div className="col-6">
                             <div className="input-group-meta mb-15">
                             <label>Re-type Password</label>
-                            <input type="password" placeholder="Enter Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange}  />
+                            <input type="password" placeholder="Enter Re-type Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange}  />
                             <h6 className="form_error_message">{this.validator.message('re_enter_password', this.state.re_enter_password, 'required')}</h6>
                             </div>
                         </div>
@@ -182,11 +182,11 @@ export class register extends Component {
                 width={50}
               />
             </center>
-            :<button className="theme-btn-one mt-50 mb-50" type='submit'>Login</button>
+            :<button className="theme-btn-one mt-1 mb-30" type='submit'>Register</button>
             }
                         </div>
                         <div className="col-12">
-                            <p className="text-center font-rubik copyright-text">© Copyright 2021 deski</p>
+                            <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>
                         </div>
                         </div>
                     </form>

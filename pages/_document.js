@@ -18,13 +18,13 @@ class MyDocument extends Document {
           <NextScript />
 
           <script async src="/vendor/jquery.min.js" />
-          {/* <script src="/vendor/popper.js/popper.min.js" />
-          <script src="/vendor/bootstrap/js/bootstrap.min.js" />
-          <script src="/vendor/mega-menu/assets/js/custom.js" />
-          <script src="/vendor/aos-next/dist/aos.js" />
-          <script src="/vendor/jquery.appear.js" />
-          <script src="/vendor/jquery.countTo.js" />
-          <script src="/vendor/slick/slick.min.js" /> */}
+          <script async src="/vendor/popper.js/popper.min.js" />
+          <script async src="/vendor/bootstrap/js/bootstrap.min.js" />
+          <script async src="/vendor/mega-menu/assets/js/custom.js" />
+          <script async src="/vendor/aos-next/dist/aos.js" />
+          <script async src="/vendor/jquery.appear.js" />
+          <script async src="/vendor/jquery.countTo.js" />
+          <script async src="/vendor/slick/slick.min.js" />
           <script async src="/js/theme.js" />
         </body>
       </Html>

@@ -4,11 +4,13 @@ import $ from "jquery";
 import SimpleReactValidator from 'simple-react-validator';
 import axios from 'axios'
 import cookie from 'react-cookies'
-import { toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import Link from 'next/link'
 
 
 export default class login extends Component {
+
+
 
     constructor(props){
       super(props)
@@ -34,9 +36,10 @@ export default class login extends Component {
  
         if (this.validator.allValid()){
           $("#myForm :input").prop('readonly', true);
-          
           this.setState({formLoading:true})
+
           // console.log(this.state)
+
 
           axios.post(`${process.env.backendURL}/user/login`,this.state)
             .then(response=>{
@@ -88,7 +91,7 @@ export default class login extends Component {
     render() {
         return (
             <>
-               <div className="main-page-wrapper p0">
+               <div className="main-page-wrapper p0 vh-100">
                 
                 <div className="user-data-page clearfix d-lg-flex">
                     <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
@@ -101,19 +104,19 @@ export default class login extends Component {
                     </div>
                     <div className="form-wrapper">
                     <div className="d-flex justify-content-between">
-                        <div className="logo"><a href="index.html"><img src="images/logo/deski_01.svg" alt="" /></a></div>
-                        <a href="index.html" className="font-rubik go-back-button">Go to home</a>
+                        <div className="logo"><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></div>
+                        <Link href='/'><a className="font-rubik go-back-button">Go to home</a></Link>
                     </div>
                     <form onSubmit={this.handleSubmit} className="user-data-form mt-30" id="myForm">
                         <h2>Join with thousands of startup!</h2>
-                        <p className="header-info pt-30 pb-50">Need account?  <a href="login.html">Register</a></p>
-                        <div className="row">
+                        <p className="header-info pt-30 pb-50">Need account?  <Link href='/register'><a>Register</a></Link></p>
+                        <div className="row ">
                         
                      
                         <div className="col-12">
                             <div className="input-group-meta mb-50">
                             <label>Email</label>
-                            <input type="email" placeholder="" name="email" value={this.state.email} onChange={this.handleChange} />
+                            <input type="email" placeholder="Enter Email" name="email" value={this.state.email} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                             </div>
                         </div>
@@ -135,20 +138,20 @@ export default class login extends Component {
                         </div> */}
                         <div className="col-12">
                         {this.state.formLoading
-            ?
-            <center className="m-5">
-              <Loader
-                type="TailSpin"
-                color="#101621"
-                height={50}
-                width={50}
-              />
-            </center>
-            :<button className="theme-btn-one mt-50 mb-50" type='submit'>Login</button>
-            }
+                          ?
+                          <center className="m-5">
+                            <Loader
+                              type="TailSpin"
+                              color="#101621"
+                              height={50}
+                              width={50}
+                            />
+                          </center>
+                          :<button className="theme-btn-one mt-1 mb-30" type='submit'>Login</button>
+                          }
                         </div>
                         <div className="col-12">
-                            <p className="text-center font-rubik copyright-text">© Copyright 2021 deski</p>
+                            <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>
                         </div>
                         </div>
                     </form>

@@ -67,7 +67,7 @@ export default class Header extends Component {
                                     */}
                         <div className="theme-main-menu sticky-menu theme-menu-three">
                             <div className="d-flex align-items-center justify-content-center">
-                            <div className="logo"><a href="index-doc.html"><img src="images/logo/deski_01.svg" alt="" /></a></div>
+                            <div className="logo"><a><img src="/images/logo-b.png" alt="" className="w-25" /></a></div>
                             <nav id="mega-menu-holder" className="navbar navbar-expand-lg">
                                 <div className="container nav-container">
                                 <button className="navbar-toggler navbar-toggler-right" type="button" onClick={this.showHideNavbar}>

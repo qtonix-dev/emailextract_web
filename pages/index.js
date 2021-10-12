@@ -19,6 +19,25 @@ import Loader from "react-loader-spinner";
         slidesToScroll: 1,
         arrows:false,
         autoplay:true,
+        responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+        }
+    
+    ],
         customPaging: function(i) {
             return (
             <a></a>
@@ -350,7 +369,7 @@ export class index extends Component {
                         Fancy Text Block Nineteen
                     ============================================== 
                     */}
-                    <div className="fancy-text-block-nineteen mt-250 mb-200 md-mt-150 md-mb-150">
+                    <div className="fancy-text-block-nineteen mt-150 mb-100 md-mt-150 md-mb-150">
                     <div className="container">
                         <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
@@ -378,12 +397,126 @@ export class index extends Component {
 
 
 
-                    {/* 
+                    
+
+
+
+
+
+
+
+
+
+
+                                {/*
+                                            =====================================================
+                                                Fancy Feature Eight
+                                            =====================================================
+                                            */}
+                                <div className="fancy-feature-eight pt-100 md-pt-100">
+                                    <div className="container">
+                                    <div className="title-style-four text-center mb-60 md-mb-40">
+                                        <div className="row">
+                                        <div className="col-lg-10 m-auto">
+                                            <h6>How it works</h6>
+                                            <h2>Awesome place to start creating your
+                                            <span>first doc with <img src="images/shape/line-shape-2.svg" alt="" /></span>deski
+                                            </h2>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div className="block-style-twelve">
+                                        <div className="row">
+                                        <div className="col-lg-6 col-md-8 ml-auto order-lg-last">
+                                            <div className="illustration-holder">
+                                            <img src="images/assets/ils_10.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-5 order-lg-first">
+                                            <div className="text-wrapper">
+                                            <h6>Documentation</h6>
+                                            <h2 className="font-rubik title">A home for your team, best-practices &amp; thoughts.</h2>
+                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
+                                            </div> {/* /.text-wrapper */}
+                                        </div>
+                                        </div>
+                                    </div> {/* /.block-style-twelve */}
+                                    <div className="block-style-twelve">
+                                        <div className="row">
+                                        <div className="col-lg-6 col-md-8 mr-auto">
+                                            <div className="illustration-holder">
+                                            <img src="images/assets/ils_11.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-5">
+                                            <div className="text-wrapper">
+                                            <h6>User Guides</h6>
+                                            <h2 className="font-rubik title">Docs for your APIs, products, FAQs and user guides,</h2>
+                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
+                                            </div> {/* /.text-wrapper */}
+                                        </div>
+                                        </div>
+                                    </div> {/* /.block-style-twelve */}
+                                    <div className="block-style-twelve">
+                                        <div className="row">
+                                        <div className="col-lg-6 col-md-8 ml-auto order-lg-last">
+                                            <div className="illustration-holder">
+                                            <img src="images/assets/ils_12.svg" alt="" />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-5 order-lg-first" data-aos="fade-right">
+                                            <div className="text-wrapper">
+                                            <h6>Combine Idea</h6>
+                                            <h2 className="font-rubik title">A place to think and track ideas for you &amp; your team</h2>
+                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
+                                            </div> {/* /.text-wrapper */}
+                                        </div>
+                                        </div>
+                                    </div> {/* /.block-style-twelve */}
+                                    </div>
+                                </div> {/* /.fancy-feature-eight */}
+                                
+                                {/*
+                                            =====================================================
+                                                Useable Tools
+                                            =====================================================
+                                            */}
+                                <div className="useable-tools-section-three mt-200 mb-200 md-mt-100 md-mb-80">
+                                    <div className="container">
+                                    <div className="row">
+                                        <div className="col-lg-6">
+                                        <div className="title-style-four">
+                                            <h2>
+                                            <span>Who is using ours <img src="images/shape/line-shape-10.svg" alt="" /></span>
+                                            deski docs?
+                                            </h2>
+                                        </div>
+                                        <p className="sub-text">Deski ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
+                                        <a href="#" className="all-button">See all partners <i className="flaticon-right-arrow" /></a>
+                                        </div>
+                                    </div>
+                                    </div> {/* /.container */}
+                                    <div className="logo-wrapper d-flex flex-wrap justify-content-center align-items-center">
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-32.png" alt="" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-33.png" alt="" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-34.png" alt="" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-35.png" alt="" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-36.png" alt="" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-37.png" alt="" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-38.png" alt="" /></div>
+                                    </div> {/* /.logo-wrapper */}
+                                </div> {/* /.useable-tools-section-three */}
+                                
+                                
+                                
+                                
+                                
+                                {/* 
                                 =============================================
                                     Fancy Feature Nineteen
                                 ============================================== 
                                 */}
-                    <div className="fancy-feature-nineteen mt-180 md-mt-100" id="effect">
+                    <div className="fancy-feature-nineteen mt-100 md-mt-100" id="effect">
                     <div className="container">
                         <div className="row">
                         <div className="col-xl-9 col-lg-11 m-auto" data-aos="fade-up" data-aos-duration={1200}>
@@ -463,84 +596,12 @@ export class index extends Component {
                         </div>
                     </div>
                     </div> {/* /.fancy-feature-nineteen */}
+                                
+                                
+                                
 
 
-
-
-
-
-
-
-
-
-                                {/*
-                                            =====================================================
-                                                Fancy Feature Eight
-                                            =====================================================
-                                            */}
-                                <div className="fancy-feature-eight pt-150 md-pt-100">
-                                    <div className="container">
-                                    <div className="title-style-four text-center mb-60 md-mb-40">
-                                        <div className="row">
-                                        <div className="col-lg-10 m-auto">
-                                            <h6>How it works</h6>
-                                            <h2>Awesome place to start creating your
-                                            <span>first doc with <img src="images/shape/line-shape-2.svg" alt="" /></span>deski
-                                            </h2>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div className="block-style-twelve">
-                                        <div className="row">
-                                        <div className="col-lg-6 col-md-8 ml-auto order-lg-last">
-                                            <div className="illustration-holder">
-                                            <img src="images/assets/ils_10.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-5 order-lg-first">
-                                            <div className="text-wrapper">
-                                            <h6>Documentation</h6>
-                                            <h2 className="font-rubik title">A home for your team, best-practices &amp; thoughts.</h2>
-                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
-                                            </div> {/* /.text-wrapper */}
-                                        </div>
-                                        </div>
-                                    </div> {/* /.block-style-twelve */}
-                                    <div className="block-style-twelve">
-                                        <div className="row">
-                                        <div className="col-lg-6 col-md-8 mr-auto">
-                                            <div className="illustration-holder">
-                                            <img src="images/assets/ils_11.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-5">
-                                            <div className="text-wrapper">
-                                            <h6>User Guides</h6>
-                                            <h2 className="font-rubik title">Docs for your APIs, products, FAQs and user guides,</h2>
-                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
-                                            </div> {/* /.text-wrapper */}
-                                        </div>
-                                        </div>
-                                    </div> {/* /.block-style-twelve */}
-                                    <div className="block-style-twelve">
-                                        <div className="row">
-                                        <div className="col-lg-6 col-md-8 ml-auto order-lg-last">
-                                            <div className="illustration-holder">
-                                            <img src="images/assets/ils_12.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-5 order-lg-first" data-aos="fade-right">
-                                            <div className="text-wrapper">
-                                            <h6>Combine Idea</h6>
-                                            <h2 className="font-rubik title">A place to think and track ideas for you &amp; your team</h2>
-                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
-                                            </div> {/* /.text-wrapper */}
-                                        </div>
-                                        </div>
-                                    </div> {/* /.block-style-twelve */}
-                                    </div>
-                                </div> {/* /.fancy-feature-eight */}
-                                {/*
+{/*
                                             =====================================================
                                                 Client Feedback Slider Two
                                             =====================================================
@@ -618,36 +679,25 @@ export class index extends Component {
                                     </div>
                                     </div> {/* /.slider-content */}
                                 </div> {/* /.client-feedback-slider-two */}
-                                {/*
-                                            =====================================================
-                                                Useable Tools
-                                            =====================================================
-                                            */}
-                                <div className="useable-tools-section-three mt-200 mb-200 md-mt-100 md-mb-80">
-                                    <div className="container">
-                                    <div className="row">
-                                        <div className="col-lg-6">
-                                        <div className="title-style-four">
-                                            <h2>
-                                            <span>Who is using ours <img src="images/shape/line-shape-10.svg" alt="" /></span>
-                                            deski docs?
-                                            </h2>
-                                        </div>
-                                        <p className="sub-text">Deski ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
-                                        <a href="#" className="all-button">See all partners <i className="flaticon-right-arrow" /></a>
-                                        </div>
-                                    </div>
-                                    </div> {/* /.container */}
-                                    <div className="logo-wrapper d-flex flex-wrap justify-content-center align-items-center">
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-32.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-33.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-34.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-35.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-36.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-37.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-38.png" alt="" /></div>
-                                    </div> {/* /.logo-wrapper */}
-                                </div> {/* /.useable-tools-section-three */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                
+                                
+                                
+                                
+                                
+                                
                                 {/*
                                             =====================================================
                                                 Faq Classic
