@@ -1,21 +1,22 @@
 import React from 'react'
 import { AiOutlineCheck,AiOutlineClose } from "react-icons/ai";
+import Link from 'next/link'
 
-export default function PricingBox() {
+export default function PricingBox({data}) {
+  // console.log(data)
     return (
         <div className="col-lg-3 col-sm-6">
-            <div className="pr-table-wrapper active" style={{backgroundColor:'#6bd0ff'}}>
-              <div className="pack-name" style={{background: '#FFECEC'}}>Basic</div>
-              <div className="mypristrike" style={{visibility:'hidden'}}>$18.99</div>
-
-              <div className="price">Free</div>
-              <div className="pack-details">TAKE GREAT NOTES</div>
+            <div className="pr-table-wrapper">
+              <div className="pack-name" style={{background: '#FFECEC'}}>{data.name}</div>
+              <div className="mypristrike" style={{visibility:'hidden'}}>${data.name}</div>
+              <div className="price">${data.displayprice}</div>
+              <div className="pack-details">{data.type==='Monthly'?`BILLED MONTHLY`:`BILLED YEARLY`}</div>
               <ul className="pr-feature">
-                <li><AiOutlineCheck /> <b>25</b> Total Domain Search </li>
-                <li><AiOutlineCheck /> <b>25</b> Total Email Search </li>
-                <li><AiOutlineCheck /> <b>25</b> Total Email Verification </li>
-                <li><AiOutlineCheck /> <b>25</b> Bulk Domain Search </li>
-                <li><AiOutlineCheck /> <b>250</b> Bulk Domain Upload  </li>
+                <li><AiOutlineCheck /> <b>{data.totalsingledomain}</b> Total Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalemailsearch}</b> Total Email Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalemailverification}</b> Total Email Verification </li>
+                <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract}</b> Bulk Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>
                 <li><AiOutlineCheck /> Unlimited Results </li>
                 <li><AiOutlineCheck /> Unlimited Storage </li>
                 <li style={{textDecoration:'line-through'}}><AiOutlineClose /> CSV Exporting  </li>
@@ -23,7 +24,8 @@ export default function PricingBox() {
 
                 
               </ul>
-              <a href="#" className="trial-button">Try it Free</a>
+              <Link href='/login'><a className="trial-button">Try it Free</a></Link>
+
               <br />
               {/* <div className="trial-text">No card required, cancel any time</div> */}
             </div> {/* /.pr-table-wrapper */}

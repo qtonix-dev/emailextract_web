@@ -185,7 +185,7 @@
 }
 
 ::-webkit-scrollbar {
-	width: 5px
+	width: 7px
 }
 
 ::-webkit-scrollbar-track {
@@ -201,16 +201,16 @@
 	--text-color: #73737B;
 	--text-light: #888888;
 	--heading: #101621;
-	--blue-dark: #6F55FF;
+	--blue-dark: #0596fd;
 	--red-light: #FD6A5E;
 	--yellow-deep: #FFB840;
-	--blue-light: #3BB0D7;
+	--blue-light: #0596fd;
 	--purple-blue: #655C97;
 	--vin-red: #973C56
 }
 
 ::selection {
-	background-color: #6f55ff;
+	background-color: #0596fd;
 	color: #fff
 }
 
@@ -5276,7 +5276,8 @@ body .theme-btn-nine:hover {
 	font-size: 20px;
 	margin: 0 0 24px;
 	display: inline-block;
-	position: relative
+	position: relative;
+	font-family: 'Rubik';
 }
 
 .block-style-eight .title:before {
@@ -5292,7 +5293,8 @@ body .theme-btn-nine:hover {
 
 .block-style-eight p {
 	line-height: 1.72em;
-	color: #000
+	color: #000;
+	font-family: 'Rubik';
 }
 
 .fancy-feature-seven {
@@ -13639,7 +13641,7 @@ body .theme-btn-nine:hover {
 }
 
 .team-details .main-bg .text-wrapper .social-icon li:nth-child(1) a:before {
-	background: #6f55ff
+	background: #0596fd
 }
 
 .team-details .main-bg .text-wrapper .social-icon li:nth-child(2) a:before {

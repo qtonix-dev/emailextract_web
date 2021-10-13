@@ -37,12 +37,118 @@ export default class about extends Component {
       </div>
     </div> {/* /.bg-wrapper */}
   </div> {/* /.fancy-hero-five */}
-  {/* 
+
+
+
+
+{/*
+			=====================================================
+				Fancy Text Block Thirteen
+			=====================================================
+			*/}
+<div className="fancy-text-block-thirteen pt-140 md-pt-100">
+  <div className="container">
+    <div className="row align-items-center">
+      <div className="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
+        <div className="text-wrapper">
+          <div className="title-style-two">
+            <h2>Security you can trust easily.</h2>
+          </div> {/* /.title-style-two */}
+          <p>Our dashboard is served over SSL which means you can be sure that all data transferred is secure. Payment processing uses the very latest PCI DSS card-security standards</p>
+        </div>
+      </div>
+      <div className="col-lg-6 col-md-8 m-auto order-lg-first" data-aos="fade-right" data-aos-duration={1200}>
+        <img src="images/assets/feature-img-11.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div> {/* /.fancy-text-block-thirteen */}
+
+
+
+
+
+
+
+
+
+{/*
+			=====================================================
+				Fancy Text block Twelve
+			=====================================================
+			*/}
+<div className="fancy-text-block-twelve mt-150 md-mt-100">
+  <div className="container">
+    <div className="row">
+      <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
+        <div className="text-wrapper">
+          <div className="title-style-three">
+            <h6>Ticket System</h6>
+            <h2>
+              <span>How doe the ticketing<img src="images/shape/line-shape-6.svg" alt="" /></span>
+              software work?
+            </h2>
+          </div>
+          <p className="sub-text">A ticketing system is a tool, primarily for customer service. It helps customer representativ inquiries from one interface without any struggles.</p>
+          <p className="sub-text">Once a customer agent receives a inquiry from any channel it will be transformed into a ticket.</p>
+        </div> {/* /.text-wrapper */}
+      </div>
+      <div className="col-lg-5 ml-auto" data-aos="fade-left" data-aos-duration={1200}>
+        <div className="img-gallery">
+          <img src="images/media/img_37.png" alt="" />
+          <img src="images/shape/53.svg" alt="" className="shapes shape-one" />
+          <img src="images/shape/52.svg" alt="" className="shapes shape-two" />
+        </div> {/* /.img-gallery */}
+      </div>
+    </div>
+    <div className="mt-70 md-mt-50">
+      <div className="row justify-content-center">
+        <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration={1200}>
+          <div className="block-style-eight">
+            <h6 className="title">Single Sign on Reports</h6>
+            <p>Keep your clients informed at all times with fully editable, professional Client Reports</p>
+          </div> {/* /.block-style-eight */}
+        </div>
+        <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={100}>
+          <div className="block-style-eight">
+            <h6 className="title">Shared Shopping Cart</h6>
+            <p>Keep your clients informed at all times with fully editable, professional Client Reports</p>
+          </div> {/* /.block-style-eight */}
+        </div>
+        <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={200}>
+          <div className="block-style-eight">
+            <h6 className="title">Client</h6>
+            <p>Keep your clients informed at all times with fully editable, professional Client Reports</p>
+          </div> {/* /.block-style-eight */}
+        </div>
+      </div>
+    </div>
+  </div>
+</div> {/* /.fancy-text-block-twelve */}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ {/* 
 			=============================================
 				Fancy Text block Seventeen
 			============================================== 
 			*/}
-  <div className="fancy-text-block-seventeen mt-250 pt-20 md-mt-80">
+  <div className="fancy-text-block-seventeen mt-100 pt-20 md-mt-80">
     <div className="container">
       <div className="row">
         <div className="col-lg-5 ml-auto order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
@@ -64,13 +170,21 @@ export default class about extends Component {
       </div>
     </div>
   </div> {/* /.fancy-text-block-seventeen */}
+
+
+
+
+
+
+
+
+
   {/* 
 			=============================================
 				Fancy Text block Eighteen
 			============================================== 
 			*/}
-  <div className="fancy-text-block-eighteen mt-170 md-mt-80" style={{paddingBottom:'0px'}}>
-    <img src="images/assets/ils_13.svg" alt="" className="illustration" data-aos="fade-up" data-aos-duration={1200} />
+  <div className="fancy-text-block-eighteen" style={{paddingBottom:'0px'}}>
     <div className="counter-info pt-90 pb-45 md-pt-60">
       <div className="container">
         <div className="row justify-content-center">
@@ -99,6 +213,19 @@ export default class about extends Component {
       </div>
     </div> {/* /.counter-info */}
   </div> {/* /.fancy-text-block-eighteen */}
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   {/*
 			=====================================================

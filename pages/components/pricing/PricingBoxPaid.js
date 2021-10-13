@@ -1,26 +1,28 @@
 import React from 'react'
 import { AiOutlineCheck } from "react-icons/ai";
+import Link from 'next/link'
 
-export default function PricingBoxPaid() {
+export default function PricingBoxPaid({data}) {
     return (
         <div className="col-lg-3 col-sm-6">
-            <div className="pr-table-wrapper active">
-              <div className="pack-name" style={{background: '#E3F8EF'}}>Reguler</div>
-              <div className="mypristrike">$18.99</div>
-              <div className="price">$8.99</div>
-              <div className="pack-details">BE MORE PRODUCTIVE</div>
+            <div className={`pr-table-wrapper ${data.name==='Growth'?`mybgprice`:``}`}>
+              <div className="pack-name" style={{background: '#E3F8EF'}}>{data.name}</div>
+              <div className="mypristrike">${data.mainprice}</div>
+
+              <div className="price">${data.displayprice}</div>
+              <div className="pack-details">{data.type==='Monthly'?`BILLED MONTHLY`:`BILLED YEARLY`}</div>
               <ul className="pr-feature">
-              <li><AiOutlineCheck /> <b>25</b> Total Domain Search </li>
-                <li><AiOutlineCheck /> <b>25</b> Total Email Search </li>
-                <li><AiOutlineCheck /> <b>25</b> Total Email Verification </li>
-                <li><AiOutlineCheck /> <b>25</b> Bulk Domain Search </li>
-                <li><AiOutlineCheck /> <b>250</b> Bulk Domain Upload  </li>
+                <li><AiOutlineCheck /> <b>{data.totalsingledomain}</b> Total Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalemailsearch}</b> Total Email Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalemailverification}</b> Total Email Verification </li>
+                <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract}</b> Bulk Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>
                 <li><AiOutlineCheck /> Unlimited Results </li>
                 <li><AiOutlineCheck /> Unlimited Storage </li>
                 <li><AiOutlineCheck /> CSV Exporting  </li>
                 <li><AiOutlineCheck /> Techinical Support  </li>
               </ul>
-              <a href="#" className="trial-button">Try it Free</a>
+              <Link href='/login'><a className="trial-button">Try it Free</a></Link>
               <br />
             </div> {/* /.pr-table-wrapper */}
           </div>

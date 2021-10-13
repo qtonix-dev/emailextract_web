@@ -4,35 +4,34 @@ import Body from './components/Body'
 function termsandcondition() {
     return (
         <Body>
-
-        {/* 
-			=============================================
-				Fancy Hero Five
-			============================================== 
-			*/}
-<div className="fancy-hero-five">
-  <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
-  <img src="images/shape/96.svg" alt="" className="shapes shape-two" />
-  <div className="bg-wrapper">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 m-auto text-center">
-          <h1 className="heading">
-            <span>Terms and Conditions<img src="/images/shape/line-shape-11.svg" alt="ss" /></span>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div> {/* /.bg-wrapper */}
-</div> {/* /.fancy-hero-five */}
+          {/* 
+          =============================================
+            Fancy Hero Five
+          ============================================== 
+          */}
+            <div className="fancy-hero-five">
+              <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
+              <img src="images/shape/96.svg" alt="" className="shapes shape-two" />
+              <div className="bg-wrapper">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-lg-12 m-auto text-center">
+                      <h1 className="heading">
+                        <span>Terms and Conditions<img src="/images/shape/line-shape-11.svg" alt="ss" /></span>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div> {/* /.bg-wrapper */}
+            </div> {/* /.fancy-hero-five */}
 
 
 
             {/*
-			=====================================================
-				Terms and Condition
-			=====================================================
-			*/}
+            =====================================================
+              Terms and Condition
+            =====================================================
+            */}
             <div className="terms_and_policy" style={{marginBottom:'100px'}}>
                 <div className="container">
                     <div className="row">

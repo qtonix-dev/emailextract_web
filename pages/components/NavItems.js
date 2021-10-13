@@ -1,20 +1,32 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
+import { withRouter } from "next/router";
 
-export default class NavItems extends Component {
+class BodyWithRouter extends Component {
+
+    componentDidMount(){
+        console.log(this.props.router.pathname)
+    }
+
     render() {
         return (
             <div className="d-lg-flex justify-content-between align-items-center">
                 <ul className="navbar-nav">
-                                        <li className="nav-item dropdown position-static active">
+                                        <li className={`nav-item dropdown position-static ${this.props.router.pathname==='/'?'active':<></>}`}>
                                             <Link href='/'><a className="nav-link">Home</a></Link>
                                         </li>
 
-                                        <li className="nav-item dropdown position-static">
+                                        <li className={`nav-item dropdown position-static ${this.props.router.pathname==='/pricing'?'active':<></>}`}>
                                             <Link href='/pricing'><a className="nav-link">Pricing</a></Link>
                                         </li>
 
-                                        <li className="nav-item dropdown position-static ">
+
+                                        <li className={`nav-item dropdown position-static ${this.props.router.pathname==='/aboutus'?'active':<></>}`}>
+                                            <Link href='/aboutus'><a className="nav-link">About</a></Link>
+                                        </li>
+
+
+                                        <li className={`nav-item dropdown position-static ${this.props.router.pathname==='/contactus'?'active':<></>}`}>
                                             <Link href='/contactus'><a className="nav-link">Contact</a></Link>
                                         </li>
                 </ul>
@@ -38,3 +50,8 @@ export default class NavItems extends Component {
         )
     }
 }
+
+
+const NavItems = withRouter(BodyWithRouter);
+
+export default NavItems;
