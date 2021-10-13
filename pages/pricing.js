@@ -1,363 +1,228 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
+import PricingBox from './components/pricing/PricingBox'
+import PricingBoxPaid from './components/pricing/PricingBoxPaid'
+import Faq from "react-faq-component";
+
+//=======FAQ=======//
+const data = {
+  // title: "FAQ (How it works)",
+  rows: [
+      {
+          title: "Lorem ipsum dolor sit amet,",
+          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
+          ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
+          In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
+          Fusce sed commodo purus, at tempus turpis.`,
+      },
+      {
+          title: "Nunc maximus, magna at ultricies elementum",
+          content:
+              "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+      },
+      {
+          title: "Curabitur laoreet, mauris vel blandit fringilla",
+          content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
+          Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
+          Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
+          Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+      },
+      {
+          title: "What is the package version",
+          content: <p>current version is 1.2.1</p>,
+      },
+  ],
+};
+const styles = {
+  // bgColor: 'white',
+  titleTextColor: "blue",
+  rowTitleColor: "blue",
+  // rowContentColor: 'grey',
+  // arrowColor: "red",
+};
+
+const config = {
+  // animate: true,
+  // arrowIcon: "V",
+  // tabFocus: true
+};
+//=======FAQ=======//
 
 export class pricing extends Component {
+  
     render() {
         return (
             <Body>
-  <div>
-  {/* 
-			=============================================
-				Pricing Section Two
-			============================================== 
+              {/*
+			=====================================================
+				Pricing Section Six
+			=====================================================
 			*/}
-  <div className="pricing-section-two">
-    <div className="fancy-hero-four">
-      <div className="shapes shape-one" />
-      <div className="shapes shape-two" />
-      <div className="shapes shape-three" />
-      <div className="shapes shape-four" />
-      <div className="shapes shape-five" />
-      <div className="shapes shape-six" />
-      <div className="bg-wrapper">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-10 col-lg-11 m-auto">
-              <h2>Choose package match your budget</h2>
-            </div>
-            <div className="col-12 m-auto">
-              <p className="font-rubik sub-heading">5 minute installation · Try Team plan features for 14 days · No credit card required</p>
-            </div>
-          </div>
-          {/* Nav tabs */}
-          <ul className="nav nav-tabs justify-content-center pricing-nav-two">
-            <li className="nav-item">
-              <a className="nav-link active" data-toggle="tab" href="#month">Monthly</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" data-toggle="tab" href="#year">Yearly</a>
-            </li>
-          </ul>
-        </div>
-      </div> {/* /.bg-wrapper */}
-    </div> {/* /.fancy-hero-four */}
-    <div className="container">
-      <div className="pricing-table-area">
-        <div className="clearfix">
-          <div className="tab-content">
-            <div className="tab-pane active" id="month">
-              <div className="row no-gutters">
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">FREE</div>
-                    <div className="price"><sup>$</sup>0</div>
-                    <div className="bill-cycle">3 Free Agents</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Email Ticketing</li>
-                      <li>Customer Management</li>
-                      <li>Help Center</li>
-                      <li>Private Knowledge Base</li>
-                      <li>Predefined SLAs</li>
-                      <li>Macros</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">Standard</div>
-                    <div className="price"><sup>$</sup>29</div>
-                    <div className="bill-cycle">Per agent billed</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Social &amp; Community</li>
-                      <li>Channels</li>
-                      <li>Product-based Ticket</li>
-                      <li>Management</li>
-                      <li>Help Center Themes</li>
-                      <li>Gallery</li>
-                      <li>Public Knowledge Base</li>
-                      <li>SLAs &amp; Escalations</li>
-                      <li>Workflow, Assignment</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">Start up</div>
-                    <div className="price"><sup>$</sup>38</div>
-                    <div className="bill-cycle">Per agent billed</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Multi-Department Ticketing</li>
-                      <li>Team Management</li>
-                      <li>Telephony</li>
-                      <li>Automatic Time Tracking</li>
-                      <li>Blueprint - Basic Process</li>
-                      <li>Management</li>
-                      <li>Round Robin Ticket</li>
-                      <li>Assignment</li>
-                      <li>Agent Collision</li>
-                      <li>Tasks, Events &amp; Call</li>
-                      <li>Activities</li>
-                      <li>Mobile SDKs</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">Business</div>
-                    <div className="price"><sup>$</sup>56</div>
-                    <div className="bill-cycle">Per agent billed</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Live Chat</li>
-                      <li>Zia - Artificial Intelligence</li>
-                      <li>Help Center</li>
-                      <li>Customization</li>
-                      <li>Multi-brand Help Center</li>
-                      <li>Advanced Process</li>
-                      <li>Management</li>
-                      <li>Custom Functions</li>
-                      <li>Multi-level IVR</li>
-                      <li>Global Reports &amp;</li>
-                      <li>Dashboards</li>
-                      <li>Scheduled Reports</li>
-                      <li>Contract Management</li>
-                      <li>Validation Rules</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-              </div>
-            </div>
-            <div className="tab-pane fade" id="year">
-              <div className="row no-gutters">
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">FREE</div>
-                    <div className="price"><sup>$</sup>0</div>
-                    <div className="bill-cycle">3 Free Agents</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Email Ticketing</li>
-                      <li>Customer Management</li>
-                      <li>Help Center</li>
-                      <li>Private Knowledge Base</li>
-                      <li>Predefined SLAs</li>
-                      <li>Macros</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">Standard</div>
-                    <div className="price"><sup>$</sup>129</div>
-                    <div className="bill-cycle">Per agent billed</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Social &amp; Community</li>
-                      <li>Channels</li>
-                      <li>Product-based Ticket</li>
-                      <li>Management</li>
-                      <li>Help Center Themes</li>
-                      <li>Gallery</li>
-                      <li>Public Knowledge Base</li>
-                      <li>SLAs &amp; Escalations</li>
-                      <li>Workflow, Assignment</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">Start up</div>
-                    <div className="price"><sup>$</sup>138</div>
-                    <div className="bill-cycle">Per agent billed</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Multi-Department Ticketing</li>
-                      <li>Team Management</li>
-                      <li>Telephony</li>
-                      <li>Automatic Time Tracking</li>
-                      <li>Blueprint - Basic Process</li>
-                      <li>Management</li>
-                      <li>Round Robin Ticket</li>
-                      <li>Assignment</li>
-                      <li>Agent Collision</li>
-                      <li>Tasks, Events &amp; Call</li>
-                      <li>Activities</li>
-                      <li>Mobile SDKs</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-                <div className="col-lg-3 col-sm-6 pr-bg d-flex">
-                  <div className="pr-table-wrapper">
-                    <div className="pack-name">Business</div>
-                    <div className="price"><sup>$</sup>156</div>
-                    <div className="bill-cycle">Per agent billed</div>
-                    <a href="#" className="theme-btn-three">Sign Up</a>
-                    <ul className="pr-feature">
-                      <li>Live Chat</li>
-                      <li>Zia - Artificial Intelligence</li>
-                      <li>Help Center</li>
-                      <li>Customization</li>
-                      <li>Multi-brand Help Center</li>
-                      <li>Advanced Process</li>
-                      <li>Management</li>
-                      <li>Custom Functions</li>
-                      <li>Multi-level IVR</li>
-                      <li>Global Reports &amp;</li>
-                      <li>Dashboards</li>
-                      <li>Scheduled Reports</li>
-                      <li>Contract Management</li>
-                      <li>Validation Rules</li>
-                    </ul>
-                  </div> {/* /.pr-table-wrapper */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img src="images/shape/64.svg" alt="" className="shapes shape-one" />
-        <img src="images/shape/65.svg" alt="" className="shapes shape-two" />
-      </div> {/* /.pricing-table-area */}
+<div className="pricing-section-six mt-100 md-mt-100 " id="pricing">
+  <div className="container">
+    <div className="row">
+      <div className="col-xl-10  m-auto">
+        <div className="title-style-seven text-center">
+          <h2>Solo, Agency or Team? We’ve got you <span>covered.</span></h2>
+        </div> {/* /.title-style-six */}
+      </div>
     </div>
-  </div> {/* /.pricing-section-two */}
-  {/* 
-			=============================================
-				Fancy Text block Seven
-			============================================== 
-			*/}
-  <div className="fancy-text-block-seven mt-130 md-mt-80">
-    <div className="bg-wrapper no-bg">
-      <img src="images/shape/29.svg" alt="" className="shapes shape-one" />
-      <img src="images/shape/30.svg" alt="" className="shapes shape-two" />
-      <img src="images/shape/31.svg" alt="" className="shapes shape-three" />
-      <img src="images/shape/32.svg" alt="" className="shapes shape-four" />
-      <img src="images/shape/33.svg" alt="" className="shapes shape-five" />
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-5 col-md-6 col-sm-10 m-auto" data-aos="fade-right" data-aos-duration={1200}>
-            <div className="img-holder">
-              <img src="images/media/img_19.png" alt="" />
-              <img src="images/shape/34.svg" alt="" className="shapes shape-six" />
-            </div>
+    {/* Nav tabs */}
+    <ul className="nav  justify-content-center pricing-nav-four">
+      <li className="nav-item">
+        <a className="nav-link active" data-toggle="tab" href="#month">Monthly</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" data-toggle="tab" href="#year">Yearly</a>
+      </li>
+    </ul>
+  </div>
+  <div className="pricing-table-area-six">
+    <div className="tab-content">
+      <div className="tab-pane active" id="month">
+        <div className="row justify-content-center">
+
+          
+          
+          
+          <PricingBoxPaid />
+          <PricingBoxPaid />
+          <PricingBox />
+
+          <PricingBoxPaid />
+
+
+          
+          {/* <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={200}>
+            <div className="pr-table-wrapper">
+              <div className="pack-name" style={{background: '#FBF3E5'}}>Business</div>
+              <div className="price">$17.99</div>
+              <div className="pack-details">Get more with team</div>
+              <ul className="pr-feature">
+                <li>Everthing is premium</li>
+                <li>Find notes fast with search</li>
+                <li>and tags</li>
+                <li>Apply rich formatting</li>
+                <li>Clip web pages</li>
+                <li>25MB maximum note size</li>
+                <li>Access notes offline</li>
+                <li>18GB monthly upload limit</li>
+              </ul>
+              <a href="#" className="trial-button">Try it Free</a>
+              <div className="trial-text">No card required, cancel any time</div>
+            </div> 
+          </div> */}
+        </div>
+      </div>
+      <div className="tab-pane fade" id="year">
+        <div className="row justify-content-center">
+          <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200}>
+            <div className="pr-table-wrapper">
+              <div className="pack-name" style={{background: '#FFECEC'}}>Basic</div>
+              <div className="price">Free</div>
+              <div className="pack-details">TAKE GREAT NOTES</div>
+              <ul className="pr-feature">
+                <li>Sync up to 2 devices </li>
+                <li>Find notes fast with search</li>
+                <li>and tags</li>
+                <li>Clip web pages</li>
+                <li>25MB maximum note </li>
+                <li>60MB monthly upload limit</li>
+              </ul>
+              <a href="#" className="trial-button">Try it Free</a>
+              <div className="trial-text">No card required, cancel any time</div>
+            </div> {/* /.pr-table-wrapper */}
           </div>
-          <div className="col-xl-6 col-lg-7 ml-auto" data-aos="fade-left" data-aos-duration={1200}>
-            <div className="quote-wrapper pt-60">
-              <img src="images/icon/26.svg" alt="" className="icon" />
-              <blockquote className="font-rubik">
-                Deski combines excellent live chat, ticketing and automation that allow us to provide quality.
-              </blockquote>
-              <h6 className="mt-20">Mike Lucas. <span>CEO &amp; Founder deksi</span></h6>
-            </div> {/* /.quote-wrapper */}
+          <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={100}>
+            <div className="pr-table-wrapper active">
+              <div className="pack-name" style={{background: '#E3F8EF'}}>Reguler</div>
+              <div className="price">$68.99</div>
+              <div className="pack-details">BE MORE PRODUCTIVE</div>
+              <ul className="pr-feature">
+                <li>Sync up to 2 devices </li>
+                <li>Find notes fast with search</li>
+                <li>and tags</li>
+                <li>Apply rich formatting</li>
+                <li>Clip web pages</li>
+                <li>25MB maximum note size</li>
+                <li>Access notes offline</li>
+                <li>10GBmonthly upload limit</li>
+                <li>Annotate PDFs</li>
+              </ul>
+              <a href="#" className="trial-button">Try it Free</a>
+              <div className="trial-text">No card required, cancel any time</div>
+            </div> {/* /.pr-table-wrapper */}
+          </div>
+          <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={200}>
+            <div className="pr-table-wrapper">
+              <div className="pack-name" style={{background: '#FBF3E5'}}>Business</div>
+              <div className="price">$189.99</div>
+              <div className="pack-details">Get more with team</div>
+              <ul className="pr-feature">
+                <li>Everthing is premium</li>
+                <li>Find notes fast with search</li>
+                <li>and tags</li>
+                <li>Apply rich formatting</li>
+                <li>Clip web pages</li>
+                <li>25MB maximum note size</li>
+                <li>Access notes offline</li>
+                <li>18GB monthly upload limit</li>
+              </ul>
+              <a href="#" className="trial-button">Try it Free</a>
+              <div className="trial-text">No card required, cancel any time</div>
+            </div> {/* /.pr-table-wrapper */}
           </div>
         </div>
       </div>
-    </div> {/* /.bg-wrapper */}
-  </div> {/* /.fancy-text-block-seven */}
-  {/*
-			=====================================================
-				Useable Tools
-			=====================================================
-			*/}
-  <div className="useable-tools-section-two bg-shape mb-200 mt-150 md-mt-50 md-mb-120">
-    <div className="bg-wrapper">
-      <div className="shapes shape-one" />
-      <div className="shapes shape-two" />
-      <div className="shapes shape-three" />
-      <div className="shapes shape-four" />
-      <div className="container">
-        <div className="title-style-two text-center mb-70 md-mb-10">
-          <div className="row">
-            <div className="col-lg-10 col-md-11 m-auto">
-              <p>Integrates with your tools</p>
-              <h2>Connect deski with the software you
-                <span>use every<img src="images/shape/line-shape-2.svg" alt="" /></span>
-                day.
-              </h2>
-              <a href="#" className="theme-btn-two mt-60 md-mt-40">Try out now</a>
-            </div>
-          </div>
-        </div> {/* /.title-style-two */}
-        <div className="icon-wrapper">
-          <ul className="clearfix">
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/09.png" alt="" />
-              </div>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/10.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/11.png" alt="" />
-              </div>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/12.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/13.png" alt="" />
-              </div>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/14.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/15.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/16.png" alt="" />
-              </div>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/17.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/18.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/19.png" alt="" />
-              </div>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/20.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/21.png" alt="" />
-              </div>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/22.png" alt="" />
-              </div>
-            </li>
-            <li>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/23.png" alt="" />
-              </div>
-              <div className="icon-box d-flex align-items-center justify-content-center">
-                <img src="images/logo/24.png" alt="" />
-              </div>
-            </li>
-          </ul>
-        </div> {/* /.icon-wrapper */}
-      </div> {/* /.container */}
-    </div> {/* /.bg-wrapper */}
-  </div> {/* /.useable-tools-section-two */}
-</div>
+    </div>
+  </div> {/* /.pricing-table-area-six */}
+</div> {/* /.pricing-section-six */}
+
+
+{/*
+                                            =====================================================
+                                                Faq Classic
+                                            =====================================================
+                                            */}
+                                <div className="faq-classic with-bg">
+                                    <img src="images/shape/86.svg" alt="" className="shapes shape-one" />
+                                    <img src="images/shape/87.svg" alt="" className="shapes shape-two" />
+                                    <img src="images/shape/88.svg" alt="" className="shapes shape-three" />
+                                    <img src="images/shape/89.svg" alt="" className="shapes shape-four" />
+                                    <img src="images/shape/90.svg" alt="" className="shapes shape-five" />
+                                    <img src="images/shape/91.svg" alt="" className="shapes shape-six" />
+                                    <div className="container">
+                                    <div className="title-style-four text-center mb-100 md-mb-70">
+                                        <div className="row">
+                                        <div className="col-lg-7 m-auto">
+                                            <h6>Common questions about the pricing</h6>
+                                            <h2>
+                                            <span>Questions &amp; Answers<img src="images/shape/line-shape-2.svg" alt="" /></span>
+                                            </h2>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                        <Faq
+                                            data={data}
+                                            styles={styles}
+                                            config={config}
+                                        />
+                                        </div>
+                                        <div className="col-md-6">
+                                        <Faq
+                                            data={data}
+                                            styles={styles}
+                                            config={config}
+                                        />
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div> {/* /.faq-classic */}
 
 
 
-
- 
             </Body>
         )
     }

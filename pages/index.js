@@ -9,6 +9,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios'
 import $ from "jquery";
 import Loader from "react-loader-spinner";
+import {Animated} from "react-animated-css";
 
     //=======SLIDER=======//
     var settings = {
@@ -369,6 +370,7 @@ export class index extends Component {
                         Fancy Text Block Nineteen
                     ============================================== 
                     */}
+                    
                     <div className="fancy-text-block-nineteen mt-150 mb-100 md-mt-150 md-mb-150">
                     <div className="container">
                         <div className="row align-items-center">
@@ -376,6 +378,7 @@ export class index extends Component {
                             <img src="images/media/img_57.png" alt="" className="m-auto" />
                         </div>
                         <div className="col-lg-6" data-aos="fade-left" data-aos-duration={1200}>
+                            <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDelay='1500' isVisible={true}>
                             <div className="text-wrapper">
                             <div className="client-info font-rubik">Over <span>150,000+ client</span></div>
                             <div className="title-style-five">
@@ -385,10 +388,12 @@ export class index extends Component {
                             <p className="font-rubik">We aim to answer any query in less than 10 minutes.</p>
                             <div className="name font-slab">Mitchell Garner</div>
                             </div> {/* /.text-wrapper */}
+                            </Animated>
                         </div>
                         </div>
                     </div>
                     </div> {/* /.fancy-text-block-nineteen */}
+                    
 
 
 
