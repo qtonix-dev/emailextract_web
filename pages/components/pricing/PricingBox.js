@@ -3,7 +3,7 @@ import { AiOutlineCheck,AiOutlineClose } from "react-icons/ai";
 import Link from 'next/link'
 
 export default function PricingBox({data}) {
-  // console.log(data)
+  console.log(data)
     return (
         <div className="col-lg-3 col-sm-6">
             <div className="pr-table-wrapper">
@@ -19,10 +19,9 @@ export default function PricingBox({data}) {
                 <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>
                 <li><AiOutlineCheck /> Unlimited Results </li>
                 <li><AiOutlineCheck /> Unlimited Storage </li>
-                <li style={{textDecoration:'line-through'}}><AiOutlineClose /> CSV Exporting  </li>
-                <li style={{textDecoration:'line-through'}}><AiOutlineClose /> Techinical Support  </li>
-
-                
+                <li><AiOutlineCheck /> {data.displayspeed}x Speed  </li>
+                <li className="price1212"><AiOutlineClose /> CSV Exporting  </li>
+                <li className="price1212"><AiOutlineClose /> Techinical Support  </li>
               </ul>
               <Link href='/login'><a className="trial-button">Try it Free</a></Link>
 
