@@ -10,6 +10,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+
+        
+        <link rel="icon" type="image/png" href="/Favicon-mail.png"/>
+
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
 		    <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
         </Head>
