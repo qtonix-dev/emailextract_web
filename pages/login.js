@@ -7,6 +7,7 @@ import cookie from 'react-cookies'
 import {  toast } from 'react-toastify';
 import Link from 'next/link'
 import { Row, Col } from 'react-bootstrap'
+import Head from 'next/head'
 
 import { FaHome } from "react-icons/fa";
 
@@ -94,6 +95,9 @@ export default class login extends Component {
     render() {
         return (
             <>
+            <Head>
+                <title>Login</title>
+            </Head>
                <div className="main-page-wrapper p0 vh-100">
                 
                 <div className="user-data-page clearfix d-lg-flex">

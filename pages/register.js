@@ -8,6 +8,7 @@ import Router from 'next/router'
 import Link from 'next/link'
 import { Row, Col } from 'react-bootstrap'
 import { FaHome } from 'react-icons/fa'
+import Head from 'next/head'
 
 export class register extends Component {
 
@@ -108,6 +109,9 @@ export class register extends Component {
     render() {
         return (
             <>
+            <Head>
+                <title>Register</title>
+            </Head>
                <div className="main-page-wrapper p0">
                 
                 <div className="user-data-page clearfix d-lg-flex">

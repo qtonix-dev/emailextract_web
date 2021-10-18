@@ -3,7 +3,6 @@ import { AiOutlineCheck,AiOutlineClose } from "react-icons/ai";
 import Link from 'next/link'
 
 export default function PricingBox({data}) {
-  console.log(data)
     return (
         <div className="col-lg-3 col-sm-6">
             <div className="pr-table-wrapper">
