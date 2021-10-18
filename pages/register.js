@@ -130,7 +130,7 @@ export class register extends Component {
                     </div>
                     <form onSubmit={this.handleSubmit} className="user-data-form mt-30" id="myForm">
                         <h2>Join with thousands of startup!</h2>
-                        <p className="header-info pt-30 pb-50">Already have an account?  <a href="login.html">Login</a></p>
+                        <p className="header-info pt-30 pb-50">Already have an account?  <Link href='/login'><a>Login</a></Link></p>
                         <div className="row">
                         
                         <div className="col-12">
