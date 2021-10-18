@@ -65,11 +65,11 @@ export default class Footer extends Component {
                                 </div> {/* /.footer-list */}
                                 <div className="col-lg-3 col-md-4 address-list" >
                                     <h5 className="footer-title">Contact Info</h5>
-                                    <p className="font-rubik">Pahala, Bhubaneswar <br />Odisha,  India</p>
-                                    <ul className="info">
-                                    <li><a href="#">info@qtonix.com</a></li>
-                                    <li><a href="#" className="mobile-num">+000 000 0000</a></li>
-                                    </ul>
+                                    <p className="font-rubik">Pahala, Bhubaneswar, Odisha,  India</p>
+                                    <p className="font-rubik">info@qtonix.com</p>
+                                    <p className="font-rubik">+000 000 0000</p>
+
+                                   
                                     <ul className="social-icon d-flex pt-15">
                                     <li><a href="#"><i className="fa fa-facebook" /></a></li>
                                     <li><a href="#"><i className="fa fa-twitter" /></a></li>

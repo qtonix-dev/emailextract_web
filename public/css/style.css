@@ -7681,14 +7681,15 @@ body .theme-btn-nine:hover {
 
 .theme-footer-three .top-footer .address-list p {
 	font-size: 16px;
-	line-height: 25px;
-	color: rgba(0, 0, 0, .35);
-	padding-bottom: 15px
+    line-height: 0px;
+    color: #727272;
+    padding-bottom: 15px;
 }
 
 .theme-footer-three .top-footer .address-list ul.info li a {
 	color: #1c1c1c;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	text-decoration: none;
 }
 
 .theme-footer-three .top-footer .address-list ul.info li a:hover {
