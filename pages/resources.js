@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
+import Head from 'next/head'
 
 export class resources extends Component {
     render() {
         return (
             <Body>
+                <Head>
+                    <title>Resources</title>
+                </Head>
                 {/* 
                 =============================================
                     Fancy Hero Five

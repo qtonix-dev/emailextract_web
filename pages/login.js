@@ -6,6 +6,9 @@ import axios from 'axios'
 import cookie from 'react-cookies'
 import {  toast } from 'react-toastify';
 import Link from 'next/link'
+import { Row, Col } from 'react-bootstrap'
+
+import { FaHome } from "react-icons/fa";
 
 
 export default class login extends Component {
@@ -103,9 +106,12 @@ export default class login extends Component {
                     </div>
                     </div>
                     <div className="form-wrapper">
+                    
                     <div className="d-flex justify-content-between">
-                        <div className="logo"><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></div>
-                        <Link href='/'><a className="font-rubik go-back-button">Go to home</a></Link>
+                      <Row>
+                        <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></Link></div></Col>
+                        <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
+                      </Row>
                     </div>
                     <form onSubmit={this.handleSubmit} className="user-data-form mt-30" id="myForm">
                         <h2>Join with thousands of startup!</h2>

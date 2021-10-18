@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
+import Head from 'next/head'
+
 
 export class cookiepolicy extends Component {
     render() {
         return (
             <Body>
+                <Head>
+                    <title>Cookie Policy</title>
+                </Head>
                 {/* 
                 =============================================
                     Fancy Hero Five

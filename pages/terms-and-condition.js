@@ -1,9 +1,14 @@
 import React from 'react'
 import Body from './components/Body'
+import Head from 'next/head'
+
 
 function termsandcondition() {
     return (
         <Body>
+          <Head>
+                    <title>Terms and Conditions</title>
+                </Head>
           {/* 
           =============================================
             Fancy Hero Five

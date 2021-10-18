@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { HiMenu } from "react-icons/hi";
 import NavItems from './NavItems'
 import $ from 'jquery'
+import Link from 'next/link';
 
 export default class Header extends Component {
 
@@ -43,7 +44,7 @@ export default class Header extends Component {
             <>
                         <div className="theme-main-menu sticky-menu theme-menu-three">
                             <div className="d-flex align-items-center justify-content-center">
-                            <div className="logo"><a><img src="/images/logo-b.png" alt="" className="w-25" /></a></div>
+                            <div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="" className="w-25" /></a></Link></div>
                             <nav id="mega-menu-holder" className="navbar navbar-expand-lg">
                                 <div className="container nav-container">
                                 <button className="navbar-toggler navbar-toggler-right" type="button" onClick={this.showHideNavbar}>

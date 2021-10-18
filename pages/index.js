@@ -8,8 +8,10 @@ import { MdVerifiedUser,MdInfoOutline } from "react-icons/md";
 import { toast } from 'react-toastify';
 import axios from 'axios'
 import $ from "jquery";
-import Loader from "react-loader-spinner";
+// import Loader from "react-loader-spinner";
+import Link from 'next/link'
 import {Animated} from "react-animated-css";
+import Head from 'next/head'
 
     //=======SLIDER=======//
     var settings = {
@@ -166,6 +168,11 @@ export class index extends Component {
         return (
 
             <Body>
+
+                <Head>
+                    <title>Home</title>
+                </Head>
+
             {/* 
                                 =============================================
                                                 Theme Hero Banner
@@ -228,7 +235,7 @@ export class index extends Component {
 
                                                     <h5>and {this.state.emailsdata.length-5} more results</h5>
                                                     <hr />
-                                                    <h3 className="addme">minelead.io is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
+                                                    <h3 className="addme">emailextractonline.com is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
                                             </div>
                                             </div>
                                         </div>
@@ -258,7 +265,7 @@ export class index extends Component {
                                                     })}
 
                                                     <hr />
-                                                    <h3 className="addme">minelead.io is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
+                                                    <h3 className="addme">emailextractonline.com is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
 
                               
                                             </div>
@@ -289,60 +296,12 @@ export class index extends Component {
                                     
 
 
-                                    {/* {this.state.foundemails==='found'
-                                    ?
-                                    <div className="row">
-                                        <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
-                                        <div className="findemailshome">
-                                            <h6>
-                                                
-                                            
-                                                <ReactImageFallback
-                                                src={`https://logo.clearbit.com/${this.state.emailsdata.domain}`}
-                                                fallbackImage="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png"
-                                                initialImage={`https://logo.clearbit.com/${this.state.emailsdata.domain}`}
-                                                alt="cool image should be here"
-                                                className="my-image" />
-
-
-                                                <span>{this.state.emailsdata.length} mails</span>  </h6>
-
-                                                <p>{this.state.emailsdata.emails[0].email}  <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                <p>{this.state.emailsdata.emails[1].email}  <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                <p>{this.state.emailsdata.emails[2].email}  <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                <p>{this.state.emailsdata.emails[3].email}  <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                <p>{this.state.emailsdata.emails[4].email}  <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                
-                                                {this.state.emailsdata.length>5
-                                                ?
-                                                <h5>and xx more results</h5>
-                                                :
-                                                <></>}
-
-
-                                                {this.state.emailsdata.emails.map((email)=>{
-                                                    return(
-                                                        <p>{email.email}  <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                        
-                                                    )
-                                                })}
-
-                                                <p>hr@tcs.com  <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                <p>info@tcs.com <span className="findemailshome_notverified"><MdInfoOutline /></span> </p>
-                                                <p>admin@tcs.com <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-                                                <p>help@tcs.com <span className="findemailshome_verified"><MdVerifiedUser /></span></p>
-
-                                                
-                                        </div>
-                                        </div>
-                                    </div>
-                                    :<></>
-                                    } */}
+                                    
 
                                     
 
                                     
-                                    <p className="sing-in-call">Already using deski? <a href="login.html" className="font-rubik">Sign in</a>.</p>
+                                    <p className="sing-in-call">Already using emailextractonline.com? <Link href='/login'><a className="font-rubik">Sign in</a></Link>.</p>
                                 
                                     </div> {/* /.container */}
 
@@ -497,7 +456,7 @@ export class index extends Component {
                                             </h2>
                                         </div>
                                         <p className="sub-text">Deski ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
-                                        <a href="#" className="all-button">See all partners <i className="flaticon-right-arrow" /></a>
+                                        {/* <a href="#" className="all-button">See all partners <i className="flaticon-right-arrow" /></a> */}
                                         </div>
                                     </div>
                                     </div> {/* /.container */}

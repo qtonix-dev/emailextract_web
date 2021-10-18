@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
+import Head from 'next/head'
 
 
 export default class about extends Component {
     render() {
         return (
             <Body>
-                
+                <Head>
+                    <title>About Us</title>
+                </Head>
 
 
 

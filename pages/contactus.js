@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
+import Head from 'next/head'
 
 export class contactus extends Component {
     render() {
         return (
             <Body>
+              <Head>
+                    <title>Contact us</title>
+                </Head>
+              
   {/* 
 			=============================================
 				Fancy Hero Four

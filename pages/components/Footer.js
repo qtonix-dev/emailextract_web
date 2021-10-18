@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 export default class Footer extends Component {
     render() {
@@ -25,7 +26,7 @@ export default class Footer extends Component {
                                         <input type="text" placeholder="Email address" />
                                         <button>Subscribe</button>
                                     </form>
-                                    <p className="font-rubik">Already a member? <a href="login.html">Sign in.</a></p>
+                                    <p className="font-rubik">Already a member? <Link href='/login'><a>Sign in.</a></Link></p>
                                     </div> {/* /.form-wrapper */}
                                 </div>
                                 </div>
@@ -42,34 +43,32 @@ export default class Footer extends Component {
                             <div className="container">
                                 <div className="row justify-content-between">
                                 <div className="col-lg-4 col-12 footer-about-widget">
-                                    <a href="index-doc.html" className="logo"><img src="images/logo/deski_01.svg" alt="" /></a>
+                                <Link href='/'><a className="logo"><img src="/images/logo-b.png" alt="img-email" className="w-75" /></a></Link>
                                 </div> {/* /.about-widget */}
                                 <div className="col-lg-2 col-md-4 footer-list" >
-                                    <h5 className="footer-title">Services</h5>
+                                    <h5 className="footer-title">Product</h5>
                                     <ul>
-                                    <li><a href="#">Web Design</a></li>
-                                    <li><a href="#">Development</a></li>
-                                    <li><a href="#">Wordpress</a></li>
-                                    <li><a href="#">Online Marketing</a></li>
-                                    <li><a href="#">Content</a></li>
+                                    <li><Link href='/'><a>Bulk Extractor</a></Link></li>
+                                    <li><Link href='/'><a>Domain Search</a></Link></li>
+                                    <li><Link href='/'><a>Email Finder</a></Link></li>
+                                    <li><Link href='/'><a>Email Verifier</a></Link></li>
                                     </ul>
                                 </div> {/* /.footer-list */}
                                 <div className="col-lg-2 col-md-4 footer-list">
-                                    <h5 className="footer-title">About us</h5>
+                                    <h5 className="footer-title">Company</h5>
                                     <ul>
-                                    <li><a href="about-us(doc).html">About us</a></li>
-                                    <li><a href="#">Work Portfolio</a></li>
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="#">Plan &amp; Pricing</a></li>
-                                    <li><a href="#">News</a></li>
+                                    <li><Link href='/aboutus'><a>About</a></Link></li>
+                                    <li><Link href='/contactus'><a>Contact</a></Link></li>
+                                    <li><Link href='/features'><a>Features</a></Link></li>
+                                    <li><Link href='/pricing'><a>Plan &amp; Pricing</a></Link></li>
                                     </ul>
                                 </div> {/* /.footer-list */}
                                 <div className="col-lg-3 col-md-4 address-list" >
                                     <h5 className="footer-title">Contact Info</h5>
-                                    <p className="font-rubik">432 Mirpur National Stadium Market <br />Dhaka,  Bangladesh</p>
+                                    <p className="font-rubik">Pahala, Bhubaneswar <br />Odisha,  India</p>
                                     <ul className="info">
-                                    <li><a href="#">deskisupportinc@gmail.com</a></li>
-                                    <li><a href="#" className="mobile-num">+761 412 3224</a></li>
+                                    <li><a href="#">info@qtonix.com</a></li>
+                                    <li><a href="#" className="mobile-num">+000 000 0000</a></li>
                                     </ul>
                                     <ul className="social-icon d-flex pt-15">
                                     <li><a href="#"><i className="fa fa-facebook" /></a></li>
@@ -86,11 +85,10 @@ export default class Footer extends Component {
                                 <div className="col-lg-8 ml-auto">
                                     <div className="d-md-flex align-items-center justify-content-between">
                                     <ul className="order-md-last" data-aos="fade-left">
-                                        <li><a href="#">Privacy</a></li>
-                                        <li><a href="#">Security</a></li>
-                                        <li><a href="#">Terms</a></li>
+                                        <li><Link href='/privacy-policy'><a>Privacy</a></Link></li>
+                                        <li><Link href='/terms-and-condition'><a>Terms</a></Link></li>
                                     </ul>
-                                    <p className="order-md-first" data-aos="fade-right">Copyright @2021 deski inc.</p>
+                                    <p className="order-md-first" data-aos="fade-right">Copyright @2021 Email Extracter.</p>
                                     </div>
                                 </div>
                                 </div>

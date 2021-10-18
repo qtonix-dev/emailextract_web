@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
+import Head from 'next/head'
 
 export class antispam extends Component {
     render() {
         return (
             <Body>
+                <Head>
+                    <title>Anti Spam</title>
+                </Head>
                 {/* 
                 =============================================
                     Fancy Hero Five

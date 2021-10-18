@@ -5,6 +5,7 @@ import PricingBoxPaid from './components/pricing/PricingBoxPaid'
 import Faq from "react-faq-component";
 import axios from 'axios';
 import _ from "lodash";
+import Head from 'next/head'
 
 //=======FAQ=======//
 const data = {
@@ -79,6 +80,9 @@ export default class pricing extends Component {
 
         return (
             <Body>
+              <Head>
+                    <title>Pricing</title>
+                </Head>
               {/*
               =====================================================
                 Pricing Section Six
