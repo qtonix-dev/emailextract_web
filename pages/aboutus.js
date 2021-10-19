@@ -104,28 +104,7 @@ export default class about extends Component {
         </div> {/* /.img-gallery */}
       </div>
     </div>
-    <div className="mt-70 md-mt-50">
-      <div className="row justify-content-center">
-        <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration={1200}>
-          <div className="block-style-eight">
-            <h6 className="title">Single Sign on Reports</h6>
-            <p>Keep your clients informed at all times with fully editable, professional Client Reports</p>
-          </div> {/* /.block-style-eight */}
-        </div>
-        <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={100}>
-          <div className="block-style-eight">
-            <h6 className="title">Shared Shopping Cart</h6>
-            <p>Keep your clients informed at all times with fully editable, professional Client Reports</p>
-          </div> {/* /.block-style-eight */}
-        </div>
-        <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={200}>
-          <div className="block-style-eight">
-            <h6 className="title">Client</h6>
-            <p>Keep your clients informed at all times with fully editable, professional Client Reports</p>
-          </div> {/* /.block-style-eight */}
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div> {/* /.fancy-text-block-twelve */}
 
