@@ -4,12 +4,16 @@ import $ from "jquery";
 import SimpleReactValidator from 'simple-react-validator';
 import axios from 'axios'
 import cookie from 'react-cookies'
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import Link from 'next/link'
 import { Row, Col } from 'react-bootstrap'
 import Head from 'next/head'
-
 import { FaHome } from "react-icons/fa";
+import Router from 'next/router'
+
+
+
+
 
 
 export default class login extends Component {
@@ -42,28 +46,51 @@ export default class login extends Component {
           $("#myForm :input").prop('readonly', true);
           this.setState({formLoading:true})
 
-          // console.log(this.state)
-
 
           axios.post(`${process.env.backendURL}/user/login`,this.state)
             .then(response=>{
 
                 if(response.data.response){
 
+                    // cookie.remove('qtonixemailextractweb_userdata', { path: '/' })
+                    // cookie.remove('qtonixemailextractweb_userlogin', { path: '/' })
+                    // cookie.remove('qtonixemailextractweb_userid', { path: '/' })
+
+
+                    // var expires = new Date();
+                    // expires.setSeconds(21600);
+                    // cookie.save('qtonixemailextractweb_userdata', response.data.user, { path: '/',expires });
+                    // cookie.save('qtonixemailextractweb_userid', response.data.user._id, { path: '/',expires });
+                    // cookie.save('qtonixemailextractweb_userlogin',true, { path: '/',expires })
+
+                
+
                     cookie.remove('qtonixemailextractweb_userdata', { path: '/' })
                     cookie.remove('qtonixemailextractweb_userlogin', { path: '/' })
                     cookie.remove('qtonixemailextractweb_userid', { path: '/' })
-
-
+                    cookie.remove('qtonixemailextractweb_emailverification', { path: '/' });
+    
+    
+    
                     var expires = new Date();
                     expires.setSeconds(21600);
                     cookie.save('qtonixemailextractweb_userdata', response.data.user, { path: '/',expires });
                     cookie.save('qtonixemailextractweb_userid', response.data.user._id, { path: '/',expires });
-                    cookie.save('qtonixemailextractweb_userlogin',true, { path: '/',expires })
+                    cookie.save('qtonixemailextractweb_userlogin',true, { path: '/',expires });
+                    cookie.save('qtonixemailextractweb_emailverification', response.data.user.emailverification, { path: '/' });
 
-                
 
-					          window.location.assign(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
+
+                  if(response.data.user.emailverification==='NotVerified'){
+                    Router.push('/emailverification')
+
+                  }else{
+					          window.location.replace(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
+
+                  }
+
+
+
                     
                 }else{
                     this.setState({formLoading:false})
