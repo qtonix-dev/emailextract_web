@@ -6,10 +6,10 @@ import axios from 'axios'
 import cookie from 'react-cookies'
 import {  toast } from 'react-toastify';
 import Link from 'next/link'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Form } from 'react-bootstrap'
 import Head from 'next/head'
 
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaGoogle } from 'react-icons/fa'
 
 
 export default class forgotpassword extends Component {
@@ -92,7 +92,7 @@ export default class forgotpassword extends Component {
 
                 
 
-			// 		          window.location.assign(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
+            //                window.location.assign(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
                     
             //     }else{
             //         this.setState({formLoading:false})
@@ -134,8 +134,8 @@ export default class forgotpassword extends Component {
                     <h3 className="font-rubik">We have a “strategic” plan its <br /> called doing things.</h3>
                     <div className="illustration-holder">
                         <img src="images/assets/ils_08.svg" alt="" className="illustration" />
-                        <img src="images/assets/ils_08.1.svg" alt="" className="shapes shape-one" />
-                        <img src="images/assets/ils_08.2.svg" alt="" className="shapes shape-two" />
+                        <img src="images/foregot.png" alt="" className="shapes shape-one" />
+                        {/* <img src="images/assets/ils_08.2.svg" alt="" className="shapes shape-two" /> */}
                     </div>
                     </div>
                     <div className="form-wrapper">
@@ -152,7 +152,7 @@ export default class forgotpassword extends Component {
                         <div className="row ">
                         
                      
-                        <div className="col-12">
+                        <div className="col-12 d-none">
                             <div className="input-group-meta mb-50">
                             <label>Email</label>
                             <input type="email" placeholder="Enter Email" name="email" value={this.state.email} onChange={this.handleChange} />
@@ -160,7 +160,12 @@ export default class forgotpassword extends Component {
                             </div>
                         </div>
                         
-                    
+                          <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="you@example.com" name="email" value={this.state.email} onChange={this.handleChange} />
+                            <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
+                          </Form.Group>
+
                         <div className="col-12">
                         {this.state.formLoading
                           ?
@@ -175,13 +180,34 @@ export default class forgotpassword extends Component {
                           :<button className="theme-btn-one mt-1 mb-30" type='submit'>Send Email</button>
                           }
                         </div>
-                        <p>Go to login? <Link href='/login'>Click Here</Link></p>
-
-                        <div className="col-12">
-                            <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>
-                        </div>
+                        
                         </div>
                     </form>
+
+                      <div className="form-bottom">
+
+                          <div className="or-sec text-center mb-4">
+                              <a>Or</a>
+                          </div>
+
+                          <div className="theme-btn-google text-center">
+                              <a className="signinGoogle">
+                              <FaGoogle /> &nbsp;Signin with Google
+                              </a>
+                          </div>  
+                              
+                          <div className="theme-btn-reg mb-4">
+                              <p className="log-sec-new">
+                              Already have an Account ? <Link href='/login'><a>Sign In Now</a></Link>
+                              </p>
+                          </div> 
+                      
+                      </div>
+
+                      <div className="col-12">
+                              <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>
+                      </div>
+
                     </div> 
                 </div> 
                 </div>

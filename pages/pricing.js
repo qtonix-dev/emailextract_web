@@ -93,7 +93,7 @@ export default class pricing extends Component {
                     <div className="row">
                       <div className="col-xl-10  m-auto">
                         <div className="title-style-seven text-center">
-                          <h2>Solo, Agency or Team? We’ve got you <span>covered.</span></h2>
+                          <h2>Solo, Agency or Team? <br />We’ve got you <span>covered.</span></h2>
                         </div> {/* /.title-style-six */}
                       </div>
                     </div>

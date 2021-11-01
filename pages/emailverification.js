@@ -64,61 +64,76 @@ export default class login extends Component {
                 ?<></>
                 :
                 <div className="main-page-wrapper p0 vh-100">
-                    <div className="user-data-page clearfix d-lg-flex">
-                        <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
-                        <h3 className="font-rubik">We have a “strategic” plan its <br /> called doing things.</h3>
-                        <div className="illustration-holder">
-                            <img src="images/assets/ils_08.svg" alt="" className="illustration" />
-                            <img src="images/assets/ils_08.1.svg" alt="" className="shapes shape-one" />
-                            <img src="images/assets/ils_08.2.svg" alt="" className="shapes shape-two" />
-                        </div>
-                        </div>
-                        <div className="form-wrapper">
-                        
-                        <div className="d-flex justify-content-between">
-                        <Row>
-                            <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></Link></div></Col>
-                            <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
-                        </Row>
-                        </div>
-                        <br />
-                        <br />
-                            <h2>Email Verification</h2>
-                            <br />
-                            <p className="header-info pt-30">
-                                Hi {user.name}  
-                            </p>
-                            <p className="header-info ">
-                                We have sent an email to {user.email} to verify your email address and active your account.
-                            </p>
-                            {this.state.formLoading==='null'
-                            ?
-                            <p className="header-info p-30">
-                                <span className="text-primary cursor-pointer" onClick={this.sendEmail}>Click here</span> if you did not receive an email.
-                            </p>
-                            :<></>}
+                
+                <div className="user-data-page clearfix d-lg-flex">
+                    <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
+                    <h3 className="font-rubik">We have a “strategic” plan its <br /> called doing things.</h3>
+                    <div className="illustration-holder">
+                        <img src="images/assets/ils_08.svg" alt="" className="illustration" />
+                        <img src="images/assets/ils_08.1.svg" alt="" className="shapes shape-one" />
+                        <img src="images/assets/ils_08.2.svg" alt="" className="shapes shape-two" />
+                    </div>
+                    </div>
+                    <div className="form-wrapper">
+                    
+                    <div className="d-flex justify-content-between">
+                      <Row>
+                        <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></Link></div></Col>
+                        <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
+                      </Row>
+                    </div>
+                    <br />
+                    <br />
 
-                            {this.state.formLoading==='loading'
-                            ?
-                            <Loader
-                                type="TailSpin"
-                                color="#101621"
-                                height={50}
-                                width={50}
-                                />
-                            :<></>
-                            }   
-                            {this.state.formLoading==='success'
-                            ?
-                            <p className="header-info  pb-50 vls12">
-                                Please check your email inbox for verification link.
-                            </p>
-                            :<></>
-                            }
-                        </div> 
+                        <h2>Email Verification</h2>
+                        <br />
+
+                        <p className="header-info pt-30">
+                            Hi {user.name}  
+                        </p>
+                        <p className="header-info ">
+                            We have sent an email to {user.email} to verify your email address and active your account.
+                        </p>
+
+                        {this.state.formLoading==='null'
+                        ?
+                        <p className="header-info p-30">
+                            <span className="text-primary cursor-pointer" onClick={this.sendEmail}>Click here</span> if you did not receive an email.
+                        </p>
+                        :<></>}
+
+                        {this.state.formLoading==='loading'
+                        ?
+                        <Loader
+                              type="TailSpin"
+                              color="#101621"
+                              height={50}
+                              width={50}
+                            />
+                        :<></>
+                        }   
+
+
+                        {this.state.formLoading==='success'
+                        ?
+                        <p className="header-info  pb-50 vls12">
+                            Please check your email inbox for verification link.
+                        </p>
+                        :<></>
+                        }
+
+                        
+                        
                     </div> 
+                </div> 
                 </div>
                 }
+
+               
+
+
+
+ 
             </>
         )
     }

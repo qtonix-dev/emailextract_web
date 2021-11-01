@@ -25,6 +25,10 @@ class BodyWithRouter extends Component {
                                             <Link href='/aboutus'><a className="nav-link">About</a></Link>
                                         </li>
 
+                                        <li className={`nav-item dropdown position-static ${this.props.router.pathname==='/compare'?'active':<></>}`}>
+                                            <Link href='/compare'><a className="nav-link">Compare</a></Link>
+                                        </li>
+
 
                                         <li className={`nav-item dropdown position-static ${this.props.router.pathname==='/contactus'?'active':<></>}`}>
                                             <Link href='/contactus'><a className="nav-link">Contact</a></Link>

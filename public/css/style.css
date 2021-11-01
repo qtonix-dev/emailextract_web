@@ -215,7 +215,8 @@
 }
 
 body {
-	font-family: Roboto, sans-serif;
+	/* font-family: Roboto, sans-serif; */
+	font-family: "Segoe UI";
 	font-weight: 400;
 	font-size: 18px;
 	position: relative;
@@ -276,10 +277,12 @@ h6 {
 	font-size: 15px
 }
 
-.font-rubik {
+/* .font-rubik {
 	font-family: Rubik, sans-serif!important
+} */
+.font-rubik {
+	font-family: "Segoe UI";
 }
-
 .font-gilroy-bold {
 	font-family: gilroy-bold!important
 }
@@ -385,7 +388,7 @@ h6 {
 }
 
 .title-style-one h2 {
-	font-family: 'Rubik';
+	/* font-family: 'Rubik'; */
 	font-size: 58px;
 	line-height: 1.15em
 }
@@ -412,9 +415,10 @@ h6 {
 }
 
 .title-style-two h2 {
-	font-family: 'Rubik';
-	font-size: 58px;
-	line-height: 1.15em
+	/* font-family: 'Rubik'; */
+	font-size: 47px;
+	line-height: 1.15em;
+	color: #090436;
 }
 
 .title-style-two span {
@@ -444,16 +448,17 @@ h6 {
 }
 
 .title-style-three h6 {
-	font-family: Roboto, sans-serif;
+	/* font-family: Roboto, sans-serif; */
 	font-size: 18px;
 	color: #adb1b5;
 	padding-bottom: 15px
 }
 
 .title-style-three h2 {
-	font-family: 'Rubik';
-	font-size: 54px;
-	line-height: 1.18em
+	/* font-family: 'Rubik'; */
+	font-size: 47px;
+	line-height: 1.18em;
+	color: #090436;	
 }
 
 .title-style-three span {
@@ -468,17 +473,17 @@ h6 {
 }
 
 .title-style-four h6 {
-	font-family: Roboto, sans-serif;
+	/* font-family: Roboto, sans-serif; */
 	font-size: 20px;
 	color: rgba(0, 0, 0, .35);
 	padding-bottom: 15px
 }
 
 .title-style-four h2 {
-	font-family: 'Rubik';
-	font-size: 58px;
+	/* font-family: 'Rubik'; */
+	font-size: 47px;
 	line-height: 1.15em;
-	color: #2a2a2a
+	color: #090436;
 }
 
 .title-style-four span {
@@ -495,9 +500,11 @@ h6 {
 }
 
 .title-style-five h2 {
-	font-family: 'Roboto Slab', serif;
-	font-size: 54px;
-	line-height: 1.25em
+	/* font-family: 'Rubik'; */
+	font-size: 47px;
+	line-height: 1.25em;
+	color: #090436;
+
 }
 
 .title-style-five h2 span {
@@ -529,7 +536,7 @@ h6 {
 	font-weight: 400;
 	font-size: 72px;
 	line-height: 1.27em;
-	color: #000
+	color: #000;
 }
 
 .dark-style .title-style-six h2 {
@@ -561,9 +568,13 @@ h6 {
 }
 
 .title-style-seven h2 {
-	font-size: 64px;
-	font-weight: 500;
-	line-height: 1.32em
+	margin: 0 auto 25px;
+    color: #090436;
+    font-size: 47px;
+    line-height: 60px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .title-style-seven h2 span {
@@ -589,15 +600,16 @@ h6 {
 }
 
 .title-style-eight h2 {
-	font-size: 68px;
+	font-size: 47px;
 	font-weight: 700;
-	line-height: 1.26em
+	line-height: 1.26em;
+	color: #090436;
 }
 
 .title-style-eight p {
 	font-size: 22px;
 	color: #000;
-	padding-top: 40px
+	padding-top: 40px;
 }
 
 .title-style-eight h6 {
@@ -632,7 +644,8 @@ h6 {
 .title-style-nine h2 {
 	font-size: 52px;
 	font-weight: 700;
-	line-height: 1.34em
+	line-height: 1.34em;
+	color: #090436;
 }
 
 .title-style-nine h2 span {
@@ -686,7 +699,7 @@ body .theme-btn-one {
 	font-weight: 500;
 	color: #fff;
 	line-height: 50px;
-	background: var(--blue-dark);
+	background: #0495fd;
 	padding: 0 42px;
 	border-radius: 4px;
 	transition: all .3s ease-in-out
@@ -704,7 +717,7 @@ body .theme-btn-one:hover {
 }
 
 body .theme-btn-two {
-	font-family: 'Rubik';
+	/* font-family: 'Rubik'; */
 	font-size: 18px;
 	color: #fff;
 	line-height: 48px;
@@ -721,7 +734,7 @@ body .theme-btn-two:hover {
 }
 
 body .theme-btn-three {
-	font-family: 'Rubik';
+	/* font-family: 'Rubik'; */
 	font-size: 18px;
 	color: var(--red-light);
 	line-height: 51px;
@@ -752,7 +765,7 @@ body .theme-btn-four:hover {
 }
 
 body .theme-btn-five {
-	font-family: Rubik, sans-serif;
+	/* font-family: Rubik, sans-serif; */
 	line-height: 56px;
 	padding: 0 35px;
 	text-align: center;
@@ -784,9 +797,9 @@ body .theme-btn-six {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 50px;
-	color: #000;
+	
 	transition: all .3s ease-in-out;
-	background: #000;
+	background: #0495fd;
 	padding: 0 30px;
 	color: #fff
 }
@@ -796,7 +809,7 @@ body .theme-btn-six.lg {
 }
 
 body .theme-btn-six:hover {
-	background: var(--blue-light);
+	background: #febc0a;
 	color: #fff
 }
 
@@ -846,7 +859,7 @@ body .theme-btn-nine:hover {
 }
 
 .page-pagination-one li a {
-	font-family: Rubik, sans-serif!important;
+	/* font-family: Rubik, sans-serif!important; */
 	background: #fff;
 	width: 40px;
 	height: 45px;
@@ -883,7 +896,7 @@ body .theme-btn-nine:hover {
 }
 
 .page-pagination-two ul li {
-	font-family: Rubik, sans-serif;
+	/* font-family: Rubik, sans-serif; */
 	font-size: 22px;
 	color: #bababa;
 	margin: 0 11px
@@ -914,7 +927,7 @@ body .theme-btn-nine:hover {
 	left: 0;
 	right: 0;
 	background: #fff;
-	padding: 30px 70px;
+	padding: 10px 70px;
 	transition: all .4s ease-out
 }
 
@@ -927,7 +940,7 @@ body .theme-btn-nine:hover {
 	padding-top: 0;
 	padding-bottom: 0;
 	background: #fff;
-	box-shadow: 0 13px 35px -12px rgba(35, 35, 35, .1)
+	box-shadow: 0 13px 35px -12px rgba(35, 35, 35, .5)
 }
 
 .theme-main-menu .logo a {
@@ -1887,13 +1900,13 @@ body .theme-btn-nine:hover {
 }
 
 .useable-tools-section.bg-transparent h2 {
-	color: #2a2a2a;
+	color: #090436;
 	margin: 0
 }
 
 .useable-tools-section h2 {
-	font-family: 'Rubik';
-	font-size: 58px;
+	font-family:'Segoe UI';
+	font-size: 47px;
 	line-height: 1.2em;
 	color: #fff;
 	margin: 20px 0 120px
@@ -5717,7 +5730,7 @@ body .theme-btn-nine:hover {
 
 .fancy-hero-four h2 {
 	font-family: 'Rubik';
-	font-size: 80px;
+	font-size: 48px;
 	line-height: 1.1em
 }
 
@@ -6325,8 +6338,8 @@ body .theme-btn-nine:hover {
 }
 
 .user-data-page .illustration-wrapper .illustration-holder .shape-one {
-	bottom: 2%;
-	left: 2%;
+	bottom: 30%;
+    left: 20%;
 	z-index: 1;
 	width: 60%;
 	animation: jumpTwo 5s infinite linear
@@ -6360,17 +6373,18 @@ body .theme-btn-nine:hover {
 .user-data-page .form-wrapper h2 {
 	font-family: gilroy-bold;
 	font-size: 58px;
-	line-height: 1.17em
+	line-height: 1.17em;
+	color: #090436;
 }
 
 .user-data-page .form-wrapper .header-info {
-	font-size: 22px;
+	font-size: 20px;
 	color: var(--heading)
 }
 
 .user-data-page .form-wrapper .header-info a {
 	color: var(--blue-dark);
-	text-decoration: underline
+	text-decoration: underline;
 }
 
 .user-data-page .form-wrapper .copyright-text {
@@ -7006,11 +7020,11 @@ body .theme-btn-nine:hover {
 }
 
 .theme-menu-three .user-login-button li a {
-	font-size: 16px;
-	font-weight: 500;
+	font-size: 18px;
+	font-weight: 600;
 	line-height: 46px;
-	color: #000;
-	transition: all .3s ease-in-out
+	color: #090436;
+	transition: all .3s ease-in-out;
 }
 
 .theme-menu-three .user-login-button li a:hover {
@@ -7019,25 +7033,25 @@ body .theme-btn-nine:hover {
 
 .theme-menu-three .user-login-button .signIn-action img {
 	margin-right: 12px;
-	margin-top: -3px
+	margin-top: -3px;
 }
 
 .theme-menu-three .user-login-button li .signUp-action {
-	border: 2px solid #000;
-	background: #000;
+	border: 2px solid #0495fd;
+	background: #0495fd;
 	padding: 0 20px;
 	color: #fff;
-	margin-left: 35px
+	margin-left: 35px;
 }
 
 .theme-menu-three .user-login-button li .signUp-action img {
-	margin-left: 12px
+	margin-left: 12px;
 }
 
 .theme-menu-three .user-login-button li .signUp-action:hover {
-	background: var(--blue-light);
-	border-color: var(--blue-light);
-	color: #fff
+	background: #090436;
+	border-color: #090436;
+	color: #fff;
 }
 
 .hero-banner-three {
@@ -7056,22 +7070,27 @@ body .theme-btn-nine:hover {
 	background-position: center top;
 	left: 0;
 	bottom: 78px;
-	z-index: -1
+	z-index: -1;
 }
 
 .hero-banner-three h1 {
-	font-size: 100px;
-	line-height: 1.05em;
-	text-align: center
+	max-width: 1100px;
+    margin: 0 auto 25px;
+    color: #090436;
+    font-size: 47px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+	text-transform: capitalize;
 }
 
 .hero-banner-three .sub-text {
-	font-size: 28px;
-	line-height: 1.39em;
-	font-weight: 300;
-	color: #2a2a2a;
-	text-align: center;
-	padding: 25px 0 45px
+	font-size: 18px;
+    line-height: 1.39em;
+    font-weight: 600;
+    color: #2a2a2a;
+    text-align: center;
+    padding: 25px 0 45px;
 }
 
 .hero-banner-three .sing-in-call {
@@ -7095,7 +7114,7 @@ body .theme-btn-nine:hover {
 }
 
 .search-filter-form form {
-	max-width: 750px;
+	max-width: 640px;
 	margin: 0 auto;
 	height: 78px;
 	position: relative;
@@ -7114,7 +7133,8 @@ body .theme-btn-nine:hover {
 }
 
 .search-filter-form button {
-	width: 85px;
+	width: 25% !important;
+	color: #fff;
 	right: 7px;
 	bottom: 7px;
 	top: 7px;
@@ -7324,7 +7344,8 @@ body .theme-btn-nine:hover {
 .block-style-twelve .text-wrapper .title {
 	font-size: 42px;
 	line-height: 1.28em;
-	padding: 20px 0 30px
+	padding: 20px 0 30px;
+	color: #090436;
 }
 
 .block-style-twelve .text-wrapper p {
@@ -7574,7 +7595,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-short-banner-four .bg-wrapper {
-	background: #1b1b1b;
+	background: #0495fd;
 	border-radius: 3px;
 	padding: 65px 50px
 }
@@ -7582,7 +7603,7 @@ body .theme-btn-nine:hover {
 .fancy-short-banner-four .title h6 {
 	font-size: 16px;
 	text-transform: uppercase;
-	color: silver;
+	color: #fff;
 	letter-spacing: 1px;
 	padding-bottom: 13px
 }
@@ -7591,14 +7612,15 @@ body .theme-btn-nine:hover {
 	font-family: gilroy-bold;
 	font-size: 52px;
 	line-height: 1.15em;
-	color: #fff
+	color: #fff;
 }
 
 .fancy-short-banner-four .form-wrapper form {
 	position: relative;
-	height: 70px;
-	border-radius: 5px;
-	border: 1.5px solid #fff
+    height: 70px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+
 }
 
 .fancy-short-banner-four .form-wrapper form input {
@@ -7609,7 +7631,7 @@ body .theme-btn-nine:hover {
 	border: none;
 	height: 100%;
 	padding: 0 150px 0 25px;
-	background: 0 0
+	background: #fff;
 }
 
 .fancy-short-banner-four .form-wrapper form button {
@@ -7621,7 +7643,7 @@ body .theme-btn-nine:hover {
 	border-radius: 5px;
 	color: #000;
 	font-size: 16px;
-	background: #fff;
+	background: #feba03;
 	transition: all .3s ease-in-out
 }
 
@@ -7632,7 +7654,7 @@ body .theme-btn-nine:hover {
 
 .fancy-short-banner-four .form-wrapper p {
 	font-size: 16px;
-	color: #999;
+	color: #fff;
 	padding-top: 10px
 }
 
@@ -7663,9 +7685,11 @@ body .theme-btn-nine:hover {
 }
 
 .theme-footer-three .top-footer .footer-title {
-	font-family: Rubik, sans-serif;
+	/* font-family: Rubik, sans-serif; */
+	font-family: "Segoe UI";
 	font-size: 24px;
-	padding-bottom: 18px
+	padding-bottom: 18px;
+	color: #090436;
 }
 
 .theme-footer-three .top-footer .footer-list ul li a {
@@ -7683,7 +7707,7 @@ body .theme-btn-nine:hover {
 	font-size: 16px;
     line-height: 0px;
     color: #727272;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .theme-footer-three .top-footer .address-list ul.info li a {
@@ -7746,9 +7770,11 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-hero-five .heading {
-	font-family: 'Rubik';
-	font-size: 80px;
-	line-height: 1.08em
+	font-family:'Segoe UI';
+	font-size: 47px;
+    line-height: 1.08em;
+    color: #090436;
+    font-weight: 600;
 }
 
 .fancy-hero-five span {
@@ -11936,7 +11962,7 @@ body .theme-btn-nine:hover {
 
 .pricing-nav-four {
 	margin: 70px auto 95px;
-	border: 2px solid #000;
+	border: 2px solid #090436;
 	padding: 6px;
 	border-radius: 10px;
 	width: 310px
@@ -11960,13 +11986,13 @@ body .theme-btn-nine:hover {
 }
 
 .pricing-nav-four .nav-item .nav-link.active {
-	background: #000;
+	background: #0495fd;
 	color: #fff
 }
 
 .pricing-table-area-six {
 	max-width: 1335px;
-	padding: 0 15px;
+	padding: 0 15px 35px;
 	margin: 0 auto
 }
 
@@ -12013,7 +12039,7 @@ body .theme-btn-nine:hover {
     margin-top: 16px;
     border-radius: 8px;
     font-size: 18px;
-    background-color: rgb(32 32 32) !important;
+    background-color: #090436 !important;
 }
 
 .pricing-table-area-six .pr-table-wrapper .pack-details {
@@ -12029,7 +12055,7 @@ body .theme-btn-nine:hover {
 .pricing-table-area-six .pr-table-wrapper .price {
 	font-size: 58px;
 	font-weight: 500;
-	color: #000;
+	color: #090436;
 	line-height: initial;
 	padding: 13px 0 6px;
 	font-family: 'Rubik';
@@ -12081,11 +12107,11 @@ body .theme-btn-nine:hover {
 
 .pricing-table-area-six .pr-table-wrapper .trial-button:hover,
 .pricing-table-area-six .pr-table-wrapper.active .trial-button {
-    background: #0495fd;
-    border-color: #0495fd;
+    background: #090436;;
+    border-color: #090436;
     color: white;
 }
-}
+
 
 .clientSliderSix {
 	max-width: 1740px;
@@ -14329,4 +14355,34 @@ body .theme-btn-nine:hover {
 	top: 50%;
 	transform: translateY(-50%);
 	left: 0
+}
+
+
+
+/* -- feature eight main -- */
+
+.fancy-feature-eight-main .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #fff !important;
+	color: #000 !important;
+    font-weight: 600;
+}
+.fancy-feature-eight-main .nav-link {
+	color: #ccc !important;
+	font-weight: 600;
+}
+.feature-sec-desc h4 {
+	color: #090436;
+	font-size: 21px;
+}
+
+
+
+.feature-sec-head .tab-heading-sec {
+    padding: 15px 5px 10px 5px;
+}
+
+.fancy-feature-nineteen-new-inner img {
+    width: 25%;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }

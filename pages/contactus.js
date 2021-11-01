@@ -1,8 +1,45 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
 import Head from 'next/head'
+import SimpleReactValidator from 'simple-react-validator'
+import Loader from "react-loader-spinner"
+import { FaFacebookSquare, FaPinterest, FaTwitter } from "react-icons/fa"
+import $ from 'jquery'
+import { Form } from 'react-bootstrap'
+import axios from 'axios'
 
 export class contactus extends Component {
+
+    constructor(props) {
+      super(props)
+      this.state={
+        formLoading:false
+      }
+      this.validator = new SimpleReactValidator();
+      this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(e) {
+      this.setState({
+        [e.target.name]:e.target.value
+      })
+    }
+
+    handleSubmit=(e)=> {
+      e.preventDefault();
+      // alert('fname')
+
+      if (this.validator.allValid()){
+        $("#myForm :input").prop('readonly', true);
+        this.setState({formLoading:true})
+      } else{
+        this.validator.showMessages();
+        this.forceUpdate();
+        $("#myForm :input").prop('readonly', false);
+
+      }
+    }
+
     render() {
         return (
             <Body>
@@ -40,14 +77,14 @@ export class contactus extends Component {
             <div className="address-info">
               <div className="icon d-flex align-items-end"><img src="images/icon/44.svg" alt="" /></div>
               <div className="title">Location</div>
-              <p className="font-rubik">Dhaka, Kawran Bazar <br /> 1201 Metro</p>
+              <p className="font-rubik">Pahala, Bhubaneswar <br /> Odisha</p>
             </div> {/* /.address-info */}
           </div>
           <div className="col-lg-4 col-sm-6 d-lg-flex">
             <div className="address-info">
               <div className="icon d-flex align-items-end"><img src="images/icon/45.svg" alt="" /></div>
               <div className="title">Contact</div>
-              <p className="font-rubik">bawejkor@duwvude.gov <br />(779) 564-1593</p>
+              <p className="font-rubik">info@qtonix.com <br />(000) 000-0000</p>
             </div> {/* /.address-info */}
           </div>
           <div className="col-lg-4 col-sm-6 d-lg-flex">
@@ -56,9 +93,9 @@ export class contactus extends Component {
               <div className="title">Social Media</div>
               <p className="font-rubik">Find on social media</p>
               <ul className="d-flex justify-content-center">
-                <li><a href="#"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
-                <li><a href="#"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
-                <li><a href="#"><i className="fa fa-pinterest" aria-hidden="true" /></a></li>
+                <li><a href="#"><FaFacebookSquare /></a></li>
+                <li><a href="#"><FaTwitter /></a></li>
+                <li><a href="#"><FaPinterest /></a></li>
               </ul>
             </div> {/* /.address-info */}
           </div>
@@ -66,51 +103,56 @@ export class contactus extends Component {
         <img src="images/shape/64.svg" alt="" className="shapes shape-one" />
       </div> {/* /.contact-info-wrapper */}
       <div className="row">
-        <div className="col-md-7">
-          <img src="images/contactimg1.png" alt="img-shape" className="mt-150" />
-        </div>
         <div className="col-md-5">
+          <img src="images/contactimg1.png" alt="img-shape" className="w-100 mt-150" />
+        </div>
+        <div className="col-md-7">
           <div className="form-style-classic mt-150 md-mt-80">
           
-            <form action="#" id="contact-form" data-toggle="validator">
+            <form method="post" action="#" id="myForm" className="user-data-form mt-30" data-toggle="validator" onSubmit={this.handleSubmit}>
               <div className="messages" />
               <div className="row controls">
                 <div className="col-md-6" data-aos="fade-right" data-aos-duration={1200}>
-                  <div className="input-group-meta form-group mb-60">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Michel" name="Fname" required="required" data-error="Name is required." />
-                    <div className="help-block with-errors" />
-                  </div>
+                  <Form.Group className="mb-3" controlId="formBasicName">
+                    <Form.Label>First Name</Form.Label>
+                    <Form.Control type="text" placeholder="Enter First Name" name="fname" value={this.state.fname} onChange={this.handleChange} />
+                    <h6 className="form_error_message">{this.validator.message('firstname', this.state.fname, 'required')}</h6>
+                  </Form.Group>
+                  
                 </div>
                 <div className="col-md-6" data-aos="fade-left" data-aos-duration={1200}>
-                  <div className="input-group-meta form-group mb-60">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Hawkins" name="Lname" required="required" data-error="Name is required." />
-                    <div className="help-block with-errors" />
-                  </div>
+                  <Form.Group className="mb-3" controlId="formBasicName">
+                    <Form.Label>Last Name</Form.Label>
+                    <Form.Control type="text" placeholder="Enter Last Name" name="lname" value={this.state.lname} onChange={this.handleChange} />
+                    <h6 className="form_error_message">{this.validator.message('lastname', this.state.lname, 'required')}</h6>
+                  </Form.Group>
+                  
                 </div>
                 
                 <div className="col-md-6" data-aos="fade-right" data-aos-duration={1200}>
-                  <div className="input-group-meta form-group mb-60">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="saeslal@zouj.co.uk" name="email" required="required" data-error="Valid email is required." />
-                    <div className="help-block with-errors" />
-                  </div>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control type="email" placeholder="Enter email" name="email" value={this.state.email} onChange={this.handleChange} />
+                    <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
+                  </Form.Group>
                 </div>
+
                 <div className="col-md-6" data-aos="fade-left" data-aos-duration={1200}>
-                  <div className="input-group-meta form-group mb-60">
-                    <label>Phone Number</label>
-                    <input type="text" placeholder="0000000000" name="cont" required="required" data-error="Phone number is required." />
-                    <div className="help-block with-errors" />
-                  </div>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Phone</Form.Label>
+                    <Form.Control type="phone" placeholder="000-000-0000" name="phone" value={this.state.phone} onChange={this.handleChange} />
+                    <h6 className="form_error_message">{this.validator.message('phone', this.state.phone, 'required|phone')}</h6>
+                  </Form.Group>
                 </div>
+
                 <div className="col-12" data-aos="fade-up" data-aos-duration={1200}>
-                  <div className="input-group-meta form-group lg mb-40">
-                    <label>Your Message</label>
-                    <textarea placeholder="your message here.." name="message" required="required" data-error="Please,leave us a message." defaultValue={""} />
-                    <div className="help-block with-errors" />
-                  </div>
+                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Your Message</Form.Label>
+                    <Form.Control as="textarea" placeholder="Your Message" name="message" value={this.state.message} onChange={this.handleChange} rows={5} />
+                    <h6 className="form_error_message">{this.validator.message('message', this.state.message, 'required')}</h6>
+                  </Form.Group>
                 </div>
+
                 <div className="col-12" data-aos="fade-up" data-aos-duration={1200}><button className="theme-btn-six lg">Send Message</button></div>
               </div>
             </form>

@@ -6,10 +6,12 @@ import axios from 'axios'
 import cookie from 'react-cookies'
 import { toast } from 'react-toastify';
 import Link from 'next/link'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Form } from 'react-bootstrap'
 import Head from 'next/head'
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaGoogle } from "react-icons/fa";
 import Router from 'next/router'
+
+import { GoogleLogin } from 'react-google-login';
 
 
 
@@ -85,7 +87,7 @@ export default class login extends Component {
                     Router.push('/emailverification')
 
                   }else{
-					          window.location.replace(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
+                              window.location.assign(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
 
                   }
 
@@ -119,6 +121,10 @@ export default class login extends Component {
         }
     }
 
+   responseGoogle = (response) => {
+      console.log(response);
+    }
+
     render() {
         return (
             <>
@@ -128,29 +134,29 @@ export default class login extends Component {
                <div className="main-page-wrapper p0 vh-100">
                 
                 <div className="user-data-page clearfix d-lg-flex">
-                    <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
+                    <div className="illustration-wrapper d-flex align-items-center flex-column">
                     <h3 className="font-rubik">We have a “strategic” plan its <br /> called doing things.</h3>
                     <div className="illustration-holder">
                         <img src="images/assets/ils_08.svg" alt="" className="illustration" />
-                        <img src="images/assets/ils_08.1.svg" alt="" className="shapes shape-one" />
-                        <img src="images/assets/ils_08.2.svg" alt="" className="shapes shape-two" />
+                        <img src="images/log.png" alt="" className="shapes shape-one" />
+                        {/* <img src="images/assets/ils_08.2.svg" alt="" className="shapes shape-two" /> */}
                     </div>
                     </div>
                     <div className="form-wrapper">
                     
                     <div className="d-flex justify-content-between">
                       <Row>
-                        <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></Link></div></Col>
+                        <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75" /></a></Link></div></Col>
                         <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
                       </Row>
                     </div>
-                    <form onSubmit={this.handleSubmit} className="user-data-form mt-30" id="myForm">
-                        <h2>Join with thousands of startup!</h2>
-                        <p className="header-info pt-30 pb-50">Need account?  <Link href='/register'><a>Register</a></Link></p>
+                    <form onSubmit={this.handleSubmit} className="user-data-form mt-5" id="myForm">
+                        <h2 className="mb-4">Good afternoon! <br />Welcome back.</h2>
+                        <p className="header-info pt-30 pb-50 d-none">Need account?  <Link href='/register'><a>Register</a></Link></p>
                         <div className="row ">
                         
                      
-                        <div className="col-12">
+                        <div className="col-12 d-none">
                             <div className="input-group-meta mb-50">
                             <label>Email</label>
                             <input type="email" placeholder="Enter Email" name="email" value={this.state.email} onChange={this.handleChange} />
@@ -158,21 +164,28 @@ export default class login extends Component {
                             </div>
                         </div>
                         
-                        <div className="col-12">
+                        <div className="col-12 d-none">
                             <div className="input-group-meta mb-50">
                             <label>Password</label>
                             <input type="password" placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange}  />
                             <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
                             </div>
                         </div>
-                        {/* <div className="col-12">
-                            <div className="agreement-checkbox d-flex justify-content-between align-items-center sm-mt-10">
-                            <div>
-                                <input type="checkbox" id="agree_to_policy" />
-                                <label htmlFor="agree_to_policy">By clicking "SIGN UP" I agree to the Terms and Conditions and Privacy Policy.</label>
-                            </div>
-                            </div> 
-                        </div> */}
+                          <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="you@example.com" name="email" value={this.state.email} onChange={this.handleChange} />
+                            <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
+                          </Form.Group>
+
+                          <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                            <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
+                          </Form.Group>
+                          <div className="forgot-section">
+                            <Link href='/forgotpassword'><a>Forgot Password ?</a></Link>
+                          </div>
+
                         <div className="col-12">
                         {this.state.formLoading
                           ?
@@ -187,7 +200,29 @@ export default class login extends Component {
                           :<button className="theme-btn-one mt-1 mb-30" type='submit'>Login</button>
                           }
                         </div>
-                        <p>Forgot your password? <Link href='/forgotpassword'>Click Here</Link></p>
+                        {/* <p>Forgot your password? <Link href='/forgotpassword'>Click Here</Link></p> */}
+                         <div className="or-sec text-center mb-4">
+                            <a>or</a>
+                          </div>
+
+                          <div className="google-signin mb-3">
+                            <GoogleLogin
+                                  clientId="372190396984-42v070uptnpu15m5i0cie4sggbtphauf.apps.googleusercontent.com"
+                                  buttonText="Sign in with Google"
+                                  onSuccess={this.responseGoogle}
+                                  onFailure={this.responseGoogle}
+                                  className="w-100"
+                            />
+                          </div>
+
+                          
+                          
+                          
+                          <div className="theme-btn-reg mb-4">
+                            <p className="register-sec-new">
+                              Donot have an Account ? <Link href='/register'><a>Register Here</a></Link>
+                            </p>
+                          </div>
 
                         <div className="col-12">
                             <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>

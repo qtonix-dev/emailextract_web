@@ -12,7 +12,11 @@ import $ from "jquery";
 import Link from 'next/link'
 import {Animated} from "react-animated-css";
 import Head from 'next/head'
+import Section21 from './components/home/Section21'
+import Section22 from './components/home/Section22'
+import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
 
+ 
     //=======SLIDER=======//
     var settings = {
         dots: true,
@@ -178,14 +182,16 @@ export class index extends Component {
                                                 Theme Hero Banner
                                 ============================================== 
                                 */}
+
+                                <div style={{backgroundColor:'#f7faff'}}>
                                 <div className="hero-banner-three">
                                     <div className="container">
                                     <div className="row">
                                         <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
-                                        <h1 className="font-rubik">Doc software you looking for.</h1>
+                                        <h1 className="font-rubik ban-head">STOP MANUAL, WE AUTOMATIC ALL! <br/> BEST EMAIL EXTRACTOR</h1>
                                         </div>
                                         <div className="col-xl-8 col-lg-9 m-auto">
-                                        <p className="sub-text font-rubik">With deski Docs, you can write, edit, and collaborate wherever you are with 7 day trial</p>
+                                        <p className="sub-text font-rubik">Stop wasting time on hunting down email address when you could be selling. Email Extract Online lets you to unmask email address from any websites in seconds. Enter a domain to start For Free! </p>
                                         </div>
                                     </div>
                                     <div className="search-filter-form">
@@ -196,9 +202,9 @@ export class index extends Component {
                                                 <h5>searching {this.state.domain}...</h5>
                                             </center>
                                             :
-                                            <form onSubmit={this.handleSubmit} id='myForm'>
+                                            <form onSubmit={this.handleSubmit} id='myForm' className="searchForm">
                                                 <input type="text" placeholder="company.com.." name="domain" value={this.state.domain} onChange={this.handleChange} />
-                                                <button><img src="images/icon/54.svg" alt="" /></button>
+                                                <button>Find Email Address</button>
                                             </form>
                                         }
                                         
@@ -236,7 +242,7 @@ export class index extends Component {
                                                     <h5>and {this.state.emailsdata.length-5} more results</h5>
                                                     <hr />
                                                     <h3 className="addme">emailextractonline.com is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
-                                            </div>
+                                                </div>
                                             </div>
                                         </div>
                                         :
@@ -301,7 +307,7 @@ export class index extends Component {
                                     
 
                                     
-                                    <p className="sing-in-call">Already using emailextractonline.com? <Link href='/login'><a className="font-rubik">Sign in</a></Link>.</p>
+                                    <p className="sing-in-call mb-5">No Credit Card Required • Cancel Anytime • Get Started In Seconds • <Link href='/login'><a className="font-rubik">Sign in</a></Link>.</p>
                                 
                                     </div> {/* /.container */}
 
@@ -319,7 +325,10 @@ export class index extends Component {
                                     <img src="images/shape/75.svg" alt="" className="shapes shape-eight" />
                                     <img src="images/shape/76.svg" alt="" className="shapes shape-nine" />
                                     <img src="images/shape/77.svg" alt="" className="shapes shape-ten" />
-                                </div> {/* /.hero-banner-three */}
+                                </div>
+                                </div>
+
+                                {/* /.hero-banner-three */}
 
 
 
@@ -354,23 +363,11 @@ export class index extends Component {
                     </div> {/* /.fancy-text-block-nineteen */}
                     
 
-
-
-
-
-
-
-
-                    
-
-
-
-
-
-
-
-
-
+                    {/*
+                        =====================================================
+                            Fancy Feature Eight Main
+                        =====================================================
+                    */}
 
                                 {/*
                                             =====================================================
@@ -389,56 +386,26 @@ export class index extends Component {
                                         </div>
                                         </div>
                                     </div>
-                                    <div className="block-style-twelve">
-                                        <div className="row">
-                                        <div className="col-lg-6 col-md-8 ml-auto order-lg-last">
-                                            <div className="illustration-holder">
-                                            <img src="images/assets/ils_10.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-5 order-lg-first">
-                                            <div className="text-wrapper">
-                                            <h6>Documentation</h6>
-                                            <h2 className="font-rubik title">A home for your team, best-practices &amp; thoughts.</h2>
-                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
-                                            </div> {/* /.text-wrapper */}
-                                        </div>
-                                        </div>
-                                    </div> {/* /.block-style-twelve */}
-                                    <div className="block-style-twelve">
-                                        <div className="row">
-                                        <div className="col-lg-6 col-md-8 mr-auto">
-                                            <div className="illustration-holder">
-                                            <img src="images/assets/ils_11.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-5">
-                                            <div className="text-wrapper">
-                                            <h6>User Guides</h6>
-                                            <h2 className="font-rubik title">Docs for your APIs, products, FAQs and user guides,</h2>
-                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
-                                            </div> {/* /.text-wrapper */}
-                                        </div>
-                                        </div>
-                                    </div> {/* /.block-style-twelve */}
-                                    <div className="block-style-twelve">
-                                        <div className="row">
-                                        <div className="col-lg-6 col-md-8 ml-auto order-lg-last">
-                                            <div className="illustration-holder">
-                                            <img src="images/assets/ils_12.svg" alt="" />
-                                            </div>
-                                        </div>
-                                        <div className="col-lg-5 order-lg-first" data-aos="fade-right">
-                                            <div className="text-wrapper">
-                                            <h6>Combine Idea</h6>
-                                            <h2 className="font-rubik title">A place to think and track ideas for you &amp; your team</h2>
-                                            <p>With deksi docs, you can write, edit, let it collaborate wherever you are lorem  dumy text introduction.</p>
-                                            </div> {/* /.text-wrapper */}
-                                        </div>
-                                        </div>
-                                    </div> {/* /.block-style-twelve */}
+                                    
+                                    
+                                    
+                                     {/* /.block-style-twelve */}
                                     </div>
                                 </div> {/* /.fancy-feature-eight */}
+
+
+
+                                <Section21 />
+                                <Section22 />
+                                
+                                
+
+                                {/*
+                                            =====================================================
+                                                Fancy Feature Eight
+                                            =====================================================
+                                            */}
+                                
                                 
                                 {/*
                                             =====================================================
@@ -473,7 +440,17 @@ export class index extends Component {
                                 
                                 
                                 
-                                
+                                {/* 
+                                =============================================
+                                    Fancy Feature Nineteen New
+                                ============================================== 
+                                */}
+
+                                <div className="fancy-feature-nineteen-new">
+                                    <Container>
+                                        
+                                    </Container>
+                                </div>
                                 
                                 {/* 
                                 =============================================
@@ -485,78 +462,60 @@ export class index extends Component {
                         <div className="row">
                         <div className="col-xl-9 col-lg-11 m-auto" data-aos="fade-up" data-aos-duration={1200}>
                             <div className="title-style-eight text-center mb-80 md-mb-40">
-                            <h2>Unleash Creativity with Pro Effects</h2>
+                            <h2>We are enterprise-ready</h2>
                             <p>Explore advanced video editing features that only professionals have access to!</p>
                             </div>
                         </div>
                         </div>
                         <div className="row">
-                        <div className="col-lg-6" data-aos="fade-up" data-aos-duration={1200}>
-                            <div className="block-style-nineteen" style={{borderLeftColor: '#FFCE22'}}>
-                            <div className="d-flex align-items-start">
-                                <img src="images/icon/112.svg" alt="" className="icon" />
-                                <div className="text">
-                                <h4>Green Screen</h4>
-                                <p>Change your background and create special effects using the Green Screen tool.</p>
-                                </div>
-                            </div>
-                            </div> {/* /.block-style-nineteen */}
-                        </div>
-                        <div className="col-lg-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={150}>
-                            <div className="block-style-nineteen" style={{borderLeftColor: '#8F6BF6'}}>
-                            <div className="d-flex align-items-start">
-                                <img src="images/icon/113.svg" alt="" className="icon" />
-                                <div className="text">
-                                <h4>Audio Mixer</h4>
-                                <p>Adjust the audio of each individual track on your timeline lorem elit extract.</p>
-                                </div>
-                            </div>
-                            </div> {/* /.block-style-nineteen */}
-                        </div>
-                        <div className="col-lg-6" data-aos="fade-up" data-aos-duration={1200}>
-                            <div className="block-style-nineteen" style={{borderLeftColor: '#FF5C5C'}}>
-                            <div className="d-flex align-items-start">
-                                <img src="images/icon/114.svg" alt="" className="icon" />
-                                <div className="text">
-                                <h4>Pan &amp; Zoom</h4>
-                                <p>Add panning and zooming movements to still footage.</p>
-                                </div>
-                            </div>
-                            </div> {/* /.block-style-nineteen */}
-                        </div>
-                        <div className="col-lg-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={150}>
-                            <div className="block-style-nineteen" style={{borderLeftColor: '#63EAA9'}}>
-                            <div className="d-flex align-items-start">
-                                <img src="images/icon/115.svg" alt="" className="icon" />
-                                <div className="text">
-                                <h4>Advanced Text Editing</h4>
-                                <p>Edit the color, size, font, and even animation of your text and titles.</p>
-                                </div>
-                            </div>
-                            </div> {/* /.block-style-nineteen */}
-                        </div>
-                        <div className="col-lg-6" data-aos="fade-up" data-aos-duration={1200}>
-                            <div className="block-style-nineteen" style={{borderLeftColor: '#5BE2FF'}}>
-                            <div className="d-flex align-items-start">
-                                <img src="images/icon/116.svg" alt="" className="icon" />
-                                <div className="text">
-                                <h4>Color Tuning</h4>
-                                <p>Adjust the white balance and dynamic range of your clips &amp; long videos.</p>
-                                </div>
-                            </div>
-                            </div> {/* /.block-style-nineteen */}
-                        </div>
-                        <div className="col-lg-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={150}>
-                            <div className="block-style-nineteen" style={{borderLeftColor: '#FF56EE'}}>
-                            <div className="d-flex align-items-start">
-                                <img src="images/icon/117.svg" alt="" className="icon" />
-                                <div className="text">
-                                <h4>3D Lut</h4>
-                                <p>Choose from a selection of color grading presets inspired by popular movies.</p>
-                                </div>
-                            </div>
-                            </div> {/* /.block-style-nineteen */}
-                        </div>
+                        
+                            <Row>
+                                            <Col>
+                                                <div className="fancy-feature-nineteen-new-inner text-center">
+                                                    <img src="https://www.skillate.com/wp-content/themes/skillate-child/assets/images/icons/availability.svg" alt="img-email" />
+                                                    <h5>99.95%</h5>
+                                                    <p>Availability</p>
+                                                </div>
+                                            </Col>
+                                            <Col>
+                                                <div className="fancy-feature-nineteen-new-inner text-center">
+                                                    <img src="https://www.skillate.com/wp-content/themes/skillate-child/assets/images/icons/secured.svg" alt="img-email" />
+                                                    <h5>Secured</h5>
+                                                    <p>PII Encryption, Disaster Recovery</p>
+                                                </div>
+                                            </Col>
+                                            <Col>
+                                                <div className="fancy-feature-nineteen-new-inner text-center">
+                                                    <img src="https://www.skillate.com/wp-content/themes/skillate-child/assets/images/icons/enabling-unbiased-hiring.svg" alt="img-email" />
+                                                    <h5>Enabling unbiased hiring</h5>
+                                                    <p>Availability</p>
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                        <Row className="mt-5">
+                                            <Col>
+                                                <div className="fancy-feature-nineteen-new-inner text-center">
+                                                    <img src="https://www.skillate.com/wp-content/themes/skillate-child/assets/images/icons/integration-with-all-major-ats.svg" alt="img-email" />
+                                                    <h5>Integration with all major ATS</h5>
+                                                    <p>Availability</p>
+                                                </div>
+                                            </Col>
+                                            <Col>
+                                                <div className="fancy-feature-nineteen-new-inner text-center">
+                                                    <img src="https://www.skillate.com/wp-content/themes/skillate-child/assets/images/icons/eu-gdpr-compliant.svg" alt="img-email" />
+                                                    <h5>EU GDPR Compliant</h5>
+                                                    <p>Availability</p>
+                                                </div>
+                                            </Col>
+                                            <Col>
+                                                <div className="fancy-feature-nineteen-new-inner text-center">
+                                                    <img src="https://www.skillate.com/wp-content/themes/skillate-child/assets/images/icons/working-with-enterprises.svg" alt="img-email" />
+                                                    <h5>Working with enterprises across sectors</h5>
+                                                    <p>Availability</p>
+                                                </div>
+                                            </Col>
+                                        </Row>
+
                         </div>
                     </div>
                     </div> {/* /.fancy-feature-nineteen */}
@@ -592,7 +551,7 @@ export class index extends Component {
                                     </div>
                                     </div>
                                     <div className="">
-                                    <div className="">
+                                    <div className="container">
 
 
 
