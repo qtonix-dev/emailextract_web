@@ -83,8 +83,10 @@ export class niceemailextractor extends Component {
                 status:'Completed'
             })
         }else{
+            
+            axios.get(`https://e157-103-171-4-131.ngrok.io/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
 
-            axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${this.state.domainCreate[this.state.count].domain}`)
+            // axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
             .then(response=>{
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= response.data.response;
