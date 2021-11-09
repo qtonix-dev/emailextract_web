@@ -3,6 +3,8 @@ import Body from './components/Body'
 import Head from 'next/head'
 import { Form } from 'react-bootstrap'
 import axios from 'axios'
+import ReactHTMLTableToExcel from 'react-html-table-to-excel'
+
 
 export class niceemailextractor extends Component {
 
@@ -76,7 +78,7 @@ export class niceemailextractor extends Component {
             var bulkdomainextratdata = this.state.datas;
             var msdata= {
                 response: true,
-                domain: this.state.domainCreate[this.state.count].domain,
+                domain: domainCreate[this.state.count].domain,
                 status: "Not Found",
                 emails: [ ],
                 tel: [ ]
@@ -101,9 +103,9 @@ export class niceemailextractor extends Component {
             })
         }else{
             
-            axios.get(`https://e157-103-171-4-131.ngrok.io/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            // axios.get(`https://e157-103-171-4-131.ngrok.io/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
 
-            // axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
             .then(response=>{
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= response.data.response;
@@ -194,6 +196,58 @@ export class niceemailextractor extends Component {
 
                                     <hr/>
                                     <br />
+
+                                    <ReactHTMLTableToExcel
+                                    id="test-table-xls-button"
+                                    className="btn btn-primary"
+                                    table="table-to-xls"
+                                    filename='Domains'
+                                    sheet="tablexls"
+                                    buttonText="Download as XLS"
+                                />
+                                {/* } */}
+
+                                <table id="table-to-xls" style={{display:'none'}}>
+                                        <tr>
+                                            <th>Domain</th>
+                                            <th>Status</th>
+                                            <th>Email</th>
+                                        </tr>
+
+                                        {this.state.datas===0
+                                            ?<></>
+                                            :
+                                            <>
+                                            {this.state.datas.map((dta)=>{
+                                                return(
+                                                    <tr key={dta.domain}>
+                                                        <td>{dta.domain}</td>
+                                                        <td>
+                                                            {dta.status==='Found'
+                                                            ?
+                                                            <>
+                                                            {dta.emails.map((em)=>{
+                                                                return(
+                                                                    <>
+                                                                        {em},&nbsp;
+                                                                    </>
+                                                                )
+                                                                
+                                                            })}
+                                                            </>
+                                                            :
+                                                            <>-</>}
+                                                        </td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                )
+                                            })}
+
+                                            </>
+                                            }
+                                    </table>
+
+                                    <br/>
                                     <table className="table">
                                         <thead className="thead-light">
                                             <tr>
