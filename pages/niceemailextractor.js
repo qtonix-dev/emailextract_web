@@ -60,10 +60,27 @@ export class niceemailextractor extends Component {
 
         axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${domainCreate[this.state.count].domain}`)
         .then(response=>{
-            console.log(response.data.response)
-
+          
             var bulkdomainextratdata = this.state.datas;
             var msdata= response.data.response;
+            bulkdomainextratdata.push(msdata);
+
+            this.setState({
+                count:this.state.count+1,
+                datas:bulkdomainextratdata,
+                status:'Processing...'
+            })
+            this.fetchRecord();
+        }).catch(err=>{
+
+            var bulkdomainextratdata = this.state.datas;
+            var msdata= {
+                response: true,
+                domain: this.state.domainCreate[this.state.count].domain,
+                status: "Not Found",
+                emails: [ ],
+                tel: [ ]
+            }
             bulkdomainextratdata.push(msdata);
 
             this.setState({
@@ -90,6 +107,21 @@ export class niceemailextractor extends Component {
             .then(response=>{
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= response.data.response;
+                bulkdomainextratdata.push(msdata);
+                this.setState({
+                    count:this.state.count+1,
+                    datas:bulkdomainextratdata
+                })
+                this.fetchRecord();
+            }).catch(err=>{
+                var bulkdomainextratdata = this.state.datas;
+                var msdata= {
+                    response: true,
+                    domain: this.state.domainCreate[this.state.count].domain,
+                    status: "Not Found",
+                    emails: [ ],
+                    tel: [ ]
+                }
                 bulkdomainextratdata.push(msdata);
                 this.setState({
                     count:this.state.count+1,
