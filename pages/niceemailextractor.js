@@ -160,8 +160,8 @@ export class niceemailextractor extends Component {
 
                                     <hr/>
                                     <br />
-                                    <table class="table">
-                                        <thead class="thead-light">
+                                    <table className="table">
+                                        <thead className="thead-light">
                                             <tr>
                                             <th scope="col">Domain</th>
                                             <th scope="col">Email</th>
@@ -175,7 +175,7 @@ export class niceemailextractor extends Component {
                                             <>
                                             {this.state.datas.map((dta)=>{
                                                 return(
-                                                    <tr>
+                                                    <tr key={dta.domain}>
                                                         <td>{dta.domain}</td>
                                                         <td>
                                                             {dta.status==='Found'
