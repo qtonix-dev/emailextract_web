@@ -121,13 +121,13 @@ import { BsTools } from "react-icons/bs"
             {
                 title: "What should I do if the Email Finder doesn't return any result?",
                 content: 
-                <p>If the Email Finder can't find the email address, we recommend you to verify the following elements:
+                <p>If the Email Finder can&quot;t find the email address, we recommend you to verify the following elements:
                     <ul className="listing-faq">
                         <li>•	Did you correctly enter the company or organization domain name for 
                             emails? In some cases, the domain name used for emails is different from the 
                             domain name used for the website.</li>
                         <li>•	Does the person you want to find still in the company or organization?</li>
-                        <li>•	Have you misspelled the person's name?</li>
+                        <li>•	Have you misspelled the person&quot;s name?</li>
 
                     </ul>
                     <a>If the Email Finder is not able to find any result after verifying all these elements, you may be required to initiate a manual search</a>
@@ -540,7 +540,7 @@ export class index extends Component {
                                                     {/* <img src="images/availability1.png" alt="img-email" /> */}
                                                     <AiOutlineFileProtect />
                                                     <h5>Data Protection and Accuracy</h5>
-                                                    <p>We don't share your information with any third party. 
+                                                    <p>We don&quot;t share your information with any third party. 
                                                         We confirm that 99.5% of the data are correct.</p>
                                                 </div>
                                             </Col>
