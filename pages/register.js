@@ -188,6 +188,7 @@ export class register extends Component {
                             </div>
                             </div> 
                         </div> */}
+                        
                             <Form.Group className="mb-3" controlId="formBasicName">
                                 <Form.Label>Full Name</Form.Label>
                                 <Form.Control type="text" placeholder="What's your full name?" name="name" value={this.state.name} onChange={this.handleChange} />
