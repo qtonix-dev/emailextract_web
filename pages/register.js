@@ -199,7 +199,7 @@ export class register extends Component {
                                 <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicName">
-                                <Form.Label>Company's Name (optional)</Form.Label>
+                                <Form.Label>Companys Name (optional)</Form.Label>
                                 <Form.Control type="text" placeholder="What's your full name?" name="company" value={this.state.company} onChange={this.handleChange} />
                                 <h6 className="form_error_message">{this.validator.message('company', this.state.company, 'required')}</h6>
                             </Form.Group>
