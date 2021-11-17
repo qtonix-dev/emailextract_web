@@ -78,6 +78,7 @@
 .user-data-page .form-wrapper h2 {
     font-size: 36px !important;
     font-family: "Segoe UI" !important;
+    text-transform: capitalize;
 }
 .form-control {
     font-size: 13px !important;
@@ -111,9 +112,11 @@ p.register-sec-new a {
 }
 p.log-sec-new a {
     text-decoration: none;
+
 }
 p.log-sec-new {
     margin-left: 15px;
+    text-transform:capitalize;
 }
 
 .how-it-works-first {
@@ -123,8 +126,30 @@ p.log-sec-new {
     -webkit-box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
     -moz-box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
     border-radius: 6px;
-    transition: 0.6s;
+    transition: 0.1s;
+    cursor: pointer;
 }
+
+
+
+.feature-sec-desc{
+    h4:hover {
+        cursor: pointer;
+
+    }
+    p:hover {
+        cursor: pointer;
+
+    }
+}
+
+
+.cursor-pointer{
+    cursor: pointer !important;
+}
+// .how-it-works-first {
+//     cursor: pointer !important;
+// }
 .findemailshome p {
     margin-left: 0px;
     line-height: 20px;
@@ -132,46 +157,181 @@ p.log-sec-new {
 .fancy-hero-four {
     margin-top: -35px;
 }
+.feature-sec-desc a {
+    text-decoration: none;
+    color: #000;
+}
+.form-bottom .google-signin {
+    width: 95%;
+    margin: 0 auto;
+}
+form#myForm label {
+    text-transform: capitalize;
+}
+.google-signin button {
+    border: 3px solid #fbfbfb !important;
+    /* padding: 2px; */
+    border-radius: 5px !important;
+}
+.feature-sec-desc:hover {
+    background-color: #fff;
+    // border-left: 4px solid #099bfd;
+     box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
+    -webkit-box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
+    -moz-box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
+    border-radius: 6px;
+    transition: 0.1s;
+    cursor: pointer;
+}
 
-h6.title-style-three {
+.icon-wrapper {
+    margin-top: 10px !important;
+}
+.sub-form input[placeholder] {
+    color: #7a7a7a !important;
+}
+.compare-main {
+    line-height: 0px;
+    max-width: 900px;
+}
+.compare-main h1 {
+    padding-bottom: 20px;
+}
+.compare-main p {
+    /* font-size: 20px; */
     font-size: 18px;
-    color: #adb1b5;
-    padding-bottom: 15px;
+    line-height: 1.39em;
+    font-weight: 600;
+    color: #2a2a2a;
+    text-align: center;
+    // padding: 5px 0px 0px;
+    text-transform: capitalize;
+    font-family: "Segoe UI";
 }
-.text-mission-sec {
-    padding: 60px 0;
+.compare-section-first {
+    padding: 90px 0;
 }
-.fancy-text-block-thirteen .text-mission-sec p {
-    font-size: 24px;
-    line-height: 1.7em;
-    padding-top: 0px;
+.compare-first h2 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 600;
+    font-family: "Segoe UI";
+    padding: 0px 45px;
 }
-.core-values h6 {
-    font-size: 20px;
-    margin-bottom: 20px;
+.compare-first p {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Segoe UI";
+    padding: 0px 45px;
+    /* line-height: 25px; */
+    font-weight: 500;
 }
-.core-values-bottom {
-    border-top:2px dashed #0495fd;
-    padding: 25px 0 0;
-}
-.core-values-bottom .core-values .border-value {
-    border-right:2px dashed #0495fd;
-    padding: 15px 10px;
-}
-.core-values-bottom-1 .core-values {
+.compare-section-second {
+    padding: 60px 0 130px;
     
-    padding: 15px 10px;
 }
-.border-value {
-    border-right: 2px dashed #0495fd;
-    padding: 15px 10px;
+.compare-second h2 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 600;
+    font-family: "Segoe UI";
+    padding: 0px 45px;
+}
+.compare-second p {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Segoe UI";
+    padding: 0px 45px;
+    /* line-height: 25px; */
+    font-weight: 500;
+}
+.btn-feature-section a {
+    color: #0495fd;
+    /* color: #ccc; */
+    font-size: 20px;
+}
+.btn-feature-section svg {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #0495fd;
+}
+.fancy-feature-nineteen-new-inner h5 {
+    font-size: 18px;
+    // color: #febc0a;
+}
+.row-title-text {
+    font-size: 18px;
+    font-weight: 500;
+}
+.fancy-feature-nineteen-new-inner svg {
+    margin: 15px 0;
+    font-size: 70px;
+    color: #0495fd;
+}
+.feature-sec-desc h3 {
+    font-size: 20px;
+    color: #090436;
+}
+.email-find-para-first h2 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 30px;
+    text-align: left;
+    text-transform: capitalize;
+}
+.email-find-para-first p {
+    font-size: 20px;
+    line-height: 38px;
+}
+a.email-first-btn {
+    padding: 13px 20px;
+    background-color: #0495fd;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+a.email-first-btn:hover {
+    background-color: #090436;
+    cursor: pointer;
+}
+.email-find {
+    padding: 90px 0;
+}
+.email-first-heading h4 {
+    text-transform: capitalize;
+    margin: 10px 0 0;
+}
+.email-first-heading p {
+    font-size: 18px;
+    margin: 25px 0;
+}
+.email-first-sect-btn {
+    cursor: pointer;
+    text-decoration: underline !important;
+    color: #0495fd !important;
+    font-size: 17px;
+}
+.email-first-heading:hover {
+    // background-color: #fff;
+    // border-left: 4px solid #099bfd;
+     box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
+    -webkit-box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
+    -moz-box-shadow: 0px 0px 15px 6px rgb(163 206 233 / 20%);
+    border-radius: 6px;
+    transition: 0.2s;
+    cursor: pointer;
 }
 // Files
-
-
-
-
-
 
 .cursor-pointer{
     cursor: pointer;
@@ -211,6 +371,7 @@ h6.title-style-three {
     position: relative;
     font-family:'Segoe UI';
     text-align: center !important;
+    text-transform: capitalize;
 }
 // .google-signin div {
 //     background-color: #ffba12 !important;

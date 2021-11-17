@@ -2399,7 +2399,7 @@ body .theme-btn-nine:hover {
 
 .faq-classic.with-bg {
 	background: #f7faff;
-	padding: 120px 0 250px;
+	padding: 70px 0 250px;
 	z-index: 5;
 	position: relative
 }
@@ -5249,7 +5249,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-text-block-twelve .text-wrapper .sub-text {
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1.81em;
 	padding-top: 40px
 }
@@ -5397,13 +5397,13 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-text-block-thirteen .text-wrapper p {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.7em;
 	padding-top: 45px
 }
 
 .fancy-text-block-fourteen .text-wrapper .sub-text {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.58em;
 	color: #0e0e0e;
 	padding-top: 40px
@@ -7091,6 +7091,7 @@ body .theme-btn-nine:hover {
     color: #2a2a2a;
     text-align: center;
     padding: 25px 0 45px;
+	text-transform: capitalize;
 }
 
 .hero-banner-three .sing-in-call {
@@ -7397,7 +7398,8 @@ body .theme-btn-nine:hover {
 	padding: 50px 40px 45px;
 	position: relative;
 	margin: 0 15px 70px;
-	transition: all .3s ease-in-out
+	transition: all .3s ease-in-out;
+	height: 590px;
 }
 
 .client-feedback-slider-two .slick-center .bg-wrapper {
@@ -7416,15 +7418,15 @@ body .theme-btn-nine:hover {
 }
 
 .client-feedback-slider-two .bg-wrapper p {
-	font-size: 22px;
-	line-height: 1.72em;
-	color: #2c2c2c;
-	padding: 35px 0 40px
+	font-size: 18px;
+    line-height: 1.42em;
+    color: #2c2c2c;
+    padding: 35px 0 40px;
 }
 
 .client-feedback-slider-two .bg-wrapper .name {
 	font-size: 22px;
-	color: #000
+	color: #090436;
 }
 
 .client-feedback-slider-two .bg-wrapper .desig {
@@ -7567,7 +7569,7 @@ body .theme-btn-nine:hover {
 }
 
 .useable-tools-section-three .sub-text {
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1.59em;
 	color: #000;
 	padding: 50px 50px 40px 0
@@ -7671,7 +7673,7 @@ body .theme-btn-nine:hover {
 }
 
 .theme-footer-three:before {
-	content: url(../images/shape/92.svg);
+	content: url(../images/shape/92-1.png);
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -7705,7 +7707,7 @@ body .theme-btn-nine:hover {
 
 .theme-footer-three .top-footer .address-list p {
 	font-size: 16px;
-    line-height: 0px;
+    line-height: 18px;
     color: #727272;
     padding-bottom: 5px;
 }
@@ -7756,7 +7758,7 @@ body .theme-btn-nine:hover {
 
 .fancy-hero-five {
 	background: #f7faff;
-	padding: 220px 0 130px;
+	padding: 170px 0 130px;
 	position: relative;
 	z-index: 5
 }
@@ -7791,7 +7793,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-hero-five .sub-heading {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.58em;
 	color: #2a2a2a;
 	padding-top: 50px;
@@ -7819,10 +7821,10 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-text-block-seventeen .text-meta {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 1.66em;
 	color: #2a2a2a;
-	padding-bottom: 40px
+	padding-bottom:0px;
 }
 
 .fancy-text-block-eighteen {
@@ -8151,7 +8153,7 @@ body .theme-btn-nine:hover {
 	color: #414141;
 	word-break: break-all;
 	word-wrap: break-word;
-	white-space: pre-wrap
+	white-space: pre-wrap;
 }
 
 .doc-container .doc-main-body .mark-blue code {
@@ -8492,9 +8494,9 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-text-block-nineteen .text-wrapper p {
-	font-size: 24px;
+	font-size: 20px;
 	color: #0e0e0e;
-	line-height: 1.58em;
+	line-height: 1.38em;
 	padding-top: 40px
 }
 
@@ -14385,4 +14387,7 @@ body .theme-btn-nine:hover {
     width: 25%;
     margin: 0 auto;
     padding-bottom: 20px;
+}
+p.bg-wrapper-text-sec {
+    height: 360px;
 }
