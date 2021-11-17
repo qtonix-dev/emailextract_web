@@ -34,9 +34,10 @@
     background-color: white;
     -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
     box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
-    margin-top: 8px;
+    margin: 8px auto;
     border-radius: 5px;
     padding: 30px;
+    max-width: 640px;
 
     &_verified{
 
@@ -67,7 +68,7 @@
     border-radius: 5px;
     position: absolute;
     top: 50px;
-    right: 40px;
+    right: 80px;
         }
         
     }
