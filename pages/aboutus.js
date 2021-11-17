@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
 import Head from 'next/head'
-import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
 
 
 export default class about extends Component {
@@ -22,19 +21,17 @@ export default class about extends Component {
 			============================================== 
 			*/}
   <div className="fancy-hero-five">
-    <img src="images/shape/93.svg" alt="" className="shapes shape-one" />
-    <img src="images/shape/94.svg" alt="" className="shapes shape-two" />
+    <img src="images/shape/93-1.png" alt="" className="shapes shape-one" />
+    <img src="images/shape/94-1.png" alt="" className="shapes shape-two" />
     <div className="bg-wrapper">
       <div className="container">
         <div className="row">
           <div className="col-lg-7 col-md-8 col-sm-10">
-          <div className="title-style-three"><h6>About Us</h6></div>
             <h1 className="heading">
-
-              <span>Who We are <img src="images/shape/line-shape-11.svg" alt="img-response" /></span>
+              <span>The Truste Docs <img src="images/shape/line-shape-11.svg" alt="" /></span>
+              site ever.
             </h1>
-            <p className="sub-heading">Conceptualized in mid-2021, Email Extract helps to hunt down professional email addresses from any website in seconds. 
-            We Link with the people that matter the most for your business.</p>
+            <p className="sub-heading">GitBook started mid-2014 as an open-source tool for developers to build documentation. Today we empower teams of all sizes to build great internal &amp; external doc</p>
           </div>
           <div className="col-lg-5 col-md-4">
             <img src="images/media/img_52.png" alt="" className="img-meta" />
@@ -56,22 +53,11 @@ export default class about extends Component {
   <div className="container">
     <div className="row align-items-center">
       <div className="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
-        <div className="text-wrapper text-mission-sec">
-          <div className="title-abt-mission">
-            <h6 className="title-style-three">Our Mission</h6>
-            <p>Our mission is to provide every company with a 360-degree view of their client relationships and 
-            opportunities. We believe businesses can grow with ethics, and triumph with consciousness. Herein, we 
-            have aptly created an ecosystem unifying software, education, and society to assist businesses to grow 
-            better each day. Thus, we empower the companies to unleash their effective marketing strategies at each 
-            phase, while driving their ability to make the mark.</p>
-          </div>
-          <div className="title-abt-mission">
-          <h6 className="title-style-three">Our Vision </h6>
-          <p>Our vision is to optimize the overall revenue potential of every individual.</p>
-          </div>
-          
-          {/* /.title-style-two */}
-          
+        <div className="text-wrapper">
+          <div className="title-style-two">
+            <h2>Security you can trust easily.</h2>
+          </div> {/* /.title-style-two */}
+          <p>Our dashboard is served over SSL which means you can be sure that all data transferred is secure. Payment processing uses the very latest PCI DSS card-security standards</p>
         </div>
       </div>
       <div className="col-lg-6 col-md-8 m-auto order-lg-first" data-aos="fade-right" data-aos-duration={1200}>
@@ -80,6 +66,13 @@ export default class about extends Component {
     </div>
   </div>
 </div> {/* /.fancy-text-block-thirteen */}
+
+
+
+
+
+
+
 
 
 {/*
@@ -93,14 +86,14 @@ export default class about extends Component {
       <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
         <div className="text-wrapper">
           <div className="title-style-three">
-            
+            <h6>Ticket System</h6>
             <h2>
-              <span>What is Our Purpose<img src="images/shape/line-shape-6.svg" alt="" /></span>
+              <span>How doe the ticketing<img src="images/shape/line-shape-6.svg" alt="" /></span>
+              software work?
             </h2>
           </div>
-          <p className="sub-text">Unlike other platforms, emailextractonline.com verifies email addresses in real-time. We doubly check the accuracy of the searched email. 
-          Our online software offers a powerful free all-in-one freeware designed to extract accurate email addresses from distinct sources: websites, local files, and search engines. With our handy plugins, you can get contact information on LinkedIn or the company’s websites. You can simply insert the source text content, including the email addresses in the provided text box, search, and get a clean list of the unique email address. Our email extractor thus can easily clean out the valuable email addresses from any content and compiles the email addresses in one user-friendly list. </p>
-          <p className="sub-text">Our purpose is to be the prominent lead generation platform for any modern sales team and reduce the complexity of capturing potential leads through an easier and quicker process. This led us to create a platform that brings forth automated approaches to sales, authorizing individuals and corporate enterprises around the world to scale their sales actions. We improve our sales team’s productivity, wherein our sales team can find the right companies and accurate contact information of key in a matter of seconds. </p>
+          <p className="sub-text">A ticketing system is a tool, primarily for customer service. It helps customer representativ inquiries from one interface without any struggles.</p>
+          <p className="sub-text">Once a customer agent receives a inquiry from any channel it will be transformed into a ticket.</p>
         </div> {/* /.text-wrapper */}
       </div>
       <div className="col-lg-5 ml-auto" data-aos="fade-left" data-aos-duration={1200}>
@@ -115,101 +108,50 @@ export default class about extends Component {
   </div>
 </div> {/* /.fancy-text-block-twelve */}
 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
  {/* 
 			=============================================
 				Fancy Text block Seventeen
 			============================================== 
 			*/}
-  <div className="fancy-text-block-seventeen mt-100 pt-20 md-mt-80">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-5 ml-auto order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
-          <div className="title-style-four">
-            
-            <div className="row">
-              <div className="col-lg-12 col-md-8">
-                <h2>
-                  <span>Our Security Compliance<img src="images/shape/line-shape-2.svg" alt="" /></span>
-                </h2>
+      <div className="fancy-text-block-seventeen mt-100 pt-20 md-mt-80 text-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 ml-auto order-lg-first" data-aos="fade-left" data-aos-duration={1200}>
+              <div className="title-style-four">
+                <h6>Our Story</h6>
+                <div className="row">
+                  <div className="col-lg-12 col-md-8">
+                    <h2>We’r providing quality service
+                      <span>since 2010!<img src="images/shape/line-shape-2.svg" alt="" /></span>
+                    </h2>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div className="col-lg-12 order-lg-last pt-40" data-aos="fade-right" data-aos-duration={1200}>
+              <p className="text-meta">Lorem ipsum dolor sit amet, consectetur adipiscing ed do eiusmod tempor inciddunt ut labore et dolore magna aliqua. </p>
+              <p className="text-meta">quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehen derit in voluptae velit esse cillum dolor fugia nul pariatur lorem itu.</p>
             </div>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-7 order-lg-first" data-aos="fade-right" data-aos-duration={1200}>
-          <p className="text-meta">We apply a globally recognized security and privacy configuration that helps to mitigate our risk and compliances. Herein, we engage the third-party certified auditors to validate our security protocols and privacy, and subsequently render us with authorized reports and certificates that will illustrate our compliances. 
-          Thus, we always prioritize the security, privacy, and availability of your data.  </p>
-          
-        </div>
-      </div>
-    </div>
-  </div> {/* /.fancy-text-block-seventeen */}
-
-{/* 
-			=============================================
-				Fancy Text block Seventeen
-			============================================== 
-			*/}
-      <div className="fancy-text-block-seventeen mt-100 pt-20 md-mt-80">
-      <Container>
-          <div className="row">
-
-            <div className="col-lg-125 ml-auto" data-aos="fade-left" data-aos-duration={1200}>
-            <div className="title-style-four">
-              <h2>
-                <span>Our Core Values<img src="images/shape/line-shape-2.svg" alt="" /></span>
-              </h2>
-              
-            </div>
-
-        </div>
-        
-        <Row className="my-5 core-values-bottom-1">
-            <Col sm={4}>
-              <div className="core-values mt-3 border-value">
-                <h6>We Embrace Everyone</h6>
-                <p>We embrace all cultures, races, ethnicities, genders, ages, perspectives, and ways of thinking. 
-                Our connection inspires the way we care for each other and our clients. </p>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className="core-values mt-3 border-value">
-                <h6>Do The Right Thing</h6>
-                <p>We are appreciated and admired for our commitment to honesty, trust, and transparency. We do the right thing- even when no one is watching.</p>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className="core-values mt-3">
-                <h6>Transparency by default</h6>
-                <p>We believe in a more visible and transparent world. We always promote this value in our company and also with our products and services.  </p>
-              </div>
-            </Col>
-          </Row>
-          <Row className="core-values-bottom border-top-2">
-            <Col sm={4}>
-              <div className="core-values mt-3 border-value">
-                <h6>Think Bigger</h6>
-                <p>At Email Extract, we think big by taking all the concepts, aspirations, dreams, and goals of our potential customers to develop an effective action plan and turn them into reality.  </p>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className="core-values mt-3 border-value">
-                <h6>Challenge Everything</h6>
-                <p>As being a game-changer in email extraction, we do not take the easy way out. Rather, we create new paths and set records that have never been achieved beforehand.</p>
-              </div>
-            </Col>
-            <Col sm={4}>
-              <div className="core-values mt-3">
-                <h6>Care for our users’ experience</h6>
-                <p>For each of our professional engagements, we take the experience of our users in a dignified manner & deep sincerity & do not let questions remain unresolved.</p>
-              </div>
-            </Col>
-        </Row>
-          
-          
-        </div>
-      </Container>
-    </div> {/* /.fancy-text-block-seventeen */}
-  
+      </div> 
 
 
 
@@ -270,8 +212,7 @@ export default class about extends Component {
     <div className="container">
       <div className="title-style-three text-center mb-60 md-mb-50 sm-mb-30">
         <h6>Our Partners</h6>
-        <h2>Who is
-          <span>using deski <img src="images/shape/line-shape-2.svg" alt="" /></span>
+        <h2>Who is&nbsp;<span>using emailextracter <img src="images/shape/line-shape-2.svg" alt="" /></span>
           docs?
         </h2>
       </div>

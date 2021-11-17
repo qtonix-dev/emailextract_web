@@ -376,16 +376,16 @@ export class index extends Component {
 
 
                                     
-                                    <img src="images/shape/68.svg" alt="" className="shapes shape-one" />
-                                    <img src="images/shape/69.svg" alt="" className="shapes shape-two" />
-                                    <img src="images/shape/70.svg" alt="" className="shapes shape-three" />
-                                    <img src="images/shape/71.svg" alt="" className="shapes shape-four" />
-                                    <img src="images/shape/72.svg" alt="" className="shapes shape-five" />
-                                    <img src="images/shape/73.svg" alt="" className="shapes shape-six" />
-                                    <img src="images/shape/74.svg" alt="" className="shapes shape-seven" />
-                                    <img src="images/shape/75.svg" alt="" className="shapes shape-eight" />
-                                    <img src="images/shape/76.svg" alt="" className="shapes shape-nine" />
-                                    <img src="images/shape/77.svg" alt="" className="shapes shape-ten" />
+                                    <img src="images/shape/68-1.png" alt="" className="shapes shape-one" />
+                                    {/* <img src="images/shape/69-1.png" alt="" className="shapes shape-two" /> */}
+                                    <img src="images/shape/70-1.png" alt="" className="shapes shape-three" />
+                                    <img src="images/shape/75-1.png" alt="" className="shapes shape-four" />
+                                    <img src="images/shape/72-1.png" alt="" className="shapes shape-five" />
+                                    <img src="images/shape/73-1.png" alt="" className="shapes shape-six" />
+                                    <img src="images/shape/74-1.png" alt="" className="shapes shape-seven" />
+                                    <img src="images/shape/75-1.png" alt="" className="shapes shape-eight" />
+                                    <img src="images/shape/76-1.png" alt="" className="shapes shape-nine" />
+                                    <img src="images/shape/68-1.png" alt="" className="shapes shape-ten" />
                                 </div>
                                 </div>
 
@@ -443,10 +443,10 @@ export class index extends Component {
                                     <div className="title-style-four text-center mb-60 md-mb-40">
                                         <div className="row">
                                             <div className="col-lg-10 m-auto">
-                                                <h6>How it works</h6>
-                                                <h2>Find verified email of any targeted&nbsp;
-                                                <span>professional from their name and company.<img src="images/shape/line-shape-2.svg" alt="" /></span>
-                                                </h2>
+                                                    <h6>How it works</h6>
+                                                    <h2>Find verified email of any targeted&nbsp;
+                                                        <span>professional from their name and company.<img src="images/shape/line-shape-2.svg" alt="" /></span>
+                                                    </h2>
                                             </div>
                                         </div>
                                     </div>
@@ -487,7 +487,7 @@ export class index extends Component {
                                             Email Extracter
                                             </h2>
                                         </div>
-                                        <p className="sub-text">Deski ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
+                                        <p className="sub-text">Email Extract ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
                                         {/* <a href="#" className="all-button">See all partners <i className="flaticon-right-arrow" /></a> */}
                                         </div>
                                     </div>
@@ -603,14 +603,14 @@ export class index extends Component {
                                             =====================================================
                                             */}
                                 <div className="client-feedback-slider-two mt-180 md-mt-100">
-                                    <img src="images/shape/78.svg" alt="" className="shapes shape-one" />
-                                    <img src="images/shape/79.svg" alt="" className="shapes shape-two" />
-                                    <img src="images/shape/80.svg" alt="" className="shapes shape-three" />
-                                    <img src="images/shape/81.svg" alt="" className="shapes shape-four" />
-                                    <img src="images/shape/82.svg" alt="" className="shapes shape-five" />
-                                    <img src="images/shape/83.svg" alt="" className="shapes shape-six" />
-                                    <img src="images/shape/84.svg" alt="" className="shapes shape-seven" />
-                                    <img src="images/shape/85.svg" alt="" className="shapes shape-eight" />
+                                    <img src="images/shape/78-1.png" alt="" className="shapes shape-one" />
+                                    <img src="images/shape/79-1.png" alt="" className="shapes shape-two" />
+                                    <img src="images/shape/80-1.png" alt="" className="shapes shape-three" />
+                                    <img src="images/shape/81-1.png" alt="" className="shapes shape-four" />
+                                    <img src="images/shape/82-1.png" alt="" className="shapes shape-five" />
+                                    <img src="images/shape/83-1.png" alt="" className="shapes shape-six" />
+                                    <img src="images/shape/84-1.png" alt="" className="shapes shape-seven" />
+                                    <img src="images/shape/85-1.png" alt="" className="shapes shape-eight" />
                                     <div className="container">
                                     <div className="title-style-four text-center mb-100 md-mb-60">
                                         <div className="row">
@@ -632,60 +632,74 @@ export class index extends Component {
                                     <div className="item">
                                         <div className="bg-wrapper">
                                             <img src="images/logo/logo-9.png" alt="" className="logo" />
-                                            <p>Absolutely love it! I would like to say it is a brilliant tool for marketers like me. 
+                                            <p className="bg-wrapper-text-sec">Absolutely love it! I would like to say it is a brilliant tool for marketers like me. 
                                                 I have tried a lot of other ones but only found lots of problems, bugs, incorrect harvesting, 
                                                 constant blockages by servers. Email Extract Online is well programmed and it gets what you 
                                                 really need. Definitely recommend it!</p>
-                                            <div className="name font-rubik">Zubayer Hasan.</div>
-                                            <div className="desig">CEO &amp; Founder Heloshape</div>
+                                            <div className="text-section-testimonial">
+                                                <div className="name font-rubik">Zubayer Hasan.</div>
+                                                <div className="desig">CEO &amp; Founder Heloshape</div>
+                                            </div>
+                                            
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
                                             <img src="images/logo/logo-10.png" alt="" className="logo" />
-                                            <p>A huge thank you to the team at Email Extract Online. I bought this tool 6 months ago and even after all this time when I reach out for any help they are brilliant. So many online extracting products promise the world and then 
+                                            <p className="bg-wrapper-text-sec">A huge thank you to the team at Email Extract Online. I bought this tool 6 months ago and even after all this time when I reach out for any help they are brilliant. So many online extracting products promise the world and then 
                                                 fail to deliver - this is a robust tool and a great bunch of people behind it. Highly recommended.</p>
-                                            <div className="name font-rubik">Eh Jewel</div>
-                                            <div className="desig">Senior Developer</div>
+                                                <div className="text-section-testimonial">
+                                                    <div className="name font-rubik">Eh Jewel</div>
+                                                    <div className="desig">Senior Developer</div>
+                                                </div>
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
                                             <img src="images/logo/logo-9.png" alt="" className="logo" />
-                                            <p>My name is David, I tried Email Extract Online and Email Bulk Finder and found both of them to be very useful. The truth is unless you try this tool, you will not know what you are missing out on. I recommend the Email Extract Online tool to small and large businesses - it is profitable 
+                                            <p className="bg-wrapper-text-sec">My name is David, I tried Email Extract Online and Email Bulk Finder and found both of them to be very useful. The truth is unless you try this tool, you will not know what you are missing out on. I recommend the Email Extract Online tool to small and large businesses - it is profitable 
                                                 especially when you want to develop reasonable contacts and good relationships with others.</p>
+                                            <div className="text-section-testimonial">
                                             <div className="name font-rubik">Johny Horoscope</div>
                                             <div className="desig">CEO &amp; Founder Heloshape</div>
+                                            </div>
+                                            
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
                                             <img src="images/logo/logo-10.png" alt="" className="logo" />
-                                            <p>Email Extract Online is very good and many thanks to the developers for making such an inexpensive 
+                                            <p className="bg-wrapper-text-sec">Email Extract Online is very good and many thanks to the developers for making such an inexpensive 
                                                 tool. Very frankly, after using this tool, I started seeing a big increase in my sales. In the past, 
                                                 I tried many other resources as well as other email harvesters to boost my sales but nothing was as 
                                                 effective as your product. I found your product 
                                                 beyond my expectations. Once again I thank you for making such an effective product that really works.</p>
-                                            <div className="name font-rubik">Eh Jewel</div>
-                                            <div className="desig">Senior Developer</div>
+                                            <div className="text-section-testimonial">
+                                            <div className="name font-rubik">Johny Horoscope</div>
+                                            <div className="desig">CEO &amp; Founder Heloshape</div>
+                                            </div>
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
                                             <img src="images/logo/logo-10.png" alt="" className="logo" />
-                                            <p>I was looking for the best solution to extract emails of some prospective clients to promote my services. Finally, I found it: Email Extract Online. 
+                                            <p className="bg-wrapper-text-sec">I was looking for the best solution to extract emails of some prospective clients to promote my services. Finally, I found it: Email Extract Online. 
                                                 Today I am really pleased with the way this tool works and the benefits, I get from email marketing.</p>
-                                            <div className="name font-rubik">Eh Jewel</div>
-                                            <div className="desig">Senior Developer</div>
+                                                <div className="text-section-testimonial">
+                                                <div className="name font-rubik">Johny Horoscope</div>
+                                                <div className="desig">CEO &amp; Founder Heloshape</div>
+                                                </div>
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
                                             <img src="images/logo/logo-10.png" alt="" className="logo" />
-                                            <p>I bought the Email Extract Online some time ago, it is so good that I felt like sharing. Email Extract Online is a small investment that can be made by any business but in a short period of time, it can really bring profits for your business. It helps to extract emails with superior potential 
+                                            <p className="bg-wrapper-text-sec">I bought the Email Extract Online some time ago, it is so good that I felt like sharing. Email Extract Online is a small investment that can be made by any business but in a short period of time, it can really bring profits for your business. It helps to extract emails with superior potential 
                                                 for reaching good customers. This software can be the best asset for any business. Highly recommended!</p>
-                                            <div className="name font-rubik">Eh Jewel</div>
-                                            <div className="desig">Senior Developer</div>
+                                                <div className="text-section-testimonial">
+                                                    <div className="name font-rubik">Johny Horoscope</div>
+                                                    <div className="desig">CEO &amp; Founder Heloshape</div>
+                                                </div>
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                     </Slider>
@@ -702,22 +716,6 @@ export class index extends Component {
                                     </div>
                                     </div> {/* /.slider-content */}
                                 </div> {/* /.client-feedback-slider-two */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                
-                                
-                                
                                 
                                 
                                 
@@ -727,12 +725,12 @@ export class index extends Component {
                                             =====================================================
                                             */}
                                 <div className="faq-classic with-bg">
-                                    <img src="images/shape/86.svg" alt="" className="shapes shape-one" />
-                                    <img src="images/shape/87.svg" alt="" className="shapes shape-two" />
-                                    <img src="images/shape/88.svg" alt="" className="shapes shape-three" />
-                                    <img src="images/shape/89.svg" alt="" className="shapes shape-four" />
-                                    <img src="images/shape/90.svg" alt="" className="shapes shape-five" />
-                                    <img src="images/shape/91.svg" alt="" className="shapes shape-six" />
+                                    <img src="images/shape/86-1.png" alt="" className="shapes shape-one" />
+                                    <img src="images/shape/87-1.png" alt="" className="shapes shape-two" />
+                                    <img src="images/shape/88-1.png" alt="" className="shapes shape-three" />
+                                    <img src="images/shape/89-1.png" alt="" className="shapes shape-four" />
+                                    <img src="images/shape/90-1.png" alt="" className="shapes shape-five" />
+                                    <img src="images/shape/91-1.png" alt="" className="shapes shape-six" />
                                     <div className="container">
                                     <div className="title-style-four text-center mb-100 md-mb-70">
                                         <div className="row">

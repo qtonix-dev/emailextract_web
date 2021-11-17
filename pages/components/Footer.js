@@ -1,8 +1,37 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 import { FaPhoneAlt, FaEnvelopeOpenText, FaMapMarkerAlt } from "react-icons/fa";
+import $ from "jquery";
+import SimpleReactValidator from 'simple-react-validator';
 
 export default class Footer extends Component {
+
+    constructor(props){
+        super(props)
+        this.state={
+          formLoading:false
+        }
+        this.validator = new SimpleReactValidator();
+        this.handleChange=this.handleChange.bind(this);
+      }
+
+      handleChange(e){
+        this.setState({
+          [e.target.name]:e.target.value
+        })
+      }
+
+      handleSubmit=e=>{
+        e.preventDefault();
+        if (this.validator.allValid()){
+            $("#myForm :input").prop('readonly', true);
+            this.setState({formLoading:true})
+        } else {
+          this.validator.showMessages();
+          this.forceUpdate();
+          $("#myForm :input").prop('readonly', false);
+        }
+      }
     render() {
         return (
             <>
@@ -23,8 +52,9 @@ export default class Footer extends Component {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-wrapper">
-                                    <form action="#">
-                                        <input type="text" placeholder="Email address" />
+                                    <form action="#" onSubmit={this.handleSubmit} className="mt-5 sub-form" id="myForm">
+                                        <input type="text" placeholder="Enter Your Email Address" name="subscribe" value={this.state.subscribe} onChange={this.handleChange} />
+                                        <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                                         <button>Subscribe</button>
                                     </form>
                                     <p className="font-rubik">Already a member? <Link href='/login'><a>Sign in.</a></Link></p>
@@ -44,7 +74,7 @@ export default class Footer extends Component {
                             <div className="container">
                                 <div className="row justify-content-between">
                                 <div className="col-lg-4 col-12 footer-about-widget">
-                                <Link href='/'><a className="logo"><img src="/images/logo-b.png" alt="img-email" className="w-75" /></a></Link>
+                                <Link href='/'><a className="logo"><img src="/images/email-logo-n.png" alt="img-email" className="w-75" /></a></Link>
                                 </div> {/* /.about-widget */}
                                 <div className="col-lg-2 col-md-4 footer-list" >
                                     <h5 className="footer-title">Product</h5>
@@ -67,7 +97,7 @@ export default class Footer extends Component {
                                 <div className="col-lg-3 col-md-4 address-list" >
                                     <h5 className="footer-title">Contact Info</h5>
                                     <div className="contact-info">
-                                        <p className="font-rubik"><FaMapMarkerAlt /> &nbsp;Pahala, Bhubaneswar, Odisha,  India</p>
+                                        <p className="font-rubik address"><FaMapMarkerAlt /> &nbsp;Pahala, Bhubaneswar, Odisha,  India</p>
                                         <p className="font-rubik"><FaEnvelopeOpenText /> &nbsp;info@qtonix.com</p>
                                         <p className="font-rubik"><FaPhoneAlt /> &nbsp;+000 000 0000</p>
                                     </div>

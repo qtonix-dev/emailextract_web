@@ -12,27 +12,35 @@ const data = {
   // title: "FAQ (How it works)",
   rows: [
       {
-          title: "Lorem ipsum dolor sit amet,",
-          content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-          ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-          In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-          Fusce sed commodo purus, at tempus turpis.`,
+        title: "Why do I need to verify Email?",
+        content: <p>For an effective email marketing process, it is very important to verify the existence of 
+        an email address so as to acquire a new subscriber. For this, you invest lots of time and money to 
+        buy an email list from 3rd party vendors. But you are not sure whether these contact emails are 
+        authentic enough to deliver your marketing campaign or not. If you send email messages to fake email 
+        addresses, the bounce-back email ratio will increase and have a negative impact on your mail server’s 
+        reputation. That’s why identifying and removing invalid 
+        email addresses are essential to protect your email reputation and bounce-free email campaigns.
+        <br /><br />By verifying email lists with our Email Extract Online tool, you can improve many of your options, such as:
+            <ul>
+                <li>•	Open Rates</li>
+                <li>•	Bounce Rates</li>
+                <li>•	Click-Through Rates</li>
+                <li>•	Conversion Rates</li>
+            </ul>
+        </p>,
       },
       {
-          title: "Nunc maximus, magna at ultricies elementum",
-          content:
-              "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+        title: "How accurate is the Email Extract Online?",
+        content:
+            "The Email Extract Online uses the most comprehensive database of public email addresses to find the correct contact information. All the email addresses go through an email verification process before being returned. The email addresses with a green shield mean they have been checked and found deliverable. You can use them safely and those email addresses with red shields are either unauthorized or are not in use. ",
       },
       {
-          title: "Curabitur laoreet, mauris vel blandit fringilla",
-          content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-          Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-          Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-          Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+        title: "Can you verify Bulk emails at once?",
+        content: `Yes, with the bulk extraction feature, you can verify an unlimited number of emails within seconds. `,
       },
       {
-          title: "What is the package version",
-          content: <p>current version is 1.2.1</p>,
+        title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
+        content: "It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.",
       },
   ],
 };
@@ -174,12 +182,12 @@ export default class pricing extends Component {
                                             =====================================================
                                             */}
                                 <div className="faq-classic with-bg">
-                                    <img src="images/shape/86.svg" alt="" className="shapes shape-one" />
-                                    <img src="images/shape/87.svg" alt="" className="shapes shape-two" />
-                                    <img src="images/shape/88.svg" alt="" className="shapes shape-three" />
-                                    <img src="images/shape/89.svg" alt="" className="shapes shape-four" />
-                                    <img src="images/shape/90.svg" alt="" className="shapes shape-five" />
-                                    <img src="images/shape/91.svg" alt="" className="shapes shape-six" />
+                                    <img src="images/shape/86-1.png" alt="" className="shapes shape-one" />
+                                    <img src="images/shape/87-1.png" alt="" className="shapes shape-two" />
+                                    <img src="images/shape/88-1.png" alt="" className="shapes shape-three" />
+                                    <img src="images/shape/89-1.png" alt="" className="shapes shape-four" />
+                                    <img src="images/shape/90-1.png" alt="" className="shapes shape-five" />
+                                    <img src="images/shape/91-1.png" alt="" className="shapes shape-six" />
                                     <div className="container">
                                     <div className="title-style-four text-center mb-100 md-mb-70">
                                         <div className="row">
