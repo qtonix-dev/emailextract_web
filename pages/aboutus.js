@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Body from './components/Body'
 import Head from 'next/head'
 import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
-
+import Freedemo from './components/aboutus/Freedemo'
 
 export default class about extends Component {
     render() {
@@ -22,8 +22,8 @@ export default class about extends Component {
 			============================================== 
 			*/}
   <div className="fancy-hero-five">
-    <img src="images/shape/93.svg" alt="" className="shapes shape-one" />
-    <img src="images/shape/94.svg" alt="" className="shapes shape-two" />
+    {/* <img src="images/shape/93.svg" alt="" className="shapes shape-one" /> */}
+    {/* <img src="images/shape/94.svg" alt="" className="shapes shape-two" /> */}
     <div className="bg-wrapper">
       <div className="container">
         <div className="row">
@@ -33,8 +33,8 @@ export default class about extends Component {
 
               <span>Who We are <img src="images/shape/line-shape-11.svg" alt="img-response" /></span>
             </h1>
-            <p className="sub-heading">Conceptualized in mid-2021, Email Extract helps to hunt down professional email addresses from any website in seconds. 
-            We Link with the people that matter the most for your business.</p>
+            <p className="sub-heading">Conceptualized in mid-2021, Email Extract Online helps to hunt down professional email addresses from any website in seconds. 
+            We link with the people that matter the most for your business.</p>
           </div>
           <div className="col-lg-5 col-md-4">
             <img src="images/media/img_52.png" alt="" className="img-meta" />
@@ -52,9 +52,9 @@ export default class about extends Component {
 				Fancy Text Block Thirteen
 			=====================================================
 			*/}
-<div className="fancy-text-block-thirteen pt-140 md-pt-100">
+<div className="fancy-text-block-thirteen pt-180 md-pt-100">
   <div className="container">
-    <div className="row align-items-center">
+    <div className="row align-items-center pt-5">
       <div className="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
         <div className="text-wrapper text-mission-sec">
           <div className="title-abt-mission">
@@ -87,7 +87,7 @@ export default class about extends Component {
 				Fancy Text block Twelve
 			=====================================================
 			*/}
-<div className="fancy-text-block-twelve mt-150 md-mt-100">
+<div className="fancy-text-block-twelve mt-130 md-mt-100">
   <div className="container">
     <div className="row">
       <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
@@ -100,7 +100,7 @@ export default class about extends Component {
           </div>
           <p className="sub-text">Unlike other platforms, emailextractonline.com verifies email addresses in real-time. We doubly check the accuracy of the searched email. 
           Our online software offers a powerful free all-in-one freeware designed to extract accurate email addresses from distinct sources: websites, local files, and search engines. With our handy plugins, you can get contact information on LinkedIn or the company’s websites. You can simply insert the source text content, including the email addresses in the provided text box, search, and get a clean list of the unique email address. Our email extractor thus can easily clean out the valuable email addresses from any content and compiles the email addresses in one user-friendly list. </p>
-          <p className="sub-text">Our purpose is to be the prominent lead generation platform for any modern sales team and reduce the complexity of capturing potential leads through an easier and quicker process. This led us to create a platform that brings forth automated approaches to sales, authorizing individuals and corporate enterprises around the world to scale their sales actions. We improve our sales team’s productivity, wherein our sales team can find the right companies and accurate contact information of key in a matter of seconds. </p>
+          {/* <p className="sub-text">Our purpose is to be the prominent lead generation platform for any modern sales team and reduce the complexity of capturing potential leads through an easier and quicker process. This led us to create a platform that brings forth automated approaches to sales, authorizing individuals and corporate enterprises around the world to scale their sales actions. We improve our sales team’s productivity, wherein our sales team can find the right companies and accurate contact information of key in a matter of seconds. </p> */}
         </div> {/* /.text-wrapper */}
       </div>
       <div className="col-lg-5 ml-auto" data-aos="fade-left" data-aos-duration={1200}>
@@ -120,26 +120,27 @@ export default class about extends Component {
 				Fancy Text block Seventeen
 			============================================== 
 			*/}
-  <div className="fancy-text-block-seventeen mt-100 pt-20 md-mt-80">
+  <div className="fancy-text-block-seventeen mt-50 pt-20 md-mt-80">
     <div className="container">
       <div className="row">
-        <div className="col-lg-5 ml-auto order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
+        <div className="col-lg-12" data-aos="fade-left" data-aos-duration={1200}>
           <div className="title-style-four">
             
             <div className="row">
-              <div className="col-lg-12 col-md-8">
-                <h2>
+              <div className="col-lg-12">
+                <h2 className="mb-5">
                   <span>Our Security Compliance<img src="images/shape/line-shape-2.svg" alt="" /></span>
                 </h2>
+                <p className="text-meta">We apply a globally recognized security and privacy configuration that helps to mitigate our risk and compliances. Herein, we engage the third-party certified auditors to validate our security protocols and privacy, and subsequently render us with authorized reports and certificates that will illustrate our compliances. 
+          Thus, we always prioritize the security, privacy, and availability of your data.  </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-xl-6 col-lg-7 order-lg-first" data-aos="fade-right" data-aos-duration={1200}>
-          <p className="text-meta">We apply a globally recognized security and privacy configuration that helps to mitigate our risk and compliances. Herein, we engage the third-party certified auditors to validate our security protocols and privacy, and subsequently render us with authorized reports and certificates that will illustrate our compliances. 
-          Thus, we always prioritize the security, privacy, and availability of your data.  </p>
+        {/* <div className="col-xl-6 col-lg-7 order-lg-first" data-aos="fade-right" data-aos-duration={1200}>
           
-        </div>
+          
+        </div> */}
       </div>
     </div>
   </div> {/* /.fancy-text-block-seventeen */}
@@ -149,7 +150,7 @@ export default class about extends Component {
 				Fancy Text block Seventeen
 			============================================== 
 			*/}
-      <div className="fancy-text-block-seventeen mt-100 pt-20 md-mt-80">
+      <div className="fancy-text-block-seventeen mt-50 pt-20 md-mt-80">
       <Container>
           <div className="row">
 
@@ -249,81 +250,68 @@ export default class about extends Component {
   </div> {/* /.fancy-text-block-eighteen */}
 
 
-
-
-
-
-
-
-
-
-
-
-
   
   {/*
 			=====================================================
 				Useable Tools
 			=====================================================
 			*/}
-  <div className="useable-tools-section bg-transparent mt-140 md-mt-80">
+  <div className="useable-tools-section bg-transparent mt-90 md-mt-90">
     <div className="container">
       <div className="title-style-three text-center mb-60 md-mb-50 sm-mb-30">
         <h6>Our Partners</h6>
-        <h2>Who is
-          <span>using deski <img src="images/shape/line-shape-2.svg" alt="" /></span>
-          docs?
+        <h2>Who Are <span>Using Email Extract Online <img src="images/shape/line-shape-2.svg" alt="" /></span>
         </h2>
       </div>
       <div className="row">
         <div className="col-xl-8 col-lg-9 m-auto">
-          <p className="sub-text pb-80 md-pb-50">Deski ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
+          <p className="sub-text pb-30 md-pb-50">Email Extract Online ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
         </div>
       </div>
       <div className="row">
         <div className="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200}>
           <div className="img-box bx-a">
-            <a href="#"><img src="images/logo/p-1.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={50}>
           <div className="img-box bx-b">
-            <a href="#"><img src="images/logo/p-2.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/Adecco.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={100}>
           <div className="img-box bx-c">
-            <a href="#"><img src="images/logo/p-3.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/icon-home-img1.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={150}>
           <div className="img-box bx-d">
-            <a href="#"><img src="images/logo/p-4.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/prisa.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={200}>
           <div className="img-box bx-e">
-            <a href="#"><img src="images/logo/p-5.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-4 col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={250}>
           <div className="img-box bx-f">
-            <a href="#"><img src="images/logo/p-6.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/icon-home-travel.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={300}>
           <div className="img-box bx-g">
-            <a href="#"><img src="images/logo/p-7.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-3 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={350}>
           <div className="img-box bx-h">
-            <a href="#"><img src="images/logo/p-8.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/icon-home-img1.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-3 col-lg-12 col-md-4 col-6 m-auto" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={400}>
           <div className="img-box bx-i">
-            <a href="#"><img src="images/logo/p-9.png" alt="" /></a>
+            <a href="#"><img src="images/iconsmain/Adecco.png" alt="emailicon" /></a>
           </div> {/* /.img-box */}
         </div>
       </div>
@@ -331,10 +319,16 @@ export default class about extends Component {
   </div> {/* /.useable-tools-section */}
  
 
- <br /><br /><br /><br /> <br /><br /><br /><br /><br />
+ <br />
 
  </div>
 
+                        <section className="free-section-demo-compare">
+                            <Container>
+                                <Freedemo />
+                            </Container>
+                            
+                        </section>
 
 
 

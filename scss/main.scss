@@ -226,12 +226,13 @@ form#myForm label {
     font-size: 18px;
     line-height: 25px;
     font-family: "Segoe UI";
-    padding: 0px 45px;
+    padding: 10px 35px 0;
     /* line-height: 25px; */
     font-weight: 500;
+    text-align:center;
 }
 .compare-section-second {
-    padding: 60px 0 130px;
+    padding: 60px 0 30px;
     
 }
 .compare-second h2 {
@@ -246,12 +247,12 @@ form#myForm label {
 .compare-second p {
     display: block;
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     font-family: "Segoe UI";
-    padding: 0px 45px;
+    padding: 5px 10px;
     /* line-height: 25px; */
-    font-weight: 500;
+    /* font-weight: 500;*/
 }
 .btn-feature-section a {
     color: #0495fd;
@@ -331,7 +332,124 @@ a.email-first-btn:hover {
     transition: 0.2s;
     cursor: pointer;
 }
-// Files
+.text-section-testimonial {
+    position: relative;
+    top:50px;
+}
+@media (max-width:420px) {
+    .search-filter-form button {
+        width: 90px !important;
+    }
+}
+.free-section-demo-compare {
+    margin-bottom: 140px;
+}
+.fancy-hero-five-features {
+    background-color: #099bfd;
+}
+.features-section-first-inner {
+    text-align: center;
+    margin: 70px 0 15px;
+}
+.features-section-first-inner img {
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px;
+}
+.follow-feature-section {
+    text-align: center;
+    padding: 10px;
+}
+.follow-feature-section svg {
+    font-size: 30px;
+}
+.follow-feature-section p {
+    padding-top: 20px;
+    font-family: 'Segoe UI'!important;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.follow-feature-section-main {
+    padding: 60px 0;
+}
+.follow-feature-section-main h3 {
+    font-size: 47px;
+}
+.follow-feature-section img {
+    width: 30%;
+    margin: 0 auto;
+}
+.follow-feature-section-main p {
+    font-weight: 500;
+}
+.visual-section-inner-listing li img {
+    width:3%;
+    float: left;
+    margin-right:10px;
+    margin-top: 5px;
+}
+.visual-section-inner-listing li {
+    margin: 10px 0 15px;
+    font-size: 17px;
+}
+.visual-section-inner-listing {
+    margin-left: -30px;
+}
+.visual-section-inner p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+}
+ul.visual-section-inner-listing {
+    margin-top: 30px;
+}
+.work-anywhere h3 {
+    font-size: 47px;
+}
+.work-anywhere-listing {
+    margin-top:30px;
+}
+.work-anywhere {
+    padding: 60px 0;
+}
+.work-anywhere-listing li img {
+    width:3%;
+    float: left;
+    margin-right:10px;
+    margin-top: 5px;
+}
+.work-anywhere-listing li {
+    margin: 10px 0 15px;
+    font-size: 17px;
+}
+.work-anywhere-listing {
+    margin-left: -30px;
+}
+section.work-anywhere h3 {
+    margin-bottom: 50px;
+}
+.work-anywhere p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.follow-visual-section h3 {
+    font-size: 47px;
+}
+.feature-main h1 span {
+    color: #fff !important;
+}
+.feature-main p {
+    color: #fff !important;
+}
+.features-section-first-inner h3 {
+    font-size: 20px;
+}
+
+.compare-first img {
+    margin: 0 auto;
+}
+// Files 
 
 .cursor-pointer{
     cursor: pointer;
@@ -524,4 +642,287 @@ section.faq-row.styles_faq-row__2YF3c {
     background-color: #fcfcfc;
     -webkit-box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
     box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.freshnessCrm h3 {
+    font-size: 47px;
+    text-transform: capitalize;
+}
+.compare-section-first h2 {
+    font-size: 47px;
+    text-transform: capitalize;
+}
+.freshnessCrm p {
+    padding: 0px 30px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.compare-section-second h2 {
+    font-size: 47px;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    text-align: center;
+}
+.compare-second img {
+    margin: 10px auto;
+}
+.compare-second h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+}
+.compare-second img {
+    height: 90px;
+    padding-bottom: 20px;
+}
+.our-customer-compaire h3 {
+    text-align: center;
+    font-size: 47px;
+    text-transform: capitalize;
+    padding: 20px 0;
+}
+.our-customer-freesales h3 {
+    text-align: center;
+    font-size: 47px;
+    text-transform: capitalize;
+    padding: 0 0 20px 0;
+}
+.our-customer-freesales table td {
+    padding: 7px;
+}
+.our-customer-freesales th img {
+    margin: 0 auto;
+}
+.sec-left {
+    padding: 10px 15px !important;
+}
+.our-customer-freesales p {
+    font-weight: 600;
+    font-size: 16px;
+}
+.freesales-btn {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.freesales-btn a {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-family: 'Segoe UI'!important;
+}
+.freesales-btn a {
+    background-color: #000;
+    color: #fff !important;
+    padding: 10px 30px;
+    font-family: "Segoe UI" !important;
+    margin: 20px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.our-customer-freesales {
+    padding: 0 0 50px 0;
+}
+.alternative-section {
+    padding: 10px 0 50px 0;
+}
+.alternative-section h3 {
+    text-align: center;
+    font-size: 47px;
+    text-transform: capitalize;
+    padding: 20px 0;
+    font-family: "Segoe UI" !important;
+}
+.alternative-section-inner h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.better-alternative h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 25px 0;
+    text-transform: capitalize;
+}
+.better-alternative a {
+    background-color: #000;
+    color: #fff !important;
+    padding: 10px 30px;
+    font-family: "Segoe UI" !important;
+    margin: 20px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.better-alternative {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px 40px;
+}
+.freshness-comparision {
+    padding: 50px 0;
+}
+.freshness-comparision h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 25px 0;
+    font-family: "Segoe UI" !important;
+    text-transform: capitalize;
+}
+
+.freshness-comparision-main-section {
+    background-color: #f7faff;
+    padding: 0 0 70px;
+}
+
+.our-customer-compaire .carousel-inner .card {
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel-indicators {
+    display: none;
+}
+.card-title.h5 {
+    font-size: 28px;
+    padding: 0 0 30px;
+}
+.free-signup {
+    background-color: #000;
+    color: #fff !important;
+    padding: 10px 30px;
+    font-family: "Segoe UI" !important;
+    margin: 20px 5px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+.businesses-world {
+    padding: 50px 0;
+}
+.businesses-world h3 {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 25px 0;
+    font-family: "Segoe UI" !important;
+    padding: 0 0 30px 0;
+    text-transform: capitalize;
+}
+section.businesses-world li {
+    display: inline-block;
+    margin: 0 50px 0 30px;
+    text-align: center;
+}
+section.freshness-comparision-main-section button {
+    margin: 0 auto;
+}
+.businesses-world ul {
+    margin: 0 auto;
+    text-align: center;
+}
+.compare-main h1 {
+    text-transform: capitalize;
+}
+@media (max-width:420px) {
+    .free-demo-form-left {
+        display: none;
+    }
+}
+@media (max-width:991px) {
+    .footer-about-widget img {
+        width: 50% !important;
+    }
+}
+h6.title-style-three {
+    font-size: 25px;
+}
+.form-error-message {
+    color:crimson;
+    margin-top:5px;
+}
+.title-style-seven h6 {
+    text-align: center;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+.img-ban-main-new-right {
+    width:20%;
+    position: absolute;
+    right: 3%;
+    top: 7.5%;
+}
+.img-ban-main-new-left {
+    width:25%;
+    position: absolute;
+    left: 2%;
+    top: 7.5%;
+}
+.sec-hifen {
+    font-size: 18px;
+    color: #979797;
+}
+h1.heading.privacy-main-title {
+    margin-top: -60px;
+    margin-bottom: 50px;
+}
+.privacy-main-first p {
+    padding:0 10px;
+    font-weight: 500;
+    font-family: "Segoe UI" !important;
+}
+.terms_and_policy h3 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    font-family: "Segoe UI" !important;
+    text-transform: capitalize;
+}
+.terms_and_policy .tab-content h2 {
+    font-size: 42px !important;
+    font-family: "Segoe UI" !important;
+}
+.terms_and_policy .tab-content p {
+    font-family: "Segoe UI" !important;
+}
+.phoneno-input.PhoneInput input {
+    border-radius: 5px;
+    height: 38px;
+    border: 1px solid #ccc;
+    font-size: 13px !important;
+    padding-left: 10px;
+    color: #5e5e5e;
+    /* border-right: 1px solid; */
+}
+.compare-main h1 {
+    margin-top: -60px;
+}
+.our-customer-freesales {
+    padding: 0px 0 50px 0;
+}
+thead.customer-freesales-table tr th {
+    border-bottom: 0px !important;
+}
+.table-bordered td, .table-bordered th {
+     border: 0px solid #dee2e6 !important; 
+}
+th.text-center.sec-middle {
+    /* margin-top: -20px !important; */
+    position: relative;
+    top: -5px;
+}
+.compare-section-second h2 {
+    margin-bottom: -30px;
+}
+.freesales-btn a {
+    text-decoration: none;
+}
+.freesales-btn a:hover {
+    background-color: #090436;
+}
+.css-b62m3t-container {
+    font-size: 14px;
 }

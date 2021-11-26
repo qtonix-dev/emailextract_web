@@ -419,6 +419,7 @@ h6 {
 	font-size: 47px;
 	line-height: 1.15em;
 	color: #090436;
+	text-transform: capitalize;
 }
 
 .title-style-two span {
@@ -459,10 +460,12 @@ h6 {
 	font-size: 47px;
 	line-height: 1.18em;
 	color: #090436;	
+	text-transform: capitalize;
 }
 
 .title-style-three span {
 	position: relative
+	
 }
 
 .title-style-three span img {
@@ -604,24 +607,29 @@ h6 {
 	font-weight: 700;
 	line-height: 1.26em;
 	color: #090436;
+	text-transform: capitalize;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-eight p {
 	font-size: 22px;
 	color: #000;
-	padding-top: 40px;
+	padding-top: 10px;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-eight h6 {
 	font-size: 16px;
 	letter-spacing: 2px;
 	color: rgba(0, 0, 0, .3);
-	padding-bottom: 20px
+	padding-bottom: 20px;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-eight h2 span {
 	display: inline-block;
-	position: relative
+	position: relative;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-eight h2 span img {
@@ -630,7 +638,8 @@ h6 {
 	z-index: -1;
 	top: 50%;
 	left: 0;
-	transform: translateY(-50%)
+	transform: translateY(-50%);
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-nine h6 {
@@ -638,7 +647,8 @@ h6 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #c8c8c8;
-	padding-bottom: 25px
+	padding-bottom: 25px;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-nine h2 {
@@ -646,6 +656,7 @@ h6 {
 	font-weight: 700;
 	line-height: 1.34em;
 	color: #090436;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-nine h2 span {
@@ -659,13 +670,15 @@ h6 {
 	z-index: -1;
 	top: 50%;
 	left: 0;
-	transform: translateY(-50%)
+	transform: translateY(-50%);
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-nine p {
 	font-size: 20px;
 	color: #6a6b72;
-	padding-top: 28px
+	padding-top: 28px;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-ten h6 {
@@ -679,19 +692,22 @@ h6 {
 .title-style-ten h2 {
 	font-size: 68px;
 	font-weight: 500;
-	line-height: 1.27em
+	line-height: 1.27em;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-ten p {
 	font-size: 24px;
 	line-height: 1.91em;
-	color: #000
+	color: #000;
+	font-family: 'Segoe UI'!important;
 }
 
 .title-style-eleven h2 {
 	font-size: 58px;
 	font-weight: 500;
-	line-height: 1.29em
+	line-height: 1.29em;
+	font-family: 'Segoe UI'!important;
 }
 
 body .theme-btn-one {
@@ -801,7 +817,7 @@ body .theme-btn-six {
 	transition: all .3s ease-in-out;
 	background: #0495fd;
 	padding: 0 30px;
-	color: #fff
+	color: #fff;
 }
 
 body .theme-btn-six.lg {
@@ -868,7 +884,8 @@ body .theme-btn-nine:hover {
 	font-size: 17px;
 	color: #515151;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, .07);
-	transition: all .3s ease-in-out
+	transition: all .3s ease-in-out;
+	font-family: 'Segoe UI'!important;
 }
 
 .page-pagination-one li a .fa {
@@ -2399,7 +2416,7 @@ body .theme-btn-nine:hover {
 
 .faq-classic.with-bg {
 	background: #f7faff;
-	padding: 70px 0 250px;
+	padding: 0px 0 250px;
 	z-index: 5;
 	position: relative
 }
@@ -5399,14 +5416,14 @@ body .theme-btn-nine:hover {
 .fancy-text-block-thirteen .text-wrapper p {
 	font-size: 20px;
 	line-height: 1.7em;
-	padding-top: 45px
+	padding-top: 0px;
 }
 
 .fancy-text-block-fourteen .text-wrapper .sub-text {
 	font-size: 20px;
 	line-height: 1.58em;
 	color: #0e0e0e;
-	padding-top: 40px
+	padding-top: 40px;
 }
 
 .fancy-text-block-fourteen .text-wrapper .name {
@@ -5717,7 +5734,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-hero-four.space-fix {
-	padding: 220px 0 320px
+	padding: 100px 0 220px
 }
 
 .fancy-hero-four h6 {
@@ -5729,9 +5746,10 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-hero-four h2 {
-	font-family: 'Rubik';
+	font-family: 'Segoe UI'!important;
 	font-size: 48px;
-	line-height: 1.1em
+	line-height: 1.1em;
+	text-transform:capitalize;
 }
 
 .fancy-hero-four .sub-heading {
@@ -7146,7 +7164,7 @@ body .theme-btn-nine:hover {
 }
 
 .search-filter-form button img {
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 .search-filter-form button:hover {
@@ -7383,7 +7401,7 @@ body .theme-btn-nine:hover {
 .client-feedback-slider-two {
 	background: #f7faff;
 	position: relative;
-	padding: 90px 0 120px;
+	padding: 90px 0 30px;
 	z-index: 5
 }
 
@@ -7399,7 +7417,7 @@ body .theme-btn-nine:hover {
 	position: relative;
 	margin: 0 15px 70px;
 	transition: all .3s ease-in-out;
-	height: 590px;
+	height: 620px;
 }
 
 .client-feedback-slider-two .slick-center .bg-wrapper {
@@ -7506,7 +7524,7 @@ body .theme-btn-nine:hover {
 	right: -7%;
 	top: 50%;
 	transform: translateY(-50%);
-	max-width: 63%
+	max-width: 62.7%
 }
 
 .useable-tools-section-three .logo-wrapper .logo {
@@ -7522,7 +7540,7 @@ body .theme-btn-nine:hover {
 .useable-tools-section-three .logo-wrapper .logo:nth-child(1) {
 	width: 165px;
 	height: 165px;
-	background: #ffe3e3;
+	background: #fbf5fd;
 	animation: jumpTwo 5s infinite linear
 }
 
@@ -7607,14 +7625,16 @@ body .theme-btn-nine:hover {
 	text-transform: uppercase;
 	color: #fff;
 	letter-spacing: 1px;
-	padding-bottom: 13px
+	padding-bottom: 13px;
+	font-family: 'Segoe UI'!important;
 }
 
 .fancy-short-banner-four .title h2 {
-	font-family: gilroy-bold;
-	font-size: 52px;
+	font-family: 'Segoe UI'!important;
+	font-size: 47px;
 	line-height: 1.15em;
 	color: #fff;
+	text-transform: capitalize;
 }
 
 .fancy-short-banner-four .form-wrapper form {
@@ -7669,7 +7689,8 @@ body .theme-btn-nine:hover {
 }
 
 .theme-footer-three {
-	position: relative
+	position: relative;
+	font-family: 'Segoe UI'!important;
 }
 
 .theme-footer-three:before {
@@ -7758,7 +7779,7 @@ body .theme-btn-nine:hover {
 
 .fancy-hero-five {
 	background: #f7faff;
-	padding: 170px 0 130px;
+	padding: 170px 0 100px;
 	position: relative;
 	z-index: 5
 }
@@ -7777,6 +7798,7 @@ body .theme-btn-nine:hover {
     line-height: 1.08em;
     color: #090436;
     font-weight: 600;
+	text-transform: capitalize;
 }
 
 .fancy-hero-five span {
@@ -14382,7 +14404,9 @@ body .theme-btn-nine:hover {
 .feature-sec-head .tab-heading-sec {
     padding: 15px 5px 10px 5px;
 }
-
+.free-demo-form-left h3 {
+	font-size: 22px;
+}
 .fancy-feature-nineteen-new-inner img {
     width: 25%;
     margin: 0 auto;
@@ -14390,4 +14414,41 @@ body .theme-btn-nine:hover {
 }
 p.bg-wrapper-text-sec {
     height: 360px;
+} 
+
+.free-demo-form-list ul {
+    margin-left: -30px;
+}
+.free-demo-form {
+    padding: 90px 0 0 0;
+	background-image: url(../images/Capture2021-1.png);
+	background-repeat: no-repeat;
+	margin: 80px 0 0 0;
+}
+.free-demo-form-left {
+    padding: 100px 50px 100px 105px;
+}
+.free-demo-form-right {
+    padding: 30px 60px;
+}
+.free-demo-form-right {
+    background-color: #fff;
+    /* margin: 20px 0; */
+    box-shadow: 0px 0px 5px 3px rgb(227 227 227 / 71%);
+    -webkit-box-shadow: 0px 0px 5px 3px rgb(227 227 227 / 71%);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(227,227,227,0.71);
+    border-radius: 18px;
+	margin-top:-15px;
+}
+.free-demo-form-right p {
+    font-size: 12px;
+}
+.free-demo-form-right .form-select {
+    font-size: 12px !important;
+    height: 40px;
+    color: #818181;
+}
+.free-demo-form-right h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
 }

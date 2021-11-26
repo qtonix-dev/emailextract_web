@@ -60,7 +60,7 @@ export class niceemailextractor extends Component {
 
         console.log(domainCreate[0])
 
-        axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${domainCreate[this.state.count].domain}`)
+        axios.get(`http://localhost:5004/extract/${domainCreate[this.state.count].domain}`)
         .then(response=>{
           
             var bulkdomainextratdata = this.state.datas;
@@ -105,7 +105,7 @@ export class niceemailextractor extends Component {
             
             // axios.get(`https://e157-103-171-4-131.ngrok.io/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
 
-            axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            axios.get(`http://localhost:5004/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
             .then(response=>{
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= response.data.response;

@@ -14,13 +14,12 @@ import {Animated} from "react-animated-css";
 import Head from 'next/head'
 import Section21 from './components/home/Section21'
 import Section22 from './components/home/Section22'
-// import Section23 from './components/home/Section23'
+
 import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
 import { FaViruses, FaHandshake, FaSearch } from "react-icons/fa"
 import { BiSupport } from "react-icons/bi"
 import { AiOutlineFileProtect } from "react-icons/ai"
 import { MdEditNote } from "react-icons/md"
-import { BsTools } from "react-icons/bs"
  
     //=======SLIDER=======//
     var settings = {
@@ -272,13 +271,13 @@ export class index extends Component {
 
                                         
                                     </div>
-
+                                    <p className="sing-in-call">No Credit Card Required • Cancel Anytime • Get Started In Seconds • <Link href='/login'><a className="font-rubik">Sign in</a></Link>.</p>
                                     {this.state.foundemails==='found'
                                     ?
                                         this.state.emailsdata.length>5
                                         ?
                                         <div className="row">
-                                            <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
+                                            <div className="col-xl-7 col-lg-9 col-md-12 m-auto mb-5">
                                             <div className="findemailshome">
                                                 <h6>
                                                     
@@ -360,15 +359,8 @@ export class index extends Component {
                                     </div>
                                     :<></>
                                     }
+                                                    
                                     
-
-
-                                    
-
-                                    
-
-                                    
-                                    <p className="sing-in-call mb-5">No Credit Card Required • Cancel Anytime • Get Started In Seconds • <Link href='/login'><a className="font-rubik">Sign in</a></Link>.</p>
                                 
                                     </div> {/* /.container */}
 
@@ -386,6 +378,10 @@ export class index extends Component {
                                     <img src="images/shape/75-1.png" alt="" className="shapes shape-eight" />
                                     <img src="images/shape/76-1.png" alt="" className="shapes shape-nine" />
                                     <img src="images/shape/68-1.png" alt="" className="shapes shape-ten" />
+                                </div>
+                                <div className="img-ban-main-new">
+                                    <img src="images/banner-right.png" alt="img-email" className="img-ban-main-new-right" />
+                                    <img src="images/banner-left.png" alt="img-email" className="img-ban-main-new-left" />
                                 </div>
                                 </div>
 
@@ -421,6 +417,9 @@ export class index extends Component {
                             {/* <div className="name font-slab">Sam Gibbs</div> */}
                             </div> {/* /.text-wrapper */}
                             </Animated>
+                            
+                            
+                            
                         </div>
                         </div>
                     </div>
@@ -477,7 +476,7 @@ export class index extends Component {
                                                 Useable Tools
                                             =====================================================
                                             */}
-                                <div className="useable-tools-section-three mt-200 mb-200 md-mt-100 md-mb-80">
+                                <div className="useable-tools-section-three mt-50 mb-140 md-mt-50 md-mb-80">
                                     <div className="container">
                                     <div className="row">
                                         <div className="col-lg-6">
@@ -493,13 +492,13 @@ export class index extends Component {
                                     </div>
                                     </div> {/* /.container */}
                                     <div className="logo-wrapper d-flex flex-wrap justify-content-center align-items-center">
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-32.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-33.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-34.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-35.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-36.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-37.png" alt="" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/logo/logo-38.png" alt="" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center w-10"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/Adecco.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/icon-home-img1.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/icon-home-travel.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/prisa.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></div>
                                     </div> {/* /.logo-wrapper */}
                                 </div> {/* /.useable-tools-section-three */}
                                 
@@ -522,12 +521,12 @@ export class index extends Component {
                                     Fancy Feature Nineteen
                                 ============================================== 
                                 */}
-                    <div className="fancy-feature-nineteen mt-100 md-mt-100" id="effect">
+                    <div className="fancy-feature-nineteen mt-70 md-mt-70" id="effect">
                     <div className="container">
                         <div className="row">
                         <div className="col-xl-9 col-lg-11 m-auto" data-aos="fade-up" data-aos-duration={1200}>
-                            <div className="title-style-eight text-center mb-80 md-mb-40">
-                            <h2>We are enterprise-ready</h2>
+                            <div className="title-style-eight text-center mb-50 md-mb-40">
+                            <h2>Why Choose Us</h2>
                             <p>Explore advanced video editing features that only professionals have access to!</p>
                             </div>
                         </div>
@@ -535,7 +534,7 @@ export class index extends Component {
                         <div className="row">
                         
                             <Row>
-                                            <Col>
+                                            <Col sm={4}>
                                                 <div className="fancy-feature-nineteen-new-inner text-center">
                                                     {/* <img src="images/availability1.png" alt="img-email" /> */}
                                                     <AiOutlineFileProtect />
@@ -545,7 +544,7 @@ export class index extends Component {
                                                 </div>
                                             </Col>
                                             
-                                            <Col>
+                                            <Col sm={4}>
                                                 <div className="fancy-feature-nineteen-new-inner text-center">
                                                     {/* <img src="images/eu-gdpr-compliant1.png" alt="img-email" /> */}
                                                     <BiSupport />
@@ -553,7 +552,7 @@ export class index extends Component {
                                                     <p>Contact us anytime, 24 hours * 7 days, to get the most detailed answers to any of your questions.</p>
                                                 </div>
                                             </Col>
-                                            <Col>
+                                            <Col sm={4}>
                                                 <div className="fancy-feature-nineteen-new-inner text-center">
                                                     {/* <img src="images/working-with-enterprises1.png" alt="img-email" /> */}
                                                     <FaSearch />
@@ -562,8 +561,8 @@ export class index extends Component {
                                                 </div>
                                             </Col>
                                         </Row>
-                                        <Row className="mt-5">
-                                            <Col>
+                                        <Row className="mt-4">
+                                            <Col sm={4}>
                                                 <div className="fancy-feature-nineteen-new-inner text-center">
                                                     {/* <img src="images/integration-with-all-major-ats1.png" alt="img-email" /> */}
                                                     <FaViruses />
@@ -571,7 +570,7 @@ export class index extends Component {
                                                     <p>Whenever you download and install our tool, we guarantee the safety and security of your PC.</p>
                                                 </div>
                                             </Col>
-                                            <Col>
+                                            <Col sm={4}>
                                                 <div className="fancy-feature-nineteen-new-inner text-center">
                                                     {/* <img src="images/secured1.png" alt="img-email" /> */}
                                                     <MdEditNote />
@@ -579,11 +578,11 @@ export class index extends Component {
                                                     <p>Though we are not a member of EU member states, yet all our products and services are GDPR compliant.</p>
                                                 </div>
                                             </Col>
-                                            <Col>
+                                            <Col sm={4}>
                                                 <div className="fancy-feature-nineteen-new-inner text-center">
                                                     {/* <img src="images/enabling-unbiased-hiring1.png" alt="img-email" /> */}
                                                     <FaHandshake />
-                                                    <h5>Strongly recommended by independent sources</h5>
+                                                    <h5>Highly recommended</h5>
                                                     <p>All of our products are highly recommended by the professionals of small to large organizations.</p>
                                                 </div>
                                             </Col>
@@ -602,7 +601,7 @@ export class index extends Component {
                                                 Client Feedback Slider Two
                                             =====================================================
                                             */}
-                                <div className="client-feedback-slider-two mt-180 md-mt-100">
+                                <div className="client-feedback-slider-two mt-70 md-mt-70">
                                     <img src="images/shape/78-1.png" alt="" className="shapes shape-one" />
                                     <img src="images/shape/79-1.png" alt="" className="shapes shape-two" />
                                     <img src="images/shape/80-1.png" alt="" className="shapes shape-three" />
@@ -612,12 +611,11 @@ export class index extends Component {
                                     <img src="images/shape/84-1.png" alt="" className="shapes shape-seven" />
                                     <img src="images/shape/85-1.png" alt="" className="shapes shape-eight" />
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-100 md-mb-60">
+                                    <div className="title-style-four text-center mb-60 md-mb-60">
                                         <div className="row">
                                         <div className="col-lg-7 col-md-9 m-auto">
                                             <h6>Feedback</h6>
-                                            <h2>What’s Our Client Say
-                                            <span>About Us <img src="images/shape/line-shape-2.svg" alt="" /></span>
+                                            <h2>What Our Client Say&nbsp;<span>About Us <img src="images/shape/line-shape-2.svg" alt="" /></span>
                                             </h2>
                                         </div>
                                         </div>
@@ -631,7 +629,7 @@ export class index extends Component {
                                     <Slider {...settings}>
                                     <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/logo/logo-9.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/bitcanny.png" alt="" className="logo" />
                                             <p className="bg-wrapper-text-sec">Absolutely love it! I would like to say it is a brilliant tool for marketers like me. 
                                                 I have tried a lot of other ones but only found lots of problems, bugs, incorrect harvesting, 
                                                 constant blockages by servers. Email Extract Online is well programmed and it gets what you 
@@ -645,7 +643,7 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/logo/logo-10.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/Adecco.png" alt="" className="logo" />
                                             <p className="bg-wrapper-text-sec">A huge thank you to the team at Email Extract Online. I bought this tool 6 months ago and even after all this time when I reach out for any help they are brilliant. So many online extracting products promise the world and then 
                                                 fail to deliver - this is a robust tool and a great bunch of people behind it. Highly recommended.</p>
                                                 <div className="text-section-testimonial">
@@ -656,7 +654,7 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/logo/logo-9.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/icon-home-img1.png" alt="" className="logo" />
                                             <p className="bg-wrapper-text-sec">My name is David, I tried Email Extract Online and Email Bulk Finder and found both of them to be very useful. The truth is unless you try this tool, you will not know what you are missing out on. I recommend the Email Extract Online tool to small and large businesses - it is profitable 
                                                 especially when you want to develop reasonable contacts and good relationships with others.</p>
                                             <div className="text-section-testimonial">
@@ -668,7 +666,7 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/logo/logo-10.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/icon-home-travel.png" alt="" className="logo" />
                                             <p className="bg-wrapper-text-sec">Email Extract Online is very good and many thanks to the developers for making such an inexpensive 
                                                 tool. Very frankly, after using this tool, I started seeing a big increase in my sales. In the past, 
                                                 I tried many other resources as well as other email harvesters to boost my sales but nothing was as 
@@ -682,7 +680,7 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/logo/logo-10.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/trips-travel-logo.png" alt="" className="logo" />
                                             <p className="bg-wrapper-text-sec">I was looking for the best solution to extract emails of some prospective clients to promote my services. Finally, I found it: Email Extract Online. 
                                                 Today I am really pleased with the way this tool works and the benefits, I get from email marketing.</p>
                                                 <div className="text-section-testimonial">
@@ -693,7 +691,7 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/logo/logo-10.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/prisa.png" alt="" className="logo" />
                                             <p className="bg-wrapper-text-sec">I bought the Email Extract Online some time ago, it is so good that I felt like sharing. Email Extract Online is a small investment that can be made by any business but in a short period of time, it can really bring profits for your business. It helps to extract emails with superior potential 
                                                 for reaching good customers. This software can be the best asset for any business. Highly recommended!</p>
                                                 <div className="text-section-testimonial">
@@ -732,7 +730,7 @@ export class index extends Component {
                                     <img src="images/shape/90-1.png" alt="" className="shapes shape-five" />
                                     <img src="images/shape/91-1.png" alt="" className="shapes shape-six" />
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-100 md-mb-70">
+                                    <div className="title-style-four text-center mb-60 md-mb-70">
                                         <div className="row">
                                         <div className="col-lg-7 m-auto">
                                             <h6>FAQ’s</h6>
