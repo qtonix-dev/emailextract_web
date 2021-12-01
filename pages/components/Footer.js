@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-import { FaPhoneAlt, FaEnvelopeOpenText, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelopeOpenText, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import $ from "jquery";
-import SimpleReactValidator from 'simple-react-validator';
+import SimpleReactValidator from 'simple-react-validator'
+
 
 export default class Footer extends Component {
 
@@ -10,9 +11,11 @@ export default class Footer extends Component {
         super(props)
         this.state={
           formLoading:false
+          
         }
         this.validator = new SimpleReactValidator();
         this.handleChange=this.handleChange.bind(this);
+        
       }
 
       handleChange(e){
@@ -32,6 +35,10 @@ export default class Footer extends Component {
           $("#myForm :input").prop('readonly', false);
         }
       }
+
+      
+      
+      
     render() {
         return (
             <>
@@ -47,7 +54,7 @@ export default class Footer extends Component {
                                 <div className="col-lg-6">
                                     <div className="title">
                                     <h6>Subscribe Now</h6>
-                                    <h2>Subscriber to our Newsletter</h2>
+                                    <h2>Subscribe to our Newsletter</h2>
                                     </div> {/* /.title-style-one */}
                                 </div>
                                 <div className="col-lg-6">
@@ -97,16 +104,20 @@ export default class Footer extends Component {
                                 <div className="col-lg-3 col-md-4 address-list" >
                                     <h5 className="footer-title">Contact Info</h5>
                                     <div className="contact-info">
-                                        <p className="font-rubik address"><FaMapMarkerAlt /> &nbsp;Pahala, Bhubaneswar, Odisha,  India</p>
+                                        
                                         <p className="font-rubik"><FaEnvelopeOpenText /> &nbsp;info@qtonix.com</p>
-                                        <p className="font-rubik"><FaPhoneAlt /> &nbsp;+000 000 0000</p>
+                                        <p className="font-rubik"><FaPhoneAlt /> &nbsp;+315 510 5120</p>
+                                        <p>
+                                        <ul className="social-icon d-inline pt-15">
+                                            <li><a href="#"><FaFacebookF /></a></li>
+                                            <li><a href="#"><FaTwitter /></a></li>
+                                            <li><a href="#"><FaInstagram /></a></li>
+                                            <li><a href="#"><FaLinkedinIn /></a></li>
+                                        </ul>
+                                        </p>
                                     </div>
 
-                                    <ul className="social-icon d-flex pt-15">
-                                    <li><a href="#"><i className="fa fa-facebook" /></a></li>
-                                    <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                                    <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-                                    </ul>
+                                    
                                 </div> {/* /.footer-list */}
                                 </div> {/* /.row */}
                             </div> {/* /.container */}
@@ -131,6 +142,8 @@ export default class Footer extends Component {
                         <button className="scroll-top">
                             <i className="fa fa-angle-up" aria-hidden="true" />
                         </button> 
+                        
+                        
             </>
         )
     }

@@ -6,6 +6,8 @@ import countryList from 'react-select-country-list'
 import Select from 'react-select'
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css"
 
 export default function Freedemo() {
 
@@ -46,22 +48,24 @@ export default function Freedemo() {
             }
 
     //   console.log(freedemo);
-      
+    const [startDate, setStartDate] = useState(new Date());
     return (
+
         <Container>
             <div className="free-demo-form">
                             <Row className="mb-5">
                                 <Col sm={6}>
                                     <div className="free-demo-form-left">
-                                        <h3>Your Personal Webdemo</h3>
-                                        <p>Get to know Personio! In just 30 minutes, 
-                                            our product experts will guide you through the solution and answer any questions you have.</p>
+                                        {/* <h3>Your Personal Webdemo</h3> */}
+                                        {/* <p>Get to know Personio! In just 30 minutes, 
+                                            our product experts will guide you through the solution and answer any questions you have.</p> */}
                                         <div className="free-demo-form-list">
-                                            <ul>
+                                            {/* <ul>
                                                 <li><FaCheck /> &nbsp;Introduction to all product features</li>
                                                 <li><FaCheck /> &nbsp;Introduction to all product features</li>
                                                 <li><FaCheck /> &nbsp;Introduction to all product features</li>
-                                            </ul>
+                                            </ul> */}
+                                            <img src="images/people-standing.png" alt="img-email" />
                                         </div>
                                     </div>
                                 </Col>
@@ -102,8 +106,8 @@ export default function Freedemo() {
                                             </Col>
                                             </Row>
                                             <Row>
-                                            <Col sm={12} className="mb-2">
-                                                    <Form.Control className="mb-2" id="inlineFormInput" placeholder="Company Size" 
+                                            <Col sm={12} className="mb-2 cSize">
+                                                    <Form.Control id="inlineFormInput" placeholder="Company Size" 
                                                     name="csize" 
                                                     defaultValue={intialValues.companysize} 
                                                     {...register("csize", {validate: (value) => value !== ""})}
@@ -129,7 +133,7 @@ export default function Freedemo() {
                                             </Row>
                                             <Row>
                                             <Col sm={12}>
-                                                <Form.Control placeholder="Business Email" 
+                                                <Form.Control placeholder="Business Email" className="bemail"
                                                 name="email"
                                                 defaultValue={intialValues.email} 
                                                 {...register("email", {validate: (value) => value !== ""})}
@@ -138,7 +142,14 @@ export default function Freedemo() {
                                                 {/* <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6> */}
                                             </Col>
                                             </Row>
-
+                                            <Row className="mb-2">
+                                                <Col sm={6}>
+                                                    <DatePicker className="form-control" selected={startDate} onChange={(date) => setStartDate(date)} />
+                                                </Col>
+                                                <Col sm={6}>
+                                                <Form.Control type="time" id="appt" name="appt" min="09:00" max="18:00" className="form-control" />
+                                                </Col>
+                                            </Row>
                                             <Row className="g-2 mt-1">
                                             {/* <Col md={3}>
                                                 
@@ -174,7 +185,7 @@ export default function Freedemo() {
                                             </Row>
                                             <Row>
                                                 <Col sm={12}>
-                                                    <p>We will only contact you to book an 
+                                                    <p className="mt-2">We will only contact you to book an 
                                                         appoint that works for you and understand your specific requirements.</p>
                                                 </Col>
                                             </Row>

@@ -170,22 +170,22 @@ export class compare extends Component {
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 px-2 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/ckgh0vvmb07syhug1bz4b6e9p-provide-unified-customer-experiences.svg" alt="email" />
-                                        <h4>A single, comprehensive solution</h4>
-                                        <p>Freshsales is not a bundle of standalone products. Instead, you get a comprehensive all-in-one solution for sales and marketing teams. </p>
+                                        <h4>A Comprehensive and Easy-to-use Solution</h4>
+                                        <p>Email Extract Online is not a bundle of complex products. Instead, you get a comprehensive and easy-to-use solution for sales and marketing teams.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 mb-5 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjz2fxoil05p9qnfzuh058xrc-support.full.png" alt="email" />
-                                        <h4>Reliable support</h4>
-                                        <p>Get 24/5 free support over the phone, chat, or email from our in-house product experts, regardless of your subscription plan.</p>
+                                        <h4>Reliable <br />support</h4>
+                                        <p>Get 24/7 free support over the phone, chat, or email from our in-house knowledgeable product experts, regardless of your subscription plan.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 mb-5 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjwbrlayh00itsfg065hbnxex-easy-to-setup.svg" alt="email" />
-                                        <h4>Highly scalable</h4>
-                                        <p>Start with an entry plan and select a higher plan seamlessly as your business grows. </p>
+                                        <h4>Highly<br />scalable</h4>
+                                        <p>Explore all the tools you need to scale your business. Start with an entry plan and select a higher plan seamlessly as your business grows. </p>
                                     </div>
                                 </Col>
                                 
@@ -255,35 +255,35 @@ export class compare extends Component {
                                 <tbody className="customer-freesales-table-tbody">
                                     <tr>
                                     <td className="sec-left">Free trial</td>
-                                    <td className="text-center"></td>
+                                    <td className="text-center">50 search/mo</td>
                                     <td className="text-center">25 requests/mo</td>
                                     <td className="text-center"></td>
                                     <td className="text-center">90 verified emails</td>
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Most popular plan price</td>
-                                    <td className="text-center"></td>
+                                    <td className="text-center">$49 per 200k emails</td>
                                     <td className="text-center">$399 per 30,000 emails</td>
                                     <td className="text-center">$149 per 1,000 credits</td>
                                     <td className="text-center">$149 per 10,000 emails</td>
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Price per email</td>
-                                    <td className="text-center"></td>
+                                    <td className="text-center">0.00024</td>
                                     <td className="text-center">0.0133</td>
                                     <td className="text-center">0.149</td>
                                     <td className="text-center">$0.01 </td>
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Available as</td>
-                                    <td className="text-center"></td>
+                                    <td className="text-center">Web app, Mobile app</td>
                                     <td className="text-center">Web app, Chrome extension</td>
                                     <td className="text-center">Web app, Chrome extension</td>
                                     <td className="text-center">Web app</td>
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Rating in Chrome Web Store</td>
-                                    <td className="text-center"></td>
+                                    <td className="text-center">4.7</td>
                                     <td className="text-center">4.7</td>
                                     <td className="text-center">4.3</td>
                                     <td className="text-center sec-hifen"><FaMinus /></td>
@@ -297,7 +297,7 @@ export class compare extends Component {
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Data export</td>
-                                    <td className="text-center"></td>
+                                    <td className="text-center">CSV, TXT</td>
                                     <td className="text-center">CSV, TXT</td>
                                     <td className="text-center">CSV</td>
                                     <td className="text-center">CSV</td>
@@ -324,9 +324,9 @@ export class compare extends Component {
                             <Row className="py-5">
                                 <Col sm={5} className="mt-3">
                                     <div className="alternative-section-inner">
-                                        <h3>Unified customer experience</h3>
-                                        <p>EMAIL EXTRACT is for all sized businesses- small, medium and large those want to generate email lists from different sources. It can easily clean out active email addresses from any text, content or websites, and compile all email addresses into one user-friendly list. A powerful and lightweight tool especially designed to 
-                                            extract active email addresses. Clear and structure your email addresses for 100% delivery!</p>
+                                        <h3>Ease of use</h3>
+                                        <p>We understand exactly how frustrating it is when a tool is hard to navigate. Therefore, our team of experienced and knowledgeable engineers and designers has built an intuitive, simple and visually compelling interface that can be used by the users to achieve specified goals with 
+                                            effectiveness, efficiency, and satisfaction. Rest assured, our interface is engaging and satisfying to use.</p>
                             
                                     </div>
                                 </Col>
@@ -340,9 +340,9 @@ export class compare extends Component {
                                 </Col>
                                 <Col sm={5} className="mt-3">
                                     <div className="alternative-section-inner">
-                                        <h3>Telephony</h3>
-                                        <p>Once you add the URLs, EMAIL EXTRACT will start harvesting hundreds of thousands of relevant active email addresses from them, 
-                                            and will present to you. The tool will surely make your work even much easier than before!  </p>
+                                        <h3>24/7 support</h3>
+                                        <p>Having a competent, reliable support team that you can depend on at any hour is a game-changer. Email Extract Online offers dependable, on-demand support options including 24/7 technical and remote support to users. Our knowledgeable support team is here for you at any time, regardless of 
+                                            the plan, you’re on. No matter what obstacles you encounter, you’ll always find help with us by your side.</p>
                                     </div>
                                 </Col>
                             </Row>
@@ -350,10 +350,11 @@ export class compare extends Component {
                                 
                                 <Col sm={5} className="mt-3">
                                     <div className="alternative-section-inner">
-                                        <h3>Get AI-powered insights</h3>
-                                        <p>The tool really works as magic. It will greatly enhance the efficiency of your email marketing campaign. It will save hours to get prospects email addresses from the Internet. Simply insert your source text, like web pages, text, and data files etc. that includes the emails in provided text-box. 
-                                            Now, click the EXTRACT BUTTON, and you will get a clean list of active email addresses.</p>
-                                
+                                        <h3>Cheaper</h3>
+                                        <p>With the plans generally being substantially cheaper than the competitors, Email Extract Online is a great choice for 
+                                            businesses of any size that are looking for an affordable all-in-one solution to easily find prospects.</p>
+                                        <p>The free-forever tier is ideal for very small businesses, as well as those wanting to give it a thorough test run. Email Extract Online is also more suitable 
+                                            for companies that don’t have a dedicated sales department, since it’s affordable and easier to use.</p>
                                     </div>
                                 </Col>
                                 <Col sm={7} className="mt-3">
@@ -361,7 +362,7 @@ export class compare extends Component {
                                 </Col>
                             </Row>
                             <div className="better-alternative">
-                                <h3>Think Email Extract Online is a better alternative ? Give it a spin today.</h3>
+                                {/* <h3>Think Email Extract Online is a better alternative ? Give it a spin today.</h3> */}
                                 <a>Try Email Extract Online for free</a>
                             </div>
                         </section>
@@ -395,12 +396,12 @@ export class compare extends Component {
                         <Container>
                             <h3 className="text-center">Trusted by businesses worldwide</h3>
                             <ul>
-                                <li><img src="http://localhost:3000/images/iconsmain/trips-travel-logo.png" alt="img-responsive" /></li>
-                                <li><img src="http://localhost:3000/images/iconsmain/Adecco.png" alt="img-responsive" /></li>
-                                <li><img src="http://localhost:3000/images/iconsmain/bitcanny.png" alt="img-responsive" /></li>
-                                <li><img src="http://localhost:3000/images/iconsmain/icon-home-travel.png" alt="img-responsive" /></li>
-                                <li><img src="http://localhost:3000/images/iconsmain/prisa.png" alt="img-responsive" /></li>
-                                <li><img src="http://localhost:3000/images/iconsmain/icon-home-img1.png" alt="img-responsive" /></li>
+                                <li><img src="https://sharkprocessing.com/wp-content/uploads/2016/03/ipaydna.jpg" alt="img-responsive" /></li>
+                                <li><img src="https://c2rio.travel/src/imgs/marca-c2rio.svg" alt="img-responsive" /></li>
+                                <li><img src="https://miro.medium.com/max/886/1*B3MHHJQNh4DyAi3pg6k18g.png" alt="img-responsive" /></li>
+                                <li><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Ekwb_1.png" alt="img-responsive" /></li>
+                                {/* <li><img src="images/iconsmain/prisa.png" alt="img-responsive" /></li>
+                                <li><img src="images/iconsmain/icon-home-img1.png" alt="img-responsive" /></li> */}
                             </ul>
                         </Container>
                         </section>

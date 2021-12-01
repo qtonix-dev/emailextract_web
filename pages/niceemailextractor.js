@@ -131,11 +131,7 @@ export class niceemailextractor extends Component {
                 })
                 this.fetchRecord();
             })
-
-
         }
-
-
     }
 
 

@@ -247,10 +247,10 @@ form#myForm label {
 .compare-second p {
     display: block;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
     font-family: "Segoe UI";
-    padding: 5px 10px;
+    padding: 5px 0px;
     /* line-height: 25px; */
     /* font-weight: 500;*/
 }
@@ -662,14 +662,16 @@ section.faq-row.styles_faq-row__2YF3c {
     text-transform: capitalize;
     padding: 15px 40px;
     text-align: center;
+    font-family: 'Segoe UI'!important;
 }
 .compare-second img {
     margin: 10px auto;
 }
 .compare-second h4 {
     text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Segoe UI'!important;
 }
 .compare-second img {
     height: 90px;
@@ -726,7 +728,7 @@ section.faq-row.styles_faq-row__2YF3c {
     padding: 0 0 50px 0;
 }
 .alternative-section {
-    padding: 10px 0 50px 0;
+    padding: 10px 0 0px 0;
 }
 .alternative-section h3 {
     text-align: center;
@@ -925,4 +927,78 @@ th.text-center.sec-middle {
 }
 .css-b62m3t-container {
     font-size: 14px;
+}
+.free-demo-form-left p {
+    font-size: 20px;
+}
+.free-demo-form-list li {
+    font-size: 20px;
+}
+.cSize {
+    margin-bottom: 0px !important;
+}
+.core-values h6 {
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-family: "Segoe UI" !important;
+    text-transform: capitalize;
+}
+.core-values p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: "Segoe UI" !important;
+}
+.alternative-section-inner p {
+    font-size: 20px;
+    font-family: "Segoe UI" !important;
+
+}
+section.faq-row p {
+    font-size: 19px;
+}
+.title-abt-mission h6 {
+    font-size: 47px;
+    font-family: "Segoe UI" !important;
+    margin-bottom:20px;
+}
+section.businesses-world li {
+    display: inline-block;
+    width: 17%;
+}
+h1.heading.font-terms {
+    margin-top: -50px;
+}
+
+.core-values img {
+    // text-align: center;
+    margin: 0 auto;
+    height: 110px;
+    // width: 100px;
+    padding-bottom: 20px;
+}
+ul.social-icon li {
+    display: inline-block;
+    /* color: #ccc !important; */
+}
+ul.social-icon li a {
+    color: #fff;
+    font-size: 16px;
+    background-color: #090436;
+    margin: 0px 3px;
+    padding: 5px 6px;
+    border-radius: 50%;
+}
+ul.social-icon li a:hover {
+    color: #feba03;
+}
+.socialMedia {
+    margin-top: -15px;
+    margin-left: -25px;
+}
+.react-datepicker__input-container input {
+    color: #686868 !important;
+}
+.core-values p {
+    padding: 0px 20px;
 }

@@ -479,7 +479,8 @@ h6 {
 	/* font-family: Roboto, sans-serif; */
 	font-size: 20px;
 	color: rgba(0, 0, 0, .35);
-	padding-bottom: 15px
+	padding-bottom: 15px;
+	padding-top: 50px;
 }
 
 .title-style-four h2 {
@@ -604,7 +605,7 @@ h6 {
 
 .title-style-eight h2 {
 	font-size: 47px;
-	font-weight: 700;
+	/* font-weight: 700; */
 	line-height: 1.26em;
 	color: #090436;
 	text-transform: capitalize;
@@ -2416,7 +2417,7 @@ body .theme-btn-nine:hover {
 
 .faq-classic.with-bg {
 	background: #f7faff;
-	padding: 0px 0 250px;
+	padding: 0px 0 200px;
 	z-index: 5;
 	position: relative
 }
@@ -6084,13 +6085,13 @@ body .theme-btn-nine:hover {
 
 .contact-style-two .contact-info-wrapper .address-info ul li a {
 	font-size: 22px;
-	margin: 5px 15px;
+	margin: 5px 10px;
 	color: rgba(0, 0, 0, .2);
 	transition: all .2s ease-in-out
 }
 
 .contact-style-two .contact-info-wrapper .address-info ul li a:hover {
-	color: var(--red-light)
+	color: #0495fd;
 }
 
 .form-style-classic .input-group-meta {
@@ -7432,7 +7433,7 @@ body .theme-btn-nine:hover {
 }
 
 .client-feedback-slider-two .bg-wrapper .logo {
-	height: 40px
+	height: 50px
 }
 
 .client-feedback-slider-two .bg-wrapper p {
@@ -7719,7 +7720,8 @@ body .theme-btn-nine:hover {
 	font-size: 16px;
 	line-height: 40px;
 	color: #727272;
-	transition: all .3s ease-in-out
+	transition: all .3s ease-in-out;
+	font-family: "Segoe UI";
 }
 
 .theme-footer-three .top-footer .footer-list ul li a:hover {
@@ -7743,15 +7745,15 @@ body .theme-btn-nine:hover {
 	text-decoration: underline
 }
 
-.theme-footer-three .top-footer .address-list .social-icon a {
+/* .theme-footer-three .top-footer .address-list .social-icon a {
 	font-size: 22px;
 	margin-right: 20px;
 	color: rgba(0, 0, 0, .35)
-}
+} */
 
-.theme-footer-three .top-footer .address-list .social-icon a:hover {
+/* .theme-footer-three .top-footer .address-list .social-icon a:hover {
 	color: #000
-}
+} */
 
 .theme-footer-three .bottom-footer-content ul li {
 	display: inline-block
@@ -7827,7 +7829,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-hero-five .img-meta {
-	bottom: -250px;
+	bottom: -200px;
 	right: 33px;
 	position: absolute
 }
@@ -13750,7 +13752,7 @@ body .theme-btn-nine:hover {
 }
 
 .terms_and_policy {
-	padding: 120px 0;
+	padding: 80px 0;
 	border-bottom: 1px solid #ececec
 }
 
@@ -14426,7 +14428,7 @@ p.bg-wrapper-text-sec {
 	margin: 80px 0 0 0;
 }
 .free-demo-form-left {
-    padding: 100px 50px 100px 105px;
+    padding: 80px 50px 80px 90px;
 }
 .free-demo-form-right {
     padding: 30px 60px;
@@ -14440,9 +14442,9 @@ p.bg-wrapper-text-sec {
     border-radius: 18px;
 	margin-top:-15px;
 }
-.free-demo-form-right p {
+/* .free-demo-form-right p {
     font-size: 12px;
-}
+} */
 .free-demo-form-right .form-select {
     font-size: 12px !important;
     height: 40px;
@@ -14451,4 +14453,7 @@ p.bg-wrapper-text-sec {
 .free-demo-form-right h3 {
     font-size: 22px;
     margin-bottom: 15px;
+}
+.phoneno-input.PhoneInput {
+    margin-top: -8px;
 }

@@ -34,7 +34,9 @@ export default class about extends Component {
               <span>Who We are <img src="images/shape/line-shape-11.svg" alt="img-response" /></span>
             </h1>
             <p className="sub-heading">Conceptualized in mid-2021, Email Extract Online helps to hunt down professional email addresses from any website in seconds. 
-            We link with the people that matter the most for your business.</p>
+            We link the people with you that matter the most for your business. Built by an experienced and knowledgeable team of engineers and designers, the Email Extract Online team is only focused on providing the best user experience possible through its simple, self-service products in order to identify future prospects with accurate and accessible data. In other words, we have built the new data backbone for modern sales and 
+            marketing teams across the world, thereby helping them connect with future customers in a few clicks.
+            </p>
           </div>
           <div className="col-lg-5 col-md-4">
             <img src="images/media/img_52.png" alt="" className="img-meta" />
@@ -52,23 +54,25 @@ export default class about extends Component {
 				Fancy Text Block Thirteen
 			=====================================================
 			*/}
-<div className="fancy-text-block-thirteen pt-180 md-pt-100">
+<div className="fancy-text-block-thirteen pt-130 md-pt-100">
   <div className="container">
     <div className="row align-items-center pt-5">
       <div className="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
         <div className="text-wrapper text-mission-sec">
           <div className="title-abt-mission">
-            <h6 className="title-style-three">Our Mission</h6>
+          <h6>
+              <span>Our Mission</span>
+            </h6>
             <p>Our mission is to provide every company with a 360-degree view of their client relationships and 
             opportunities. We believe businesses can grow with ethics, and triumph with consciousness. Herein, we 
             have aptly created an ecosystem unifying software, education, and society to assist businesses to grow 
             better each day. Thus, we empower the companies to unleash their effective marketing strategies at each 
             phase, while driving their ability to make the mark.</p>
           </div>
-          <div className="title-abt-mission">
+          {/* <div className="title-abt-mission">
           <h6 className="title-style-three">Our Vision </h6>
           <p>Our vision is to optimize the overall revenue potential of every individual.</p>
-          </div>
+          </div> */}
           
           {/* /.title-style-two */}
           
@@ -167,41 +171,47 @@ export default class about extends Component {
         <Row className="my-5 core-values-bottom-1">
             <Col sm={4}>
               <div className="core-values mt-3 border-value">
-                <h6>We Embrace Everyone</h6>
-                <p>We embrace all cultures, races, ethnicities, genders, ages, perspectives, and ways of thinking. 
+              <img src="images/embrace.png" alt="img-value" />
+                <h6 className="text-center">We Embrace Everyone</h6>
+                <p className="text-center">We embrace all cultures, races, ethnicities, genders, ages, perspectives, and ways of thinking. 
                 Our connection inspires the way we care for each other and our clients. </p>
               </div>
             </Col>
             <Col sm={4}>
               <div className="core-values mt-3 border-value">
-                <h6>Do The Right Thing</h6>
-                <p>We are appreciated and admired for our commitment to honesty, trust, and transparency. We do the right thing- even when no one is watching.</p>
+                <img src="images/right.png" alt="img-value" />
+                <h6 className="text-center">Do The Right Thing</h6>
+                <p className="text-center">We are appreciated and admired for our commitment to honesty, trust, and transparency. We do the right thing- even when no one is watching.</p>
               </div>
             </Col>
             <Col sm={4}>
               <div className="core-values mt-3">
-                <h6>Transparency by default</h6>
-                <p>We believe in a more visible and transparent world. We always promote this value in our company and also with our products and services.  </p>
+                <img src="images/transparency.png" alt="img-value" />
+                <h6 className="text-center">Transparency by default</h6>
+                <p className="text-center">We believe in a more visible and transparent world. We always promote this value in our company and also with our products and services.  </p>
               </div>
             </Col>
           </Row>
           <Row className="core-values-bottom border-top-2">
             <Col sm={4}>
               <div className="core-values mt-3 border-value">
-                <h6>Think Bigger</h6>
-                <p>At Email Extract, we think big by taking all the concepts, aspirations, dreams, and goals of our potential customers to develop an effective action plan and turn them into reality.  </p>
+                <img src="images/bigger.png" alt="img-value" />
+                <h6 className="text-center">Think Bigger</h6>
+                <p className="text-center">At Email Extract, we think big by taking all the concepts, aspirations, dreams, and goals of our potential customers to develop an effective action plan and turn them into reality.  </p>
               </div>
             </Col>
             <Col sm={4}>
               <div className="core-values mt-3 border-value">
-                <h6>Challenge Everything</h6>
-                <p>As being a game-changer in email extraction, we do not take the easy way out. Rather, we create new paths and set records that have never been achieved beforehand.</p>
+                <img src="images/challenge.png" alt="img-value" />
+                <h6 className="text-center">Challenge Everything</h6>
+                <p className="text-center">As being a game-changer in email extraction, we do not take the easy way out. Rather, we create new paths and set records that have never been achieved beforehand.</p>
               </div>
             </Col>
             <Col sm={4}>
               <div className="core-values mt-3">
-                <h6>Care for our users’ experience</h6>
-                <p>For each of our professional engagements, we take the experience of our users in a dignified manner & deep sincerity & do not let questions remain unresolved.</p>
+                <img src="images/user.png" alt="img-value" />
+                <h6 className="text-center">Care for our user experience</h6>
+                <p className="text-center">For each of our professional engagements, we take the experience of our users in a dignified manner & deep sincerity & do not let questions remain unresolved.</p>
               </div>
             </Col>
         </Row>
@@ -271,49 +281,49 @@ export default class about extends Component {
       <div className="row">
         <div className="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200}>
           <div className="img-box bx-a">
-            <a href="#"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></a>
+            <a href="#"><img src="images/ipaydna.png" alt="emailicon" className="w-75" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={50}>
           <div className="img-box bx-b">
-            <a href="#"><img src="images/iconsmain/Adecco.png" alt="emailicon" /></a>
+            <a href="#"><img src="images/iconsmain/Adecco.png" alt="emailicon" className="w-75" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={100}>
           <div className="img-box bx-c">
-            <a href="#"><img src="images/iconsmain/icon-home-img1.png" alt="emailicon" /></a>
+            <a href="#"><img src="images/ekwb.png" alt="emailicon" className="w-75" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={150}>
           <div className="img-box bx-d">
-            <a href="#"><img src="images/iconsmain/prisa.png" alt="emailicon" /></a>
+            <a href="#"><img src="images/c2.png" alt="emailicon" className="w-75" /></a>
           </div> {/* /.img-box */}
         </div>
         <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={200}>
           <div className="img-box bx-e">
-            <a href="#"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" /></a>
+            <a href="#"><img src="images/cybernetm.png" alt="emailicon" className="w-75" /></a>
           </div> {/* /.img-box */}
         </div>
-        <div className="col-xl-4 col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={250}>
+        {/* <div className="col-xl-4 col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={250}>
           <div className="img-box bx-f">
-            <a href="#"><img src="images/iconsmain/icon-home-travel.png" alt="emailicon" /></a>
-          </div> {/* /.img-box */}
-        </div>
-        <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={300}>
+            <a href="#"><img src="images/c2.png" alt="emailicon" /></a>
+          </div> 
+        </div> */}
+        {/* <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={300}>
           <div className="img-box bx-g">
             <a href="#"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" /></a>
-          </div> {/* /.img-box */}
+          </div> 
         </div>
         <div className="col-xl-3 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={350}>
           <div className="img-box bx-h">
             <a href="#"><img src="images/iconsmain/icon-home-img1.png" alt="emailicon" /></a>
-          </div> {/* /.img-box */}
+          </div> 
         </div>
         <div className="col-xl-3 col-lg-12 col-md-4 col-6 m-auto" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={400}>
           <div className="img-box bx-i">
             <a href="#"><img src="images/iconsmain/Adecco.png" alt="emailicon" /></a>
-          </div> {/* /.img-box */}
-        </div>
+          </div>
+        </div> */}
       </div>
     </div> {/* /.container */}
   </div> {/* /.useable-tools-section */}

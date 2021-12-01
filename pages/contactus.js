@@ -3,7 +3,7 @@ import Body from './components/Body'
 import Head from 'next/head'
 import SimpleReactValidator from 'simple-react-validator'
 import Loader from "react-loader-spinner"
-import { FaFacebookSquare, FaPinterest, FaTwitter } from "react-icons/fa"
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa"
 import $ from 'jquery'
 import { Form } from 'react-bootstrap'
 import axios from 'axios'
@@ -13,7 +13,9 @@ export class contactus extends Component {
     constructor(props) {
       super(props)
       this.state={
-        formLoading:false
+        formLoading:false,
+        
+        email:''
       }
       this.validator = new SimpleReactValidator();
       this.handleChange = this.handleChange.bind(this);
@@ -23,11 +25,12 @@ export class contactus extends Component {
       this.setState({
         [e.target.name]:e.target.value
       })
+      console.log(this.state)
     }
 
     handleSubmit=(e)=> {
       e.preventDefault();
-      // alert('fname')
+      
 
       if (this.validator.allValid()){
         $("#myForm :input").prop('readonly', true);
@@ -39,7 +42,9 @@ export class contactus extends Component {
 
       }
     }
-
+    responseGoogle = (response) => {
+      console.log(response);
+    }
     render() {
         return (
             <Body>
@@ -73,18 +78,18 @@ export class contactus extends Component {
     <div className="container">
       <div className="contact-info-wrapper">
         <div className="row justify-content-center">
-          <div className="col-lg-4 col-sm-6 d-lg-flex">
+          {/* <div className="col-lg-4 col-sm-6 d-lg-flex">
             <div className="address-info">
               <div className="icon d-flex align-items-end"><img src="images/icon/44.svg" alt="" /></div>
               <div className="title">Location</div>
               <p className="font-rubik">Pahala, Bhubaneswar <br /> Odisha</p>
-            </div> {/* /.address-info */}
-          </div>
+            </div> 
+          </div> */}
           <div className="col-lg-4 col-sm-6 d-lg-flex">
             <div className="address-info">
               <div className="icon d-flex align-items-end"><img src="images/icon/45.svg" alt="" /></div>
               <div className="title">Contact</div>
-              <p className="font-rubik">info@qtonix.com <br />(000) 000-0000</p>
+              <p className="font-rubik">info@qtonix.com <br />(315) 510-5120</p>
             </div> {/* /.address-info */}
           </div>
           <div className="col-lg-4 col-sm-6 d-lg-flex">
@@ -92,10 +97,11 @@ export class contactus extends Component {
               <div className="icon d-flex align-items-end"><img src="images/icon/46.svg" alt="" /></div>
               <div className="title">Social Media</div>
               <p className="font-rubik">Find on social media</p>
-              <ul className="d-flex justify-content-center">
-                <li><a href="#"><FaFacebookSquare /></a></li>
+              <ul className="d-flex justify-content-center socialMedia">
+                <li><a href="#"><FaFacebookF /></a></li>
                 <li><a href="#"><FaTwitter /></a></li>
-                <li><a href="#"><FaPinterest /></a></li>
+                <li><a href="#"><FaInstagram /></a></li>
+                <li><a href="#"><FaLinkedinIn /></a></li>
               </ul>
             </div> {/* /.address-info */}
           </div>
