@@ -247,7 +247,7 @@ export class index extends Component {
                                     <div className="container">
                                     <div className="row">
                                         <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
-                                        <h1 className="font-rubik ban-head">STOP MANUAL, WE AUTOMATE ALL! <br/> BEST EMAIL EXTRACTOR 🚀</h1>
+                                        <h1 className="font-rubik ban-head text-center"><span>STOP MANUAL, WE AUTOMATE ALL! <br /> BEST EMAIL EXTRACTOR</span>🚀 </h1>
                                         </div>
                                         <div className="col-xl-8 col-lg-9 m-auto">
                                         <p className="sub-text font-rubik">Increase sales with the most powerful & easy-to-use email finding 
@@ -258,7 +258,7 @@ export class index extends Component {
                                         {this.state.mainformLoading
                                             ?
                                             <center>
-                                            <img src="https://cdn.dribbble.com/users/2450224/screenshots/4933013/adspy_loading_animation.gif" alt="asas" style={{height:'84px'}} />
+                                            <img src="https://cdn.dribbble.com/users/1208688/screenshots/4575084/anime_search_event.gif" alt="asas" style={{height:'84px'}} />
                                                 <h5>searching {this.state.domain}...</h5>
                                             </center>
                                             :
@@ -271,7 +271,7 @@ export class index extends Component {
 
                                         
                                     </div>
-                                    <p className="sing-in-call">No Credit Card Required • Cancel Anytime • Get Started In Seconds • <Link href='/login'><a className="font-rubik">Sign in</a></Link>.</p>
+                                    
                                     {this.state.foundemails==='found'
                                     ?
                                         this.state.emailsdata.length>5
@@ -289,8 +289,8 @@ export class index extends Component {
                                                     alt="cool image should be here"
                                                     className="my-image" />
 
-
-                                                    <span>{this.state.emailsdata.length} emails</span>  </h6>
+                                                    <span>
+                                                    {this.state.emailsdata.length} emails</span>  </h6>
 
                                                     <p>{this.state.emailsdata.emails[0].email}  {this.state.emailsdata.emails[0].email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}</p>
                                                     <p>{this.state.emailsdata.emails[1].email}  {this.state.emailsdata.emails[1].email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}</p>
@@ -301,7 +301,7 @@ export class index extends Component {
 
                                                     <h5>and {this.state.emailsdata.length-5} more results</h5>
                                                     <hr />
-                                                    <h3 className="addme">emailextractonline.com is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
+                                                    <h3 className="addme">emailextractonline.com is completely FREE. Signup right now to get 50 free credits per month.</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -320,7 +320,11 @@ export class index extends Component {
                                                     className="my-image" />
 
 
-                                                    <span>{this.state.emailsdata.length} emails</span>  </h6>
+                                                    <span>
+                                                   
+   
+                                                        {this.state.emailsdata.length} emails</span>  </h6>
+
 
                         
                                                     {this.state.emailsdata.emails.map((email)=>{
@@ -348,19 +352,19 @@ export class index extends Component {
                                     <div className="row">
                                         <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
                                             <div className="notfindemailshome">
-                                                <h5>Oh no! We couldnt find any leads for {this.state.emailsdata.domain}.</h5>
+                                                <h5>Oh no! We couldn&quot;t find any leads for {this.state.emailsdata.domain}.</h5>
                                                 <br />
-                                                <p>our trackers are searching the internet for leads of the highest quality, unfortunately we dont have any for this company, YET. but rest assured, we are working on it.
+                                                <p>Our trackers are searching the internet for leads of the highest quality. Unfortunately, we don&quot;t have any for this company yet. But rest assured, we are working on it.
                                                 </p>
                                                 <hr />
-                                                <h3 className="addme">in the meantime, minelead.io is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
+                                                <h3 className="addme">In the meantime, <Link href='/register'><a className="font-rubik">emailextractonline.com</a></Link> is completely FREE. Signup right now to get 50 free credits per month.</h3>
                                             </div>
                                         </div>
                                     </div>
                                     :<></>
                                     }
                                                     
-                                    
+                                                    <p className="sing-in-call">50 Free Credits Every Month • GDPR Alligned & CCPA Compligned • Get Started In Seconds • <Link href='/register'><a className="font-rubik">Sign Up</a></Link></p>
                                 
                                     </div> {/* /.container */}
 
@@ -396,18 +400,18 @@ export class index extends Component {
                     ============================================== 
                     */}
                     
-                    <div className="fancy-text-block-nineteen mt-150 mb-100 md-mt-150 md-mb-150">
+                    <div className="fancy-text-block-nineteen mt-200 mb-100 md-mt-200 md-mb-150">
                     <div className="container">
                         <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
-                            <img src="images/media/img_57.png" alt="" className="m-auto" />
+                            <img src="images/media/img_57.png" alt="" className="m-auto w-75" />
                         </div>
                         <div className="col-lg-6" data-aos="fade-left" data-aos-duration={1200}>
                             <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDelay='1500' isVisible={true}>
                             <div className="text-wrapper">
                             <div className="client-info font-rubik">Over <span>150,000+ client</span></div>
                             <div className="title-style-five">
-                                <h2><span>Grow Your Network</span> In Automation.</h2>
+                                <h2><span>Grow Your Network</span> In Automation</h2>
                             </div>
                             <p className="font-rubik">From small businesses to FORTUNE 500** companies, over 150,000+ clients are using our quick and reliable Email Extract Online tool to find, 
                             extract & build high-quality leads from the internet in just one click.</p>
@@ -437,14 +441,14 @@ export class index extends Component {
                                                 Fancy Feature Eight
                                             =====================================================
                                             */}
-                                <div className="fancy-feature-eight pt-100 md-pt-100">
+                                <div className="fancy-feature-eight pt-50 md-pt-50">
                                     <div className="container">
                                     <div className="title-style-four text-center mb-60 md-mb-40">
                                         <div className="row">
                                             <div className="col-lg-10 m-auto">
                                                     <h6>How it works</h6>
                                                     <h2>Find verified email of any targeted&nbsp;
-                                                        <span>professional from their name and company.<img src="images/shape/line-shape-2.svg" alt="" /></span>
+                                                        <span>professional from their name and company<img src="images/shape/line-shape-2.svg" alt="img-responsive" /></span>
                                                     </h2>
                                             </div>
                                         </div>
@@ -482,8 +486,8 @@ export class index extends Component {
                                         <div className="col-lg-6">
                                         <div className="title-style-four">
                                             <h2>
-                                            <span>Who is using ours <img src="images/shape/line-shape-10.svg" alt="" /></span>
-                                            Email Extracter
+                                            <span>Who is using our <img src="images/shape/line-shape-10.svg" alt="" /></span>
+                                            Email Extract Tool
                                             </h2>
                                         </div>
                                         <p className="sub-text">Email Extract ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
@@ -492,13 +496,13 @@ export class index extends Component {
                                     </div>
                                     </div> {/* /.container */}
                                     <div className="logo-wrapper d-flex flex-wrap justify-content-center align-items-center">
-                                    <div className="logo d-flex align-items-center justify-content-center w-10"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/Adecco.png" alt="emailicon" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/icon-home-img1.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center w-10"><img src="images/ipaydna.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/Adecco.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/ekwb.png" alt="emailicon" className="w-75" /></div>
                                     <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/icon-home-travel.png" alt="emailicon" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/prisa.png" alt="emailicon" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/cybernetm.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/c2.png" alt="emailicon" className="w-75" /></div>
+                                    {/* <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></div> */}
                                     </div> {/* /.logo-wrapper */}
                                 </div> {/* /.useable-tools-section-three */}
                                 
@@ -629,21 +633,21 @@ export class index extends Component {
                                     <Slider {...settings}>
                                     <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/bitcanny.png" alt="" className="logo" />
+                                            <img src="images/ipaydna.png" alt="img-logo" className="logo" />
                                             <p className="bg-wrapper-text-sec">Absolutely love it! I would like to say it is a brilliant tool for marketers like me. 
                                                 I have tried a lot of other ones but only found lots of problems, bugs, incorrect harvesting, 
                                                 constant blockages by servers. Email Extract Online is well programmed and it gets what you 
                                                 really need. Definitely recommend it!</p>
                                             <div className="text-section-testimonial">
-                                                <div className="name font-rubik">Zubayer Hasan.</div>
-                                                <div className="desig">CEO &amp; Founder Heloshape</div>
+                                                <div className="name font-rubik">Guan</div>
+                                                <div className="desig">Founder ipaydna</div>
                                             </div>
                                             
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/Adecco.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/Adecco.png" alt="emailicon" className="logo" />
                                             <p className="bg-wrapper-text-sec">A huge thank you to the team at Email Extract Online. I bought this tool 6 months ago and even after all this time when I reach out for any help they are brilliant. So many online extracting products promise the world and then 
                                                 fail to deliver - this is a robust tool and a great bunch of people behind it. Highly recommended.</p>
                                                 <div className="text-section-testimonial">
@@ -654,49 +658,49 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/icon-home-img1.png" alt="" className="logo" />
+                                            <img src="images/ekwb.png" alt="emailicon" className="logo" />
                                             <p className="bg-wrapper-text-sec">My name is David, I tried Email Extract Online and Email Bulk Finder and found both of them to be very useful. The truth is unless you try this tool, you will not know what you are missing out on. I recommend the Email Extract Online tool to small and large businesses - it is profitable 
                                                 especially when you want to develop reasonable contacts and good relationships with others.</p>
                                             <div className="text-section-testimonial">
                                             <div className="name font-rubik">Johny Horoscope</div>
-                                            <div className="desig">CEO &amp; Founder Heloshape</div>
+                                            <div className="desig">EKWB</div>
                                             </div>
                                             
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/icon-home-travel.png" alt="" className="logo" />
+                                            <img src="images/c2.png" alt="emailicon" className="logo" />
                                             <p className="bg-wrapper-text-sec">Email Extract Online is very good and many thanks to the developers for making such an inexpensive 
                                                 tool. Very frankly, after using this tool, I started seeing a big increase in my sales. In the past, 
                                                 I tried many other resources as well as other email harvesters to boost my sales but nothing was as 
                                                 effective as your product. I found your product 
                                                 beyond my expectations. Once again I thank you for making such an effective product that really works.</p>
                                             <div className="text-section-testimonial">
-                                            <div className="name font-rubik">Johny Horoscope</div>
-                                            <div className="desig">CEO &amp; Founder Heloshape</div>
+                                            <div className="name font-rubik">Alex Wilson</div>
+                                            <div className="desig">C2rio</div>
                                             </div>
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/trips-travel-logo.png" alt="" className="logo" />
+                                            <img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" className="logo" />
                                             <p className="bg-wrapper-text-sec">I was looking for the best solution to extract emails of some prospective clients to promote my services. Finally, I found it: Email Extract Online. 
                                                 Today I am really pleased with the way this tool works and the benefits, I get from email marketing.</p>
                                                 <div className="text-section-testimonial">
                                                 <div className="name font-rubik">Johny Horoscope</div>
-                                                <div className="desig">CEO &amp; Founder Heloshape</div>
+                                                <div className="desig">Trip Exotica</div>
                                                 </div>
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/prisa.png" alt="" className="logo" />
+                                            <img src="images/cybernetm.png" alt="emailicon" className="logo" />
                                             <p className="bg-wrapper-text-sec">I bought the Email Extract Online some time ago, it is so good that I felt like sharing. Email Extract Online is a small investment that can be made by any business but in a short period of time, it can really bring profits for your business. It helps to extract emails with superior potential 
                                                 for reaching good customers. This software can be the best asset for any business. Highly recommended!</p>
                                                 <div className="text-section-testimonial">
-                                                    <div className="name font-rubik">Johny Horoscope</div>
-                                                    <div className="desig">CEO &amp; Founder Heloshape</div>
+                                                    <div className="name font-rubik">Paul Wilson</div>
+                                                    <div className="desig">Cybernet</div>
                                                 </div>
                                         </div> {/* /.bg-wrapper */}
                                         </div>

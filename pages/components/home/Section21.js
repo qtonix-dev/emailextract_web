@@ -27,12 +27,12 @@ export default class Section21 extends Component {
                         <div className="col-md-6 py-3">
 
                                 {this.state.active===1
-                                ?<><img src="images/assets/ils_10.svg" alt="" /></>
+                                ?<><img src="images/emailfinder1.png" alt="img-alt" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===2
-                                ?<><img src="images/assets/ils_11.svg" alt="" /></>
+                                ?<><img src="images/verifiernew.png" alt="" /></>
                                 :<></>
                                 }
 

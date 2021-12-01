@@ -63,6 +63,7 @@
 
 .hero-banner-three .sing-in-call {
     padding-bottom: 25px;
+    margin-top: -14px;
 }
 
 .hero-banner-three {
@@ -153,6 +154,7 @@ p.log-sec-new {
 .findemailshome p {
     margin-left: 0px;
     line-height: 20px;
+    cursor: pointer;
 }
 .fancy-hero-four {
     margin-top: -35px;
@@ -932,7 +934,7 @@ th.text-center.sec-middle {
     font-size: 20px;
 }
 .free-demo-form-list li {
-    font-size: 20px;
+    font-size: 16px;
 }
 .cSize {
     margin-bottom: 0px !important;
@@ -1002,3 +1004,21 @@ ul.social-icon li a:hover {
 .core-values p {
     padding: 0px 20px;
 }
+.free-demo-form-left p {
+    line-height: 23px;
+    font-size: 16px;
+}
+.free-demo-form-left li svg {
+    color: #0d6efd;
+}
+.free-demo-form-left li {
+    transition:0.3s;
+    cursor: pointer;
+}
+.free-demo-form-left li:hover {
+    padding-left: 5px;
+}
+h3.addme a {
+    text-decoration: none;
+}
+

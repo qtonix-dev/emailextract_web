@@ -159,7 +159,7 @@ export class compare extends Component {
                         </div>
                         <div className="freshnessCrm text-center">
                             <h3 className="pb-3">A Powerful & Lightweight Tool Designed For Business Use </h3>
-                            <p>You might be wondering why EMAIL EXTRACT? Why not another one? The tool can identify the country of origin by examining the website and email domains. This easy-to-use tool will suit your needs 
+                            <p>You might be wondering why EMAIL EXTRACT ONLINE? Why not another one? The tool can identify the country of origin by examining the website and email domains. This easy-to-use tool will suit your needs 
                                 perfectly for email extraction utilizing filtering rules and find any email with the click of a mouse! </p>
                             {/* <p>So, why is Freshsales a better option? </p> */}
                         </div>
@@ -170,22 +170,22 @@ export class compare extends Component {
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 px-2 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/ckgh0vvmb07syhug1bz4b6e9p-provide-unified-customer-experiences.svg" alt="email" />
-                                        <h4>A Comprehensive and Easy-to-use Solution</h4>
-                                        <p>Email Extract Online is not a bundle of complex products. Instead, you get a comprehensive and easy-to-use solution for sales and marketing teams.</p>
+                                        <h4>Free Prospects For Life</h4>
+                                        <p>We give 50 credits for free every month for lifetime.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 mb-5 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjz2fxoil05p9qnfzuh058xrc-support.full.png" alt="email" />
-                                        <h4>Reliable <br />support</h4>
-                                        <p>Get 24/7 free support over the phone, chat, or email from our in-house knowledgeable product experts, regardless of your subscription plan.</p>
+                                        <h4>An Easy-to-use Web App</h4>
+                                        <p>The best way to reach your prospects during COVID-19 is through our easy-to-use web app.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 mb-5 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjwbrlayh00itsfg065hbnxex-easy-to-setup.svg" alt="email" />
-                                        <h4>Highly<br />scalable</h4>
-                                        <p>Explore all the tools you need to scale your business. Start with an entry plan and select a higher plan seamlessly as your business grows. </p>
+                                        <h4>Highly Scalable</h4>
+                                        <p>Start with an entry plan and select a higher plan seamlessly as your business grows. </p>
                                     </div>
                                 </Col>
                                 
@@ -255,9 +255,9 @@ export class compare extends Component {
                                 <tbody className="customer-freesales-table-tbody">
                                     <tr>
                                     <td className="sec-left">Free trial</td>
-                                    <td className="text-center">50 search/mo</td>
+                                    <td className="text-center">50 credits/mo</td>
                                     <td className="text-center">25 requests/mo</td>
-                                    <td className="text-center"></td>
+                                    <td className="text-center sec-hifen"><FaMinus /></td>
                                     <td className="text-center">90 verified emails</td>
                                     </tr>
                                     <tr>

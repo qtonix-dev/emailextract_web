@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import { Container, Row, Col, Form,Button,FloatingLabel } from 'react-bootstrap'
-import { FaCheck } from 'react-icons/fa'
+import { FaAngleDoubleRight } from 'react-icons/fa'
 import { useForm } from "react-hook-form"
 import countryList from 'react-select-country-list'
 import Select from 'react-select'
@@ -56,16 +56,23 @@ export default function Freedemo() {
                             <Row className="mb-5">
                                 <Col sm={6}>
                                     <div className="free-demo-form-left">
-                                        {/* <h3>Your Personal Webdemo</h3> */}
-                                        {/* <p>Get to know Personio! In just 30 minutes, 
-                                            our product experts will guide you through the solution and answer any questions you have.</p> */}
+                                        <h3>SCHEDULE A FREE 1:1 LIVE DEMO WITH OUR PRODUCT EXPERT</h3> 
+                                        <p>Is your organization looking for a powerful solution to extract email addresses of your potential prospects 
+                                            from legitimate sources? Get to know Email Extract Online in just 30 minutes! Registering for a free demo 
+                                            session with one of our product experts will let you know about all our product features while giving you 
+                                            a clear insight into how to get the most out of our product.</p>
                                         <div className="free-demo-form-list">
-                                            {/* <ul>
-                                                <li><FaCheck /> &nbsp;Introduction to all product features</li>
-                                                <li><FaCheck /> &nbsp;Introduction to all product features</li>
-                                                <li><FaCheck /> &nbsp;Introduction to all product features</li>
-                                            </ul> */}
-                                            <img src="images/people-standing.png" alt="img-email" />
+                                            <ul>
+                                                <li><FaAngleDoubleRight /> &nbsp;<b>Introduction to all product features</b></li>
+                                                <li><FaAngleDoubleRight /> &nbsp;<b>Tailored to your business priorities</b></li>
+                                                <li><FaAngleDoubleRight /> &nbsp;<b>Answers to any questions you have</b></li>
+                                            </ul>
+                                            {/* <img src="images/people-standing.png" alt="img-email" /> */}
+                                            <p>So book a free demo class with us now and see for yourself why leading businesses around the world trust 
+                                                Email Extract Online to grow better each day!</p>
+                                            <p className="mt-4">
+                                            {/* <img src="images/ipaydna.png" alt="emailicon" className="w-25" /> */}
+                                            </p>
                                         </div>
                                     </div>
                                 </Col>

@@ -102,7 +102,7 @@ export default class about extends Component {
               <span>What is Our Purpose<img src="images/shape/line-shape-6.svg" alt="" /></span>
             </h2>
           </div>
-          <p className="sub-text">Unlike other platforms, emailextractonline.com verifies email addresses in real-time. We doubly check the accuracy of the searched email. 
+          <p className="sub-text">Unlike other platforms, <b>EMAIL EXTRACT ONLINE</b> verifies email addresses in real-time. We doubly check the accuracy of the searched email. 
           Our online software offers a powerful free all-in-one freeware designed to extract accurate email addresses from distinct sources: websites, local files, and search engines. With our handy plugins, you can get contact information on LinkedIn or the company’s websites. You can simply insert the source text content, including the email addresses in the provided text box, search, and get a clean list of the unique email address. Our email extractor thus can easily clean out the valuable email addresses from any content and compiles the email addresses in one user-friendly list. </p>
           {/* <p className="sub-text">Our purpose is to be the prominent lead generation platform for any modern sales team and reduce the complexity of capturing potential leads through an easier and quicker process. This led us to create a platform that brings forth automated approaches to sales, authorizing individuals and corporate enterprises around the world to scale their sales actions. We improve our sales team’s productivity, wherein our sales team can find the right companies and accurate contact information of key in a matter of seconds. </p> */}
         </div> {/* /.text-wrapper */}
@@ -235,23 +235,23 @@ export default class about extends Component {
         <div className="row justify-content-center">
           <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200}>
             <div className="counter-box-two">
-              <h2 className="number" style={{color: '#FAAA4B'}}><span className="timer" data-from={0} data-to={1200} data-speed={1500} data-refresh-interval={5}>0</span>+</h2>
+              <h2 className="number" style={{color: '#FAAA4B'}}><span className="timer" data-from={0} data-to={1200} data-speed={1500} data-refresh-interval={5}>150</span>+</h2>
               <em>Positive Review</em>
-              <p className="font-rubik">A place to think and <br /> track ideas</p>
+              {/* <p className="font-rubik">A place to think and <br /> track ideas</p> */}
             </div> {/* /.counter-box-two */}
           </div>
           <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={100}>
             <div className="counter-box-two">
-              <h2 className="number" style={{color: '#36C2DB'}}><span className="timer" data-from={0} data-to={200} data-speed={1200} data-refresh-interval={5}>0</span>+</h2>
+              <h2 className="number" style={{color: '#36C2DB'}}><span className="timer" data-from={0} data-to={200} data-speed={1200} data-refresh-interval={5}>2</span>+</h2>
               <em>Branches</em>
-              <p className="font-rubik">A home for your iqu <br /> team, best</p>
+              {/* <p className="font-rubik"></p> */}
             </div> {/* /.counter-box-two */}
           </div>
           <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={200}>
             <div className="counter-box-two">
-              <h2 className="number" style={{color: '#3DB382'}}><span className="timer" data-from={0} data-to={3} data-speed={1200} data-refresh-interval={5}>0</span>k</h2>
+              <h2 className="number" style={{color: '#3DB382'}}><span className="timer" data-from={0} data-to={3} data-speed={1200} data-refresh-interval={5}>1k</span>+</h2>
               <em>Work Done</em>
-              <p className="font-rubik">Beautiful docs for your <br />APIs, Products</p>
+              {/* <p className="font-rubik">APIs, Products</p> */}
             </div> {/* /.counter-box-two */}
           </div>
         </div>
@@ -275,7 +275,7 @@ export default class about extends Component {
       </div>
       <div className="row">
         <div className="col-xl-8 col-lg-9 m-auto">
-          <p className="sub-text pb-30 md-pb-50">Email Extract Online ties into your existing tools, services, &amp; workflow. Get notifications or create story with others tools.</p>
+          <p className="sub-text pb-30 md-pb-50">Email Extract Online is used by 1,000,000+ professionals and leading companies worldwide.</p>
         </div>
       </div>
       <div className="row">
@@ -304,26 +304,26 @@ export default class about extends Component {
             <a href="#"><img src="images/cybernetm.png" alt="emailicon" className="w-75" /></a>
           </div> {/* /.img-box */}
         </div>
-        {/* <div className="col-xl-4 col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={250}>
+       <div className="col-xl-4 col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={250}>
           <div className="img-box bx-f">
-            <a href="#"><img src="images/c2.png" alt="emailicon" /></a>
+            <a href="#"><img src="https://sbsdatasystems.co.uk/wp-content/uploads/2021/02/1212111.png" alt="emailicon" className="w-75" /></a>
           </div> 
-        </div> */}
-        {/* <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={300}>
+        </div>
+      <div className="col-xl-2 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={300}>
           <div className="img-box bx-g">
-            <a href="#"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" /></a>
+            <a href="#"><img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" className="w-75" /></a>
           </div> 
         </div>
         <div className="col-xl-3 col-lg-3 col-md-4 col-6" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={350}>
           <div className="img-box bx-h">
-            <a href="#"><img src="images/iconsmain/icon-home-img1.png" alt="emailicon" /></a>
+            <a href="#"><img src="https://sp-ao.shortpixel.ai/client/to_webp%2Cq_glossy%2Cret_img/https://theexerciseco.com/wp-content/uploads/2021/06/logo.jpg" alt="emailicon" className="w-75" /></a>
           </div> 
         </div>
         <div className="col-xl-3 col-lg-12 col-md-4 col-6 m-auto" data-aos="fade-up" data-aos-duration={1200} data-aos-delay={400}>
           <div className="img-box bx-i">
-            <a href="#"><img src="images/iconsmain/Adecco.png" alt="emailicon" /></a>
+            <a href="#"><img src="images/iconsmain/Adecco.png" alt="emailicon" className="w-75" /></a>
           </div>
-        </div> */}
+        </div> 
       </div>
     </div> {/* /.container */}
   </div> {/* /.useable-tools-section */}

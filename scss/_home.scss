@@ -34,11 +34,10 @@
     background-color: white;
     -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
     box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
-    margin: 8px auto;
+    margin: 10px auto 0;
     border-radius: 5px;
     padding: 30px;
     max-width: 640px;
-
     &_verified{
 
             
@@ -51,6 +50,7 @@
             
         color:#e91e63;
         float: right;
+        cursor: pointer;
     }
 
 
@@ -68,7 +68,7 @@
     border-radius: 5px;
     position: absolute;
     top: 50px;
-    right: 80px;
+    right: 3.8rem;
         }
         
     }

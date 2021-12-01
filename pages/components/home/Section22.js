@@ -72,15 +72,15 @@ export default class Section22 extends Component {
                             
                         </div>
 
-                        <div className="col-md-6 py-3">
+                        <div className="col-md-6 align-items-center">
 
                                 {this.state.active===1
-                                ?<><img src="images/assets/ils_10.svg" alt="img-main" /></>
+                                ?<><img src="images/bulk1new.png" alt="img-main" className="pt-2" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===2
-                                ?<><img src="images/assets/ils_11.svg" alt="" /></>
+                                ?<><img src="images/searchImage.jpg" alt="img-main" className="pt-5" /></>
                                 :<></>
                                 }
 
