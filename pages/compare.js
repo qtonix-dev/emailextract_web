@@ -169,14 +169,14 @@ export class compare extends Component {
 
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 px-2 text-center">
-                                        <img src="https://website-assets-fw.freshworks.com/attachments/ckgh0vvmb07syhug1bz4b6e9p-provide-unified-customer-experiences.svg" alt="email" />
+                                        <img src="images/prospects.png" alt="email" />
                                         <h4>Free Prospects For Life</h4>
                                         <p>We give 50 credits for free every month for lifetime.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4} className="mt-3">
                                     <div className="compare-second py-5 mb-5 text-center">
-                                        <img src="https://website-assets-fw.freshworks.com/attachments/cjz2fxoil05p9qnfzuh058xrc-support.full.png" alt="email" />
+                                        <img src="images/easytouse.png" alt="email" />
                                         <h4>An Easy-to-use Web App</h4>
                                         <p>The best way to reach your prospects during COVID-19 is through our easy-to-use web app.</p>
                                     </div>

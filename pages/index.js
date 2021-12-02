@@ -277,7 +277,7 @@ export class index extends Component {
                                         this.state.emailsdata.length>5
                                         ?
                                         <div className="row">
-                                            <div className="col-xl-7 col-lg-9 col-md-12 m-auto mb-5">
+                                            <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
                                             <div className="findemailshome">
                                                 <h6>
                                                     
@@ -301,7 +301,7 @@ export class index extends Component {
 
                                                     <h5>and {this.state.emailsdata.length-5} more results</h5>
                                                     <hr />
-                                                    <h3 className="addme">emailextractonline.com is completely FREE. Signup right now to get 50 free credits per month.</h3>
+                                                    <h3 className="addme">Email Extract Online is completely FREE, <Link href='/register'>Signup</Link> right now to get unlimited cutting edge lead generation.</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -335,7 +335,7 @@ export class index extends Component {
                                                     })}
 
                                                     <hr />
-                                                    <h3 className="addme">emailextractonline.com is completely FREE, Signup right now to get unlimited cutting edge lead generation.</h3>
+                                                    <h3 className="addme">Email Extract Online is completely FREE, <Link href='/register'>Signup</Link> right now to get unlimited cutting edge lead generation.</h3>
 
                               
                                             </div>
@@ -357,7 +357,7 @@ export class index extends Component {
                                                 <p>Our trackers are searching the internet for leads of the highest quality. Unfortunately, we don&quot;t have any for this company yet. But rest assured, we are working on it.
                                                 </p>
                                                 <hr />
-                                                <h3 className="addme">In the meantime, <Link href='/register'><a className="font-rubik">emailextractonline.com</a></Link> is completely FREE. Signup right now to get 50 free credits per month.</h3>
+                                                <h3 className="addme">In the meantime, <Link href='/register'><a className="font-rubik">Email Extract Online</a></Link> is completely FREE. Signup right now to get 50 free credits per month.</h3>
                                             </div>
                                         </div>
                                     </div>
