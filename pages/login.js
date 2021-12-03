@@ -73,7 +73,7 @@ export default class login extends Component {
                     cookie.remove('qtonixemailextractweb_emailverification', { path: '/' });
     
     
-    
+					
                     var expires = new Date();
                     expires.setSeconds(21600);
                     cookie.save('qtonixemailextractweb_userdata', response.data.user, { path: '/',expires });
