@@ -56,7 +56,7 @@ export default function Freedemo() {
                             <Row className="mb-5">
                                 <Col sm={6}>
                                     <div className="free-demo-form-left">
-                                        <h3>SCHEDULE A FREE 1:1 LIVE DEMO WITH OUR PRODUCT EXPERT</h3> 
+                                        <h3>SCHEDULE A FREE DEMO</h3> 
                                         <p>Is your organization looking for a powerful solution to extract email addresses of your potential prospects 
                                             from legitimate sources? Get to know Email Extract Online in just 30 minutes! Registering for a free demo 
                                             session with one of our product experts will let you know about all our product features while giving you 
@@ -190,13 +190,7 @@ export default function Freedemo() {
                                                 {/* <h6 className="form_error_message">{this.validator.message('phone', this.state.email, 'required|phone')}</h6> */}
                                             </Col>
                                             </Row>
-                                            <Row>
-                                                <Col sm={12}>
-                                                    <p className="mt-2">We will only contact you to book an 
-                                                        appoint that works for you and understand your specific requirements.</p>
-                                                </Col>
-                                            </Row>
-                                            <Button variant="primary" type="submit" className="w-100">Submit</Button>
+                                            <Button variant="primary" type="submit" className="w-100 mt-3">Submit</Button>
                                             
                                         </Form>
                                          <Row>

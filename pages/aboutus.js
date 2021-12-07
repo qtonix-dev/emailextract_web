@@ -28,11 +28,11 @@ export default class about extends Component {
       <div className="container">
         <div className="row">
           <div className="col-lg-7 col-md-8 col-sm-10">
-          <div className="title-style-three"><h6>About Us</h6></div>
-            <h1 className="heading">
+          <div className="title-style-three title-style-five"><h2><span>About</span> Us</h2></div>
+            <h6 className="heading">
 
-              <span>Who We are <img src="images/shape/line-shape-11.svg" alt="img-response" /></span>
-            </h1>
+              <span>Who We are </span>
+            </h6>
             <p className="sub-heading">Conceptualized in mid-2021, Email Extract Online helps to hunt down professional email addresses from any website in seconds. 
             We link the people with you that matter the most for your business. Built by an experienced and knowledgeable team of engineers and designers, the Email Extract Online team is only focused on providing the best user experience possible through its simple, self-service products in order to identify future prospects with accurate and accessible data. In other words, we have built the new data backbone for modern sales and 
             marketing teams across the world, thereby helping them connect with future customers in a few clicks.
@@ -60,9 +60,12 @@ export default class about extends Component {
       <div className="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
         <div className="text-wrapper text-mission-sec">
           <div className="title-abt-mission">
-          <h6>
-              <span>Our Mission</span>
-            </h6>
+            <div className="title-style-five">
+              <h2>
+                <span>Our M</span>ission
+              </h2>
+            </div>
+          
             <p>Our mission is to provide every company with a 360-degree view of their client relationships and 
             opportunities. We believe businesses can grow with ethics, and triumph with consciousness. Herein, we 
             have aptly created an ecosystem unifying software, education, and society to assist businesses to grow 
@@ -97,10 +100,12 @@ export default class about extends Component {
       <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
         <div className="text-wrapper">
           <div className="title-style-three">
+            <div className="title-style-five">
+              <h2>
+                <span>What is Our</span> Purpose
+              </h2>
+            </div>  
             
-            <h2>
-              <span>What is Our Purpose<img src="images/shape/line-shape-6.svg" alt="" /></span>
-            </h2>
           </div>
           <p className="sub-text">Unlike other platforms, <b>EMAIL EXTRACT ONLINE</b> verifies email addresses in real-time. We doubly check the accuracy of the searched email. 
           Our online software offers a powerful free all-in-one freeware designed to extract accurate email addresses from distinct sources: websites, local files, and search engines. With our handy plugins, you can get contact information on LinkedIn or the company’s websites. You can simply insert the source text content, including the email addresses in the provided text box, search, and get a clean list of the unique email address. Our email extractor thus can easily clean out the valuable email addresses from any content and compiles the email addresses in one user-friendly list. </p>
@@ -132,9 +137,12 @@ export default class about extends Component {
             
             <div className="row">
               <div className="col-lg-12">
-                <h2 className="mb-5">
-                  <span>Our Security Compliance<img src="images/shape/line-shape-2.svg" alt="" /></span>
-                </h2>
+                <div className="title-style-five">
+                  <h2 className="mb-5">
+                    <span>Our Security</span> Compliance
+                  </h2>
+                </div>
+                
                 <p className="text-meta">We apply a globally recognized security and privacy configuration that helps to mitigate our risk and compliances. Herein, we engage the third-party certified auditors to validate our security protocols and privacy, and subsequently render us with authorized reports and certificates that will illustrate our compliances. 
           Thus, we always prioritize the security, privacy, and availability of your data.  </p>
               </div>
@@ -160,9 +168,12 @@ export default class about extends Component {
 
             <div className="col-lg-125 ml-auto" data-aos="fade-left" data-aos-duration={1200}>
             <div className="title-style-four">
-              <h2>
-                <span>Our Core Values<img src="images/shape/line-shape-2.svg" alt="" /></span>
-              </h2>
+              <div className="title-style-five">
+                <h2>
+                  <span>Our Core</span> Values
+                </h2>
+              </div>
+              
               
             </div>
 
@@ -269,9 +280,12 @@ export default class about extends Component {
   <div className="useable-tools-section bg-transparent mt-90 md-mt-90">
     <div className="container">
       <div className="title-style-three text-center mb-60 md-mb-50 sm-mb-30">
-        <h6>Our Partners</h6>
-        <h2>Who Are <span>Using Email Extract Online <img src="images/shape/line-shape-2.svg" alt="" /></span>
-        </h2>
+        <div className="title-style-five">
+          <h2><span>Our</span> Partners</h2>
+        </div>
+        
+        <h6 className="mt-3 useable-tools-section-h6">Who Are Using Email Extract Online
+        </h6>
       </div>
       <div className="row">
         <div className="col-xl-8 col-lg-9 m-auto">

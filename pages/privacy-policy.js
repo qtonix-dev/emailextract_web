@@ -23,9 +23,13 @@ export class privacypolicy extends Component {
                         <div className="container">
                         <div className="row privacy-main-first">
                             <div className="col-lg-12 m-auto text-center">
-                            <h1 className="heading privacy-main-title">
-                                <span>Privacy Policy<img src="/images/shape/line-shape-11.svg" alt="ss" /></span>
-                            </h1>
+                            {/* <h1 className="heading privacy-main-title">
+                                <span>Privacy Policy</span>
+                            </h1> */}
+                            <div className="title-style-five">
+                            <h2><span>Privacy</span> Policy</h2>
+                            </div>
+                            
                             <p>This privacy policy reveals the privacy practices for Email Extract Online. We are committed to respecting everyone&quot;s privacy and have designed our services with this object in mind following the new personal data processing principles coming with the European General Data Protection Regulation 
                             (EU Regulation 2016/679 of 27 April 2016 or the GDPR — General Data Protection Regulation).</p>
                             <p>Data protection is particularly of a high priority for the management of the Email Extract Online. In order to meet our customers’ expectations, demands and to ensure the respect of data 

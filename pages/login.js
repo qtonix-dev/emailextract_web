@@ -14,7 +14,7 @@ import Router from 'next/router'
 import { GoogleLogin } from 'react-google-login';
 
 
-
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 
@@ -25,10 +25,12 @@ export default class login extends Component {
     constructor(props){
       super(props)
       this.state={
-        formLoading:false
+        formLoading:false,
+        isVerified:false
       }
       this.validator = new SimpleReactValidator();
       this.handleChange=this.handleChange.bind(this);
+      this.handleOnChange = this.handleOnChange.bind(this);
     }
 
     componentDidMount(){
@@ -73,7 +75,7 @@ export default class login extends Component {
                     cookie.remove('qtonixemailextractweb_emailverification', { path: '/' });
     
     
-					
+    
                     var expires = new Date();
                     expires.setSeconds(21600);
                     cookie.save('qtonixemailextractweb_userdata', response.data.user, { path: '/',expires });
@@ -91,8 +93,6 @@ export default class login extends Component {
 
                   }
 
-
-
                     
                 }else{
                     this.setState({formLoading:false})
@@ -108,9 +108,6 @@ export default class login extends Component {
                       // theme:'colored'
                     });
                 }
-
-                
-
             })
 
         }else{
@@ -125,6 +122,11 @@ export default class login extends Component {
       console.log(response);
     }
 
+    handleOnChange(value) {
+      console.log("Captcha value:", value);
+      this.setState({isVerified:true})
+    }
+
     render() {
         return (
             <>
@@ -135,7 +137,7 @@ export default class login extends Component {
                 
                 <div className="user-data-page clearfix d-lg-flex">
                     <div className="illustration-wrapper d-flex align-items-center flex-column">
-                    <h3 className="font-rubik">We have a “strategic” plan its <br /> called doing things.</h3>
+                    <h3 className="font-rubik">Some of the world&quot;s biggest brand are using Email Extract. Log in now</h3>
                     <div className="illustration-holder">
                         <img src="images/assets/ils_08.svg" alt="" className="illustration" />
                         <img src="images/log.png" alt="" className="shapes shape-one" />
@@ -146,14 +148,14 @@ export default class login extends Component {
                     
                     <div className="d-flex justify-content-between">
                       <Row>
-                        <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75" /></a></Link></div></Col>
-                        <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
+                        <Col xs={9}><div className="logo ml-5"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75 ml-3" /></a></Link></div></Col>
+                        {/* <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col> */}
                       </Row>
                     </div>
                     <form onSubmit={this.handleSubmit} className="user-data-form mt-5" id="myForm">
                         <h2 className="mb-4">Good afternoon! <br />Welcome back.</h2>
                         <p className="header-info pt-30 pb-50 d-none">Need account?  <Link href='/register'><a>Register</a></Link></p>
-                        <div className="row ">
+                        <div className="row">
                         
                      
                         <div className="col-12 d-none">
@@ -201,7 +203,7 @@ export default class login extends Component {
                           }
                         </div>
                         {/* <p>Forgot your password? <Link href='/forgotpassword'>Click Here</Link></p> */}
-                         <div className="or-sec text-center mb-4">
+                         <div className="or-sec text-center mb-3">
                             <a>or</a>
                           </div>
 
@@ -215,12 +217,15 @@ export default class login extends Component {
                             />
                           </div>
 
-                          
+                          {/* <ReCAPTCHA
+                              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                              onChange={this.handleOnChange}
+                          /> */}
                           
                           
                           <div className="theme-btn-reg mb-4">
                             <p className="register-sec-new">
-                              Donot have an Account ? <Link href='/register'><a>Register Here</a></Link>
+                              Don&quot;t have an Account ? <Link href='/register'><a>Register Here</a></Link>
                             </p>
                           </div>
 

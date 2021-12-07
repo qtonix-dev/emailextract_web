@@ -6,41 +6,44 @@ import Faq from "react-faq-component";
 import axios from 'axios';
 import _ from "lodash";
 import Head from 'next/head'
+import Freedemo from './components/aboutus/Freedemo'
 
 //=======FAQ=======//
 const data = {
   // title: "FAQ (How it works)",
   rows: [
       {
-        title: "Why do I need to verify Email?",
-        content: <p>For an effective email marketing process, it is very important to verify the existence of 
-        an email address so as to acquire a new subscriber. For this, you invest lots of time and money to 
-        buy an email list from 3rd party vendors. But you are not sure whether these contact emails are 
-        authentic enough to deliver your marketing campaign or not. If you send email messages to fake email 
-        addresses, the bounce-back email ratio will increase and have a negative impact on your mail server’s 
-        reputation. That’s why identifying and removing invalid 
-        email addresses are essential to protect your email reputation and bounce-free email campaigns.
-        <br /><br />By verifying email lists with our Email Extract Online tool, you can improve many of your options, such as:
+        title: "Is Email Extract Online free to use?",
+        content: <p>Yes, we offer one of the most generous free plans in the industry so you get an idea of what our software is capable of.
+        <br /><br />Our free tier includes:
             <ul>
-                <li>•	Open Rates</li>
-                <li>•	Bounce Rates</li>
-                <li>•	Click-Through Rates</li>
-                <li>•	Conversion Rates</li>
+                <li>•	5 Total Domain Search</li>
+                <li>•	5 Total Email Search</li>
+                <li>•	5 Total Email Verification</li>
+                <li>•	50 Bulk Domain Search</li>
+                <li>•	50 Bulk Domain Upload</li>
+                <li>•	Unlimited Results</li>
+                <li>•	Unlimited Storage</li>
+                <li>•	1x Speed</li>
             </ul>
         </p>,
       },
       {
-        title: "How accurate is the Email Extract Online?",
+        title: "What payment methods do you offer?",
         content:
-            "The Email Extract Online uses the most comprehensive database of public email addresses to find the correct contact information. All the email addresses go through an email verification process before being returned. The email addresses with a green shield mean they have been checked and found deliverable. You can use them safely and those email addresses with red shields are either unauthorized or are not in use. ",
+            "We accept all payments made via debit and credit card.",
       },
       {
-        title: "Can you verify Bulk emails at once?",
-        content: `Yes, with the bulk extraction feature, you can verify an unlimited number of emails within seconds. `,
+        title: "What currency are your prices in?",
+        content: <p>All our prices are in US dollars.</p>,
       },
       {
-        title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-        content: "It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.",
+        title: "Are there any contracts, hidden charges or setup fees?",
+        content: "No contracts, no hidden charges, and no setup fees. You can switch your plan or cancel your Email Extract Online subscription at any time.",
+      },
+      {
+        title: "How can I cancel my plan?",
+        content: "Cancel your account anytime from your Account Settings. After canceling, you’ll still be able to use your plan until the end of the trial or subscription period.",
       },
   ],
 };
@@ -101,8 +104,12 @@ export default class pricing extends Component {
                     <div className="row">
                       <div className="col-xl-10  m-auto">
                         <div className="title-style-seven text-center">
-                          <h2>Solo, Agency or Team? <br />We’ve got you <span>covered.</span></h2>
+                          <h2><span>Simple & Transparent</span> Pricing Plans</h2>
+                          <h6>Find the right solution for your needs</h6>
+                          <p>We deliver an analytics experience with no hidden costs or additional products required. Understand the price you pay upfront, with no surprises. Buy our simple, capability-rich packages to upscale your business with verified emails.</p>
                         </div> {/* /.title-style-six */}
+                        
+                        
                       </div>
                     </div>
                     {/* Nav tabs */}
@@ -192,34 +199,39 @@ export default class pricing extends Component {
                                     <div className="title-style-four text-center mb-100 md-mb-70">
                                         <div className="row">
                                         <div className="col-lg-7 m-auto">
-                                            <h6>Common questions about the pricing</h6>
-                                            <h2>
-                                            <span>Questions &amp; Answers<img src="images/shape/line-shape-2.svg" alt="" /></span>
-                                            </h2>
+                                          <div className="title-style-five mt-5">
+                                          <h2><span>Common questions</span> about the pricing</h2>
+                                          </div>
+                                            
+                                            <h6>
+                                            <span>FREQUENTLY ASKED QUESTIONS</span>
+                                            </h6>
                                         </div>
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-6">
+                                        <div className="col-md-12">
                                         <Faq
                                             data={data}
                                             styles={styles}
                                             config={config}
                                         />
                                         </div>
-                                        <div className="col-md-6">
+                                        {/* <div className="col-md-6">
                                         <Faq
                                             data={data}
                                             styles={styles}
                                             config={config}
                                         />
-                                        </div>
+                                        </div> */}
                                     </div>
                                     </div>
                                 </div> {/* /.faq-classic */}
 
 
-
+                          <section className="free-section-demo-compare">
+                            <Freedemo />
+                          </section>
             </Body>
         )
     }

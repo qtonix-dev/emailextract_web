@@ -62,8 +62,11 @@ export class contactus extends Component {
       <div className="container">
         <div className="row">
           <div className="col-xl-9 col-lg-11 col-md-10 m-auto">
-            <h6>Contact us</h6>
-            <h2>Feel free to contact us or just say hi!</h2>
+            
+            <div className="title-style-five">
+              <h2><span>Contact</span> us</h2>
+            </div>
+            <h6 className="my-5">Feel free to contact us or just say hi!</h6>
           </div>
         </div>
       </div>

@@ -114,9 +114,10 @@ export class compare extends Component {
                         <div className="container">
                         <div className="row">
                             <div className="col-lg-12 m-auto text-center compare-main">
-                            <h1 className="heading compare-section-title">
-                                <span>EMAIL EXTRACT Is A Nifty Tool That Lets You Extract A Large Number Of Emails</span>
-                            </h1>
+                                            <div className="title-style-five mb-4">
+                                                <h2><span>EMAIL EXTRACT is a Nifty Tool</span> That Lets You Extract a Large Number of Emails</h2>
+                                            </div>
+                            
                                 <p>Get email addresses in text, web pages, and data files. Using EMAIL EXTRACT tool, you will be able to find a lot of email addresses to send emails to. The application lets you extract bulk emails from different sources. You can 
                                     extract emails from social media, like Facebook and Twitter, websites including Yelp, and email accounts. </p>
                                 <p>Whether you are in need of a reliable crawler to extract the email addresses of your potential prospects or customers from a legitimate 
@@ -129,7 +130,10 @@ export class compare extends Component {
 
                     <Container>
                         <div className="compare-section-first">
-                            <h2 className="heading text-center pb-5">Recommended by industry experts</h2>
+                        <div className="title-style-five">
+                            <h2 className="text-center mb-4"><span>Recommended by</span> industry experts</h2>
+                        </div>
+                            
                             <Row>
                                 <Col sm={3} className="mt-3">
                                     <div className="compare-first">
@@ -158,13 +162,19 @@ export class compare extends Component {
                             </Row>
                         </div>
                         <div className="freshnessCrm text-center">
-                            <h3 className="pb-3">A Powerful & Lightweight Tool Designed For Business Use </h3>
-                            <p>You might be wondering why EMAIL EXTRACT ONLINE? Why not another one? The tool can identify the country of origin by examining the website and email domains. This easy-to-use tool will suit your needs 
+                        <div className="title-style-five">
+                            <h2 className="mt-5"><span>A Powerful & Lightweight Tool</span> Designed For Business Use</h2>
+                        </div>
+                            
+                            <p className="mt-5">You might be wondering why EMAIL EXTRACT ONLINE? Why not another one? The tool can identify the country of origin by examining the website and email domains. This easy-to-use tool will suit your needs 
                                 perfectly for email extraction utilizing filtering rules and find any email with the click of a mouse! </p>
                             {/* <p>So, why is Freshsales a better option? </p> */}
                         </div>
-                        <div className="compare-section-second">
-                            <h2>Why Email Extract Online is a better alternative</h2>
+                        <div className="compare-section-second mt-4">
+                            <div className="title-style-five">
+                            <h2><span>Why Email Extract Online</span> is a Better Alternative</h2>
+                            </div>
+                            
                             <Row>
 
                                 <Col sm={4} className="mt-3">
@@ -192,7 +202,10 @@ export class compare extends Component {
                             </Row>
                         </div>
                         <div className="our-customer-compaire d-none">
-                            <h3 className="pb-5">What our customers say about us</h3>
+                            <div className="title-style-five">
+                                <h2 className="pb-5">What our customers say about us</h2>
+                            </div>
+                            
                             <div className="customer-compaire-testimonial">
                             <Carousel variant="dark">
                                 <Carousel.Item>
@@ -318,8 +331,10 @@ export class compare extends Component {
                             </div>
                         </div>
                         <section>
-                            <div className="alternative-section">
-                                <h3>3 reasons why Email Extract Online is the best alternative</h3>
+                            <div className="alternative-section mt-5">
+                                <div className="title-style-five text-center">
+                                    <h2 className="pb-5 text-capitalize"><span>3 reasons why Email Extract Online</span> is the best alternative</h2>
+                                </div>
                             </div>
                             <Row className="py-5">
                                 <Col sm={5} className="mt-3">
@@ -369,9 +384,19 @@ export class compare extends Component {
                         </Container>
                         <section className="freshness-comparision-main-section">
                         <Container>
-                            <div className="freshness-comparision">
+                            {/* <div className="freshness-comparision">
                                 <h3 className="text-center">Email Extract Online vs Hunter.io vs Prospect.io vs Anymailfindier</h3>
+                            </div> */}
+                            <div className="text-center title-style-four mt-5 mb-3">
+                                <div className="title-style-five">
+                                    <h2><span>FAQ</span>’s</h2>
+                                </div>
+                                            
+                                <h6>
+                                    <span>Questions &amp; Answers</span>
+                                </h6>
                             </div>
+                            
                             <div className="row">
                                         <div className="col-12">
                                         <Faq
@@ -388,8 +413,8 @@ export class compare extends Component {
                                         />
                                         </div>
                             </div>
-                            <p className="mt-5"><b>Data as of: 20th November 2020</b></p>
-                            <button className="free-signup text-center">Sign up for free</button>
+                            {/* <p className="mt-5"><b>Data as of: 20th November 2020</b></p> */}
+                            <button className="free-signup text-center mt-5">Sign up for free</button>
                             </Container>
                         </section>
                         <section className="businesses-world">

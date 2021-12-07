@@ -153,8 +153,9 @@ p.log-sec-new {
 // }
 .findemailshome p {
     margin-left: 0px;
-    line-height: 20px;
+    line-height: 15px;
     cursor: pointer;
+    font-weight: 600 !important;
 }
 .fancy-hero-four {
     margin-top: -35px;
@@ -200,10 +201,10 @@ form#myForm label {
     padding-bottom: 20px;
 }
 .compare-main p {
-    /* font-size: 20px; */
-    font-size: 18px;
+    font-size: 20px;
+    
     line-height: 1.39em;
-    font-weight: 600;
+    font-weight: 400;
     color: #2a2a2a;
     text-align: center;
     // padding: 5px 0px 0px;
@@ -211,7 +212,7 @@ form#myForm label {
     font-family: "Segoe UI";
 }
 .compare-section-first {
-    padding: 90px 0;
+    padding: 20px 0 50px;
 }
 .compare-first h2 {
     margin-top: 25px;
@@ -234,7 +235,7 @@ form#myForm label {
     text-align:center;
 }
 .compare-section-second {
-    padding: 60px 0 30px;
+    padding: 0px 0 30px;
     
 }
 .compare-second h2 {
@@ -245,6 +246,7 @@ form#myForm label {
     font-weight: 600;
     font-family: "Segoe UI";
     padding: 0px 45px;
+    
 }
 .compare-second p {
     display: block;
@@ -655,13 +657,12 @@ section.faq-row.styles_faq-row__2YF3c {
     text-transform: capitalize;
 }
 .freshnessCrm p {
-    padding: 0px 30px;
-    font-size: 17px;
-    font-weight: 500;
+    padding: 10px 30px;
+    font-size: 20px;
 }
 .compare-section-second h2 {
     font-size: 47px;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     padding: 15px 40px;
     text-align: center;
     font-family: 'Segoe UI'!important;
@@ -689,7 +690,7 @@ section.faq-row.styles_faq-row__2YF3c {
     text-align: center;
     font-size: 47px;
     text-transform: capitalize;
-    padding: 0 0 20px 0;
+    padding: 0 0 40px 0;
 }
 .our-customer-freesales table td {
     padding: 7px;
@@ -710,13 +711,13 @@ section.faq-row.styles_faq-row__2YF3c {
     text-align: center;
 }
 .freesales-btn a {
-    background-color: #000;
+    background-color: #0495fd;
     color: #fff;
     padding: 5px 10px;
     font-family: 'Segoe UI'!important;
 }
 .freesales-btn a {
-    background-color: #000;
+    background-color: #0495fd;
     color: #fff !important;
     padding: 10px 30px;
     font-family: "Segoe UI" !important;
@@ -752,7 +753,7 @@ section.faq-row.styles_faq-row__2YF3c {
     text-transform: capitalize;
 }
 .better-alternative a {
-    background-color: #000;
+    background-color: #0495fd;
     color: #fff !important;
     padding: 10px 30px;
     font-family: "Segoe UI" !important;
@@ -762,13 +763,16 @@ section.faq-row.styles_faq-row__2YF3c {
     cursor: pointer;
     text-transform: uppercase;
 }
+.better-alternative a:hover {
+    background-color: #090436;
+}
 .better-alternative {
     margin: 0 auto;
     text-align: center;
     padding: 0 20px 40px;
 }
 .freshness-comparision {
-    padding: 50px 0;
+    padding: 25px 0;
 }
 .freshness-comparision h3 {
     font-weight: 700;
@@ -795,7 +799,7 @@ section.faq-row.styles_faq-row__2YF3c {
     padding: 0 0 30px;
 }
 .free-signup {
-    background-color: #000;
+    background-color: #0495fd;
     color: #fff !important;
     padding: 10px 30px;
     font-family: "Segoe UI" !important;
@@ -806,8 +810,11 @@ section.faq-row.styles_faq-row__2YF3c {
     text-align: center;
     text-transform: uppercase;
 }
+.free-signup:hover {
+    background-color: #090436;
+}
 .businesses-world {
-    padding: 50px 0;
+    padding: 15px 0;
 }
 .businesses-world h3 {
     font-weight: 700;
@@ -957,7 +964,7 @@ th.text-center.sec-middle {
 
 }
 section.faq-row p {
-    font-size: 19px;
+    font-size: 20px;
 }
 .title-abt-mission h6 {
     font-size: 47px;
@@ -1006,7 +1013,8 @@ ul.social-icon li a:hover {
 }
 .free-demo-form-left p {
     line-height: 23px;
-    font-size: 16px;
+    font-size: 15px;
+    padding: 0px 0px 0px 10px;
 }
 .free-demo-form-left li svg {
     color: #0d6efd;
@@ -1021,4 +1029,6 @@ ul.social-icon li a:hover {
 h3.addme a {
     text-decoration: none;
 }
-
+.useable-tools-section-h6 {
+    color: #000 !important;
+}
