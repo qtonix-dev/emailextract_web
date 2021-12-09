@@ -29,11 +29,29 @@
     background-color: white;
     -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
     box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
-    margin-top: 8px;
+    margin: 10px auto 0;
     border-radius: 5px;
     padding: 30px;
+    width: 640px;
 }
-
+@media (max-width:576px) {
+    .search-filter-form form {
+        width: 100% !important;
+    }
+    .notfindemailshome {
+        width: 100%;
+    }
+    .findemailshome {
+        width: 100%;
+    }
+    .img-ban-main-new {
+        display: none;
+    }
+    .hero-banner-three h1 span {
+        font-size: 27px;
+        line-height: 22px;
+    }
+}
 .findemailshome{
     background-color: white;
     -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);

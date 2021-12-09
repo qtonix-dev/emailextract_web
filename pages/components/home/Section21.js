@@ -27,12 +27,12 @@ export default class Section21 extends Component {
                         <div className="col-md-6 py-3">
 
                                 {this.state.active===1
-                                ?<><img src="images/emailfinder1.png" alt="img-alt" /></>
+                                ?<><img src="images/emailFinder.jpg" alt="img-alt" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===2
-                                ?<><img src="images/verifiernew.png" alt="" /></>
+                                ?<><img src="images/emailVerifier.jpg" alt="" /></>
                                 :<></>
                                 }
 
@@ -44,7 +44,7 @@ export default class Section21 extends Component {
 
                         </div>
 
-                        <div className="col-md-6">
+                        <div className="col-md-6 justify-content-center align-items-center">
                                 
                                 <p className={this.state.active===1?'how-it-works-first':''} onClick={()=>this.changeImage(1)}>
                                     
