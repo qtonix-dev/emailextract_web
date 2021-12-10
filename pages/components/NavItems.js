@@ -44,7 +44,7 @@ class BodyWithRouter extends Component {
                                         </Link>
                                         </li>
                                         <li>
-                                        <Link href='/login'>
+                                        <Link href='/register'>
                                         <a className="signUp-action d-flex align-items-center">
                                             <span>Getting Started</span>
                                             <img src="images/icon/53.svg" alt="" />

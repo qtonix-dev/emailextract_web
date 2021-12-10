@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-import { FaPhoneAlt, FaEnvelopeOpenText, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelopeOpenText, FaAngleUp, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import $ from "jquery";
 import SimpleReactValidator from 'simple-react-validator'
+
 
 
 export default class Footer extends Component {
@@ -38,6 +39,7 @@ export default class Footer extends Component {
 
       
       
+
       
     render() {
         return (
@@ -122,6 +124,9 @@ export default class Footer extends Component {
                                 </div> {/* /.row */}
                             </div> {/* /.container */}
                             </div> {/* /.top-footer */}
+                            
+                            
+
                             <div className="container">
                             <div className="bottom-footer-content">
                                 <div className="row">
@@ -140,7 +145,7 @@ export default class Footer extends Component {
                         </footer> {/* /.theme-footer-three */}
                         {/* Scroll Top Button */}
                         <button className="scroll-top">
-                            <i className="fa fa-angle-up" aria-hidden="true" />
+                            <FaAngleUp />
                         </button> 
                         
                         

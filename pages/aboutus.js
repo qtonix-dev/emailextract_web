@@ -3,6 +3,7 @@ import Body from './components/Body'
 import Head from 'next/head'
 import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
 import Freedemo from './components/aboutus/Freedemo'
+import { FaCheckCircle } from 'react-icons/fa';
 
 export default class about extends Component {
     render() {
@@ -54,7 +55,7 @@ export default class about extends Component {
 				Fancy Text Block Thirteen
 			=====================================================
 			*/}
-<div className="fancy-text-block-thirteen pt-130 md-pt-100">
+<div className="fancy-text-block-thirteen pt-100 md-pt-100">
   <div className="container">
     <div className="row align-items-center pt-5">
       <div className="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration={1200}>
@@ -94,7 +95,7 @@ export default class about extends Component {
 				Fancy Text block Twelve
 			=====================================================
 			*/}
-<div className="fancy-text-block-twelve mt-130 md-mt-100">
+<div className="fancy-text-block-twelve mt-80 md-mt-80">
   <div className="container">
     <div className="row">
       <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
@@ -129,7 +130,7 @@ export default class about extends Component {
 				Fancy Text block Seventeen
 			============================================== 
 			*/}
-  <div className="fancy-text-block-seventeen mt-50 pt-20 md-mt-80">
+  <div className="fancy-text-block-seventeen mt-20 pt-20 md-mt-80">
     <div className="container">
       <div className="row">
         <div className="col-lg-12" data-aos="fade-left" data-aos-duration={1200}>
@@ -138,7 +139,7 @@ export default class about extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="title-style-five">
-                  <h2 className="mb-5">
+                  <h2 className="mb-3">
                     <span>Our Security</span> Compliance
                   </h2>
                 </div>
@@ -162,7 +163,7 @@ export default class about extends Component {
 				Fancy Text block Seventeen
 			============================================== 
 			*/}
-      <div className="fancy-text-block-seventeen mt-50 pt-20 md-mt-80">
+      <div className="fancy-text-block-seventeen mt-20 pt-20 md-mt-20">
       <Container>
           <div className="row">
 
@@ -179,7 +180,7 @@ export default class about extends Component {
 
         </div>
         
-        <Row className="my-5 core-values-bottom-1">
+        <Row className="mt-2 mb-3 core-values-bottom-1">
             <Col sm={4}>
               <div className="core-values mt-3 border-value">
               <img src="images/embrace.png" alt="img-value" />
@@ -241,7 +242,7 @@ export default class about extends Component {
 			============================================== 
 			*/}
   <div className="fancy-text-block-eighteen" style={{paddingBottom:'0px'}}>
-    <div className="counter-info pt-90 pb-45 md-pt-60">
+    <div className="counter-info pt-50 pb-45 md-pt-50">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-duration={1200}>
@@ -277,9 +278,9 @@ export default class about extends Component {
 				Useable Tools
 			=====================================================
 			*/}
-  <div className="useable-tools-section bg-transparent mt-90 md-mt-90">
+  <div className="useable-tools-section bg-transparent mt-50 md-mt-50">
     <div className="container">
-      <div className="title-style-three text-center mb-60 md-mb-50 sm-mb-30">
+      <div className="title-style-three text-center mb-20 md-mb-20 sm-mb-30">
         <div className="title-style-five">
           <h2><span>Our</span> Partners</h2>
         </div>
@@ -342,6 +343,54 @@ export default class about extends Component {
     </div> {/* /.container */}
   </div> {/* /.useable-tools-section */}
  
+      <div className="our-cli">
+        <div className="container">
+          <div className="our-cli">
+            <h3>Our Clients</h3>
+            <p>Our Linkdin automation tool works best for:</p>
+            <Row>
+              <Col>
+                <div className="col-sec-de">
+                  <img src="images/clients1.png" alt="icon" />
+                  <h5>Business Owners</h5>
+                  <div className="col-sec-de-check">
+                    <FaCheckCircle />
+                  </div>
+                </div>
+                
+              </Col>
+              <Col>
+                <div className="col-sec-de">
+                  <img src="images/clients2.png" alt="icon" />
+                  <h5>Marketing Agencies</h5>
+                  <div className="col-sec-de-check">
+                    <FaCheckCircle />
+                  </div>
+                </div>
+              </Col>
+              <Col>
+                <div className="col-sec-de">
+                  <img src="images/clients3.png" alt="icon" />
+                  <h5>Recruiters</h5>
+                  <div className="col-sec-de-check">
+                    <FaCheckCircle />
+                  </div>
+                </div>
+              </Col>
+              <Col>
+                <div className="col-sec-de">
+                  <img src="images/clients4.png" alt="icon" />
+                  <h5>Sales Teams</h5>
+                  <div className="col-sec-de-check">
+                    <FaCheckCircle />
+                  </div>
+                </div>
+              </Col>
+            </Row>
+            <div className="our-cli-btn text-center">Request A free Demo</div>
+          </div>
+        </div>
+      </div>
 
  <br />
 

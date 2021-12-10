@@ -166,7 +166,7 @@ export class compare extends Component {
                             <h2 className="mt-5"><span>A Powerful & Lightweight Tool</span> Designed For Business Use</h2>
                         </div>
                             
-                            <p className="mt-5">You might be wondering why EMAIL EXTRACT ONLINE? Why not another one? The tool can identify the country of origin by examining the website and email domains. This easy-to-use tool will suit your needs 
+                            <p className="mt-3">You might be wondering why EMAIL EXTRACT ONLINE? Why not another one? The tool can identify the country of origin by examining the website and email domains. This easy-to-use tool will suit your needs 
                                 perfectly for email extraction utilizing filtering rules and find any email with the click of a mouse! </p>
                             {/* <p>So, why is Freshsales a better option? </p> */}
                         </div>
@@ -178,21 +178,21 @@ export class compare extends Component {
                             <Row>
 
                                 <Col sm={4} className="mt-3">
-                                    <div className="compare-second py-5 px-2 text-center">
+                                    <div className="compare-second pt-5 pb-2 px-2 text-center">
                                         <img src="images/prospects.png" alt="email" />
                                         <h4>Free Prospects For Life</h4>
                                         <p>We give 50 credits for free every month for lifetime.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4} className="mt-3">
-                                    <div className="compare-second py-5 mb-5 text-center">
+                                    <div className="compare-second pt-5 pb-2 mb-5 text-center">
                                         <img src="images/easytouse.png" alt="email" />
                                         <h4>An Easy-to-use Web App</h4>
                                         <p>The best way to reach your prospects during COVID-19 is through our easy-to-use web app.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4} className="mt-3">
-                                    <div className="compare-second py-5 mb-5 text-center">
+                                    <div className="compare-second pt-5 pb-2 mb-5 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjwbrlayh00itsfg065hbnxex-easy-to-setup.svg" alt="email" />
                                         <h4>Highly Scalable</h4>
                                         <p>Start with an entry plan and select a higher plan seamlessly as your business grows. </p>
@@ -331,12 +331,12 @@ export class compare extends Component {
                             </div>
                         </div>
                         <section>
-                            <div className="alternative-section mt-5">
+                            <div className="alternative-section mt-2">
                                 <div className="title-style-five text-center">
-                                    <h2 className="pb-5 text-capitalize"><span>3 reasons why Email Extract Online</span> is the best alternative</h2>
+                                    <h2 className="pb-2 text-capitalize"><span>3 reasons why Email Extract Online</span> is the best alternative</h2>
                                 </div>
                             </div>
-                            <Row className="py-5">
+                            <Row className="py-3">
                                 <Col sm={5} className="mt-3">
                                     <div className="alternative-section-inner">
                                         <h3>Ease of use</h3>
@@ -349,7 +349,7 @@ export class compare extends Component {
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks0defd0053otsg03163hh6p-fsa-analytics-dashboard.one-half.png" alt="img-email" />
                                 </Col>
                             </Row>
-                            <Row className="py-5">
+                            <Row className="py-3">
                                 <Col sm={7} className="mt-3">
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks4ef4yu02zx74fzoovd0bso-104-b.one-half.png" alt="img-email" />
                                 </Col>
@@ -361,7 +361,7 @@ export class compare extends Component {
                                     </div>
                                 </Col>
                             </Row>
-                            <Row className="py-5">
+                            <Row className="py-3">
                                 
                                 <Col sm={5} className="mt-3">
                                     <div className="alternative-section-inner">
@@ -382,7 +382,7 @@ export class compare extends Component {
                             </div>
                         </section>
                         </Container>
-                        <section className="freshness-comparision-main-section">
+                        <section className="freshness-comparision-main-section pt-1">
                         <Container>
                             {/* <div className="freshness-comparision">
                                 <h3 className="text-center">Email Extract Online vs Hunter.io vs Prospect.io vs Anymailfindier</h3>

@@ -15,12 +15,14 @@ import Head from 'next/head'
 import Section21 from './components/home/Section21'
 import Section22 from './components/home/Section22'
 
-import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
+import { Tab, Row, Col, Nav, Container,Modal,Button } from 'react-bootstrap'
 import { FaViruses, FaHandshake, FaSearch } from "react-icons/fa"
 import { BiSupport } from "react-icons/bi"
 import { AiOutlineFileProtect } from "react-icons/ai"
 import { MdEditNote } from "react-icons/md"
- 
+
+
+
     //=======SLIDER=======//
     var settings = {
         dots: true,
@@ -366,8 +368,39 @@ export class index extends Component {
                                     :<></>
                                     }
                                                     
-                                                    <p className="sing-in-call">50 Free Credits Every Month • GDPR Alligned & CCPA Compligned • Get Started In Seconds • <Link href='/register'><a className="font-rubik">Sign Up</a></Link></p>
+                                        <p className="sing-in-call">50 Free Credits Every Month • GDPR Alligned & CCPA Compligned • Get Started In Seconds • <Link href='/register'><a className="font-rubik">Sign Up</a></Link></p>
                                 
+                                        <div className="icon-images-ban">
+                                            <ul>
+                                                <li>
+                                                    <img src="images/g2.png" alt="img-ban" />
+                                                    <p>
+                                                        4.7/5 <br /> 
+                                                        {/* <span>89 reviews</span> */}
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <img src="images/captera.png" alt="img-ban" />
+                                                    <p>
+                                                        4.7/5 <br /> 
+                                                        {/* <span>63 reviews</span> */}
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <img src="images/trustpilot.png" alt="img-ban" />
+                                                    <p>
+                                                        Excellent <br /> 
+                                                        {/* <span>45 reviews</span> */}
+                                                    </p>
+                                                </li>
+                                                {/* <li>
+                                                    <img src="images/01.png" alt="img-ban" />
+                                                </li>
+                                                <li>
+                                                    <img src="images/medal2.png" alt="img-ban" />
+                                                </li> */}
+                                            </ul>
+                                        </div>
                                     </div> {/* /.container */}
 
 
@@ -402,11 +435,57 @@ export class index extends Component {
                     ============================================== 
                     */}
                     
-                    <div className="fancy-text-block-nineteen mt-200 mb-100 md-mt-200 md-mb-150">
+                    <div className="fancy-text-block-nineteen mt-90 mb-20 md-mt-90 md-mb-20">
                     <div className="container">
+                        <div className="fancy-text-block-section-main mb-5">
+                            <div className="row">
+
+                                <div className="col-lg-4">
+                                    <div className="fancy-text-block-section">
+                                        <div className="row">
+                                            <div className="col-lg-4">
+                                                <img src="images/nums-1.png" alt="img-email" />
+                                            </div>
+                                            <div className="col-lg-8">
+                                                <h4>150 000+</h4>
+                                                <p>companies on board</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div className="col-lg-4">
+                                    <div className="fancy-text-block-section">
+                                        <div className="row">
+                                            <div className="col-lg-4">
+                                                <img src="images/nums-2.png" alt="img-email" />
+                                            </div>
+                                            <div className="col-lg-8">
+                                                <h4>2 000+</h4>
+                                                <p>website crawled everyday</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4">
+                                    <div className="fancy-text-block-section">
+                                        <div className="row">
+                                            <div className="col-lg-4">
+                                                <img src="images/nums-3.png" alt="img-email" />
+                                            </div>
+                                            <div className="col-lg-8">
+                                                <h4>750 000+</h4>
+                                                <p>leads verified daily</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
-                            <img src="images/media/img_57.png" alt="" className="m-auto w-75" />
+                            <img src="images/peopleholding.png" alt="" className="m-auto w-100" />
                         </div>
                         <div className="col-lg-6" data-aos="fade-left" data-aos-duration={1200}>
                             <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDelay='1500' isVisible={true}>
@@ -443,9 +522,9 @@ export class index extends Component {
                                                 Fancy Feature Eight
                                             =====================================================
                                             */}
-                                <div className="fancy-feature-eight pt-50 md-pt-50">
+                                <div className="fancy-feature-eight pt-40 md-pt-40">
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-60 md-mb-40">
+                                    <div className="title-style-four text-center mb-40 md-mb-40">
                                         <div className="row">
                                             <div className="col-lg-10 m-auto">
                                                     <div className="title-style-five">
@@ -485,7 +564,7 @@ export class index extends Component {
                                                 Useable Tools
                                             =====================================================
                                             */}
-                                <div className="useable-tools-section-three mt-50 mb-140 md-mt-50 md-mb-80">
+                                <div className="useable-tools-section-three mt-20 mb-80 md-mt-20 md-mb-80">
                                     <div className="container">
                                     <div className="row">
                                         <div className="col-lg-6">
@@ -533,7 +612,7 @@ export class index extends Component {
                     <div className="container">
                         <div className="row">
                         <div className="col-xl-9 col-lg-11 m-auto" data-aos="fade-up" data-aos-duration={1200}>
-                            <div className="title-style-eight text-center mb-50 md-mb-40">
+                            <div className="title-style-eight text-center mb-30 md-mb-30">
                                 <div className="title-style-five">
                                     <h2><span>Why Choos</span>e Us</h2>
                                 </div>
@@ -612,7 +691,7 @@ export class index extends Component {
                                                 Client Feedback Slider Two
                                             =====================================================
                                             */}
-                                <div className="client-feedback-slider-two mt-70 md-mt-70">
+                                <div className="client-feedback-slider-two mt-40 md-mt-40">
                                     <img src="images/shape/78-1.png" alt="" className="shapes shape-one" />
                                     <img src="images/shape/79-1.png" alt="" className="shapes shape-two" />
                                     <img src="images/shape/80-1.png" alt="" className="shapes shape-three" />
@@ -622,7 +701,7 @@ export class index extends Component {
                                     <img src="images/shape/84-1.png" alt="" className="shapes shape-seven" />
                                     <img src="images/shape/85-1.png" alt="" className="shapes shape-eight" />
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-60 md-mb-60">
+                                    <div className="title-style-four text-center mb-20 md-mb-20">
                                         <div className="row">
                                         <div className="col-lg-7 col-md-9 m-auto">
                                             <div className="title-style-five">
@@ -715,14 +794,6 @@ export class index extends Component {
                                         </div> {/* /.bg-wrapper */}
                                         </div>
                                     </Slider>
-
-
-
-
-
-
-
-
                                         
                                         
                                     </div>
@@ -744,7 +815,7 @@ export class index extends Component {
                                     <img src="images/shape/90-1.png" alt="" className="shapes shape-five" />
                                     <img src="images/shape/91-1.png" alt="" className="shapes shape-six" />
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-60 md-mb-70">
+                                    <div className="title-style-four text-center mb-20 md-mb-20">
                                         <div className="row">
                                         <div className="col-lg-7 m-auto">
                                             <div className="title-style-five">
@@ -775,6 +846,8 @@ export class index extends Component {
                                     </div>
                                     </div>
                                 </div> {/* /.faq-classic */}
+
+                                
             
             </Body>
         )

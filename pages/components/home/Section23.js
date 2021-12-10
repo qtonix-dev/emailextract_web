@@ -22,17 +22,17 @@ export default class Section21 extends Component {
     render() {
         return (
             <>
-                <Container className="pt-5 pb-2">
+                <Container className="py-5">
                     <div className="row">
-                        <div className="col-md-6 py-3">
+                        <div className="col-md-6 py-5">
 
                                 {this.state.active===1
-                                ?<><img src="images/emailFinder.jpg" alt="img-alt" /></>
+                                ?<><img src="images/assets/ils_10.svg" alt="" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===2
-                                ?<><img src="images/emailVerifier.jpg" alt="" /></>
+                                ?<><img src="images/assets/ils_11.svg" alt="" /></>
                                 :<></>
                                 }
 
@@ -44,11 +44,11 @@ export default class Section21 extends Component {
 
                         </div>
 
-                        <div className="col-md-6 justify-content-center align-items-center">
+                        <div className="col-md-6">
                                 
                                 <p className={this.state.active===1?'how-it-works-first':''} onClick={()=>this.changeImage(1)}>
                                     
-                                        <div className="feature-sec-desc active px-4 py-3">
+                                        <div className="feature-sec-desc active px-4 py-2">
                                             <h3 className="cursor-pointer">Email Finder</h3>
                                             {/* <p className="cursor-pointer">Find verified email of any targeted professional from their name and company.</p> */}
                                             <h6>A Faster Way To Find Anyone</h6>
@@ -62,7 +62,7 @@ export default class Section21 extends Component {
                                 
                                 <p className={this.state.active===2?'how-it-works-first':''} onClick={()=>this.changeImage(2)}>
                                   
-                                    <div className="feature-sec-desc active px-4 py-3">
+                                    <div className="feature-sec-desc active px-4 py-2">
                                         <h3>Email Verifier</h3>
                                         {/* <p>Verify any professional email address and boost email deliverability with the most 
                                             reliable email verifier tool.</p> */}
@@ -73,18 +73,18 @@ export default class Section21 extends Component {
                                     
                                 </p>
                             
-                                {/* <p className={this.state.active===3?'how-it-works-first':''} onClick={()=>this.changeImage(3)}>
+                                <p className={this.state.active===3?'how-it-works-first':''} onClick={()=>this.changeImage(3)}>
                                     
                                     <div className="feature-sec-desc active px-4 py-2">
                                             <h3 className="cursor-pointer">Bulk Extractor</h3>
-                                            
+                                            {/* <p className="cursor-pointer">The all-in-one solution to verify a large number of email addresses at once.</p> */}
                                             <h6>Find Verified Bulk Emails At once</h6>
                                             <p>Extracting bulk email has never been so much easier. With the Email Extract Online Bulk Extractor, you can 
                                                 find large numbers of verified email addresses in seconds. </p>
                                             <div className="btn-feature-section"><Link href="/pricing">View More </Link> &nbsp;<FaArrowCircleRight /></div>
                                     </div>
                                     
-                                </p> */}
+                                </p>
                             
                         </div>
                     </div>

@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import Router from 'next/router'
 import Link from 'next/link'
 import { Row, Col, Form } from 'react-bootstrap'
-import { FaHome, FaGoogle } from 'react-icons/fa'
+import { FaHome, FaGoogle,FaEye } from 'react-icons/fa'
 import Head from 'next/head'
 import { GoogleLogin } from 'react-google-login'
 
@@ -17,10 +17,13 @@ export class register extends Component {
     constructor(props){
         super(props)
         this.state={
-          formLoading:false
+          formLoading:false,
+          passwordViewType:'password',
+          text: 'Show'
         }
         this.validator = new SimpleReactValidator();
         this.handleChange=this.handleChange.bind(this);
+        this.changePasswordViewType=this.changePasswordViewType.bind(this);
       }
   
       componentDidMount(){
@@ -30,9 +33,21 @@ export class register extends Component {
       handleChange(e){
         this.setState({
           [e.target.name]:e.target.value
+
         })
       }
 
+      changePasswordViewType(e){
+        
+    
+
+          if(this.state.passwordViewType==='text'){
+            this.setState({passwordViewType:'password'})
+          }else{
+            this.setState({passwordViewType:'text'})
+          }
+      }
+    
     componentDidMount(){
 
     }
@@ -94,7 +109,8 @@ export class register extends Component {
                 });
                 
             }
-  
+            
+            
                   
   
             //   })
@@ -111,6 +127,14 @@ export class register extends Component {
         console.log(response);
       }
 
+    // onClick: function() {
+    //     var 
+    //     this.setState({
+    //         type: newState,
+    //         wording: newWord
+    //       })
+    // }
+    
     render() {
         return (
             <>
@@ -167,16 +191,18 @@ export class register extends Component {
                         </div>
                         
                         <div className="col-6 d-none">
-                            <div className="input-group-meta mb-50">
+                            <div className="input-group-meta mb-50 password-img">
                             <label>Password</label>
-                            <input type="password" placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange}  />
+                            <input type={this.state.passwordViewType} placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange}  />
+                           
+                            <span className="password-trigger" onClick={this.changeState}>{this.state.text}</span>
                             <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
                             </div>
                         </div>
                         <div className="col-6 d-none">
                             <div className="input-group-meta mb-15">
                             <label>Re-type Password</label>
-                            <input type="password" placeholder="Enter Re-type Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange}  />
+                            <input type="password" placeholder="Enter Re-type Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('re_enter_password', this.state.re_enter_password, 'required')}</h6>
                             </div>
                         </div>
@@ -204,13 +230,15 @@ export class register extends Component {
                                 <h6 className="form_error_message">{this.validator.message('company', this.state.company, 'required')}</h6>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                                <Form.Label>Password   </Form.Label>
+                                <Form.Control type={this.state.passwordViewType} placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                                <span className="password-trigger" onClick={this.changePasswordViewType}><a><FaEye /></a></span>
                                 <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
                                 </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Conform Password</Form.Label>
-                                <Form.Control type="password" placeholder="Conform Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange} />
+                                <Form.Control type={this.state.passwordViewType} placeholder="Conform Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange} />
+                                <span className="password-trigger" onClick={this.changePasswordViewType}><a><FaEye /></a></span>
                                 <h6 className="form_error_message">{this.validator.message('re_enter_password', this.state.re_enter_password, 'required')}</h6>
                             </Form.Group>
                             <div className="col-12">
@@ -224,7 +252,7 @@ export class register extends Component {
                                         width={50}
                                     />
                                     </center>
-                                    :<button className="theme-btn-one mt-1 mb-30" type='submit'>Register</button>
+                                    :<button className="theme-btn-one mt-1 mb-30" type='submit'>Sign Me Up</button>
                                     }
                             </div>
                         
@@ -233,6 +261,10 @@ export class register extends Component {
                     
 
                     <div className="form-bottom">
+
+                        <div className="conte-sec">
+                            <p>By Clicking &quot;Sign Me Up&quot; you agree to Email Extracter Online&rdquo;s <Link href='/terms-and-condition'>Terms & Condition</Link> & <Link href='/privacy-policy'>Privacy Policy</Link></p>
+                        </div>
 
                         <div className="or-sec text-center mb-4">
                             <a>or</a>

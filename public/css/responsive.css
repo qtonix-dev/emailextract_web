@@ -19,7 +19,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1450px) {
     .theme-main-menu {
-        padding: 30px 40px;
+        padding: 0px 40px;
     }
     .theme-menu-two .navbar {
         padding-right: 18%;

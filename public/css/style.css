@@ -478,8 +478,8 @@ h6 {
 .title-style-four h6 {
 	/* font-family: Roboto, sans-serif; */
 	font-size: 20px;
-	color: rgba(0, 0, 0, .35);
-	padding-bottom: 15px;
+	color: #000;
+	/* padding-bottom: 15px; */
 	padding-top: 10px;
 }
 
@@ -7396,7 +7396,7 @@ body .theme-btn-nine:hover {
 }
 
 .block-style-twelve:last-child {
-	padding-bottom: 0
+	padding-bottom: 0;
 }
 
 .block-style-twelve:last-child:before {
@@ -7406,7 +7406,7 @@ body .theme-btn-nine:hover {
 .client-feedback-slider-two {
 	background: #f7faff;
 	position: relative;
-	padding: 90px 0 30px;
+	padding: 40px 0 10px;
 	z-index: 5
 }
 
@@ -7422,7 +7422,7 @@ body .theme-btn-nine:hover {
 	position: relative;
 	margin: 0 15px 70px;
 	transition: all .3s ease-in-out;
-	height: 430px;
+	height: 390px;
 }
 
 .client-feedback-slider-two .slick-center .bg-wrapper {
@@ -7449,7 +7449,7 @@ body .theme-btn-nine:hover {
 	white-space: nowrap;
 	height: 200x;
 	text-overflow: ellipsis;
-	width: 345px;
+	width: 265px;
 }
 
 .client-feedback-slider-two .bg-wrapper .name {
@@ -7790,7 +7790,7 @@ body .theme-btn-nine:hover {
 
 .fancy-hero-five {
 	background: #f7faff;
-	padding: 170px 0 100px;
+	padding: 140px 0 100px;
 	position: relative;
 	z-index: 5
 }

@@ -74,7 +74,14 @@ export default function Freedemo() {
                                             {/* <img src="images/ipaydna.png" alt="emailicon" className="w-25" /> */}
                                             </p>
                                         </div>
+                                        <div className="free-demo-form-list-btn">
+                                            <ul>
+                                                <li className="schedule-demo">Schedule A Demo</li>
+                                                <li className="schedule-demo-free">Try For Free</li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                    
                                 </Col>
                                 <Col sm={6}>
                                     <div className="free-demo-form-right mb-5">

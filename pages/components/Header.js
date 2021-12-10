@@ -15,7 +15,7 @@ export default class Header extends Component {
     }
 
     componentDidMount(){
-        this.setState({hideMobileMenu:false})
+        // this.setState({hideMobileMenu:false})
 
 
         $(window).scroll(function() {

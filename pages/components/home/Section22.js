@@ -22,7 +22,7 @@ export default class Section22 extends Component {
     render() {
         return (
             <>
-                <Container className="py-5">
+                <Container className="pt-5 pb-3">
                     <Row>
                     <div className="col-md-6 py-3">
                                 
