@@ -16,13 +16,13 @@ function termsandcondition() {
           ============================================== 
           */}
             <div className="fancy-hero-five">
-              <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
-              <img src="images/shape/96.svg" alt="" className="shapes shape-two" />
+              {/* <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
+              <img src="images/shape/96.svg" alt="" className="shapes shape-two" /> */}
               <div className="bg-wrapper">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-12 m-auto text-center">
-                      <h1 className="heading">
+                      <h1 className="heading font-terms">
                         <span>Terms and Conditions<img src="/images/shape/line-shape-11.svg" alt="ss" /></span>
                       </h1>
                     </div>

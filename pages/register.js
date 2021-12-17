@@ -10,7 +10,7 @@ import { Row, Col, Form } from 'react-bootstrap'
 import { FaHome, FaGoogle,FaEye } from 'react-icons/fa'
 import Head from 'next/head'
 import { GoogleLogin } from 'react-google-login'
-
+import {GiSelfLove} from "react-icons/gi"
 
 export class register extends Component {
 
@@ -145,7 +145,7 @@ export class register extends Component {
                 
                 <div className="user-data-page clearfix d-lg-flex">
                     <div className="illustration-wrapper d-flex align-items-center flex-column">
-                    <h3 className="font-rubik">Your prospect clients are on our website right now. Find them today.</h3>
+                    <h3 className="font-rubik">Your prospect clients are on our website right now. Find them today!</h3>
                     <div className="illustration-holder">
                         <img src="images/assets/ils_08.svg" alt="" className="illustration" />
                         <img src="images/register.png" alt="" className="shapes shape-one" />
@@ -157,11 +157,13 @@ export class register extends Component {
                         {/* <div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="img-email" className="w-50" /></a></Link></div>
                         <Link href='/'><a className="font-rubik go-back-button">Go to home</a></Link> */}
                         <Row>
-                            <Col xs={9}><div className="logo ml-5"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75 ml-3" /></a></Link></div></Col>
+                            {/* <Col xs={9}><div className="logo ml-5"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75 ml-3" /></a></Link></div></Col> */}
                             {/* <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col> */}
                         </Row>
                     </div>
                     <form onSubmit={this.handleSubmit} className="user-data-form mt-30" id="myForm">
+                    <div className="logo mb-3"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75" /></a></Link></div>
+                        <h6><Link href='/'>Back to Home</Link></h6>
                         <h2 className="mb-3">Create your free account</h2>
                         <p className="header-info pt-30 pb-50 d-none">Already have an account?  <Link href='/login'><a>Login</a></Link></p>
                         <div className="row">
@@ -225,12 +227,12 @@ export class register extends Component {
                                 <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicName">
-                                <Form.Label>Company&quot;s Name</Form.Label>
+                                <Form.Label>Company&#39;s Name</Form.Label>
                                 <Form.Control type="text" placeholder="What's your full name?" name="company" value={this.state.company} onChange={this.handleChange} />
                                 <h6 className="form_error_message">{this.validator.message('company', this.state.company, 'required')}</h6>
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Password   </Form.Label>
+                                <Form.Label>Password</Form.Label>
                                 <Form.Control type={this.state.passwordViewType} placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
                                 <span className="password-trigger" onClick={this.changePasswordViewType}><a><FaEye /></a></span>
                                 <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
@@ -295,7 +297,7 @@ export class register extends Component {
                     </div>
 
                     <div className="col-12">
-                            <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>
+                            <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
                     </div>
 
                     </div> 

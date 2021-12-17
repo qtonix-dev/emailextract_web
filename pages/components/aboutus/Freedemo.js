@@ -8,6 +8,7 @@ import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css"
+import Link from 'next/link'
 
 export default function Freedemo() {
 
@@ -49,6 +50,9 @@ export default function Freedemo() {
 
     //   console.log(freedemo);
     const [startDate, setStartDate] = useState(new Date());
+
+   
+
     return (
 
         <Container>
@@ -76,8 +80,8 @@ export default function Freedemo() {
                                         </div>
                                         <div className="free-demo-form-list-btn">
                                             <ul>
-                                                <li className="schedule-demo">Schedule A Demo</li>
-                                                <li className="schedule-demo-free">Try For Free</li>
+                                                <li className="schedule-demo"><Link href="/register">Register Now</Link></li>
+                                                {/* <li className="schedule-demo-free">Try For Free</li> */}
                                             </ul>
                                         </div>
                                     </div>
@@ -197,7 +201,7 @@ export default function Freedemo() {
                                                 {/* <h6 className="form_error_message">{this.validator.message('phone', this.state.email, 'required|phone')}</h6> */}
                                             </Col>
                                             </Row>
-                                            <Button variant="primary" type="submit" className="w-100 mt-3">Submit</Button>
+                                            <Button type="submit" className="w-100 mt-3 btn-lg free-demo-btn">Submit</Button>
                                             
                                         </Form>
                                          <Row>

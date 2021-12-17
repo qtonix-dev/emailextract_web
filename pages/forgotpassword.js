@@ -8,8 +8,9 @@ import {  toast } from 'react-toastify';
 import Link from 'next/link'
 import { Row, Col, Form } from 'react-bootstrap'
 import Head from 'next/head'
-
+import { GoogleLogin } from 'react-google-login';
 import { FaHome, FaGoogle } from 'react-icons/fa'
+import {GiSelfLove} from "react-icons/gi"
 
 
 export default class forgotpassword extends Component {
@@ -121,6 +122,10 @@ export default class forgotpassword extends Component {
         }
     }
 
+    responseGoogle = (response) => {
+      console.log(response);
+    }
+
     render() {
         return (
             <>
@@ -142,13 +147,15 @@ export default class forgotpassword extends Component {
                     
                     <div className="d-flex justify-content-between">
                       <Row>
-                        <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></Link></div></Col>
-                        <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
+                        {/* <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75" /></a></Link></div></Col> */}
+                        {/* <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col> */}
                       </Row>
                     </div>
                     <form onSubmit={this.handleSubmit} className="user-data-form mt-30" id="myForm">
+                        <div className="logo"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75" /></a></Link></div>
+                        <h6><Link href='/'>Back to Home</Link></h6>
                         <h2>Forgot Password?</h2>
-                        <p className="header-info pt-30 pb-50">If you have lost or forgotten your password, enter your email to have your password sent to the email address.</p>
+                        <p className="header-info pt-30 pb-30">If you have lost or forgotten your password, enter your email to have your password sent to the email address.</p>
                         <div className="row ">
                         
                      
@@ -187,13 +194,17 @@ export default class forgotpassword extends Component {
                       <div className="form-bottom">
 
                           <div className="or-sec text-center mb-4">
-                              <a>Or</a>
+                              <a>or</a>
                           </div>
 
-                          <div className="theme-btn-google text-center">
-                              <a className="signinGoogle">
-                              <FaGoogle /> &nbsp;Signin with Google
-                              </a>
+                          <div className="google-signin mb-3">
+                            <GoogleLogin
+                                  clientId="372190396984-42v070uptnpu15m5i0cie4sggbtphauf.apps.googleusercontent.com"
+                                  buttonText="Sign in with Google"
+                                  onSuccess={this.responseGoogle}
+                                  onFailure={this.responseGoogle}
+                                  className="w-100"
+                            />
                           </div>  
                               
                           <div className="theme-btn-reg mb-4">
@@ -205,7 +216,7 @@ export default class forgotpassword extends Component {
                       </div>
 
                       <div className="col-12">
-                              <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>
+                      <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
                       </div>
 
                     </div> 

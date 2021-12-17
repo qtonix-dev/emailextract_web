@@ -326,7 +326,7 @@ export class compare extends Component {
                             </Table>
                             <p>Note: Data as of 20th November 2020</p>
                             <div className="freesales-btn">
-                            <Link href='/login'>Try For Free</Link>
+                            <Link href='/register'>Try For Free</Link>
                                 <a>Feature Comparision</a>
                             </div>
                         </div>
@@ -378,7 +378,7 @@ export class compare extends Component {
                             </Row>
                             <div className="better-alternative">
                                 {/* <h3>Think Email Extract Online is a better alternative ? Give it a spin today.</h3> */}
-                                <a>Try Email Extract Online for free</a>
+                                <Link href="/register">Try Email Extract Online for free</Link>
                             </div>
                         </section>
                         </Container>

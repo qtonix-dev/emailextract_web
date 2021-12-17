@@ -20,7 +20,9 @@ import React from 'react'
 import {Provider} from 'react-redux'
 import {createWrapper} from 'next-redux-wrapper'
 import store from '../store/store'
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify'
+
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -29,7 +31,11 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import 'react-toastify/dist/ReactToastify.css';
 
 
+
 class MyApp extends App {
+
+  
+
   render(){
     const {Component,pageProps} = this.props;
     return(
@@ -37,7 +43,9 @@ class MyApp extends App {
         
           <Component {...pageProps}></Component>
           <ToastContainer />
+          
       </Provider>
+      
     )
   }
 }

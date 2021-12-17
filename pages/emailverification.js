@@ -77,10 +77,10 @@ export default class login extends Component {
                     <div className="form-wrapper">
                     
                     <div className="d-flex justify-content-between">
-                      <Row>
-                        <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/logo-b.png" alt="" className="w-50" /></a></Link></div></Col>
-                        <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
-                      </Row>
+                        <Row>
+                            <Col xs={9}><div className="logo"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75" /></a></Link></div></Col>
+                            <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col>
+                        </Row>
                     </div>
                     <br />
                     <br />

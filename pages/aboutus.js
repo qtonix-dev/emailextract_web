@@ -28,7 +28,7 @@ export default class about extends Component {
     <div className="bg-wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-lg-7 col-md-8 col-sm-10">
+          <div className="col-lg-7 col-md-8 col-sm-10 align-items-center">
           <div className="title-style-three title-style-five"><h2><span>About</span> Us</h2></div>
             <h6 className="heading">
 
@@ -39,7 +39,7 @@ export default class about extends Component {
             marketing teams across the world, thereby helping them connect with future customers in a few clicks.
             </p>
           </div>
-          <div className="col-lg-5 col-md-4">
+          <div className="col-lg-5 col-md-4 align-items-center">
             <img src="images/media/img_52.png" alt="" className="img-meta" />
           </div>
         </div>
@@ -55,7 +55,7 @@ export default class about extends Component {
 				Fancy Text Block Thirteen
 			=====================================================
 			*/}
-<div className="fancy-text-block-thirteen pt-100 md-pt-100">
+<div className="fancy-text-block-thirteen pt-20 md-pt-20">
   <div className="container">
     <div className="row align-items-center pt-5">
       <div className="col-lg-6 order-lg-last" data-aos="fade-left" data-aos-duration={1200}>

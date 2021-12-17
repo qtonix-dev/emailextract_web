@@ -4,7 +4,9 @@ import { FaPhoneAlt, FaEnvelopeOpenText, FaAngleUp, FaFacebookF, FaTwitter, FaIn
 import $ from "jquery";
 import SimpleReactValidator from 'simple-react-validator'
 
-
+import ReCAPTCHA from "react-google-recaptcha"
+import {FiPhoneCall} from "react-icons/fi"
+import {GiSelfLove} from "react-icons/gi"
 
 export default class Footer extends Component {
 
@@ -25,6 +27,7 @@ export default class Footer extends Component {
         })
       }
 
+
       handleSubmit=e=>{
         e.preventDefault();
         if (this.validator.allValid()){
@@ -37,8 +40,6 @@ export default class Footer extends Component {
         }
       }
 
-      
-      
 
       
     render() {
@@ -51,7 +52,14 @@ export default class Footer extends Component {
                         */}
                         <div className="fancy-short-banner-four">
                             <div className="container">
+
                             <div className="bg-wrapper">
+
+                            {/* <ReCAPTCHA
+                                sitekey="6LdNCWgdAAAAABfgiogYFxsOU4LgySOzlMscH5FS"
+                                onChange={onChange}
+                            /> */}
+
                                 <div className="row align-items-center">
                                 <div className="col-lg-6">
                                     <div className="title">
@@ -61,7 +69,7 @@ export default class Footer extends Component {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-wrapper">
-                                    <form action="#" onSubmit={this.handleSubmit} className="mt-5 sub-form" id="myForm">
+                                    <form action="#" onSubmit={this.handleSubmit} className="sub-form" id="myForm">
                                         <input type="text" placeholder="Enter Your Email Address" name="subscribe" value={this.state.subscribe} onChange={this.handleChange} />
                                         <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                                         <button>Subscribe</button>
@@ -83,7 +91,11 @@ export default class Footer extends Component {
                             <div className="container">
                                 <div className="row justify-content-between">
                                 <div className="col-lg-4 col-12 footer-about-widget">
-                                <Link href='/'><a className="logo"><img src="/images/email-logo-n.png" alt="img-email" className="w-75" /></a></Link>
+                                <Link href='/'>
+                                    <a className="logo">
+                                        <img src="/images/email-logo-n.png" alt="img-email" className="w-75" />
+                                    </a>
+                                </Link>
                                 </div> {/* /.about-widget */}
                                 <div className="col-lg-2 col-md-4 footer-list" >
                                     <h5 className="footer-title">Product</h5>
@@ -107,8 +119,8 @@ export default class Footer extends Component {
                                     <h5 className="footer-title">Contact Info</h5>
                                     <div className="contact-info">
                                         
-                                        <p className="font-rubik"><FaEnvelopeOpenText /> &nbsp;info@qtonix.com</p>
-                                        <p className="font-rubik"><FaPhoneAlt /> &nbsp;+315 510 5120</p>
+                                        <p><FaEnvelopeOpenText /> &nbsp;sales@emailextractonline.com</p>
+                                        <p><FaPhoneAlt /> &nbsp;+1 (315) 293-2806</p>
                                         <p>
                                         <ul className="social-icon d-inline pt-15">
                                             <li><a href="#"><FaFacebookF /></a></li>
@@ -125,18 +137,42 @@ export default class Footer extends Component {
                             </div> {/* /.container */}
                             </div> {/* /.top-footer */}
                             
-                            
+                            <div className='footer-third-section'>
+                                <div className="container">
+                                    <div className='row'>
+                                        <div className='col-md-3'>
+                                            <p>Stay in Touch</p>
+                                        </div>
+                                        <div className='col-md-6'>
+                                            <p className='text-center'>
+                                                <a><FiPhoneCall /> +1 (315) 293-2806</a>&nbsp;&nbsp;
+                                                <a><FiPhoneCall /> +1 (315) 293-2806</a>
+                                            </p>
+                                        </div>
+                                        <div className='col-md-3'>
+                                            <ul className='text-right'>
+                                                <li><a><FaFacebookF /></a></li>
+                                                <li><a><FaTwitter /></a></li>
+                                                <li><a><FaInstagram /></a></li>
+                                                <li><a><FaLinkedinIn /></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
 
                             <div className="container">
                             <div className="bottom-footer-content">
                                 <div className="row">
-                                <div className="col-lg-8 ml-auto">
+                                <div className="col-lg-12 ml-auto">
                                     <div className="d-md-flex align-items-center justify-content-between">
                                     <ul className="order-md-last" data-aos="fade-left">
                                         <li><Link href='/privacy-policy'><a>Privacy</a></Link></li>
                                         <li><Link href='/terms-and-condition'><a>Terms</a></Link></li>
+                                        <li><Link href='/sitemap.html'><a>Sitemap</a></Link></li>
                                     </ul>
-                                    <p className="order-md-first" data-aos="fade-right">Copyright @2021 Email Extracter.</p>
+                                    <p className="order-md-first" data-aos="fade-right">© 2020-2021 All rights reserved. Email Extract Online - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
                                     </div>
                                 </div>
                                 </div>

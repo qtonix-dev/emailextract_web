@@ -11,11 +11,13 @@ class MyDocument extends Document {
       <Html>
         <Head>
 
-        
+        <link rel="canonical" href="https://www.emailextractonline.com/" />
         <link rel="icon" type="image/png" href="/Favicon-mail.png"/>
 
         <link rel="stylesheet" type="text/css" href="/css/style.css" />
 		    <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+       
+        <meta name="google-site-verification" content="yxd1eZtLZwfmfjdlSnePMlYLaBWhSIfqVDGNc5BtDIw" />
         </Head>
         <body>
           <Main />

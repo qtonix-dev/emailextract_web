@@ -22,9 +22,9 @@ export default class Section21 extends Component {
     render() {
         return (
             <>
-                <Container className="pt-5 pb-2">
+                <Container className="">
                     <div className="row">
-                        <div className="col-md-6 py-3">
+                        <div className="col-md-6 py-3 align-self-center">
 
                                 {this.state.active===1
                                 ?<><img src="images/emailFinder.jpg" alt="img-alt" /></>

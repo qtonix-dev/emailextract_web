@@ -31,7 +31,7 @@ const data = {
       {
         title: "What payment methods do you offer?",
         content:
-            "We accept all payments made via debit and credit card.",
+            <p>We accept all payments made via debit card and credit card.</p>,
       },
       {
         title: "What currency are your prices in?",
@@ -39,11 +39,11 @@ const data = {
       },
       {
         title: "Are there any contracts, hidden charges or setup fees?",
-        content: "No contracts, no hidden charges, and no setup fees. You can switch your plan or cancel your Email Extract Online subscription at any time.",
+        content: <p>No contracts, no hidden charges, and no setup fees. You can switch your plan or cancel your Email Extract Online subscription at any time.</p>,
       },
       {
         title: "How can I cancel my plan?",
-        content: "Cancel your account anytime from your Account Settings. After canceling, you’ll still be able to use your plan until the end of the trial or subscription period.",
+        content: <p>Cancel your account anytime from your Account Settings. After canceling, you’ll still be able to use your plan until the end of the trial or subscription period.</p>,
       },
   ],
 };
@@ -99,15 +99,27 @@ export default class pricing extends Component {
                 Pricing Section Six
               =====================================================
               */}
-                <div className="pricing-section-six mt-100 md-mt-100 " id="pricing">
+              <div className="fancy-hero-four bg-doc space-fix">
+                <div className="bg-wrapper">
                   <div className="container">
                     <div className="row">
-                      <div className="col-xl-10  m-auto">
+                      <div className="col-xl-9 col-lg-11 col-md-10 m-auto">
                         <div className="title-style-seven text-center">
                           <h2><span>Simple & Transparent</span> Pricing Plans</h2>
                           <h6>Find the right solution for your needs</h6>
                           <p>We deliver an analytics experience with no hidden costs or additional products required. Understand the price you pay upfront, with no surprises. Buy our simple, capability-rich packages to upscale your business with verified emails.</p>
-                        </div> {/* /.title-style-six */}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+                <div className="pricing-section-six mt-10 md-mt-10" id="pricing">
+                  <div className="container">
+                    <div className="row">
+                      <div className="col-xl-10  m-auto">
+                         {/* /.title-style-six */}
                         
                         
                       </div>
@@ -188,7 +200,7 @@ export default class pricing extends Component {
                                                 Faq Classic
                                             =====================================================
                                             */}
-                                <div className="faq-classic with-bg">
+                                <div className="faq-classic with-bg faq-classic-bg">
                                     <img src="images/shape/86-1.png" alt="" className="shapes shape-one" />
                                     <img src="images/shape/87-1.png" alt="" className="shapes shape-two" />
                                     <img src="images/shape/88-1.png" alt="" className="shapes shape-three" />
@@ -196,10 +208,10 @@ export default class pricing extends Component {
                                     <img src="images/shape/90-1.png" alt="" className="shapes shape-five" />
                                     <img src="images/shape/91-1.png" alt="" className="shapes shape-six" />
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-100 md-mb-70">
+                                    <div className="title-style-four text-center mb-30 md-mb-30">
                                         <div className="row">
                                         <div className="col-lg-7 m-auto">
-                                          <div className="title-style-five mt-5">
+                                          <div className="title-style-five mt-2">
                                           <h2><span>Common questions</span> about the pricing</h2>
                                           </div>
                                             

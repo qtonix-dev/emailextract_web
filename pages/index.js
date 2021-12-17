@@ -85,16 +85,16 @@ import { MdEditNote } from "react-icons/md"
             {
                 title: "How accurate is the Email Extract Online?",
                 content:
-                    "The Email Extract Online uses the most comprehensive database of public email addresses to find the correct contact information. All the email addresses go through an email verification process before being returned. The email addresses with a green shield mean they have been checked and found deliverable. You can use them safely and those email addresses with red shields are either unauthorized or are not in use. "
+                    <p>The Email Extract Online uses the most comprehensive database of public email addresses to find the correct contact information. All the email addresses go through an email verification process before being returned. The email addresses with a green shield mean they have been checked and found deliverable. You can use them safely and those email addresses with red shields are either unauthorized or are not in use. </p>
                     ,
             },
             {
                 title: "Can you verify Bulk emails at once?",
-                content: `Yes, with the bulk extraction feature, you can verify an unlimited number of emails within seconds. `,
+                content: <p>Yes, with the bulk extraction feature, you can verify an unlimited number of emails within seconds. </p>,
             },
             {
                 title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-                content: "It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.",
+                content: <p>It&quot;s 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.</p>,
             },
         ],
     };
@@ -103,8 +103,8 @@ import { MdEditNote } from "react-icons/md"
         rows: [
             {
                 title: "How fast is your email extraction tool?",
-                content: `It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
-                Note: The performance and speed also depend on your PC as well.`,
+                content: <p>It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
+                Note: The performance and speed also depend on your PC as well.</p>,
             },
             {
                 title: "Do you offer a free trial to test the tool before buying it?",
@@ -131,7 +131,7 @@ import { MdEditNote } from "react-icons/md"
                         <li>•	Have you misspelled the person&quot;s name?</li>
 
                     </ul>
-                    <a>If the Email Finder is not able to find any result after verifying all these elements, you may be required to initiate a manual search</a>
+                    <p><a>If the Email Finder is not able to find any result after verifying all these elements, you may be required to initiate a manual search</a></p>
                 </p>
                 
                 
@@ -140,7 +140,7 @@ import { MdEditNote } from "react-icons/md"
             },
             {
                 title: "Why choose Email Extract Online over other email extract tools?",
-                content: "We started Email Extract Online because we found that other similar services were charging a lot of money for data that is either publicly available on the internet or not authorized. Our goal is to help YOU find suitable leads and build a million-dollar business, and to do that you need to save time and as much money as you can. We want to bring people together so that they can provide value for each other, and we plan on doing that by providing the best Email Extract Online tool ever.",
+                content: <p>We started Email Extract Online because we found that other similar services were charging a lot of money for data that is either publicly available on the internet or not authorized. Our goal is to help YOU find suitable leads and build a million-dollar business, and to do that you need to save time and as much money as you can. We want to bring people together so that they can provide value for each other, and we plan on doing that by providing the best Email Extract Online tool ever.</p>,
             },
         ],
     };
@@ -231,7 +231,9 @@ export class index extends Component {
         }
         const ishide = this.state.ishide;
     }
+
     
+      
     render() {
         return (
 
@@ -247,7 +249,7 @@ export class index extends Component {
                                 ============================================== 
                                 */}
 
-                                <div style={{backgroundColor:'#f7faff'}}>
+                                <div style={{backgroundImage:'#f7faff'}} className="ban-main-home">
                                 <div className="hero-banner-three">
                                     <div className="container">
                                     <div className="row banner-header-content" hidden={this.state.hiddenContent}>
@@ -305,7 +307,7 @@ export class index extends Component {
 
                                                     <h5>and {this.state.emailsdata.length-5} more results</h5>
                                                     <hr />
-                                                    <h3 className="addme">Email Extract Online is completely FREE, <Link href='/register'>Signup</Link> right now to get unlimited cutting edge lead generation.</h3>
+                                                    <h3 className="addme font-rubik">Email Extract Online is completely FREE, <Link href='/register'>Signup</Link> right now to get unlimited cutting edge lead generation.</h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -339,7 +341,7 @@ export class index extends Component {
                                                     })}
 
                                                     <hr />
-                                                    <h3 className="addme">Email Extract Online is completely FREE, <Link href='/register'>Signup</Link> right now to get unlimited cutting edge lead generation.</h3>
+                                                    <h3 className="addme  font-rubik">Email Extract Online is completely FREE, <Link href='/register'>Signup</Link> right now to get unlimited cutting edge lead generation.</h3>
 
                               
                                             </div>
@@ -361,7 +363,7 @@ export class index extends Component {
                                                 <p>Our trackers are searching the internet for leads of the highest quality. Unfortunately, we don&quot;t have any for this company yet. But rest assured, we are working on it.
                                                 </p>
                                                 <hr />
-                                                <h3 className="addme">In the meantime, <Link href='/register'><a className="font-rubik">Email Extract Online</a></Link> is completely FREE. Signup right now to get 50 free credits per month.</h3>
+                                                <h3 className="addme  font-rubik">In the meantime, <Link href='/register'><a className="font-rubik">Email Extract Online</a></Link> is completely FREE. Signup right now to get 50 free credits per month.</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -374,31 +376,16 @@ export class index extends Component {
                                             <ul>
                                                 <li>
                                                     <img src="images/g2.png" alt="img-ban" />
-                                                    <p>
-                                                        4.7/5 <br /> 
-                                                        {/* <span>89 reviews</span> */}
-                                                    </p>
+                                                    
                                                 </li>
                                                 <li>
                                                     <img src="images/captera.png" alt="img-ban" />
-                                                    <p>
-                                                        4.7/5 <br /> 
-                                                        {/* <span>63 reviews</span> */}
-                                                    </p>
+                                                    
                                                 </li>
                                                 <li>
                                                     <img src="images/trustpilot.png" alt="img-ban" />
-                                                    <p>
-                                                        Excellent <br /> 
-                                                        {/* <span>45 reviews</span> */}
-                                                    </p>
+                                                    
                                                 </li>
-                                                {/* <li>
-                                                    <img src="images/01.png" alt="img-ban" />
-                                                </li>
-                                                <li>
-                                                    <img src="images/medal2.png" alt="img-ban" />
-                                                </li> */}
                                             </ul>
                                         </div>
                                     </div> {/* /.container */}
@@ -407,20 +394,20 @@ export class index extends Component {
 
 
                                     
-                                    <img src="images/shape/68-1.png" alt="" className="shapes shape-one" />
+                                    {/* <img src="images/shape/68-1.png" alt="" className="shapes shape-one" /> */}
                                     {/* <img src="images/shape/69-1.png" alt="" className="shapes shape-two" /> */}
-                                    <img src="images/shape/70-1.png" alt="" className="shapes shape-three" />
+                                    {/* <img src="images/shape/70-1.png" alt="" className="shapes shape-three" />
                                     <img src="images/shape/75-1.png" alt="" className="shapes shape-four" />
                                     <img src="images/shape/72-1.png" alt="" className="shapes shape-five" />
                                     <img src="images/shape/73-1.png" alt="" className="shapes shape-six" />
                                     <img src="images/shape/74-1.png" alt="" className="shapes shape-seven" />
                                     <img src="images/shape/75-1.png" alt="" className="shapes shape-eight" />
                                     <img src="images/shape/76-1.png" alt="" className="shapes shape-nine" />
-                                    <img src="images/shape/68-1.png" alt="" className="shapes shape-ten" />
+                                    <img src="images/shape/68-1.png" alt="" className="shapes shape-ten" /> */}
                                 </div>
                                 <div className="img-ban-main-new">
-                                    <img src="images/banner-right.png" alt="img-email" className="img-ban-main-new-right" />
-                                    <img src="images/banner-left.png" alt="img-email" className="img-ban-main-new-left" />
+                                    {/* <img src="images/banner-right.png" alt="img-email" className="img-ban-main-new-right" />
+                                    <img src="images/banner-left.png" alt="img-email" className="img-ban-main-new-left" /> */}
                                 </div>
                                 </div>
 
@@ -435,20 +422,20 @@ export class index extends Component {
                     ============================================== 
                     */}
                     
-                    <div className="fancy-text-block-nineteen mt-90 mb-20 md-mt-90 md-mb-20">
-                    <div className="container">
-                        <div className="fancy-text-block-section-main mb-5">
+                    <div className="fancy-text-block-nineteen mt-50  mb-20 md-mb-20">
+                    <div className="container-fluid">
+                        {/* <div className="fancy-text-block-section-main mb-5">
                             <div className="row">
 
                                 <div className="col-lg-4">
                                     <div className="fancy-text-block-section">
                                         <div className="row">
-                                            <div className="col-lg-4">
+                                            <div className="col-lg-2">
                                                 <img src="images/nums-1.png" alt="img-email" />
                                             </div>
-                                            <div className="col-lg-8">
-                                                <h4>150 000+</h4>
-                                                <p>companies on board</p>
+                                            <div className="col-lg-10">
+                                                <h4>150,000+</h4>
+                                                <p style={{marginTop:'-19px'}}>companies on board</p>
                                             </div>
                                         </div>
                                         
@@ -457,12 +444,12 @@ export class index extends Component {
                                 <div className="col-lg-4">
                                     <div className="fancy-text-block-section">
                                         <div className="row">
-                                            <div className="col-lg-4">
+                                            <div className="col-lg-2">
                                                 <img src="images/nums-2.png" alt="img-email" />
                                             </div>
-                                            <div className="col-lg-8">
-                                                <h4>2 000+</h4>
-                                                <p>website crawled everyday</p>
+                                            <div className="col-lg-10">
+                                                <h4>1M+</h4>
+                                                <p style={{marginTop:'-19px'}}>websites crawled everyday</p>
                                             </div>
                                         </div>
                                     </div>
@@ -470,25 +457,25 @@ export class index extends Component {
                                 <div className="col-lg-4">
                                     <div className="fancy-text-block-section">
                                         <div className="row">
-                                            <div className="col-lg-4">
+                                            <div className="col-lg-2">
                                                 <img src="images/nums-3.png" alt="img-email" />
                                             </div>
-                                            <div className="col-lg-8">
-                                                <h4>750 000+</h4>
-                                                <p>leads verified daily</p>
+                                            <div className="col-lg-10">
+                                                <h4>750,000+</h4>
+                                                <p style={{marginTop:'-19px'}}>leads verified daily</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         
                         <div className="row align-items-center">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
                             <img src="images/peopleholding.png" alt="" className="m-auto w-100" />
                         </div>
                         <div className="col-lg-6" data-aos="fade-left" data-aos-duration={1200}>
-                            <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDelay='1500' isVisible={true}>
+                            <Animated  isVisible={true}>
                             <div className="text-wrapper">
                             <div className="client-info font-rubik">Over <span>150,000+ client</span></div>
                             <div className="title-style-five">
@@ -522,13 +509,13 @@ export class index extends Component {
                                                 Fancy Feature Eight
                                             =====================================================
                                             */}
-                                <div className="fancy-feature-eight pt-40 md-pt-40">
+                                <div className="fancy-feature-eight">
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-40 md-mb-40">
+                                    <div className="title-style-five text-center mb-40 md-mb-40">
                                         <div className="row">
                                             <div className="col-lg-10 m-auto">
                                                     <div className="title-style-five">
-                                                        <h2><span>How it w</span>orks</h2>
+                                                        <h2><span>How it works</span></h2>
                                                     </div>
                                                     
                                                     <h6>Find verified email of any targeted&nbsp;
@@ -569,7 +556,7 @@ export class index extends Component {
                                     <div className="row">
                                         <div className="col-lg-6">
                                         <div className="title-style-five">
-                                            <h2>
+                                            <h2  className="font-rubik">
                                             <span>Who is using our</span> Email Extract Tool
                                             </h2>
                                         </div>
@@ -580,11 +567,11 @@ export class index extends Component {
                                     </div> {/* /.container */}
                                     <div className="logo-wrapper d-flex flex-wrap justify-content-center align-items-center">
                                     <div className="logo d-flex align-items-center justify-content-center w-10"><img src="images/ipaydna.png" alt="emailicon" className="w-75" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/Adecco.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/ibm.png" alt="emailicon" className="w-75" /></div>
                                     <div className="logo d-flex align-items-center justify-content-center"><img src="images/ekwb.png" alt="emailicon" className="w-75" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/icon-home-travel.png" alt="emailicon" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/cybernetm.png" alt="emailicon" className="w-75" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/c2.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/cisco.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/mcdonald.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/lorel.jpg" alt="emailicon" className="w-75" /></div>
                                     {/* <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></div> */}
                                     </div> {/* /.logo-wrapper */}
                                 </div> {/* /.useable-tools-section-three */}
@@ -614,10 +601,10 @@ export class index extends Component {
                         <div className="col-xl-9 col-lg-11 m-auto" data-aos="fade-up" data-aos-duration={1200}>
                             <div className="title-style-eight text-center mb-30 md-mb-30">
                                 <div className="title-style-five">
-                                    <h2><span>Why Choos</span>e Us</h2>
+                                    <h2  className="font-rubik"><span>Why Choos</span>e Us</h2>
                                 </div>
                             
-                            <p>Explore advanced video editing features that only professionals have access to!</p>
+                            {/* <p>Explore advanced video editing features that only professionals have access to!</p> */}
                             </div>
                         </div>
                         </div>
@@ -629,7 +616,7 @@ export class index extends Component {
                                                     {/* <img src="images/availability1.png" alt="img-email" /> */}
                                                     <AiOutlineFileProtect />
                                                     <h5>Data Protection and Accuracy</h5>
-                                                    <p>We don&quot;t share your information with any third party. 
+                                                    <p>We don&#39;t share your information with any third party. 
                                                         We confirm that 99.5% of the data are correct.</p>
                                                 </div>
                                             </Col>
@@ -692,20 +679,20 @@ export class index extends Component {
                                             =====================================================
                                             */}
                                 <div className="client-feedback-slider-two mt-40 md-mt-40">
-                                    <img src="images/shape/78-1.png" alt="" className="shapes shape-one" />
+                                    {/* <img src="images/shape/78-1.png" alt="" className="shapes shape-one" />
                                     <img src="images/shape/79-1.png" alt="" className="shapes shape-two" />
                                     <img src="images/shape/80-1.png" alt="" className="shapes shape-three" />
                                     <img src="images/shape/81-1.png" alt="" className="shapes shape-four" />
                                     <img src="images/shape/82-1.png" alt="" className="shapes shape-five" />
                                     <img src="images/shape/83-1.png" alt="" className="shapes shape-six" />
                                     <img src="images/shape/84-1.png" alt="" className="shapes shape-seven" />
-                                    <img src="images/shape/85-1.png" alt="" className="shapes shape-eight" />
+                                    <img src="images/shape/85-1.png" alt="" className="shapes shape-eight" /> */}
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-20 md-mb-20">
+                                    <div className="title-style-five text-center mb-20 md-mb-20">
                                         <div className="row">
                                         <div className="col-lg-7 col-md-9 m-auto">
                                             <div className="title-style-five">
-                                                <h2><span>Feedba</span>ck</h2>
+                                                <h2  className="font-rubik"><span>Feedba</span>ck</h2>
                                             </div>
                                             
                                             <h6>What Our Client Say&nbsp;<span>About Us</span>
@@ -717,7 +704,8 @@ export class index extends Component {
                                     <div className="">
                                     <div className="container">
 
-
+                                    
+                                
 
                                     <Slider {...settings}>
                                     <div className="item">
@@ -736,7 +724,7 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/Adecco.png" alt="emailicon" className="logo" />
+                                            <img src="images/ibm.png" alt="emailicon" className="logo" />
                                             <p className="bg-wrapper-text-sec">A huge thank you to the team<br /> at Email Extract Online. I bought this tool 6 months ago and even after all this time when I reach out for any help they are brilliant. So many online extracting products promise the world and then 
                                                 fail to deliver - this is a robust tool and a great bunch of people behind it. Highly recommended.</p>
                                                 <div className="text-section-testimonial">
@@ -773,7 +761,7 @@ export class index extends Component {
                                         </div>
                                         <div className="item">
                                         <div className="bg-wrapper">
-                                            <img src="images/iconsmain/trips-travel-logo.png" alt="emailicon" className="logo" />
+                                            <img src="images/mcdonald.png" alt="emailicon" className="logo" />
                                             <p className="bg-wrapper-text-sec">I was looking for the best solution<br /> to extract emails of some prospective clients to promote my services. Finally, I found it: Email Extract Online. 
                                                 Today I am really pleased with the way this tool works and the benefits, I get from email marketing.</p>
                                                 <div className="text-section-testimonial">
@@ -808,18 +796,18 @@ export class index extends Component {
                                             =====================================================
                                             */}
                                 <div className="faq-classic with-bg">
-                                    <img src="images/shape/86-1.png" alt="" className="shapes shape-one" />
+                                    {/* <img src="images/shape/86-1.png" alt="" className="shapes shape-one" />
                                     <img src="images/shape/87-1.png" alt="" className="shapes shape-two" />
                                     <img src="images/shape/88-1.png" alt="" className="shapes shape-three" />
                                     <img src="images/shape/89-1.png" alt="" className="shapes shape-four" />
                                     <img src="images/shape/90-1.png" alt="" className="shapes shape-five" />
-                                    <img src="images/shape/91-1.png" alt="" className="shapes shape-six" />
+                                    <img src="images/shape/91-1.png" alt="" className="shapes shape-six" /> */}
                                     <div className="container">
-                                    <div className="title-style-four text-center mb-20 md-mb-20">
+                                    <div className="title-style-five text-center mb-20 md-mb-20">
                                         <div className="row">
                                         <div className="col-lg-7 m-auto">
                                             <div className="title-style-five">
-                                            <h2><span>FAQ</span>’s</h2>
+                                            <h2  className="font-rubik"><span>FAQ</span>’s</h2>
                                             </div>
                                             
                                             <h6>

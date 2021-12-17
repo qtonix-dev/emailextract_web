@@ -17,16 +17,16 @@ export class privacypolicy extends Component {
                 ============================================== 
                 */}
                     <div className="fancy-hero-five">
-                    <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
-                    <img src="images/shape/96.svg" alt="" className="shapes shape-two" />
+                    {/* <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
+                    <img src="images/shape/96.svg" alt="" className="shapes shape-two" /> */}
                     <div className="bg-wrapper">
                         <div className="container">
                         <div className="row privacy-main-first">
-                            <div className="col-lg-12 m-auto text-center">
+                            <div className="col-lg-12 m-auto">
                             {/* <h1 className="heading privacy-main-title">
                                 <span>Privacy Policy</span>
                             </h1> */}
-                            <div className="title-style-five">
+                            <div className="title-style-five  text-center">
                             <h2><span>Privacy</span> Policy</h2>
                             </div>
                             
@@ -34,7 +34,7 @@ export class privacypolicy extends Component {
                             (EU Regulation 2016/679 of 27 April 2016 or the GDPR — General Data Protection Regulation).</p>
                             <p>Data protection is particularly of a high priority for the management of the Email Extract Online. In order to meet our customers’ expectations, demands and to ensure the respect of data 
                             subjects’ rights, we constantly update internal processes.</p>
-                            <p>This Privacy Policy page informs you of our policies related to the collection, use, and disclosure of personal data when you use our services and the choices you have associated with that data. Should you have any questions, please reach out, we&quot;ll be glad to help: info@qtonix.com.</p>
+                            <p>This Privacy Policy page informs you of our policies related to the collection, use, and disclosure of personal data when you use our services and the choices you have associated with that data. Should you have any questions, please reach out, we&quot;ll be glad to help: sales@emailextractonline.com.</p>
                             </div>
                         </div>
                         </div>
@@ -196,7 +196,7 @@ export class privacypolicy extends Component {
                                      your activities on this and other Websites and to provide you targeted advertising based upon your interests.</p>
                                     <h3>Third-Party Tracking Technologies</h3>
                                     <p>The use of cookies and web beacons by other tracking utility companies is not covered by our Privacy Policy or Cookie Policy.</p>
-                                    <h2>How to Access & Control Your Personal Data</h2>
+                                    <h2 className="mt-4">How to Access & Control Your Personal Data</h2>
                                     <h3>Reviewing, Correcting and Removing Your Personal Information</h3>
                                     <p>You have the following data protection rights:</p>
                                     <br />

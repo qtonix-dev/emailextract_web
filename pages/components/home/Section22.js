@@ -22,7 +22,7 @@ export default class Section22 extends Component {
     render() {
         return (
             <>
-                <Container className="pt-5 pb-3">
+                <Container className="">
                     <Row>
                     <div className="col-md-6 py-3">
                                 
@@ -47,7 +47,7 @@ export default class Section22 extends Component {
                                     <h3>Domain Search</h3>
                                     {/* <p>Verify any professional email address and boost email deliverability with the most 
                                         reliable email verifier tool.</p> */}
-                                    <h6>STOP MANUAL, WE AUTOMATE ALL!</h6>
+                                    <h6>Stop Manual, We Automate All!</h6>
                                     <p>Increase Sales With The Most Powerful & Easy-To-Use Email Finding Tool. Email Extract Online Lets You Find & Extract Email Addresses From Any Websites.</p>
                                     <div className="btn-feature-section"><Link href="/pricing">View More </Link> &nbsp;<FaArrowCircleRight /></div>
                                 </div>
@@ -72,7 +72,7 @@ export default class Section22 extends Component {
                             
                         </div>
 
-                        <div className="col-md-6 justify-content-center align-items-center">
+                        <div className="col-md-6 justify-content-center align-items-center align-self-center">
 
                                 {this.state.active===1
                                 ?<><img src="images/bulkDomain.png" alt="img-main" className="pt-2" /></>
@@ -80,7 +80,7 @@ export default class Section22 extends Component {
                                 }
 
                                 {this.state.active===2
-                                ?<><img src="images/domainSearch.jpg" alt="img-main" className="pt-5" /></>
+                                ?<><img src="images/domainSearch.png" alt="img-main" className="pt-5" /></>
                                 :<></>
                                 }
 

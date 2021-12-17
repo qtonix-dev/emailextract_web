@@ -66,7 +66,7 @@ export class contactus extends Component {
             <div className="title-style-five">
               <h2><span>Contact</span> us</h2>
             </div>
-            <h6 className="my-5">Feel free to contact us or just say hi!</h6>
+            <h6 className="mb-5 mt-3">Feel free to contact us or just say hi!</h6>
           </div>
         </div>
       </div>
@@ -88,14 +88,14 @@ export class contactus extends Component {
               <p className="font-rubik">Pahala, Bhubaneswar <br /> Odisha</p>
             </div> 
           </div> */}
-          <div className="col-lg-4 col-sm-6 d-lg-flex">
+          <div className="col-lg-6 col-sm-6 d-lg-flex">
             <div className="address-info">
               <div className="icon d-flex align-items-end"><img src="images/icon/45.svg" alt="" /></div>
               <div className="title">Contact</div>
-              <p className="font-rubik">info@qtonix.com <br />(315) 510-5120</p>
+              <p className="font-rubik">sales@emailextractonline.com <br />+1 (315) 293-2806</p>
             </div> {/* /.address-info */}
           </div>
-          <div className="col-lg-4 col-sm-6 d-lg-flex">
+          <div className="col-lg-6 col-sm-6 d-lg-flex">
             <div className="address-info">
               <div className="icon d-flex align-items-end"><img src="images/icon/46.svg" alt="" /></div>
               <div className="title">Social Media</div>

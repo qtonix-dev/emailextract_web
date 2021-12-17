@@ -10,7 +10,7 @@ import { Row, Col, Form } from 'react-bootstrap'
 import Head from 'next/head'
 import { FaHome, FaGoogle } from "react-icons/fa";
 import Router from 'next/router'
-
+import {GiSelfLove} from "react-icons/gi"
 import { GoogleLogin } from 'react-google-login';
 
 
@@ -137,7 +137,7 @@ export default class login extends Component {
                 
                 <div className="user-data-page clearfix d-lg-flex">
                     <div className="illustration-wrapper d-flex align-items-center flex-column">
-                    <h3 className="font-rubik">Some of the world&quot;s biggest brand are using Email Extract. Log in now</h3>
+                    <h3 className="font-rubik">Some of the world&#39;s biggest brand are using Email Extract. Log in now!</h3>
                     <div className="illustration-holder">
                         <img src="images/assets/ils_08.svg" alt="" className="illustration" />
                         <img src="images/log.png" alt="" className="shapes shape-one" />
@@ -148,12 +148,16 @@ export default class login extends Component {
                     
                     <div className="d-flex justify-content-between">
                       <Row>
-                        <Col xs={9}><div className="logo ml-5"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75 ml-3" /></a></Link></div></Col>
+                        {/* <Col xs={9}><div className="logo ml-5"><Link href='/'><a><img src="/images/email-logo-n.png" alt="" className="w-75 ml-3" /></a></Link></div></Col> */}
                         {/* <Col xs={3} className="text-right go-to-home"><Link href='/'><a className="font-rubik go-back-button"><FaHome />&nbsp; Go to home</a></Link></Col> */}
                       </Row>
                     </div>
-                    <form onSubmit={this.handleSubmit} className="user-data-form mt-5" id="myForm">
-                        <h2 className="mb-4">Good afternoon! <br />Welcome back.</h2>
+                    <form onSubmit={this.handleSubmit} className="user-data-form" id="myForm">
+                        <div className="logo"><Link href='/'><a><img src="/images/email-logo-n.png" alt="logo" className="w-75" /></a></Link></div>
+                        <h6><Link href='/'>Back to Home</Link></h6>
+                        <h2 className="mb-4">
+                          {/* Good afternoon!  */}
+                          Welcome back</h2>
                         <p className="header-info pt-30 pb-50 d-none">Need account?  <Link href='/register'><a>Register</a></Link></p>
                         <div className="row">
                         
@@ -209,11 +213,11 @@ export default class login extends Component {
 
                           <div className="google-signin mb-3">
                             <GoogleLogin
-                                  clientId="372190396984-42v070uptnpu15m5i0cie4sggbtphauf.apps.googleusercontent.com"
-                                  buttonText="Sign in with Google"
-                                  onSuccess={this.responseGoogle}
-                                  onFailure={this.responseGoogle}
-                                  className="w-100"
+                              clientId="372190396984-42v070uptnpu15m5i0cie4sggbtphauf.apps.googleusercontent.com"
+                              buttonText="Sign in with Google"
+                              onSuccess={this.responseGoogle}
+                              onFailure={this.responseGoogle}
+                              className="w-100"
                             />
                           </div>
 
@@ -225,13 +229,13 @@ export default class login extends Component {
                           
                           <div className="theme-btn-reg mb-4">
                             <p className="register-sec-new">
-                              Don&quot;t have an Account ? <Link href='/register'><a>Register Here</a></Link>
+                              Don&#39;t have an Account ? <Link href='/register'><a>Register Here</a></Link>
                             </p>
                           </div>
 
-                        <div className="col-12">
-                            <p className="text-center font-rubik copyright-text">© Copyright 2021 <a href="https://emailextractonline.com/">Email Extracter</a></p>
-                        </div>
+                          <div className="col-12">
+                          <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
+                          </div>
                         </div>
                     </form>
 

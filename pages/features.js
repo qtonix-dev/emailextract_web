@@ -91,25 +91,25 @@ export class compare extends Component {
                             <Row>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Activity reminders keep you on top of all activities & deals</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Sync all your activities with Google Calendar</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Edit, complete and add new activities on the go</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Customize activity types to meet your needs</p>
                                     </div>
                                 </Col>
@@ -163,25 +163,25 @@ export class compare extends Component {
                             <Row>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Import, add and update Google Contacts from Pipedrive</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Add notes and files to your deals or contacts</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Send and write emails from Pipedrive</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
-                                        <img src="images/checkbox-main.png" />
+                                        <img src="images/checkbox-main.png" alt="img-icon" />
                                         <p>Enrich your data by connecting Pipedrive with your everyday tools</p>
                                     </div>
                                 </Col>

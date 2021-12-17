@@ -89,7 +89,7 @@ export default class index extends Component {
                 <div className="user-data-page clearfix d-lg-flex">
                     <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
                     <h3 className="font-rubik">We have a “strategic” plan its <br /> called doing things.</h3>
-                    <div className="illustration-holder">
+                    <div className="illustration-holder w-75 mt-5">
                         <img src="/images/assets/ils_08.svg" alt="" className="illustration" />
                         <img src="/images/assets/ils_08.1.svg" alt="" className="shapes shape-one" />
                         <img src="/images/assets/ils_08.2.svg" alt="" className="shapes shape-two" />

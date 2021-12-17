@@ -38,7 +38,7 @@ class BodyWithRouter extends Component {
                                         <li>
                                         <Link href='/login'>
                                         <a className="signIn-action d-flex align-items-center">
-                                            <img src="images/icon/52.svg" alt="" />
+                                            <img src="images/icon/52.svg" alt="Email Extract Online" />
                                             <span>Login</span>
                                         </a>
                                         </Link>
@@ -47,7 +47,7 @@ class BodyWithRouter extends Component {
                                         <Link href='/register'>
                                         <a className="signUp-action d-flex align-items-center">
                                             <span>Getting Started</span>
-                                            <img src="images/icon/53.svg" alt="" />
+                                            <img src="images/icon/53.svg" alt="Email Extract Online" />
                                         </a>
                                         </Link>
                                         </li>
