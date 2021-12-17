@@ -28,6 +28,7 @@
     "react-form-input-validation": "^2.0.5",
     "react-google-login": "^5.2.2",
     "react-google-recaptcha": "^2.1.0",
+    "react-google-recaptcha-v3": "^1.9.7",
     "react-hook-form": "^7.20.2",
     "react-html-table-to-excel": "^2.0.0",
     "react-icons": "^4.3.1",
