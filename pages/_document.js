@@ -22,7 +22,9 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-
+          {/* Global site tag (gtag.js) - Google Analytics  */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXZLGN5W8Z"></script>
+          
           {/* <script async src="/vendor/jquery.min.js" />
           <script async src="/vendor/popper.js/popper.min.js" />
           <script async src="/vendor/bootstrap/js/bootstrap.min.js" />

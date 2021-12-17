@@ -90,15 +90,15 @@ export default class Footer extends Component {
                             <div className="top-footer">
                             <div className="container">
                                 <div className="row justify-content-between">
-                                <div className="col-lg-4 col-12 footer-about-widget">
+                                <div className="col-lg-6 col-12 footer-about-widget">
                                 <Link href='/'>
                                     <a className="logo">
-                                        <img src="/images/email-logo-n.png" alt="img-email" className="w-75" />
+                                        <img src="/images/email-logo-n.png" alt="img-email" className="w-50" />
                                     </a>
                                 </Link>
                                 </div> {/* /.about-widget */}
-                                <div className="col-lg-2 col-md-4 footer-list" >
-                                    <h5 className="footer-title">Product</h5>
+                                <div className="col-lg-3 col-md-4 footer-list" >
+                                    <h5 className="footer-title">Features</h5>
                                     <ul>
                                     <li><Link href='/'><a>Bulk Extractor</a></Link></li>
                                     <li><Link href='/'><a>Domain Search</a></Link></li>
@@ -106,8 +106,8 @@ export default class Footer extends Component {
                                     <li><Link href='/'><a>Email Verifier</a></Link></li>
                                     </ul>
                                 </div> {/* /.footer-list */}
-                                <div className="col-lg-2 col-md-4 footer-list">
-                                    <h5 className="footer-title">Company</h5>
+                                <div className="col-lg-3 col-md-4 footer-list">
+                                    <h5 className="footer-title">Information</h5>
                                     <ul>
                                     <li><Link href='/aboutus'><a>About</a></Link></li>
                                     <li><Link href='/contactus'><a>Contact</a></Link></li>
@@ -115,7 +115,7 @@ export default class Footer extends Component {
                                     <li><Link href='/pricing'><a>Plan &amp; Pricing</a></Link></li>
                                     </ul>
                                 </div> {/* /.footer-list */}
-                                <div className="col-lg-3 col-md-4 address-list" >
+                                {/* <div className="col-lg-3 col-md-4 address-list" >
                                     <h5 className="footer-title">Contact Info</h5>
                                     <div className="contact-info">
                                         
@@ -132,7 +132,7 @@ export default class Footer extends Component {
                                     </div>
 
                                     
-                                </div> {/* /.footer-list */}
+                                </div>  */}
                                 </div> {/* /.row */}
                             </div> {/* /.container */}
                             </div> {/* /.top-footer */}
@@ -145,7 +145,7 @@ export default class Footer extends Component {
                                         </div>
                                         <div className='col-md-6'>
                                             <p className='text-center'>
-                                                <a><FiPhoneCall /> +1 (315) 293-2806</a>&nbsp;&nbsp;
+                                                <a><FaEnvelopeOpenText /> &nbsp;sales@emailextractonline.com</a>&nbsp;&nbsp;
                                                 <a><FiPhoneCall /> +1 (315) 293-2806</a>
                                             </p>
                                         </div>
@@ -162,19 +162,21 @@ export default class Footer extends Component {
                                 </div>
                             </div>
 
-                            <div className="container">
+                            
                             <div className="bottom-footer-content">
-                                <div className="row">
-                                <div className="col-lg-12 ml-auto">
-                                    <div className="d-md-flex align-items-center justify-content-between">
-                                    <ul className="order-md-last" data-aos="fade-left">
-                                        <li><Link href='/privacy-policy'><a>Privacy</a></Link></li>
-                                        <li><Link href='/terms-and-condition'><a>Terms</a></Link></li>
-                                        <li><Link href='/sitemap.html'><a>Sitemap</a></Link></li>
-                                    </ul>
-                                    <p className="order-md-first" data-aos="fade-right">© 2020-2021 All rights reserved. Email Extract Online - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
+                                <div className="container">
+                                    <div className="row">
+                                    <div className="col-lg-12 ml-auto">
+                                        <div className="d-md-flex align-items-center justify-content-between">
+                                        <ul className="order-md-last" data-aos="fade-left">
+                                            <li><Link href='/gdpr'><a>GDPR</a></Link></li>
+                                            <li><Link href='/privacy-policy'><a>Privacy</a></Link></li>
+                                            <li><Link href='/terms-and-condition'><a>Terms</a></Link></li>
+                                            <li><Link href='/sitemap.html'><a>Sitemap</a></Link></li>
+                                        </ul>
+                                        <p className="order-md-first" data-aos="fade-right">© 2020-2021 All rights reserved. Email Extract Online - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                             </div> {/* /.bottom-footer */}
                             </div>

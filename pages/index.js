@@ -15,8 +15,8 @@ import Head from 'next/head'
 import Section21 from './components/home/Section21'
 import Section22 from './components/home/Section22'
 
-import { Tab, Row, Col, Nav, Container,Modal,Button } from 'react-bootstrap'
-import { FaViruses, FaHandshake, FaSearch } from "react-icons/fa"
+import { Tab, Row, Col, Nav, Container,Modal,Button, Form } from 'react-bootstrap'
+import { FaViruses, FaHandshake, FaSearch, FaCheck } from "react-icons/fa"
 import { BiSupport } from "react-icons/bi"
 import { AiOutlineFileProtect } from "react-icons/ai"
 import { MdEditNote } from "react-icons/md"
@@ -438,7 +438,6 @@ export class index extends Component {
                                                 <p style={{marginTop:'-19px'}}>companies on board</p>
                                             </div>
                                         </div>
-                                        
                                     </div>
                                 </div>
                                 <div className="col-lg-4">
@@ -551,7 +550,7 @@ export class index extends Component {
                                                 Useable Tools
                                             =====================================================
                                             */}
-                                <div className="useable-tools-section-three mt-20 mb-80 md-mt-20 md-mb-80">
+                                <div className="useable-tools-section-three mt-50 mb-80 md-mt-50 md-mb-80">
                                     <div className="container">
                                     <div className="row">
                                         <div className="col-lg-6">
@@ -566,12 +565,12 @@ export class index extends Component {
                                     </div>
                                     </div> {/* /.container */}
                                     <div className="logo-wrapper d-flex flex-wrap justify-content-center align-items-center">
-                                    <div className="logo d-flex align-items-center justify-content-center w-10"><img src="images/ipaydna.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/cisco.png" alt="emailicon" className="w-75" /></div>
                                     <div className="logo d-flex align-items-center justify-content-center"><img src="images/ibm.png" alt="emailicon" className="w-75" /></div>
                                     <div className="logo d-flex align-items-center justify-content-center"><img src="images/ekwb.png" alt="emailicon" className="w-75" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/cisco.png" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/ipaydna.png" alt="emailicon" className="w-75" /></div>
                                     <div className="logo d-flex align-items-center justify-content-center"><img src="images/mcdonald.png" alt="emailicon" className="w-75" /></div>
-                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/lorel.jpg" alt="emailicon" className="w-75" /></div>
+                                    <div className="logo d-flex align-items-center justify-content-center"><img src="images/lorel.png" alt="emailicon" className="w-75" /></div>
                                     {/* <div className="logo d-flex align-items-center justify-content-center"><img src="images/iconsmain/bitcanny.png" alt="emailicon" /></div> */}
                                     </div> {/* /.logo-wrapper */}
                                 </div> {/* /.useable-tools-section-three */}
@@ -599,9 +598,9 @@ export class index extends Component {
                     <div className="container">
                         <div className="row">
                         <div className="col-xl-9 col-lg-11 m-auto" data-aos="fade-up" data-aos-duration={1200}>
-                            <div className="title-style-eight text-center mb-30 md-mb-30">
+                            <div className="title-style-eight text-center mt-30 mb-30 md-mb-30">
                                 <div className="title-style-five">
-                                    <h2  className="font-rubik"><span>Why Choos</span>e Us</h2>
+                                    <h2  className="font-rubik"><span>Why Choose</span> Us</h2>
                                 </div>
                             
                             {/* <p>Explore advanced video editing features that only professionals have access to!</p> */}
@@ -788,7 +787,29 @@ export class index extends Component {
                                     </div> {/* /.slider-content */}
                                 </div> {/* /.client-feedback-slider-two */}
                                 
-                                
+                                <div className='free-liveChart'>
+                                    <div className='container'>
+                                        <h2>Start a free LiveChat now!</h2>
+                                        <p>Supercharge your website and social media profiles. <br />Turn visits into sales, customers into fans.</p>
+                                        <form className='w-75 free-liveChartForm'>
+                                            <Row>
+                                                <Col sm={8}>
+                                                    <Form.Control placeholder="Enter Your Email Address" />
+                                                </Col>
+                                                <Col sm={4}>
+                                                    <Button variant="primary" className="btn-large w-100" type="submit">
+                                                        Submit
+                                                    </Button>
+                                                </Col>
+                                            </Row>
+                                        </form>
+                                        <ul>
+                                            <li><FaCheck /> &nbsp;Free 14-day trial</li>
+                                            <li><FaCheck /> &nbsp;Ticketing system</li>
+                                            <li><FaCheck /> &nbsp;Analytics</li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 
                                 {/*
                                             =====================================================

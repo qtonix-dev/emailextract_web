@@ -3098,7 +3098,7 @@ body .theme-btn-nine:hover {
 
 .counter-box-two {
 	text-align: center;
-	margin-bottom: 30px
+	margin-bottom: 15px
 }
 
 .counter-box-two .number {
@@ -5804,7 +5804,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-hero-four.space-fix {
-	padding: 100px 0 120px
+	padding: 100px 0 175px
 }
 
 .fancy-hero-four h6 {
@@ -5816,7 +5816,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-hero-four h2 {
-	font-family: 'Segoe UI'!important;
+	/* font-family: 'Segoe UI'!important; */
 	font-size: 48px;
 	line-height: 1.1em;
 	text-transform:capitalize;
@@ -5893,7 +5893,7 @@ body .theme-btn-nine:hover {
 }
 
 .pricing-nav-two .nav-item .nav-link {
-	font-family: Rubik, sans-serif;
+	font-family: 'EEO-regular';
 	line-height: 50px;
 	border: 2px solid var(--red-light);
 	padding: 0 15px;
@@ -7732,8 +7732,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 	position: relative;
     height: 55px;
     border-radius: 5px;
-    border: 1px solid #fff;
-
+    /* border: 1px solid #fff; */
 }
 
 .fancy-short-banner-four .form-wrapper form input {
@@ -7782,7 +7781,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 
 .theme-footer-three {
 	position: relative;
-	font-family: 'Segoe UI'!important;
+	/* font-family: 'Segoe UI'!important; */
 }
 
 .theme-footer-three:before {
@@ -7851,27 +7850,27 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 
 .theme-footer-three .bottom-footer-content ul li a {
 	font-size: 16px;
-    color: #212121;
+    color: #d7d7d7;
     margin-left: 20px;
 }
 
 .theme-footer-three .bottom-footer-content ul li a:hover {
-	color: #000
+	color: #0495fd;
 }
 
 .theme-footer-three .bottom-footer-content p {
 	font-size: 15px;
-    color: #212121;
+    color: #d7d7d7;
     padding-left: 0px;
     font-weight: bolder;
 }
 
 .theme-footer-three .bottom-footer-content {
-	padding: 26px 0 0px
+	padding: 26px 0 0px;
+	background-color: #000;
 }
 
 .fancy-hero-five {
-	
     background: url('/images/ban111.png') no-repeat top right !important;
     background-size:68% !important;
     right: 0;
@@ -7881,7 +7880,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
     z-index: 0;
 	padding: 140px 0 100px;
 	position: relative;
-	z-index: 5
+	z-index: 5;
 }
 
 .fancy-hero-five .page-title {
@@ -7951,8 +7950,9 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 }
 
 .fancy-text-block-eighteen {
-	background: linear-gradient(180deg, #fff, #edf2f9);
-	padding-bottom: 425px
+	background:#f9f9f9;
+	padding-bottom: 425px;
+	margin-top:30px;
 }
 
 .fancy-text-block-eighteen .illustration {
@@ -12213,7 +12213,9 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 	font-weight: 500;
 	color: #000;
 	line-height: 43px;
-	border: 2px solid #000;
+	border: 2px solid;
+	background-color: linear-gradient( 
+		90deg,#fa9531 0,#ffbd39 100%) !important;
 	border-radius: 5px;
 	transition: all .3s ease-in-out;
 	text-decoration: none;
@@ -12232,8 +12234,10 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 
 .pricing-table-area-six .pr-table-wrapper .trial-button:hover,
 .pricing-table-area-six .pr-table-wrapper.active .trial-button {
-    background: #090436;;
-    border-color: #090436;
+    background: linear-gradient(
+		34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(0,214,212,1) 0%, rgba(1,148,241,1) 47%);
+    border-color:linear-gradient(
+		34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(0,214,212,1) 0%, rgba(1,148,241,1) 47%);
     color: white;
 }
 

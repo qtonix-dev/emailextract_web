@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
 import Freedemo from './components/aboutus/Freedemo'
 import { FaCheckCircle } from 'react-icons/fa';
+import Link from 'next/link'
 
 export default class about extends Component {
     render() {
@@ -387,7 +388,7 @@ export default class about extends Component {
                 </div>
               </Col>
             </Row>
-            <div className="our-cli-btn text-center">Request A free Demo</div>
+            <div className="our-cli-btn text-center"><Link href="/">Request a free demo</Link></div>
           </div>
         </div>
       </div>
