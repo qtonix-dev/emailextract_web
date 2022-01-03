@@ -6,15 +6,14 @@ import axios from 'axios'
 import cookie from 'react-cookies'
 import { toast } from 'react-toastify';
 import Link from 'next/link'
-import { Row, Col, Form } from 'react-bootstrap'
+import { Row, Col, Form ,InputGroup,FormControl} from 'react-bootstrap'
 import Head from 'next/head'
-import { FaHome, FaGoogle } from "react-icons/fa";
+import { FaHome, FaGoogle, FaBeer  } from "react-icons/fa";
 import Router from 'next/router'
 import {GiSelfLove} from "react-icons/gi"
 import { GoogleLogin } from 'react-google-login';
 
-
-import ReCAPTCHA from "react-google-recaptcha";
+import { AiOutlineEye } from 'react-icons/ai';
 
 
 
@@ -26,11 +25,13 @@ export default class login extends Component {
       super(props)
       this.state={
         formLoading:false,
-        isVerified:false
+        isVerified:false,
+        type: 'password'
       }
       this.validator = new SimpleReactValidator();
       this.handleChange=this.handleChange.bind(this);
       this.handleOnChange = this.handleOnChange.bind(this);
+      this.showHide = this.showHide.bind(this);
     }
 
     componentDidMount(){
@@ -126,6 +127,13 @@ export default class login extends Component {
       console.log("Captcha value:", value);
       this.setState({isVerified:true})
     }
+    showHide(e){
+        //e.preventDefault();
+        //e.stopPropagation();
+        this.setState({
+          type: this.state.type === 'password' ? 'input' : 'password'
+        })  
+      }
 
     render() {
         return (
@@ -174,18 +182,31 @@ export default class login extends Component {
                             <div className="input-group-meta mb-50">
                             <label>Password</label>
                             <input type="password" placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange}  />
+                            
+                      
+
+
                             <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
                             </div>
                         </div>
                           <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="you@example.com" name="email" value={this.state.email} onChange={this.handleChange} />
+                            <Form.Control type="email" placeholder="you@example.com" name="email" value={this.state.email} onChange={this.handleChange}     />
+                             
                             <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                           </Form.Group>
 
+
+                           
                           <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                            <InputGroup >
+                           
+                            <Form.Control type={this.state.type} placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                           
+                                <InputGroup.Text id="basic-addon2"  onClick={this.showHide} > <AiOutlineEye /> </InputGroup.Text>
+    
+                             </InputGroup> 
                             <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
                           </Form.Group>
                           <div className="forgot-section">
@@ -229,7 +250,7 @@ export default class login extends Component {
                           
                           <div className="theme-btn-reg mb-4">
                             <p className="register-sec-new">
-                              Don&#39;t have an Account ? <Link href='/register'><a>Register Here</a></Link>
+                            Do not have an account ?  <Link href='/register'><a>Sighn up</a></Link>
                             </p>
                           </div>
 

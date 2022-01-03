@@ -13,7 +13,8 @@ export default class Footer extends Component {
     constructor(props){
         super(props)
         this.state={
-          formLoading:false
+          formLoading:false,
+          email:''
           
         }
         this.validator = new SimpleReactValidator();
@@ -70,7 +71,7 @@ export default class Footer extends Component {
                                 <div className="col-lg-6">
                                     <div className="form-wrapper">
                                     <form action="#" onSubmit={this.handleSubmit} className="sub-form" id="myForm">
-                                        <input type="text" placeholder="Enter Your Email Address" name="subscribe" value={this.state.subscribe} onChange={this.handleChange} />
+                                        <input type="email" placeholder="Enter Your Email Address" name="subscribe" value={this.state.subscribe} onChange={this.handleChange} />
                                         <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                                         <button>Subscribe</button>
                                     </form>

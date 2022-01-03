@@ -22,7 +22,6 @@ import { AiOutlineFileProtect } from "react-icons/ai"
 import { MdEditNote } from "react-icons/md"
 
 
-
     //=======SLIDER=======//
     var settings = {
         dots: true,
@@ -172,12 +171,20 @@ export class index extends Component {
             mainformLoading:false,
             domain:'',
             foundemails:'',
-            emailsdata:null
+            email: "",
+            emailsdata:null,
+            allresponsedata:null
         }
         this.handleChange=this.handleChange.bind(this);
+         this.onChange = this.onChange.bind(this);
     }
 
 
+    onChange(e) {
+        this.setState({
+          email: e.target.value,
+        });
+      }
     handleChange(e){
         this.setState({
             foundemails:'',
@@ -185,12 +192,39 @@ export class index extends Component {
             [e.target.name]:e.target.value
         })
     }
+    onSubmit(){
+
+           if(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.state.email)){
+
+           console.log(this.state.email)
+
+     } 
+
+     else{
+        toast.error('please type valid email id', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+     }
+    }
+
+
+
+  
+
 
 
 
     handleSubmit=e=>{
         e.preventDefault();
         // axios.get('')
+
+        this.setState({allresponsedata:null})
         if(this.state.domain===''){
             toast.warning('Please enter the domain name', {
                 position: "top-right",
@@ -204,33 +238,68 @@ export class index extends Component {
         }else{
             $("#myForm :input").prop('readonly', true);
             this.setState({mainformLoading:true,hiddenContent:true})
-
-            axios.get(`${process.env.backendURL}/domainsearch/finddomain/${this.state.domain}/webuser`)
+            
+        if(/^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$/.test(this.state.domain)) {
+              
+            axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${this.state.domain}`)
             .then(response=>{
 
                 $("#myForm :input").prop('readonly', false);
-                if(response.data.response){
+                // if(response.data.response){
+                //     this.setState({
+                //         foundemails:'found',
+                //         emailsdata:response.data,
+                //         mainformLoading:false,
+                //     })
+                // }else{
+                //     this.setState({
+                //         mainformLoading:false,
+                //         foundemails:'notfound',
+                //         emailsdata:response.data
+                //     })
+                // }
+
+
+                if(response.data.response.status==='Found'){
                     this.setState({
-                        
                         foundemails:'found',
-                        emailsdata:response.data,
                         mainformLoading:false,
+                        allresponsedata:response.data.response
                     })
                 }else{
-                    this.setState({
+                     this.setState({
                         mainformLoading:false,
                         foundemails:'notfound',
-                        emailsdata:response.data
-
+                        allresponsedata:response.data.response
                     })
                 }
 
                 
-                console.log(response.data)
+                console.log(response.data.response)
             })
+
+
         }
-        const ishide = this.state.ishide;
+        else {
+            
+            toast.error('invalid domain', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+            
+        this.setState({mainformLoading:false,hiddenContent:false})
+    
+        }
+         }
+         const ishide = this.state.ishide;
+        
     }
+   
 
     
       
@@ -281,8 +350,7 @@ export class index extends Component {
                                     
                                     {this.state.foundemails==='found'
                                     ?
-                                        this.state.emailsdata.length>5
-                                        ?
+                                        
                                         <div className="row">
                                             <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
                                             <div className="findemailshome">
@@ -290,38 +358,9 @@ export class index extends Component {
                                                     
                                                 
                                                     <ReactImageFallback
-                                                    src={`https://logo.clearbit.com/${this.state.emailsdata.domain}`}
+                                                    src={`https://logo.clearbit.com/${this.state.domain}`}
                                                     fallbackImage="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png"
-                                                    initialImage={`https://logo.clearbit.com/${this.state.emailsdata.domain}`}
-                                                    alt="cool image should be here"
-                                                    className="my-image" />
-
-                                                    <span><b>{this.state.emailsdata.length} emails</b></span>  </h6>
-
-                                                    <p>{this.state.emailsdata.emails[0].email}  {this.state.emailsdata.emails[0].email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}</p>
-                                                    <p>{this.state.emailsdata.emails[1].email}  {this.state.emailsdata.emails[1].email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}</p>
-                                                    <p>{this.state.emailsdata.emails[2].email}  {this.state.emailsdata.emails[2].email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}</p>
-                                                    <p>{this.state.emailsdata.emails[3].email}  {this.state.emailsdata.emails[3].email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}</p>
-                                                    <p>{this.state.emailsdata.emails[4].email}  {this.state.emailsdata.emails[4].email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}</p>
-                                                    
-
-                                                    <h5>and {this.state.emailsdata.length-5} more results</h5>
-                                                    <hr />
-                                                    <h3 className="addme font-rubik">Email Extract Online is completely FREE, <Link href='/register'>Signup</Link> right now to get unlimited cutting edge lead generation.</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        :
-                                        <div className="row">
-                                            <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
-                                            <div className="findemailshome">
-                                                <h6>
-                                                    
-                                                
-                                                    <ReactImageFallback
-                                                    src={`https://logo.clearbit.com/${this.state.emailsdata.domain}`}
-                                                    fallbackImage="https://www.freepnglogos.com/uploads/logo-website-png/logo-website-website-logo-png-transparent-background-background-15.png"
-                                                    initialImage={`https://logo.clearbit.com/${this.state.emailsdata.domain}`}
+                                                    initialImage={`https://logo.clearbit.com/${this.state.domain}`}
                                                     alt="cool image should be here"
                                                     className="my-image" />
 
@@ -329,13 +368,15 @@ export class index extends Component {
                                                     <span>
                                                    
    
-                                                        {this.state.emailsdata.length} emails</span>  </h6>
+                                                    {this.state.allresponsedata.emails.length} emails</span>  </h6>
 
 
                         
-                                                    {this.state.emailsdata.emails.map((email)=>{
+                                                    {this.state.allresponsedata.emails.map((email)=>{
                                                         return(
-                                                            <p key={email.email}>{email.email}  {email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}  </p>
+                                                            <p key={email}>{email}  
+                                                            {/* {email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}   */}
+                                                            </p>
                                                              
                                                         )
                                                     })}
@@ -353,12 +394,14 @@ export class index extends Component {
                                     }
 
 
+                                    
+                                    
                                     {this.state.foundemails==='notfound'
                                     ?
                                     <div className="row">
                                         <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
                                             <div className="notfindemailshome">
-                                                <h5>Oh no! We couldn&quot;t find any leads for {this.state.emailsdata.domain}.</h5>
+                                                <h5>Oh no! We couldn&quot;t find any leads for {this.state.domain}.</h5>
                                                 <br />
                                                 <p>Our trackers are searching the internet for leads of the highest quality. Unfortunately, we don&quot;t have any for this company yet. But rest assured, we are working on it.
                                                 </p>
@@ -369,7 +412,38 @@ export class index extends Component {
                                     </div>
                                     :<></>
                                     }
-                                                    
+
+                                    {this.state.allresponsedata!==null
+                                    ?
+                                    <div className="row">
+                                        <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
+                                            <div className="notfindemailshome">
+                                                {this.state.allresponsedata.emails.length>0?<p>Emails: {this.state.allresponsedata.emails.length}</p>:<></>}
+                                                {this.state.allresponsedata.tel.length>0?<p>Tel: {this.state.allresponsedata.tel.length}</p>:<></>}
+                                                {this.state.allresponsedata.facebook.length>0?<p>Facebook: {this.state.allresponsedata.facebook.length}</p>:<></>}
+                                                {this.state.allresponsedata.instagram.length>0?<p>Instagram: {this.state.allresponsedata.instagram.length}</p>:<></>}
+                                                {this.state.allresponsedata.twitter.length>0?<p>Twitter: {this.state.allresponsedata.twitter.length}</p>:<></>}
+                                                {this.state.allresponsedata.linkedin.length>0?<p>Linkedin: {this.state.allresponsedata.linkedin.length}</p>:<></>}
+                                                {this.state.allresponsedata.googleplus.length>0?<p>Googleplus: {this.state.allresponsedata.googleplus.length}</p>:<></>}
+                                                {this.state.allresponsedata.youtube.length>0?<p>Youtube: {this.state.allresponsedata.youtube.length}</p>:<></>}
+                                                {this.state.allresponsedata.whatsapp.length>0?<p>WhatsApp: {this.state.allresponsedata.whatsapp.length}</p>:<></>}
+                                                {this.state.allresponsedata.printrest.length>0?<p>Printrest: {this.state.allresponsedata.printrest.length}</p>:<></>}
+                                                {this.state.allresponsedata.skype.length>0?<p>Skype: {this.state.allresponsedata.skype.length}</p>:<></>}
+
+
+
+
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    :
+                                    <></>
+                                    }
+                                    
+                                
+
+
                                         <p className="sing-in-call">50 Free Credits Every Month • GDPR Alligned & CCPA Compligned • Get Started In Seconds • <Link href='/register'><a className="font-rubik">Sign Up</a></Link></p>
                                 
                                         <div className="icon-images-ban">
@@ -388,7 +462,7 @@ export class index extends Component {
                                                 </li>
                                             </ul>
                                         </div>
-                                    </div> {/* /.container */}
+                                    </div> 
 
 
 
@@ -469,11 +543,11 @@ export class index extends Component {
                             </div>
                         </div> */}
                         
-                        <div className="row align-items-center">
+                        <div className="row align-items-center container ">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
                             <img src="images/peopleholding.png" alt="" className="m-auto w-100" />
                         </div>
-                        <div className="col-lg-6" data-aos="fade-left" data-aos-duration={1200}>
+                        <div className="col-lg-6 " data-aos="fade-left" data-aos-duration={1200} >
                             <Animated  isVisible={true}>
                             <div className="text-wrapper">
                             <div className="client-info font-rubik">Over <span>150,000+ client</span></div>
@@ -794,10 +868,11 @@ export class index extends Component {
                                         <form className='w-75 free-liveChartForm'>
                                             <Row>
                                                 <Col sm={8}>
-                                                    <Form.Control placeholder="Enter Your Email Address" />
+                                                    <Form.Control placeholder="Enter Your Email Address"   value={this.state.email}
+                                                      onChange={this.onChange} />
                                                 </Col>
                                                 <Col sm={4}>
-                                                    <Button variant="primary" className="btn-large w-100" type="submit">
+                                                    <Button variant="primary" className="btn-large w-100" type="submit" onClick={() => this.onSubmit()}>
                                                         Submit
                                                     </Button>
                                                 </Col>
