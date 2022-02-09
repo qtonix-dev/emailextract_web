@@ -309,7 +309,9 @@ export class index extends Component {
             <Body>
 
                 <Head>
-                    <title>Home</title>
+                    <title>Email Extractors - Scrape Emails From Website | Email Extract online</title>
+                    <meta name="description" content="Email Extract Online is a web-based software that can be used to scrape email addresses along with the phone numbers of potential clients just with the click of a button" />
+                    <meta name="keywords" content="email extractor online, email extractor from website, scrape emails from website, Scrape Email, email extractors" />
                 </Head>
 
             {/* 
