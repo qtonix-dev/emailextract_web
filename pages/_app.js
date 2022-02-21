@@ -24,9 +24,11 @@ import { ToastContainer } from 'react-toastify'
 
 
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// *** IMPORTANT MAIN.SCSS (not included)
 
-import '../scss/main.scss'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './scss/main.scss'
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import 'react-toastify/dist/ReactToastify.css';
 

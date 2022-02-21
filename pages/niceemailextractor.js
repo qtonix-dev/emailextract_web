@@ -61,7 +61,7 @@ export class niceemailextractor extends Component {
 
         console.log(domainCreate[0])
 
-        axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${domainCreate[this.state.count].domain}`)
+        axios.get(`https://bulkemailextractor.herokuapp.com/extract/${domainCreate[this.state.count].domain}`)
         .then(response=>{
           
             var bulkdomainextratdata = this.state.datas;
