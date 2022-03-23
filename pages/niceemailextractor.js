@@ -208,7 +208,6 @@ export class niceemailextractor extends Component {
                                         <tr>
                                             <th>Domain</th>
                                             <th>Status</th>
-                                            <th>Email</th>
                                         </tr>
 
                                         {this.state.datas===0
@@ -233,9 +232,8 @@ export class niceemailextractor extends Component {
                                                             })}
                                                             </>
                                                             :
-                                                            <>-</>}
+                                                            <></>}
                                                         </td>
-                                                        <td>-</td>
                                                     </tr>
                                                 )
                                             })}
