@@ -241,7 +241,7 @@ export class index extends Component {
             
         if(/^([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}$/.test(this.state.domain)) {
               
-            axios.get(`https://emailextractserver2bulkgetinfo.herokuapp.com/extract/${this.state.domain}`)
+            axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${this.state.domain}`)
             .then(response=>{
 
                 $("#myForm :input").prop('readonly', false);
