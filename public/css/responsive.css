@@ -90,7 +90,8 @@
         padding-right: 0;
     }
     .client-feedback-slider-two .bg-wrapper p {
-        font-size: 18px;
+        font-size: 14px !important;
+        width:218px !important;
     }
     .client-feedback-slider-two .bg-wrapper .name {
         font-size: 20px;
@@ -2884,5 +2885,8 @@
     }
     .clientSliderThree p {
         font-size: 22px;
+    }
+    .navbar-toggler .navbar-toggler-right button {
+        color:linear-gradient( 90deg,#fa9531 0,#ffbd39 100%) !important;
     }
 }

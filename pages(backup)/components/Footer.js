@@ -151,11 +151,11 @@ export default class Footer extends Component {
                                             </p>
                                         </div>
                                         <div className='col-md-3'>
-                                            <ul className='text-right socialm'>
-                                                <li><a href={'https://www.facebook.com/Email-Extract-Online-102299352298570'}><FaFacebookF /></a></li>
-                                                <li><a href={'https://twitter.com/EmailextractO'}><FaTwitter /></a></li>
-                                                <li><a href={'https://www.instagram.com/emailextractonline/'}><FaInstagram /></a></li>
-                                                <li><a href={'https://www.linkedin.com/in/email-extract-online-6514a2227/'}><FaLinkedinIn /></a></li>
+                                            <ul className='text-right'>
+                                                <li><a><FaFacebookF /></a></li>
+                                                <li><a><FaTwitter /></a></li>
+                                                <li><a><FaInstagram /></a></li>
+                                                <li><a><FaLinkedinIn /></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -175,7 +175,7 @@ export default class Footer extends Component {
                                             <li><Link href='/terms-and-condition'><a>Terms</a></Link></li>
                                             <li><Link href='/sitemap.html'><a>Sitemap</a></Link></li>
                                         </ul>
-                                        <p className="order-md-first" data-aos="fade-right">© 2020-2022 All rights reserved. Email Extract Online - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
+                                        <p className="order-md-first" data-aos="fade-right">© 2020-2021 All rights reserved. Email Extract Online - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
                                         </div>
                                     </div>
                                 </div>

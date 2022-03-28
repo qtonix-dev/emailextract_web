@@ -327,7 +327,7 @@ export class compare extends Component {
                             <p>Note: Data as of 20th November 2020</p>
                             <div className="freesales-btn">
                             <Link href='/register'>Try For Free</Link>
-                            <Link href='/'>Feature Comparision</Link>
+                                <a>Feature Comparision</a>
                             </div>
                         </div>
                         <section>

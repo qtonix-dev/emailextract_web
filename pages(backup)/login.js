@@ -13,8 +13,8 @@ import Router from 'next/router'
 import {GiSelfLove} from "react-icons/gi"
 import { GoogleLogin } from 'react-google-login';
 
-// import { AiOAiOutlineEyeInvisibleutlineEye } from 'react-icons/ai';
-import { FiEyeOff } from "react-icons/fi";
+import { AiOutlineEye } from 'react-icons/ai';
+
 
 
 export default class login extends Component {
@@ -204,7 +204,7 @@ export default class login extends Component {
                            
                             <Form.Control type={this.state.type} placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange} />
                            
-                                <InputGroup.Text id="basic-addon2"  onClick={this.showHide} > <FiEyeOff /> </InputGroup.Text>
+                                <InputGroup.Text id="basic-addon2"  onClick={this.showHide} > <AiOutlineEye /> </InputGroup.Text>
     
                              </InputGroup> 
                             <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
@@ -250,7 +250,7 @@ export default class login extends Component {
                           
                           <div className="theme-btn-reg mb-4">
                             <p className="register-sec-new">
-                            Do not have an account ?  <Link href='/register'><a>Sign up</a></Link>
+                            Do not have an account ?  <Link href='/register'><a>Sighn up</a></Link>
                             </p>
                           </div>
 

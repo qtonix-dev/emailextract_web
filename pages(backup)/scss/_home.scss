@@ -1,0 +1,113 @@
+.search-filter-form form {
+    height: 64px;
+}
+.search-filter-form button {
+    width: 60px;
+    background: #0495fd;
+}
+.search-filter-form button:hover {
+    width: 60px;
+    background: #090436;
+}
+.search-filter-form input {
+    color: #0495fd;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.addme{
+    
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.block-style-twelve {
+    padding: 100px 0;
+}
+
+.notfindemailshome{
+    background-color: white;
+    -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    margin: 10px auto 0;
+    border-radius: 5px;
+    padding: 30px;
+    width: 640px;
+}
+@media (max-width:576px) {
+    .search-filter-form form {
+        width: 100% !important;
+    }
+    .notfindemailshome {
+        width: 100%;
+    }
+    .findemailshome {
+        width: 100%;
+    }
+    .img-ban-main-new {
+        display: none;
+    }
+    .hero-banner-three h1 span {
+        font-size: 27px;
+        line-height: 22px;
+    }
+}
+.findemailshome{
+    background-color: white;
+    -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
+    margin: 10px auto 0;
+    border-radius: 0px;
+    padding: 30px;
+    max-width: 640px;
+    &_verified{
+
+            
+        color: #4caf50;
+        float: right;
+    }
+
+    &_notverified{
+
+            
+        color:#e91e63;
+        float: right;
+        cursor: pointer;
+    }
+
+
+    h6{
+        img{
+            height: 70px;
+        }
+
+        span{
+            float: right;
+            background-color: #e8e8e8;
+            padding: 7px 6px 6px;
+            font-size: 13px;
+            font-weight: 400;
+            border-radius: 0px;
+            position: absolute;
+            top: 50px;
+            right: 4.8rem;
+        }
+        
+    }
+
+
+
+    p{
+        margin-left: 11px;
+        line-height: 31px;
+
+        
+    }
+
+    h5{
+        font-size: 16px;
+    margin-left: 10px;
+    margin-top: 33px;
+    }
+}

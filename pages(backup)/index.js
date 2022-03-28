@@ -499,7 +499,7 @@ export class index extends Component {
                     */}
                     
                     <div className="fancy-text-block-nineteen mt-50  mb-20 md-mb-20">
-                    <div className="container">
+                    <div className="container-fluid">
                         {/* <div className="fancy-text-block-section-main mb-5">
                             <div className="row">
 

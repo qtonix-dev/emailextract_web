@@ -7519,7 +7519,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 }
 
 .client-feedback-slider-two .bg-wrapper p {
-	font-size: 18px;
+	font-size: 18px !important;
     line-height: 1.42em;
     color: #2c2c2c;
     padding: 35px 0 40px;
