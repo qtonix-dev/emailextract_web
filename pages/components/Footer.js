@@ -142,7 +142,7 @@ export default class Footer extends Component {
                                 <div className="container">
                                     <div className='row'>
                                         <div className='col-md-3'>
-                                            <p>Stay in Touch</p>
+                                            <p className='text-center'>Stay in Touch</p>
                                         </div>
                                         <div className='col-md-6'>
                                             <p className='text-center'>
@@ -151,7 +151,7 @@ export default class Footer extends Component {
                                             </p>
                                         </div>
                                         <div className='col-md-3'>
-                                            <ul className='text-right socialm'>
+                                            <ul className='text-center socialm'>
                                                 <li><a href={'https://www.facebook.com/Email-Extract-Online-102299352298570'}><FaFacebookF /></a></li>
                                                 <li><a href={'https://twitter.com/EmailextractO'}><FaTwitter /></a></li>
                                                 <li><a href={'https://www.instagram.com/emailextractonline/'}><FaInstagram /></a></li>

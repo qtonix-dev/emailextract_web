@@ -34,16 +34,16 @@ const data = {
         {
             title: "How accurate is the Email Extract Online?",
             content:
-                "The Email Extract Online uses the most comprehensive database of public email addresses to find the correct contact information. All the email addresses go through an email verification process before being returned. The email addresses with a green shield mean they have been checked and found deliverable. You can use them safely and those email addresses with red shields are either unauthorized or are not in use. "
+                <p>The Email Extract Online uses the most comprehensive database of public email addresses to find the correct contact information. All the email addresses go through an email verification process before being returned. The email addresses with a green shield mean they have been checked and found deliverable. You can use them safely and those email addresses with red shields are either unauthorized or are not in use.</p>
                 ,
         },
         {
             title: "Can you verify Bulk emails at once?",
-            content: `Yes, with the bulk extraction feature, you can verify an unlimited number of emails within seconds. `,
+            content: <p>`Yes, with the bulk extraction feature, you can verify an unlimited number of emails within seconds. `</p>,
         },
         {
             title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-            content: "It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.",
+            content: <p>"It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage."</p>,
         },
     ],
 };
@@ -52,8 +52,8 @@ const data1 = {
     rows: [
         {
             title: "How fast is your email extraction tool?",
-            content: `It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
-            Note: The performance and speed also depend on your PC as well.`,
+            content: <p>`It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
+            Note: The performance and speed also depend on your PC as well.`</p>,
         },
         {
             title: "Do you offer a free trial to test the tool before buying it?",
@@ -71,13 +71,13 @@ const data1 = {
         {
             title: "What should I do if the Email Finder doesn't return any result?",
             content: 
-            <p>If the Email Finder can&quot;t find the email address, we recommend you to verify the following elements:
+            <p>If the Email Finder can't find the email address, we recommend you to verify the following elements:
                 
             </p>
         },
         {
             title: "Why choose Email Extract Online over other email extract tools?",
-            content: "We started Email Extract Online because we found that other similar services were charging a lot of money for data that is either publicly available on the internet or not authorized. Our goal is to help YOU find suitable leads and build a million-dollar business, and to do that you need to save time and as much money as you can. We want to bring people together so that they can provide value for each other, and we plan on doing that by providing the best Email Extract Online tool ever.",
+            content: <p>"We started Email Extract Online because we found that other similar services were charging a lot of money for data that is either publicly available on the internet or not authorized. Our goal is to help YOU find suitable leads and build a million-dollar business, and to do that you need to save time and as much money as you can. We want to bring people together so that they can provide value for each other, and we plan on doing that by providing the best Email Extract Online tool ever."</p>,
         },
     ],
 };
@@ -214,7 +214,7 @@ export class compare extends Component {
                                     <Card.Body>
                                         <Card.Title>chargebee logo</Card.Title>
                                         <Card.Text>
-                                        “We initially had Salesforce CRM but didn&quot;t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks CRM), the first thing I remember saying is, okay, the interface is clean and simple.”
+                                        “We initially had Salesforce CRM but didn't really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks CRM), the first thing I remember saying is, okay, the interface is clean and simple.”
                                         </Card.Text>
                                         {/* <Button variant="primary">Go somewhere</Button> */}
                                         <h4 className="pb-2">Germain Brion</h4>

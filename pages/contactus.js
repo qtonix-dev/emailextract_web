@@ -103,10 +103,10 @@ export class contactus extends Component {
               <div className="title">Social Media</div>
               <p className="font-rubik">Find on social media</p>
               <ul className="d-flex justify-content-center socialMedia">
-                <li><a href="#"><FaFacebookF /></a></li>
-                <li><a href="#"><FaTwitter /></a></li>
-                <li><a href="#"><FaInstagram /></a></li>
-                <li><a href="#"><FaLinkedinIn /></a></li>
+                <li><a href={'https://www.facebook.com/Email-Extract-Online-102299352298570'}><FaFacebookF /></a></li>
+                <li><a href={'https://twitter.com/EmailextractO'}><FaTwitter /></a></li>
+                <li><a href={'https://www.instagram.com/emailextractonline/'}><FaInstagram /></a></li>
+                <li><a href={'https://www.linkedin.com/in/email-extract-online-6514a2227/'}><FaLinkedinIn /></a></li>
               </ul>
             </div> {/* /.address-info */}
           </div>

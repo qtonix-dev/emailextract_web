@@ -12,6 +12,7 @@ export default class about extends Component {
             <Body>
                 <Head>
                     <title>About Us</title>
+                    
                 </Head>
 
 
@@ -347,7 +348,10 @@ export default class about extends Component {
       <div className="our-cli">
         <div className="container">
           <div className="our-cli">
-            <h3>Our Clients</h3>
+            <div className="title-style-five">
+              <h2><span>Our</span> Clients</h2>
+            </div>
+            
             <p>Our Linkdin automation tool works best for:</p>
             <Row>
               <Col>

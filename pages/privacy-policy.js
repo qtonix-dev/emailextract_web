@@ -30,11 +30,11 @@ export class privacypolicy extends Component {
                             <h2><span>Privacy</span> Policy</h2>
                             </div>
                             
-                            <p>This privacy policy reveals the privacy practices for Email Extract Online. We are committed to respecting everyone&quot;s privacy and have designed our services with this object in mind following the new personal data processing principles coming with the European General Data Protection Regulation 
+                            <p>This privacy policy reveals the privacy practices for Email Extract Online. We are committed to respecting everyone's privacy and have designed our services with this object in mind following the new personal data processing principles coming with the European General Data Protection Regulation 
                             (EU Regulation 2016/679 of 27 April 2016 or the GDPR — General Data Protection Regulation).</p>
                             <p>Data protection is particularly of a high priority for the management of the Email Extract Online. In order to meet our customers’ expectations, demands and to ensure the respect of data 
                             subjects’ rights, we constantly update internal processes.</p>
-                            <p>This Privacy Policy page informs you of our policies related to the collection, use, and disclosure of personal data when you use our services and the choices you have associated with that data. Should you have any questions, please reach out, we&quot;ll be glad to help: sales@emailextractonline.com.</p>
+                            <p>This Privacy Policy page informs you of our policies related to the collection, use, and disclosure of personal data when you use our services and the choices you have associated with that data. Should you have any questions, please reach out, we'll be glad to help: sales@emailextractonline.com.</p>
                             </div>
                         </div>
                         </div>
@@ -73,7 +73,7 @@ export class privacypolicy extends Component {
 
                                     <h2>What information does Email Extract Online collect?</h2>
                                     <h3>When you are on our website</h3>
-                                    <p>When you&quot;re using our website, we track your usage, which includes statistics such as the total number of pages you visit and the total amount of time you look at them. This information may include but is not limited to IP address, geolocation information, browser type and 
+                                    <p>When you're using our website, we track your usage, which includes statistics such as the total number of pages you visit and the total amount of time you look at them. This information may include but is not limited to IP address, geolocation information, browser type and 
                                     data about the use of our website, including a history of the pages you view.</p>
                                     <p>On creating an account with us, we will ask you for information such including but not limited to: your email address, your full name or what company you are currently working for. All this information is used to personalize your experience or send you onboarding emails and invoices. In cases of high fraud risk, we might ask you for a phone number for verification purposes (we never use it for marketing purposes). If you become a paying customer with us, 
                                     we will collect your payment card information.</p>
@@ -113,8 +113,8 @@ export class privacypolicy extends Component {
                                     <p>On creating an account with us, you agree to our Terms of Service, which allows us to process your data in order to give you access to Email Extract Online. This way, you can have an account on our website as well as save and process leads, invite other team members, etc.</p>
                                     <br />
                                     <h3>To improve the User Experience</h3>
-                                    <p>We&quot;re looking at the usage patterns of our users and various statistics to understand what to improve on Email Extract Online. For example, this includes doing A/B testing on new features.
-                                    We&quot;re also using the data that goes through our services to improve the services themselves. We only use this information to validate data we already have or that is being provided by a user, not to improve our databases.
+                                    <p>We're looking at the usage patterns of our users and various statistics to understand what to improve on Email Extract Online. For example, this includes doing A/B testing on new features.
+                                    We're also using the data that goes through our services to improve the services themselves. We only use this information to validate data we already have or that is being provided by a user, not to improve our databases.
                                     </p>
                                     <br />
                                     <h3>To inform businesses regarding content that is publicly displayed online</h3>
@@ -256,8 +256,8 @@ export class privacypolicy extends Component {
                         </div>
                     </div>
                     <section className="free-section-demo-compare">
-                            <Freedemo />
-                        </section>
+                        <Freedemo />
+                    </section>
             </Body>
         )
     }
