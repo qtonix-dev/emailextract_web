@@ -255,7 +255,7 @@ export class compare extends Component {
                         </div>
                         <div className="our-customer-freesales">
                             <h3>Email Extract Online vs Hunter.io vs Prospect.io vs Anymailfindier</h3>
-                            <Table striped bordered hover size="sm">
+                            <Table striped bordered hover size="sm" responsive="sm">
                                 <thead className="customer-freesales-table">
                                     <tr>
                                     <th className="sec-left">CRITERIA</th>
