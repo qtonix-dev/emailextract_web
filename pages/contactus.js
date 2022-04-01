@@ -49,9 +49,9 @@ export class contactus extends Component {
         return (
             <Body>
               <Head>
-                <title>Email Address Extractor - Best Email Extractor Application Free </title>
+                <title>Best Extract Email - Online Email Address Extractor From Website Free </title>
                 <meta name="description" content="Ranked as the best free email extractor for the year 2022, try Email Extract Online to scrape unlimited emails and phone numbers of prospectives in seconds from various valid sources" />
-                <meta name="keywords" content="best free email extractor, email address extractor, online email extractor free, email extractor from website, scrape emails from website" />
+                <meta name="keywords" content="best free email extractor, email address extractor, online email extractor free, email extractor from website, scrape emails from website, extract email from website free" />
               </Head>
               
   {/* 

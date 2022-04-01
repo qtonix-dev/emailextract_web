@@ -92,7 +92,7 @@ export default class pricing extends Component {
         return (
             <Body>
               <Head>
-                <title>Free Online Email Extractor - Email Scraper Pricing</title>
+                <title>Free Online Email Extractor and Scraper - Web Email Finder Software</title>
                 <meta name="description" content="Email Extract Online is a free email scraper that comes with various advanced and useful features to help you extract 100% verified email addresses of different clients in seconds" />
                 <meta name="keywords" content="free online email extractor, free email scraper, Email Scraper Pricing, email extractor application, email extractor software" />
               </Head>

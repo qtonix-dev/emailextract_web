@@ -309,9 +309,9 @@ export class index extends Component {
             <Body>
 
                 <Head>
-                    <title>Email Extractors - Scrape Emails From Website | Email Extract online</title>
+                    <title>Email Extractors - Scrape Emails From Websites | Email Extract online</title>
                     <meta name="description" content="Email Extract Online is a web-based software that can be used to scrape email addresses along with the phone numbers of potential clients just with the click of a button" />
-                    <meta name="keywords" content="email extractor online, email extractor from website, scrape emails from website, Scrape Email, email extractors" />
+                    <meta name="keywords" content="email extractor online, email extractor from website, scrape emails from website, Scrape Email, online email extractor" />
                 </Head>
 
             {/* 
@@ -874,7 +874,7 @@ export class index extends Component {
                                                       onChange={this.onChange} />
                                                 </Col>
                                                 <Col sm={4}>
-                                                    <Button variant="primary" className="btn-large w-100" type="submit" onClick={() => this.onSubmit()}>
+                                                    <Button variant="primary" className="btn-large w-100 btn-liveChat" type="submit" onClick={() => this.onSubmit()}>
                                                         Submit
                                                     </Button>
                                                 </Col>

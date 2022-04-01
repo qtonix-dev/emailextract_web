@@ -27,17 +27,17 @@ export default class Section21 extends Component {
                         <div className="col-md-6 py-3 align-self-center">
 
                                 {this.state.active===1
-                                ?<><img src="images/emailFinder.jpg" alt="img-alt" /></>
+                                ?<><img src="images/emailFinder.jpg" alt="img-email" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===2
-                                ?<><img src="images/emailVerifier.jpg" alt="" /></>
+                                ?<><img src="images/emailVerifier.jpg" alt="img-email" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===3
-                                ?<><img src="images/assets/ils_12.svg" alt="" /></>
+                                ?<><img src="images/assets/ils_12.svg" alt="img-email" /></>
                                 :<></>
                                 }
 

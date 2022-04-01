@@ -75,17 +75,17 @@ export default class Section22 extends Component {
                         <div className="col-md-6 justify-content-center align-items-center align-self-center">
 
                                 {this.state.active===1
-                                ?<><img src="images/bulkDomain.png" alt="img-main" className="pt-2" /></>
+                                ?<><img src="images/bulkDomain.png" alt="img-email" className="pt-2" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===2
-                                ?<><img src="images/domainSearch.png" alt="img-main" className="pt-5" /></>
+                                ?<><img src="images/domainSearch.png" alt="img-email" className="pt-5" /></>
                                 :<></>
                                 }
 
                                 {this.state.active===3
-                                ?<><img src="images/assets/ils_12.svg" alt="" /></>
+                                ?<><img src="images/assets/ils_12.svg" alt="img-email" /></>
                                 :<></>
                                 }
 
