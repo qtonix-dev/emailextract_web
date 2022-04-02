@@ -22,20 +22,15 @@ export class niceemailextractor extends Component {
         this.fetchRecord=this.fetchRecord.bind(this);
     }
 
-
-
     handleChange(e){
         this.setState({
             [e.target.name]:e.target.value
         })
     }
 
-
-
     handleSubmit=e=>{
         e.preventDefault();
-
-        
+                
         const word = this.state.domains;
         const domains = word.split("\n");
 
@@ -61,7 +56,8 @@ export class niceemailextractor extends Component {
 
         console.log(domainCreate[0])
 
-        axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${domainCreate[this.state.count].domain}`)
+        axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}`)
+        // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
         .then(response=>{
           
             var bulkdomainextratdata = this.state.datas;
@@ -104,9 +100,12 @@ export class niceemailextractor extends Component {
             })
         }else{
             
-            // axios.get(`https://e157-103-171-4-131.ngrok.io/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
 
-            axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            // axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            
+            
             .then(response=>{
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= response.data.response;
