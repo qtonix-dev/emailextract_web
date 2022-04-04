@@ -470,6 +470,7 @@ export class index extends Component {
                       {this.state.allresponsedata.emails.length > 0 ? (
                                                 <>
                                                   <span>
+                                                      
                                                     <img src="https://img.icons8.com/fluency/30/000000/email.png" />
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
@@ -489,8 +490,12 @@ export class index extends Component {
                                               )}
                                               {this.state.allresponsedata.facebook.length > 0 ? (
                                                 <>
+                                                
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluency/30/000000/facebook.png" />
+                                                  <a href={this.state.allresponsedata.facebook[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluency/30/000000/facebook.png" />
+                                                  </a>
+                                                    
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -499,8 +504,10 @@ export class index extends Component {
                                               )}
                                               {this.state.allresponsedata.googleplus.length > 0 ? (
                                                 <>
-                                                  <span>
-                                                    <img src="https://img.icons8.com/fluent/30/google-plus-squared.png" />
+                                                <span>
+                                                  <a href={this.state.allresponsedata.googleplus[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluent/30/google-plus-squared.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -510,7 +517,9 @@ export class index extends Component {
                                               {this.state.allresponsedata.instagram.length > 0 ? (
                                                 <>
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluent/30/instagram-new.png" />
+                                                  <a href={this.state.allresponsedata.instagram[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluent/30/instagram-new.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -520,7 +529,9 @@ export class index extends Component {
                                               {this.state.allresponsedata.linkedin.length > 0 ? (
                                                 <>
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluency/30/000000/linkedin.png" />
+                                                  <a href={this.state.allresponsedata.linkedin[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluency/30/000000/linkedin.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -530,7 +541,9 @@ export class index extends Component {
                                               {this.state.allresponsedata.printrest.length > 0 ? (
                                                 <>
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluency/30/000000/pinterest.png" />
+                                                  <a href={this.state.allresponsedata.printrest[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluency/30/000000/pinterest.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -540,7 +553,9 @@ export class index extends Component {
                                               {this.state.allresponsedata.skype.length > 0 ? (
                                                 <>
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluency/30/000000/skype.png" />
+                                                  <a href={this.state.allresponsedata.skype[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluency/30/000000/skype.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -549,8 +564,12 @@ export class index extends Component {
                                               )}
                                               {this.state.allresponsedata.twitter.length > 0 ? (
                                                 <>
+
+
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluency/30/000000/twitter.png" />
+                                                  <a href={this.state.allresponsedata.twitter[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluency/30/000000/twitter.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -560,7 +579,9 @@ export class index extends Component {
                                               {this.state.allresponsedata.whatsapp.length > 0 ? (
                                                 <>
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluency/30/000000/whatsapp.png" />
+                                                  <a href={this.state.allresponsedata.whatsapp[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluency/30/000000/whatsapp.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
@@ -570,7 +591,9 @@ export class index extends Component {
                                               {this.state.allresponsedata.youtube.length > 0 ? (
                                                 <>
                                                   <span>
-                                                    <img src="https://img.icons8.com/fluency/30/000000/youtube.png" />
+                                                  <a href={this.state.allresponsedata.youtube[0]} target="_blank">
+                                                  <img src="https://img.icons8.com/fluency/30/000000/youtube.png" />
+                                                  </a>
                                                   </span>{" "}
                                                   &nbsp;&nbsp;
                                                 </>
