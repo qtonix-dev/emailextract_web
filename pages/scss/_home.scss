@@ -99,8 +99,11 @@
 
 
     p{
-        margin-left: 11px;
-        line-height: 31px;
+        margin-left: 0px;
+        line-height: 15px;
+        /* cursor: pointer; */
+        /* font-weight: 100 !important; */
+        font-size: 16px;
 
         
     }
@@ -109,5 +112,12 @@
         font-size: 16px;
     margin-left: 10px;
     margin-top: 33px;
+    }
+}
+
+
+.H54ASS{
+    span{
+        display: inline-block !important;
     }
 }
