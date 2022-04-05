@@ -100,7 +100,7 @@ export class niceemailextractor extends Component {
             })
         }else{
             
-            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
+            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}`)
 
             // axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
             // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
@@ -109,21 +109,6 @@ export class niceemailextractor extends Component {
             .then(response=>{
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= response.data.response;
-                bulkdomainextratdata.push(msdata);
-                this.setState({
-                    count:this.state.count+1,
-                    datas:bulkdomainextratdata
-                })
-                this.fetchRecord();
-            }).catch(err=>{
-                var bulkdomainextratdata = this.state.datas;
-                var msdata= {
-                    response: true,
-                    domain: this.state.domainCreate[this.state.count].domain,
-                    status: "Not Found",
-                    emails: [ ],
-                    tel: [ ]
-                }
                 bulkdomainextratdata.push(msdata);
                 this.setState({
                     count:this.state.count+1,
