@@ -27,7 +27,7 @@ export default class gdpr extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='gdpr-section pb-180'>
+                <div className='gdpr-section pb-180 pt-50'>
                     <div className='container'>
                         <h2>Frequently Asked Questions about LiveChat, Inc’s GDPR compliance</h2>
                         <p>The General Data Protection Regulation (GDPR) is the result of many years of work by the European Union to unify and strengthen data protection 

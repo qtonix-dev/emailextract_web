@@ -152,10 +152,10 @@ export default class Footer extends Component {
                                         </div>
                                         <div className='col-md-3'>
                                             <ul className='text-center socialm'>
-                                                <li><a href={'https://www.facebook.com/Email-Extract-Online-102299352298570'}><FaFacebookF /></a></li>
-                                                <li><a href={'https://twitter.com/EmailextractO'}><FaTwitter /></a></li>
-                                                <li><a href={'https://www.instagram.com/emailextractonline/'}><FaInstagram /></a></li>
-                                                <li><a href={'https://www.linkedin.com/in/email-extract-online-6514a2227/'}><FaLinkedinIn /></a></li>
+                                                <li><a href={'https://www.facebook.com/Email-Extract-Online-102299352298570'} target="_blank"><FaFacebookF /></a></li>
+                                                <li><a href={'https://twitter.com/EmailextractO'} target="_blank"><FaTwitter /></a></li>
+                                                <li><a href={'https://www.instagram.com/emailextractonline/'} target="_blank"><FaInstagram /></a></li>
+                                                <li><a href={'https://www.linkedin.com/in/email-extract-online-6514a2227/'} target="_blank"><FaLinkedinIn /></a></li>
                                             </ul>
                                         </div>
                                     </div>

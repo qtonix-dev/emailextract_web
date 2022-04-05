@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import Link from 'next/link'
 import { Row, Col, Form ,InputGroup,FormControl} from 'react-bootstrap'
 import Head from 'next/head'
-import { FaHome, FaGoogle, FaBeer  } from "react-icons/fa";
+import { FaHome, FaGoogle, FaBeer, FaRegEye,FaRegEyeSlash  } from "react-icons/fa";
 import Router from 'next/router'
 import {GiSelfLove} from "react-icons/gi"
 import { GoogleLogin } from 'react-google-login';
@@ -26,12 +26,14 @@ export default class login extends Component {
       this.state={
         formLoading:false,
         isVerified:false,
-        type: 'password'
+        type: 'password',
+        eye:true
       }
       this.validator = new SimpleReactValidator();
       this.handleChange=this.handleChange.bind(this);
       this.handleOnChange = this.handleOnChange.bind(this);
       this.showHide = this.showHide.bind(this);
+      this.eye = this.eye.bind(this);
     }
 
     componentDidMount(){
@@ -135,6 +137,23 @@ export default class login extends Component {
         })  
       }
 
+      eye() {
+
+        if(this.state.type==="password") {
+          this.setState ({
+            type:'text',
+            eye:false
+          })
+        } else {
+          this.setState ({
+            type:'password',
+            eye:true
+          })
+        }
+
+      }
+
+
     render() {
         return (
             <>
@@ -172,9 +191,9 @@ export default class login extends Component {
                      
                         <div className="col-12 d-none">
                             <div className="input-group-meta mb-50">
-                            <label>Email</label>
-                            <input type="email" placeholder="Enter Email" name="email" value={this.state.email} onChange={this.handleChange} />
-                            <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
+                              <label>Email</label>
+                              <input type="email" placeholder="Enter Email" name="email" value={this.state.email} onChange={this.handleChange} />
+                              <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                             </div>
                         </div>
                         
@@ -200,12 +219,12 @@ export default class login extends Component {
                            
                           <Form.Group className="mb-3" controlId="formBasicPassword">
                             <Form.Label>Password</Form.Label>
-                            <InputGroup >
+                            <InputGroup className='formLogin-sec'>
                            
-                            <Form.Control type={this.state.type} placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                              <Form.Control type={this.state.type} placeholder="Enter Password" name="password" value={this.state.password} onChange={this.handleChange} />
                            
-                                <InputGroup.Text id="basic-addon2"  onClick={this.showHide} > <FiEyeOff /> </InputGroup.Text>
-    
+                                {/* <InputGroup.Text id="basic-addon2"  onClick={this.showHide} > <FiEyeOff /> </InputGroup.Text> */}
+                                { this.state.eye ? <FaRegEyeSlash onClick={this.eye}/> : <FaRegEye onClick={this.eye}/> }
                              </InputGroup> 
                             <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
                           </Form.Group>
@@ -255,7 +274,7 @@ export default class login extends Component {
                           </div>
 
                           <div className="col-12">
-                          <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
+                            <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
                           </div>
                         </div>
                     </form>

@@ -7610,10 +7610,10 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 
 .useable-tools-section-three .logo-wrapper {
 	position: absolute;
-	right: -7%;
+	/* right: -7%; */
 	top: 50%;
 	transform: translateY(-50%);
-	max-width: 62.7%
+	/* max-width: 62.7% */
 }
 
 .useable-tools-section-three .logo-wrapper .logo {
@@ -14564,4 +14564,16 @@ p.bg-wrapper-text-sec {
 }
 .phoneno-input.PhoneInput {
     margin-top: -8px;
+}
+
+.formLogin-sec svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.icon-register-main svg {
+	float: right;
+	position: relative;
+	bottom: 28px;
+	right: 10px;
 }

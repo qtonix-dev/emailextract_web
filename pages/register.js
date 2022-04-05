@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import Router from 'next/router'
 import Link from 'next/link'
 import { Row, Col, Form } from 'react-bootstrap'
-import { FaHome, FaGoogle,FaEye } from 'react-icons/fa'
+import { FaHome, FaGoogle, FaEye, FaRegEye, FaRegEyeSlash } from 'react-icons/fa'
 import Head from 'next/head'
 import { GoogleLogin } from 'react-google-login'
 import {GiSelfLove} from "react-icons/gi"
@@ -19,11 +19,15 @@ export class register extends Component {
         this.state={
           formLoading:false,
           passwordViewType:'password',
-          text: 'Show'
+          text: 'Show',
+          eye:true,
+          eye1:true
         }
         this.validator = new SimpleReactValidator();
         this.handleChange=this.handleChange.bind(this);
         this.changePasswordViewType=this.changePasswordViewType.bind(this);
+        this.eye = this.eye.bind(this);
+        this.eye1 = this.eye1.bind(this);
       }
   
       componentDidMount(){
@@ -134,7 +138,40 @@ export class register extends Component {
     //         wording: newWord
     //       })
     // }
-    
+
+    eye(){
+      
+        if(this.state.passwordViewType === 'password'){
+          this.setState({
+            passwordViewType: 'text',
+            eye:false
+          })  
+        }
+        else{
+          this.setState({
+            passwordViewType: 'password',
+            eye:true
+          })
+        
+        }
+      }
+      eye1(){
+      
+        if(this.state.passwordViewType1 === 'password'){
+          this.setState({
+            passwordViewType1: 'text',
+            eye1:false
+          })  
+        }
+        else{
+          this.setState({
+            passwordViewType1: 'password',
+            eye1:true
+          })
+        
+        }
+      }
+
     render() {
         return (
             <>
@@ -233,14 +270,19 @@ export class register extends Component {
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Password</Form.Label>
-                                <Form.Control type={this.state.passwordViewType} placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
-                                <span className="password-trigger" onClick={this.changePasswordViewType}><a><FaEye /></a></span>
-                                <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
+                                    <Form.Control type={this.state.passwordViewType} placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                                    {/* <span className="password-trigger" onClick={this.changePasswordViewType}><a><FaEye /></a></span> */}
+                                    <div className='icon-register-main'>
+                                    { this.state.eye ? <FaRegEyeSlash onClick={this.eye}/> : <FaRegEye onClick={this.eye}/> }
+                                    </div>
+                                    <h6 className="form_error_message">{this.validator.message('password', this.state.password, 'required')}</h6>
                                 </Form.Group>
                             <Form.Group className="mb-3" controlId="formBasicPassword">
                                 <Form.Label>Conform Password</Form.Label>
-                                <Form.Control type={this.state.passwordViewType} placeholder="Conform Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange} />
-                                <span className="password-trigger" onClick={this.changePasswordViewType}><a><FaEye /></a></span>
+                                    <Form.Control type={this.state.passwordViewType1} placeholder="Conform Password" name="re_enter_password" value={this.state.re_enter_password} onChange={this.handleChange} />
+                                    <div className='icon-register-main'>
+                                    { this.state.eye1 ? <FaRegEyeSlash onClick={this.eye1}/> : <FaRegEye onClick={this.eye1}/> }
+                                    </div>
                                 <h6 className="form_error_message">{this.validator.message('re_enter_password', this.state.re_enter_password, 'required')}</h6>
                             </Form.Group>
                             <div className="col-12">

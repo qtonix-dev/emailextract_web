@@ -49,17 +49,12 @@ export class niceemailextractor extends Component {
             
         }
 
-        
-
-
-       if(domainCreate.length>300){
-        alert(`You can't upload more than 300 domains at a time.`)
-       }else{
-
         this.setState({
             domainCreate:domainCreate,
             totaldomains:domainCreate.length
         })
+
+        console.log(domainCreate[0])
 
         axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}`)
         // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
@@ -94,9 +89,6 @@ export class niceemailextractor extends Component {
             })
             this.fetchRecord();
         })
-       }
-
-        
     }
 
 
