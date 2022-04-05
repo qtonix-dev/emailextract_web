@@ -56,7 +56,7 @@ export class niceemailextractor extends Component {
 
         console.log(domainCreate[0])
 
-        axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}`)
+        axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`)
         // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
         .then(response=>{
           
@@ -100,7 +100,7 @@ export class niceemailextractor extends Component {
             })
         }else{
             
-            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}`)
+            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
 
             // axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
             // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
