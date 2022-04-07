@@ -21,10 +21,10 @@ function termsandcondition() {
               <div className="bg-wrapper">
                 <div className="container">
                   <div className="row">
-                    <div className="col-lg-12 m-auto text-center">
-                      <h1 className="heading font-terms">
-                        <span>Terms and Conditions<img src="/images/shape/line-shape-11.svg" alt="ss" /></span>
-                      </h1>
+                    <div className="col-lg-12 m-auto text-center title-style-five">
+                      <h2 className="heading font-terms">
+                        <span>Terms and </span>Conditions
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -162,7 +162,7 @@ function termsandcondition() {
                 </div>
             </div>
             <section className="free-section-demo-compare">
-              <Freedemo />
+            <Freedemo />
             </section>
         </Body>
     )

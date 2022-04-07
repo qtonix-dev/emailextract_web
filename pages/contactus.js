@@ -14,8 +14,12 @@ export class contactus extends Component {
       super(props)
       this.state={
         formLoading:false,
-        
-        email:''
+        showMessages:false,
+        fname:'',
+        lname:'',
+        email:'',
+        phone:'',
+        message:'',
       }
       this.validator = new SimpleReactValidator();
       this.handleChange = this.handleChange.bind(this);
@@ -34,7 +38,14 @@ export class contactus extends Component {
 
       if (this.validator.allValid()){
         $("#myForm :input").prop('readonly', true);
-        this.setState({formLoading:true})
+        this.setState({formLoading:true,showMessages:false})
+
+        axios.post(`${process.env.backendURL}/webapi/contactus`,this.state)
+        .then(response=>{
+          this.setState({formLoading:false,showMessages:true})
+        })
+
+        console.log(this.state)
       } else{
         this.validator.showMessages();
         this.forceUpdate();
@@ -164,7 +175,16 @@ export class contactus extends Component {
                   </Form.Group>
                 </div>
 
-                <div className="col-12" data-aos="fade-up" data-aos-duration={1200}><button className="theme-btn-six lg">Send Message</button></div>
+                {this.state.formLoading===false
+                ?<div className="col-12" data-aos="fade-up" data-aos-duration={1200}><button className="theme-btn-six lg">Send Message</button></div>
+                :<img src='https://swedlook.com/wp-content/uploads/2016/07/585d0331234507.564a1d239ac5e.gif' alt='image' style={{width:'100px'}} />
+                }
+                
+                {this.state.showMessages
+                ?<h3 className='text-success'>Done bro</h3>
+                :<></>}
+                
+              
               </div>
             </form>
           </div> {/* /.form-style-classic */}

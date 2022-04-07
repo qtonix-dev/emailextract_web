@@ -247,7 +247,7 @@ export default class login extends Component {
                           }
                         </div>
                         {/* <p>Forgot your password? <Link href='/forgotpassword'>Click Here</Link></p> */}
-                         <div className="or-sec text-center mb-3">
+                         {/* <div className="or-sec text-center mb-3">
                             <a>or</a>
                           </div>
 
@@ -259,7 +259,7 @@ export default class login extends Component {
                               onFailure={this.responseGoogle}
                               className="w-100"
                             />
-                          </div>
+                          </div> */}
 
                           {/* <ReCAPTCHA
                               sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
@@ -274,7 +274,7 @@ export default class login extends Component {
                           </div>
 
                           <div className="col-12">
-                            <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
+                            <p className="text-center font-rubik copyright-text">© 2020-2022 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
                           </div>
                         </div>
                     </form>

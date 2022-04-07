@@ -463,9 +463,52 @@
     }
 }
 @media (max-width: 991px) {
+    .free-demo-form-left {
+        padding: 60px 0px 0px 0px;
+        margin-bottom: 40px;
+    }
+    .user-data-form {
+        width: 90%;
+    }
+    .user-data-form .logo img {
+        width:90% !important;
+    }
     .navbar .navbar-toggler {
         position: relative;
-        left:30px;
+        left:0px;
+    }
+    .our-cli-btn {
+        width: 50%;
+    }
+
+    .compare-section-first h2 {
+        /* width: 20px; */
+        font-size: 35px;
+    }
+    .compare-section-second h2 {
+        font-size: 40px;
+    }
+    .our-customer-freesales h3 {
+        font-size: 35px;
+    }
+    .fancy-text-block-thirteen {
+        padding: 0px 10px;
+    }
+    .alternative-section-inner {
+        padding: 0 10px;
+    }
+    .footer-list {
+        width: 215px !important;
+    }
+    .hero-banner-three h1 span {
+        font-size: 25px;
+    }
+    .free-liveChart ul li {
+        display: inline-block;
+        padding: 30px 10px;
+        /* margin-left: 10px; */
+        position: relative;
+        right: 15px;
     }
     .title-style-five h2 {
         font-size: 40px;
@@ -1185,6 +1228,7 @@
     .contact-style-two .contact-info-wrapper .address-info {
         height: auto;
         padding: 35px 15px 35px;
+        margin: 20px 0;
     }
     .contact-style-two .contact-info-wrapper .address-info .icon {
         height: 55px;
@@ -2099,10 +2143,19 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar .navbar-toggler {
     position: relative;
-    left: 35px;
+    left: 10px;
+    }
+    .hero-banner-three h1 span {
+        font-size:25px;
     }
     .block-style-thirteen.style-border {
         border-right: none;
+    }
+    .icon-images-ban ul li {
+        display: inline-block;
+        margin: 0 auto;
+        width: 20%;
+        margin: 0px 50px 20px 10px;
     }
     .team-section-one .gap,
     .team-section-one .mix {

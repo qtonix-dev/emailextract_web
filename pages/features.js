@@ -23,11 +23,11 @@ export class compare extends Component {
                     <div className="bg-wrapper">
                         <div className="container">
                         <div className="row">
-                            <div className="col-lg-12 m-auto text-center compare-main feature-main">
-                            <h1 className="heading">
-                                <span>Can’t decide between Ahrefs, SEMrush, and Moz?
-                                </span>
-                            </h1>
+                            <div className="col-lg-12 m-auto text-center compare-main feature-main title-style-five">
+                            <h2 className="heading">
+                                <span>Can’t decide between Ahrefs, </span>SEMrush, and Moz?
+                                
+                            </h2>
                                 <p>Let’s be real: software comparison pages like this are usually biased. When bloggers create them, they gravitate towards the option with the best affiliate commissions.</p>
                                 
                             </div>

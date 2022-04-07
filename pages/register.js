@@ -310,7 +310,7 @@ export class register extends Component {
                             <p>By Clicking &quot;Sign Me Up&quot; you agree to Email Extracter Online&rdquo;s <Link href='/terms-and-condition'>Terms & Condition</Link> & <Link href='/privacy-policy'>Privacy Policy</Link></p>
                         </div>
 
-                        <div className="or-sec text-center mb-4">
+                        {/* <div className="or-sec text-center mb-4">
                             <a>or</a>
                         </div>
                         
@@ -322,7 +322,7 @@ export class register extends Component {
                                   onFailure={this.responseGoogle}
                                   className="w-100"
                             />
-                        </div>
+                        </div> */}
 
                         {/* <div className="theme-btn-google text-center">
                             <a className="signinGoogle">
@@ -339,7 +339,7 @@ export class register extends Component {
                     </div>
 
                     <div className="col-12">
-                            <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
+                            <p className="text-center font-rubik copyright-text">© 2020-2022 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
                     </div>
 
                     </div> 
