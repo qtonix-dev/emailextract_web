@@ -504,11 +504,11 @@
         font-size: 25px;
     }
     .free-liveChart ul li {
-        display: inline-block;
-        padding: 30px 10px;
-        /* margin-left: 10px; */
-        position: relative;
-        right: 15px;
+    padding: 20px 10px 0 !important;
+    
+    position: relative;
+    right: 15px;
+    font-size: 14px;
     }
     .title-style-five h2 {
         font-size: 40px;
