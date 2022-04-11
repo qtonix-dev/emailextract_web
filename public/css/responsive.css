@@ -463,19 +463,52 @@
     }
 }
 @media (max-width: 991px) {
+    
+    .icon-images-ban ul li {
+        width: 30% !important;
+    }
+    p.log-sec-new {
+        font-size: 14px;
+    }
+    .findemailshome h6 span {
+        right: 6.8rem;
+    }
+    .title-style-seven h2 span:before {
+        background: none;
+    }
+    .client-feedback-slider-two .bg-wrapper {
+        height: 300px;
+    }
+    .free-liveChartForm input {
+        margin-bottom: 5px;
+    }
     .free-demo-form-left {
         padding: 60px 0px 0px 0px;
         margin-bottom: 40px;
+    }
+    .col-sec-de {
+        width: 100% !important;
+        padding: 10px !important;
+        height: 200px !important;
+        border-radius: 20px !important;
+    }
+    .col-sec-de-check svg {
+        position: absolute;
+        top: 95px;
+        right: 0px !important;
+    }
+    .our-cli-btn {
+        width:40% !important;
     }
     .user-data-form {
         width: 90%;
     }
     .user-data-form .logo img {
-        width:90% !important;
+        width:325px !important;
     }
     .navbar .navbar-toggler {
         position: relative;
-        left:0px;
+        left:15px;
     }
     .our-cli-btn {
         width: 50%;
@@ -504,11 +537,12 @@
         font-size: 25px;
     }
     .free-liveChart ul li {
-    padding: 20px 10px 0 !important;
-    
-    position: relative;
-    right: 15px;
-    font-size: 14px;
+        display: inline-block;
+        padding: 20px 10px 0 !important;
+        /* margin-left: 10px; */
+        position: relative;
+        right: 15px;
+        font-size: 14px;
     }
     .title-style-five h2 {
         font-size: 40px;
@@ -1385,7 +1419,7 @@
         padding: 55px 0;
     }
     .client-feedback-slider-two {
-        padding: 80px 0 50px;
+        padding: 80px 0 0px;
     }
     .client-feedback-slider-two .bg-wrapper {
         padding: 35px 20px 30px;
@@ -2144,6 +2178,10 @@
     .navbar .navbar-toggler {
     position: relative;
     left: 10px;
+    }
+    
+    .findemailshome h6 span {
+        right: 5.1rem;
     }
     .hero-banner-three h1 span {
         font-size:25px;
@@ -3013,5 +3051,11 @@
     }
     .our-cli-btn {
         width: 62% !important;
+    }
+    .user-data-form .logo img {
+        width:300px;
+    }
+    .free-liveChart ul li {
+        padding: 20px 10px 0px;
     }
 }
