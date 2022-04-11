@@ -61,11 +61,31 @@ p.sub-text {
         width: 100%;
     }
     p.sub-text {
-        font-size: 16px;
+        font-size: 16px !important;
     }
     .how-it-works-first p {
         padding-top: 10px;
         font-size: 16px;
+    }
+    .faq-row-wrapper {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 991px){
+    .faq-row-wrapper {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    p.sub-text {
+        font-size: 15px !important;
+    }
+    .fancy-feature-nineteen-new-inner h5 {
+        font-size: 14px;
+    }
+    .fancy-feature-nineteen-new-inner.text-center {
+        height: 212px;
     }
 }
 

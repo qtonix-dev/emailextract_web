@@ -43,7 +43,7 @@ class MyApp extends App {
     return(
       <Provider store={store}>
           <GoogleReCaptchaProvider
-      language="es-AR"
+      language="en-us"
       reCaptchaKey="6Lf3qmQfAAAAADHGPu7Wkmr7RqJcVLz2BwNKpQ5l"
     >
           <Component {...pageProps}></Component>
