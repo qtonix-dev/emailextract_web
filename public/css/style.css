@@ -7527,7 +7527,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 	white-space: nowrap;
 	height: 200x;
 	text-overflow: ellipsis;
-	width: 265px;
+	width: 275px;
 }
 
 .client-feedback-slider-two .bg-wrapper .name {
@@ -7875,7 +7875,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
     background-size:68% !important;
     right: 0;
     height: 100%;
-    min-height: 420px;
+    min-height: 550px;
     top: 0;
     z-index: 0;
 	padding: 140px 0 100px;
@@ -13856,7 +13856,6 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 
 .terms_and_policy {
 	padding: 80px 0;
-	border-bottom: 1px solid #ececec
 }
 
 .terms_and_policy .nav-tabs {
