@@ -161,9 +161,9 @@ function termsandcondition() {
                     </div>
                 </div>
             </div>
-            <section className="free-section-demo-compare">
+            {/* <section className="free-section-demo-compare">
             <Freedemo />
-            </section>
+            </section> */}
         </Body>
     )
 }

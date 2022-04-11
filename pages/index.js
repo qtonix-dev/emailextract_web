@@ -276,7 +276,7 @@ export class index extends Component {
 
         }
         else {
-            
+            $("#myForm :input").prop('readonly', false);
             toast.error('invalid domain', {
                 position: "top-right",
                 autoClose: 5000,
@@ -290,8 +290,7 @@ export class index extends Component {
         this.setState({mainformLoading:false,hiddenContent:false})
     
         }
-         }
-         const ishide = this.state.ishide;
+    }    
         
     }
    
@@ -327,7 +326,7 @@ export class index extends Component {
                                         <span>
                                         STOP MANUAL, WE AUTOMATE ALL! <br /> BEST EMAIL EXTRACTOR
                                         </span>
-                                        🚀{" "}
+                                        <span className="rocket">🚀</span>{" "}
                                     </h1>
                                     </div>
                                     <div className="col-xl-8 col-lg-9 m-auto">
@@ -339,7 +338,9 @@ export class index extends Component {
                                     </p>
                                     </div>
                                 </div>
-                                <div className="search-filter-form">
+                                <div className='row'>
+                                    <div className='col-xl-7 col-lg-9 col-md-12 m-auto'>
+                                    <div className="search-filter-form">
                                     {this.state.mainformLoading ? (
                                     <center>
                                         <img
@@ -353,7 +354,7 @@ export class index extends Component {
                                     <form
                                         onSubmit={this.handleSubmit}
                                         id="myForm"
-                                        className="searchForm w-75"
+                                        // className="searchForm w-75"
                                     >
                                         <input
                                         type="text"
@@ -366,6 +367,9 @@ export class index extends Component {
                                     </form>
                                     )}
                                 </div>
+                                    </div>
+                                </div>
+                                
 
                                 {this.state.allresponsedata !== null ? (
                                     <div className="row">
@@ -398,7 +402,7 @@ export class index extends Component {
                                         {this.state.allresponsedata.emails.length===0
                                         ?
                                         <h5>
-                                            Oh no! We couldn&quot;t find any emails for{" "}
+                                            Oh no! We couldn't find any emails for{" "}
                                             {this.state.domain}.
                                         </h5>
                                         :
@@ -651,7 +655,6 @@ export class index extends Component {
                     <div className="container">
                         {/* <div className="fancy-text-block-section-main mb-5">
                             <div className="row">
-
                                 <div className="col-lg-4">
                                     <div className="fancy-text-block-section">
                                         <div className="row">
@@ -713,9 +716,6 @@ export class index extends Component {
                             {/* <div className="name font-slab">Sam Gibbs</div> */}
                             </div> {/* /.text-wrapper */}
                             </Animated>
-                            
-                            
-                            
                         </div>
                         </div>
                     </div>
@@ -735,23 +735,21 @@ export class index extends Component {
                                             */}
                                 <div className="fancy-feature-eight">
                                     <div className="container">
-                                    <div className="title-style-five text-center mb-40 md-mb-40">
-                                        <div className="row">
-                                            <div className="col-lg-10 m-auto">
-                                                    <div className="title-style-five">
-                                                        <h2><span>How it works</span></h2>
-                                                    </div>
-                                                    
-                                                    <h6>Find verified email of any targeted&nbsp;
-                                                        <span>professional from their name and company.</span>
-                                                    </h6>
+                                        <div className="title-style-five text-center mb-40 md-mb-40">
+                                            <div className="row">
+                                                <div className="col-lg-10 m-auto">
+                                                        <div className="title-style-five">
+                                                            <h2><span>How it works</span></h2>
+                                                        </div>
+                                                        
+                                                        <h6>Find verified email of any targeted&nbsp;
+                                                            <span>professional from their name and company.</span>
+                                                        </h6>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    
-                                    
-                                    
-                                     {/* /.block-style-twelve */}
+                                        
+                                        {/* /.block-style-twelve */}
                                     </div>
                                 </div> {/* /.fancy-feature-eight */}
 

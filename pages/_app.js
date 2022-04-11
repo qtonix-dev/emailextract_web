@@ -21,7 +21,7 @@ import {Provider} from 'react-redux'
 import {createWrapper} from 'next-redux-wrapper'
 import store from '../store/store'
 import { ToastContainer } from 'react-toastify'
-
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
 
 
 // *** IMPORTANT MAIN.SCSS (not included)
@@ -42,10 +42,13 @@ class MyApp extends App {
     const {Component,pageProps} = this.props;
     return(
       <Provider store={store}>
-        
+          <GoogleReCaptchaProvider
+      language="es-AR"
+      reCaptchaKey="6Lf3JqwZAAAAAM7EVYnGEw3QtmXEI8gWxjr3rdGZ"
+    >
           <Component {...pageProps}></Component>
           <ToastContainer />
-          
+          </GoogleReCaptchaProvider>
       </Provider>
       
     )

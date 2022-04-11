@@ -337,7 +337,7 @@ export class compare extends Component {
                                 </div>
                             </div>
                             <Row className="py-3">
-                                <Col sm={5} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <div className="alternative-section-inner">
                                         <h3>Ease of use</h3>
                                         <p>We understand exactly how frustrating it is when a tool is hard to navigate. Therefore, our team of experienced and knowledgeable engineers and designers has built an intuitive, simple and visually compelling interface that can be used by the users to achieve specified goals with 
@@ -345,15 +345,15 @@ export class compare extends Component {
                             
                                     </div>
                                 </Col>
-                                <Col sm={7} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks0defd0053otsg03163hh6p-fsa-analytics-dashboard.one-half.png" alt="img-email" />
                                 </Col>
                             </Row>
                             <Row className="py-3">
-                                <Col sm={7} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks4ef4yu02zx74fzoovd0bso-104-b.one-half.png" alt="img-email" />
                                 </Col>
-                                <Col sm={5} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <div className="alternative-section-inner">
                                         <h3>24/7 support</h3>
                                         <p>Having a competent, reliable support team that you can depend on at any hour is a game-changer. Email Extract Online offers dependable, on-demand support options including 24/7 technical and remote support to users. Our knowledgeable support team is here for you at any time, regardless of 
@@ -363,7 +363,7 @@ export class compare extends Component {
                             </Row>
                             <Row className="py-3">
                                 
-                                <Col sm={5} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <div className="alternative-section-inner">
                                         <h3>Cheaper</h3>
                                         <p>With the plans generally being substantially cheaper than the competitors, Email Extract Online is a great choice for 
@@ -372,7 +372,7 @@ export class compare extends Component {
                                             for companies that don’t have a dedicated sales department, since it’s affordable and easier to use.</p>
                                     </div>
                                 </Col>
-                                <Col sm={7} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks0defd0053otsg03163hh6p-fsa-analytics-dashboard.one-half.png" alt="img-email" />
                                 </Col>
                             </Row>
@@ -430,7 +430,7 @@ export class compare extends Component {
                             </ul>
                         </Container>
                         </section>
-                        <section className="free-section-demo-compare">
+                        <section className="free-section-demo-compare mt-5">
                             <Container>
                                 <Freedemo />
                             </Container>
