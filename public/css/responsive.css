@@ -545,7 +545,7 @@
         font-size: 14px;
     }
     .title-style-five h2 {
-        font-size: 40px;
+        font-size: 29px;
     }
     .title-style-one h2 {
         font-size: 42px;
@@ -685,7 +685,7 @@
         font-size: 20px;
     }
     .fancy-text-block-nineteen .text-wrapper p {
-        font-size: 20px;
+        font-size: 16px;
         padding-top: 30px;
     }
     .fancy-text-block-nineteen .text-wrapper .name {
@@ -1354,8 +1354,8 @@
         line-height: 1.18em;
     }
     .hero-banner-three .sub-text {
-        font-size: 22px;
-        padding-bottom: 40px;
+        font-size: 16px;
+        padding-bottom: 27px;
     }
     .search-filter-form form {
         height: 65px;
@@ -1431,8 +1431,10 @@
         max-width: 100%;
     }
     .useable-tools-section-three .sub-text {
-        font-size: 20px;
-        padding: 35px 0 25px 0;
+        font-size: 17px;
+        /* padding: 35px
+    px
+     0 25px 0; */
     }
     .useable-tools-section-three .all-button {
         font-size: 17px;
@@ -1906,7 +1908,7 @@
         bottom: 41%;
     }
     .title-style-eight h2 {
-        font-size: 42px;
+        font-size: 24px;
     }
     .title-style-eight h2 br {
         display: none;

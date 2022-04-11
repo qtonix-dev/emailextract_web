@@ -32,7 +32,7 @@ export default class Section22 extends Component {
                                         <h3 className="cursor-pointer">Bulk Extractor</h3>
                                         {/* <p className="cursor-pointer">Find verified email of any targeted professional from their name and company.</p> */}
                                         <h6>Find Verified Bulk Emails At once</h6>
-                                        <p>Extracting bulk email has never been so much easier. With the Email Extract Online Bulk Extractor, you can 
+                                        <p className='sub-text'>Extracting bulk email has never been so much easier. With the Email Extract Online Bulk Extractor, you can 
                                                 find large numbers of verified email addresses in seconds.</p>
                                         {/* <p>The Email Extract Online tool helps you to connect with people that matter the most for your business. You just need to hit search by entering the prospect’s full name and company domain, and the tool will 
                                             search relevant websites and scan them to collect the right and verified email addresses in seconds.</p> */}
@@ -48,7 +48,7 @@ export default class Section22 extends Component {
                                     {/* <p>Verify any professional email address and boost email deliverability with the most 
                                         reliable email verifier tool.</p> */}
                                     <h6>Stop Manual, We Automate All!</h6>
-                                    <p>Increase Sales With The Most Powerful & Easy-To-Use Email Finding Tool. Email Extract Online Lets You Find & Extract Email Addresses From Any Websites.</p>
+                                    <p className='sub-text'>Increase Sales With The Most Powerful & Easy-To-Use Email Finding Tool. Email Extract Online Lets You Find & Extract Email Addresses From Any Websites.</p>
                                     <div className="btn-feature-section"><Link href="/pricing">View More </Link> &nbsp;<FaArrowCircleRight /></div>
                                 </div>
                                 

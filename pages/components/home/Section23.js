@@ -52,7 +52,7 @@ export default class Section21 extends Component {
                                             <h3 className="cursor-pointer">Email Finder</h3>
                                             {/* <p className="cursor-pointer">Find verified email of any targeted professional from their name and company.</p> */}
                                             <h6>A Faster Way To Find Anyone</h6>
-                                            <p>The Email Extract Online tool helps you to connect with people that matter the most for your business. </p>
+                                            <p className='sub-text'>The Email Extract Online tool helps you to connect with people that matter the most for your business. </p>
                                             {/* <p>The Email Extract Online tool helps you to connect with people that matter the most for your business. You just need to hit search by entering the prospect’s full name and company domain, and the tool will 
                                                 search relevant websites and scan them to collect the right and verified email addresses in seconds.</p> */}
                                             <div className="btn-feature-section"><Link href="/pricing">View More </Link> &nbsp;<FaArrowCircleRight /></div>
@@ -67,7 +67,7 @@ export default class Section21 extends Component {
                                         {/* <p>Verify any professional email address and boost email deliverability with the most 
                                             reliable email verifier tool.</p> */}
                                         <h6>Verifying Emails Is Now Super Quick And Easy</h6>
-                                        <p>In order to help you send the correct email lists to the right inbox every time, we have designed a simple yet the most powerful tool- Email Extract Online. </p>
+                                        <p className='sub-text'>In order to help you send the correct email lists to the right inbox every time, we have designed a simple yet the most powerful tool- Email Extract Online. </p>
                                         <div className="btn-feature-section"><Link href="/pricing">View More </Link> &nbsp;<FaArrowCircleRight /></div>
                                     </div>
                                     
@@ -79,7 +79,7 @@ export default class Section21 extends Component {
                                             <h3 className="cursor-pointer">Bulk Extractor</h3>
                                             {/* <p className="cursor-pointer">The all-in-one solution to verify a large number of email addresses at once.</p> */}
                                             <h6>Find Verified Bulk Emails At once</h6>
-                                            <p>Extracting bulk email has never been so much easier. With the Email Extract Online Bulk Extractor, you can 
+                                            <p className='sub-text'>Extracting bulk email has never been so much easier. With the Email Extract Online Bulk Extractor, you can 
                                                 find large numbers of verified email addresses in seconds. </p>
                                             <div className="btn-feature-section"><Link href="/pricing">View More </Link> &nbsp;<FaArrowCircleRight /></div>
                                     </div>

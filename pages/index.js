@@ -842,7 +842,7 @@ export class index extends Component {
                                                     {/* <img src="images/availability1.png" alt="img-email" /> */}
                                                     <AiOutlineFileProtect />
                                                     <h5>Data Protection and Accuracy</h5>
-                                                    <p>We don&#39;t share your information with any third party. 
+                                                    <p className='sub-text'>We don&#39;t share your information with any third party. 
                                                         We confirm that 99.5% of the data are correct.</p>
                                                 </div>
                                             </Col>
@@ -852,7 +852,7 @@ export class index extends Component {
                                                     {/* <img src="images/eu-gdpr-compliant1.png" alt="img-email" /> */}
                                                     <BiSupport />
                                                     <h5>Technical support 24/7</h5>
-                                                    <p>Contact us anytime, 24 hours * 7 days, to get the most detailed answers to any of your questions.</p>
+                                                    <p className='sub-text'>Contact us anytime, 24 hours * 7 days, to get the most detailed answers to any of your questions.</p>
                                                 </div>
                                             </Col>
                                             <Col sm={4}>
@@ -860,7 +860,7 @@ export class index extends Component {
                                                     {/* <img src="images/working-with-enterprises1.png" alt="img-email" /> */}
                                                     <FaSearch />
                                                     <h5>Free trial</h5>
-                                                    <p>Try any of the features of our tool for free before purchasing.</p>
+                                                    <p className='sub-text'>Try any of the features of our tool for free before purchasing.</p>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -870,7 +870,7 @@ export class index extends Component {
                                                     {/* <img src="images/integration-with-all-major-ats1.png" alt="img-email" /> */}
                                                     <FaViruses />
                                                     <h5>Malware free</h5>
-                                                    <p>Whenever you download and install our tool, we guarantee the safety and security of your PC.</p>
+                                                    <p className='sub-text'>Whenever you download and install our tool, we guarantee the safety and security of your PC.</p>
                                                 </div>
                                             </Col>
                                             <Col sm={4}>
@@ -878,7 +878,7 @@ export class index extends Component {
                                                     {/* <img src="images/secured1.png" alt="img-email" /> */}
                                                     <MdEditNote />
                                                     <h5>GDPR compliant</h5>
-                                                    <p>Though we are not a member of EU member states, yet all our products and services are GDPR compliant.</p>
+                                                    <p className='sub-text'>Though we are not a member of EU member states, yet all our products and services are GDPR compliant.</p>
                                                 </div>
                                             </Col>
                                             <Col sm={4}>
@@ -886,7 +886,7 @@ export class index extends Component {
                                                     {/* <img src="images/enabling-unbiased-hiring1.png" alt="img-email" /> */}
                                                     <FaHandshake />
                                                     <h5>Highly recommended</h5>
-                                                    <p>All of our products are highly recommended by the professionals of small to large organizations.</p>
+                                                    <p className='sub-text'>All of our products are highly recommended by the professionals of small to large organizations.</p>
                                                 </div>
                                             </Col>
                                         </Row>

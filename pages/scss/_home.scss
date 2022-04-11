@@ -25,6 +25,9 @@
 .block-style-twelve {
     padding: 100px 0;
 }
+p.sub-text {
+    font-size: 20px;
+}
 
 .notfindemailshome{
     background-color: white;
@@ -36,8 +39,9 @@
     width: 640px;
 }
 @media (max-width:576px) {
-    .search-filter-form form {
-        width: 100% !important;
+    .search-filter-form button {
+        width: 90px !important;
+        font-size: 12px;
     }
     .notfindemailshome {
         width: 100%;
@@ -49,10 +53,22 @@
         display: none;
     }
     .hero-banner-three h1 span {
-        font-size: 27px;
-        line-height: 22px;
+        font-size: 26px;
+        line-height: 33px !important;
+    }
+
+    .faq-row-wrapper {
+        width: 100%;
+    }
+    p.sub-text {
+        font-size: 16px;
+    }
+    .how-it-works-first p {
+        padding-top: 10px;
+        font-size: 16px;
     }
 }
+
 .findemailshome{
     background-color: white;
     -webkit-box-shadow: 0 30px 50px rgb(7 21 36 / 6%);
