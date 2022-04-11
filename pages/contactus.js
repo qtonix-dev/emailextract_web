@@ -181,7 +181,7 @@ export class contactus extends Component {
                 }
                 
                 {this.state.showMessages
-                ?<h3 className='text-success'>Done bro</h3>
+                ?<h3 className='text-success'>Message has sent successfully</h3>
                 :<></>}
                 
               
