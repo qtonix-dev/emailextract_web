@@ -135,25 +135,25 @@ export class compare extends Component {
                         </div>
                             
                             <Row>
-                                <Col sm={3} className="mt-3">
+                                <Col sm={6} md={6} lg={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjyh4slij00ej4zfzt7jm8v6u-1-2x.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>Gartner Magic Quadrant 2021 - Sales Force Automation</p>
                                     </div>
                                 </Col>
-                                <Col sm={3} className="mt-3">
+                                <Col sm={6} md={6} lg={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksrja4qtaby4anfzxvtvphqg-medal-1.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>G2 Crowd CRM Software Leader 2021</p>
                                     </div>
                                 </Col>
-                                <Col sm={3} className="mt-3">
+                                <Col sm={6} md={6} lg={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksskhytfji37ayfzrfqd5fik-ga-badge.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>GetApp CRM Software Leaders 2021</p>
                                     </div>
                                 </Col>
-                                <Col sm={3} className="mt-3">
+                                <Col sm={6} md={6} lg={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksskj46hji72ayfzdciky9ah-sa-badge.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>Software Advice CRM Front Runners 2021</p>
@@ -206,6 +206,7 @@ export class compare extends Component {
                                 <h2 className="pb-5">What our customers say about us</h2>
                             </div>
                             
+                            
                             <div className="customer-compaire-testimonial">
                             <Carousel variant="dark">
                                 <Carousel.Item>
@@ -254,7 +255,10 @@ export class compare extends Component {
                             </div>
                         </div>
                         <div className="our-customer-freesales">
-                            <h3>Email Extract Online vs Hunter.io vs Prospect.io vs Anymailfindier</h3>
+                            <div className="title-style-five">
+                            
+                            <h2 className='text-center'><span>Why Email Extract Online</span> vs Hunter.io vs Prospect.io vs Anymailfindier</h2>
+                            </div>
                             <Table striped bordered hover size="sm" responsive="sm">
                                 <thead className="customer-freesales-table">
                                     <tr>

@@ -69,7 +69,7 @@ export class Freedemo extends Component {
       <Container>
       <div className="">
         <Row className="mb-5">
-          <Col sm={6} className="align-self-center">
+          <Col lg={6} className="align-self-center">
             <div className="free-demo-form">
             <div className="free-demo-form-left">
               <h3>SCHEDULE A FREE DEMO</h3>
@@ -119,7 +119,7 @@ export class Freedemo extends Component {
             </div>
             
           </Col>
-          <Col sm={6}>
+          <Col lg={6}>
             <div className="free-demo-form-right mb-5">
               <h3>Book Your Free Demo</h3>
               
