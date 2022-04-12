@@ -9,6 +9,11 @@
 @import '_pricing.scss';
 
 
+.priceactive{
+    transform: scale(1.05);
+    background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(0,214,212,1) 0%, rgba(1,148,241,1) 47%);
+}
+
 
 // Files
 .go-back-button {
@@ -219,7 +224,7 @@ form#myForm label {
     
     line-height: 1.39em;
     font-weight: 400;
-    color: #2a2a2a;
+    color: #000;
     text-align: center;
     // padding: 5px 0px 0px;
     text-transform: capitalize;

@@ -22,7 +22,6 @@ export default function PricingBoxPaid({data}) {
                 <li><AiOutlineCheck /> {data.displayspeed}x Speed  </li>
                 <li><AiOutlineCheck /> CSV Exporting  </li>
                 <li><AiOutlineCheck /> Techinical Support  </li>
-                
               </ul>
               <Link href='/login'><a className="trial-button">Try it Free</a></Link>
               <br />
