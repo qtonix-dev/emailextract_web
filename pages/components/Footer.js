@@ -42,6 +42,13 @@ export default class Footer extends Component {
       }
 
 
+      handleSubmitSubscribe=e=>{
+          e.preventDefault();
+
+
+          alert('Success')
+      }
+
       
     render() {
         return (
@@ -70,12 +77,13 @@ export default class Footer extends Component {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="form-wrapper">
-                                    <form action="#" onSubmit={this.handleSubmit} className="sub-form" id="myForm">
+                                    <form action="#" onSubmit={this.handleSubmitSubscribe} className="sub-form" id="myForm12112">
                                         <input type="email" placeholder="Enter Your Email Address" name="subscribe" value={this.state.subscribe} onChange={this.handleChange} />
                                         <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                                         <button>Subscribe</button>
                                     </form>
-                                    <p className="font-rubik">Already a member? <Link href='/login'><a>Sign in.</a></Link></p>
+                                    <br />
+                                    {/* <p className="font-rubik">Already a member? <Link href='/login'><a>Sign in.</a></Link></p> */}
                                     </div> {/* /.form-wrapper */}
                                 </div>
                                 </div>
