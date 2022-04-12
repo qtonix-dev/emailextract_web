@@ -98,7 +98,7 @@ export default class Footer extends Component {
                                     </a>
                                 </Link>
                                 </div> {/* /.about-widget */}
-                                <div className="col-lg-3 col-md-4 footer-list" >
+                                <div className="col-lg-3 col-md-4 col-6 footer-list" >
                                     <h5 className="footer-title">Features</h5>
                                     <ul>
                                     <li><Link href='/'><a>Bulk Extractor</a></Link></li>
@@ -107,7 +107,7 @@ export default class Footer extends Component {
                                     <li><Link href='/'><a>Email Verifier</a></Link></li>
                                     </ul>
                                 </div> {/* /.footer-list */}
-                                <div className="col-lg-3 col-md-4 footer-list">
+                                <div className="col-lg-3 col-md-4 col-6 footer-list">
                                     <h5 className="footer-title">Information</h5>
                                     <ul>
                                     <li><Link href='/aboutus'><a>About</a></Link></li>
