@@ -93,7 +93,7 @@ import { MdEditNote } from "react-icons/md"
             },
             {
                 title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-                content: <p>It&quot;s 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.</p>,
+                content: <p>It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.</p>,
             },
         ],
     };
