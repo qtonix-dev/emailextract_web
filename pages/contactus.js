@@ -42,7 +42,14 @@ export class contactus extends Component {
 
         axios.post(`${process.env.backendURL}/webapi/contactus`,this.state)
         .then(response=>{
-          this.setState({formLoading:false,showMessages:true})
+        $("#myForm :input").prop('readonly', false);
+          this.setState({formLoading:false,showMessages:true,
+            fname:'',
+            lname:'',
+            email:'',
+            phone:'',
+            message:''
+          })
         })
 
         console.log(this.state)
