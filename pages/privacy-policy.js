@@ -190,7 +190,7 @@ export class privacypolicy extends Component {
                                     <p>We use cookies to: <br/>
                                     – Remember that you have visited us before; this means we can identify the number of unique visitors we receive. This allows us to make sure we have enough capacity for the number of users that we get;
                                     <br />– Customize elements of the promotional layout and/or content of the pages of the Site;
-                                    <br />– Collect statistical information about how you use the Site (including how long you spend on the Site) and where you have come to the Site from so that we can improve the Site and learn which parts of the Site are most popular with visitors; and to speed site navigation and recognize your access rights on the site.
+                                    <br />– Collect statistical information about how you use the Site (including how long you spend on the Site) and where you have come to the Site from so that we can improve the Site and learn which parts of the Site are most popular with visitors, and to speed site navigation and recognize your access rights on the site.
                                     
                                     </p>
                                     <h4>Most web browsers automatically accept cookies but, if you prefer, you can change your browser to prevent that or to notify you each time a cookie is set.
