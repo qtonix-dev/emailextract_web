@@ -15,21 +15,36 @@ function termsandcondition() {
             Fancy Hero Five
           ============================================== 
           */}
-            <div className="fancy-hero-five mainterms">
-              {/* <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
-              <img src="images/shape/96.svg" alt="" className="shapes shape-two" /> */}
-              <div className="bg-wrapper">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-12 m-auto text-center title-style-five">
-                      <h2 className="heading font-terms">
-                        <span>Terms and </span>Conditions
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div> {/* /.bg-wrapper */}
-            </div> {/* /.fancy-hero-five */}
+            
+
+          <br />
+          <br />
+
+            <div className="">
+                    {/* <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
+                    <img src="images/shape/96.svg" alt="" className="shapes shape-two" /> */}
+                    <div className="bg-wrapper">
+                        <div className="container">
+                        <div className="row privacy-main-first">
+                            <div className="col-lg-12 m-auto">
+                            {/* <h1 className="heading privacy-main-title">
+                                <span>Privacy Policy</span>
+                            </h1> */}
+                            <div className=" text-center">
+                            <h1><span>Terms and </span>Conditions</h1>
+                            </div>
+                            
+                            {/* <p>This privacy policy reveals the privacy practices for Email Extract Online. We are committed to respecting everyone's privacy and have designed our services with this object in mind following the new personal data processing principles coming with the European General Data Protection Regulation 
+                            (EU Regulation 2016/679 of 27 April 2016 or the GDPR — General Data Protection Regulation).</p>
+                            <p>Data protection is particularly of a high priority for the management of the Email Extract Online. In order to meet our customers’ expectations, demands and to ensure the respect of data 
+                            subjects’ rights, we constantly update internal processes.</p>
+                            <p>This Privacy Policy page informs you of our policies related to the collection, use, and disclosure of personal data when you use our services and the choices you have associated with that data. Should you have any questions, please reach out, we'll be glad to help: sales@emailextractonline.com.</p> */}
+                            
+                            </div>
+                        </div>
+                        </div>
+                    </div> {/* /.bg-wrapper */}
+                    </div> {/* /.fancy-hero-five */}
 
 
 
@@ -45,7 +60,7 @@ function termsandcondition() {
                     <div className="col-lg-12">
                         <div className="tab-content">
                         <div id="opt1" className="tab-pane fade active show">
-                            <h3>1. General terms</h3>
+                            <h4>1. General terms</h4>
                             <p>These terms of use form a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and Email Extract Online (“we,” “us” or “our”) concerning your access to and use of the https://emailextractonline.com/ website as well as any other media form, media channel, mobile website or web application related, linked, or otherwise connected thereto (collectively, the “site”).</p>
                             <p>You agree that by accessing the site, you have read, understood, and agree to be bound by all of these terms of use (including our privacy policy). If you do not agree with all of these terms of use, then you are expressly prohibited from using the site and you must discontinue use immediately.</p>
                             <p>Supplemental terms and conditions or documents that may be posted on the site from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole discretion, to make changes or modifications to these terms of use at any time and for any reason.</p>
@@ -56,7 +71,7 @@ function termsandcondition() {
                             <p>The site is intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to register for the site.</p>
                             <br />
 
-                            <h3>2. Intellectual property rights</h3>
+                            <h4>2. Intellectual property rights</h4>
                             <p>Unless otherwise indicated, the site is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the site (collectively, the “content”) and the trademarks, service marks, and logos contained therein (the “marks”) are owned or controlled by us or licensed to us and are protected by copyright and trademark laws and various other intellectual property 
                             rights and unfair competition laws of the united states, foreign jurisdictions, and international conventions.</p>
                             <p>The content and the Marks are provided on the site “as is” for your information and personal use only. Except as expressly provided in these terms of use, no part of the site and no content or marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, 
@@ -67,7 +82,7 @@ function termsandcondition() {
                             
                             <br />
 
-                            <h3>3. User representations</h3>
+                            <h4>3. User representations</h4>
                             <p>By using the site, you represent and warrant that:</p>
                             <p>(1) all registration information you submit will be true, accurate, current, and complete;</p>
                             <p>(2) you will maintain the accuracy of such information and promptly update such 
@@ -77,7 +92,7 @@ function termsandcondition() {
                             <p>If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the site (or any portion thereof).</p>
                         
                           <br />
-                          <h3>4. Fees and payment</h3>
+                          <h4>4. Fees and payment</h4>
                           <p>You may be required to purchase or pay a fee to access some of our services. You agree to provide current, complete, and accurate purchase and account information for all purchases made via the site. You further agree to promptly update account and payment information, including email address, payment method, 
                           and payment card expiration date, so that we can complete your transactions and contact you as needed.</p>
                           <p>We bill you through an online billing account for purchases made via the site. Sales tax will be added to the price of purchases as deemed required by us. 
@@ -87,26 +102,26 @@ function termsandcondition() {
                           <p>We reserve the right to correct any errors or mistakes in pricing, even if we have already requested or received 
                           payment. We also reserve the right to refuse any order placed through the site.</p>
                           <br />
-                          <h3>5. Renewal</h3>
+                          <h4>5. Renewal</h4>
                           <p>Unless you notify us before the end of the applicable subscription period that you want to cancel your subscription, your subscription will be automatically renewed and you authorize us to collect the then-applicable annual or monthly subscription fee (as well as any taxes) 
                           using any credit card or other payment mechanism we have on record for you.</p>
                           <br />
-                          <h3>6. Free trial</h3>
+                          <h4>6. Free trial</h4>
                           <p>We offer a 7-day free trial to new users who register with the site. At the end of the free trial period, and access to the website 
                           will be restricted unless you subscribe to one of our pricing plans.</p>
                           <br />
-                          <h3>7. Cancellation</h3>
-                          <p>All monthly purchases are non-refundable. If you subscribe to one of our annual plans, you are eligible for a refund within 24 hours after we receive your payment. You can cancel your subscription at any time (by emailing us at info@qtonix.com) or cancel your subscription by yourself (by going to your control panel, opening the Billing tab, and pressing Cancel Subscription). 
+                          <h4>7. Cancellation</h4>
+                          <p>All monthly purchases are non-refundable. If you subscribe to one of our annual plans, you are eligible for a refund within 24 hours after we receive your payment. You can cancel your subscription at any time (by emailing us at sales@emailextractonline.com) or cancel your subscription by yourself (by going to your control panel, opening the Billing tab, and pressing Cancel Subscription). 
                           Your cancellation will take effect at the end of the current paid term.</p>
                           <p>Additional services (including the LinkedIn profile makeover service) offered by our team are non-refundable.</p>
-                          <p>If you are unsatisfied with our services, please email us at info@qtonix.com.</p>
+                          <p>If you are unsatisfied with our services, please email us at sales@emailextractonline.com.</p>
                           <br />
-                          <h3>8. Software</h3>
+                          <h4>8. Software</h4>
                           <p>We may include software for use in connection with our services. If such software is accompanied by an end-user license agreement (“EULA”), the terms of the EULA will govern your use of the software. If such software is not accompanied by a EULA, then we grant to you a non-exclusive, revocable, personal, and non-transferable license to use such software solely in connection with our services and in accordance with these terms of use.
                           <br />Any software and any related documentation is provided “as is” without warranty of any kind, either express or implied, including, without limitation, the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. You accept any and all risk arising out of the use or performance of any software. You may not reproduce or redistribute any software except in accordance with the EULA or these terms of use.
                           </p>
                           <br />
-                          <h3>9. Prohibited activities</h3>
+                          <h4>9. Prohibited activities</h4>
                           <p>You may not access or use the site for any purpose other than that for which we make the site available. The site may not be used in connection with 
                           any commercial endeavors except those that are specifically endorsed or approved by us.</p>
                           <p>As a user of the site, you agree not to:</p>
@@ -138,23 +153,23 @@ function termsandcondition() {
 
                           </p>
                           <br />
-                          <h3>10. Disclaimer</h3>
+                          <h4>10. Disclaimer</h4>
                           <p>The site is provided on an as-is and as-available basis. You agree that your use of the site and our services will be at your sole risk. To the fullest extent permitted by law, we disclaim all warranties, express or implied, in connection with the site and your use thereof, including, without limitation, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. We make no warranties or representations about the accuracy or completeness of the site’s content or the content of any websites linked to the site and we will assume no liability or responsibility for any (1) errors, mistakes, or inaccuracies of content and materials, (2) personal injury or property damage, of any nature whatsoever, resulting from your access to and use of the site, (3) any unauthorized access to or use of our secure servers and/or any and all personal information and/or financial information stored therein, (4) any interruption or cessation of transmission to or from the site, (5) any bugs, viruses, trojan horses, or the like which may be transmitted to or through the site by any third party, and/or (6) any errors or omissions in any content and materials or for any loss or damage of any kind incurred as a result of the use of any content posted, transmitted, or otherwise made available via the site. We do not warrant, endorse, guarantee, or assume responsibility for any product or service advertised or offered by a third party through the site, any hyperlinked website, or any website or mobile application featured in any banner or other advertising, and we will not be a party to or in any way be responsible for monitoring any transaction between you and any third-party providers of products or services. As with the purchase of a product or service through any 
                           medium or in any environment, you should use your best judgment and exercise caution where appropriate.</p>
                           <br />
-                          <h3>Limitation of Liability</h3>
+                          <h4>Limitation of Liability</h4>
                           <p>In no event will Email Extract Online, or its suppliers or licensors, be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory for: Any special, incidental or consequential damages; The cost of procurement for substitute products or services; For interruption of use or loss or corruption of data; or For any amounts that exceed the fees paid by you to Email Extract Online under this agreement during the twelve (12) month period before the cause of action. Email Extract Online shall have no liability for any failure or delay due to matters beyond or not within their reasonable 
                           control. The foregoing shall not apply to the extent prohibited by applicable law.</p>
                           <br />
-                          <h3>11. MISCELLANEOUS</h3>
+                          <h4>11. MISCELLANEOUS</h4>
                           <p>These Terms of Use and any policies or operating rules posted by us on the Site or in respect to the Site constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control.<br />
                           If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions.<br />
                           There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Site. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.<br />
                           </p>
                           <br />
-                          <h3>Contact us</h3>
+                          <h4>Contact us</h4>
                           <p>In order to resolve a complaint regarding the site or to receive further 
-                          information regarding the use of the site, please contact us at: info@qtonix.com</p>
+                          information regarding the use of the site, please contact us at: sales@emailextractonline.com</p>
                         </div>
                         </div> {/* /.tab-content */}
                     </div>

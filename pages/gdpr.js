@@ -29,7 +29,7 @@ export default class gdpr extends Component {
                 </div>
                 <div className='gdpr-section pb-180 pt-50'>
                     <div className='container'>
-                        <h2>Frequently Asked Questions about LiveChat, Inc’s GDPR compliance</h2>
+                        <h3>Frequently Asked Questions about LiveChat, Inc’s GDPR compliance</h3>
                         <p>The General Data Protection Regulation (GDPR) is the result of many years of work by the European Union to unify and strengthen data protection 
                             for all EU citizens. Taking care of your and your customers’ privacy is our number one priority.</p>
                         <p>GDPR gives you more control over how your data is used, while to us, it will be a simple legal environment where we can operate. That makes this 
@@ -38,10 +38,13 @@ export default class gdpr extends Component {
                         <p>Below you will find a list of frequently asked questions regarding GDPR compliance. If you can’t find an answer that relates to your question, please let us know by writing to 
                         sales@emailextractonline.com – we will reply as soon as possible and update this document.</p>
                         <div className="gdpr-inner-section">
-                            <h3>01. What has LiveChat done about the GDPR?</h3>
+                            <br />
+                            <h4>01. What has LiveChat done about the GDPR?</h4>
                             <p>We take our responsibilities under the GDPR seriously. That’s why we have taken steps to identify which measures we need to implement to be compliant with the GDPR.</p>
                             <p>Here: https://www.emailextractonline.com is a quick summary of what we’ve done.</p>
-                            <h3>02. What organization provides Services and stores my data? Is Emailextractonline, a data controller or a data processor?</h3>
+                            <br />
+                            
+                            <h4>02. What organization provides Services and stores my data? Is Emailextractonline, a data controller or a data processor?</h4>
                             <p>The basis for your personal data processing by LiveChat, Inc. is an Agreement between you and us which is concluded when you sign up for the Service (create an account). The Agreement is constituted by “Terms and Conditions” and “Privacy Policy”:</p>
                         </div>
                     </div>

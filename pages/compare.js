@@ -43,7 +43,7 @@ const data = {
         },
         {
             title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-            content: <p>"It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage."</p>,
+            content: <p>It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.</p>,
         },
     ],
 };
@@ -52,8 +52,8 @@ const data1 = {
     rows: [
         {
             title: "How fast is your email extraction tool?",
-            content: <p>`It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
-            Note: The performance and speed also depend on your PC as well.`</p>,
+            content: <p>It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
+            Note: The performance and speed also depend on your PC as well.</p>,
         },
         {
             title: "Do you offer a free trial to test the tool before buying it?",
