@@ -24,6 +24,7 @@ class MyDocument extends Document {
           <NextScript />
           {/* Global site tag (gtag.js) - Google Analytics  */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-JXZLGN5W8Z"></script>
+          <script src="//code.tidio.co/ewmnz28etnvmpphwvxoy6c8p5sck2bdu.js" async></script>
           
           {/* <script async src="/vendor/jquery.min.js" />
           <script async src="/vendor/popper.js/popper.min.js" />
