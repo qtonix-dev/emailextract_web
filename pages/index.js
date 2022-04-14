@@ -1028,30 +1028,7 @@ export class index extends Component {
                                     </div> {/* /.slider-content */}
                                 </div> {/* /.client-feedback-slider-two */}
                                 
-                                <div className='free-liveChart'>
-                                    <div className='container'>
-                                        <h2>Start a free LiveChat now!</h2>
-                                        <p>Supercharge your website and social media profiles. <br />Turn visits into sales, customers into fans.</p>
-                                        <form className='w-75 free-liveChartForm'>
-                                            <Row>
-                                                <Col sm={8}>
-                                                    <Form.Control placeholder="Enter Your Email Address"   value={this.state.email}
-                                                      onChange={this.onChange} />
-                                                </Col>
-                                                <Col sm={4}>
-                                                    <Button variant="primary" className="btn-large w-100 btn-liveChat" type="submit" onClick={() => this.onSubmit()}>
-                                                        Submit
-                                                    </Button>
-                                                </Col>
-                                            </Row>
-                                        </form>
-                                        <ul>
-                                            <li><FaCheck /> &nbsp;Free 14-day trial</li>
-                                            <li><FaCheck /> &nbsp;Ticketing system</li>
-                                            <li><FaCheck /> &nbsp;Analytics</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                               
                                 
                                 {/*
                                             =====================================================

@@ -4,17 +4,8 @@ import {
   Row,
   Col,
   Form,
-  Button,
-  FloatingLabel,
 } from "react-bootstrap";
 import { FaAngleDoubleRight } from "react-icons/fa";
-// import { useForm } from "react-hook-form";
-// import countryList from "react-select-country-list";
-// import Select from "react-select";
-// import PhoneInput from "react-phone-number-input";
-// import "react-phone-number-input/style.css";
-// import DatePicker from "react-datepicker";
-// import "react-datepicker/dist/react-datepicker.css";
 import Link from "next/link";
 import SimpleReactValidator from 'simple-react-validator'
 import axios from 'axios';
