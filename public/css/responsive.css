@@ -205,8 +205,13 @@
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    .logo{
+        width: 800px !important;
+    }
+
     .theme-main-menu {
-        padding: 30px 25px;
+        padding: 0px 15px;
     }
     .hero-banner-two .container {
         padding: 0 25px;
