@@ -183,7 +183,7 @@ export default class about extends Component {
         </div>
         
         <Row className="mt-2 mb-3 core-values-bottom-1">
-            <Col sm={4}>
+            <Col lg={4}>
               <div className="core-values mt-3 border-value">
               <img src="images/embrace.png" alt="img-value" />
                 <h6 className="text-center">We Embrace Everyone</h6>
@@ -191,14 +191,14 @@ export default class about extends Component {
                 Our connection inspires the way we care for each other and our clients. </p>
               </div>
             </Col>
-            <Col sm={4}>
+            <Col lg={4}>
               <div className="core-values mt-3 border-value">
                 <img src="images/right.png" alt="img-value" />
                 <h6 className="text-center">Do The Right Thing</h6>
                 <p className="text-center">We are appreciated and admired for our commitment to honesty, trust, and transparency. We do the right thing- even when no one is watching.</p>
               </div>
             </Col>
-            <Col sm={4}>
+            <Col lg={4}>
               <div className="core-values mt-3">
                 <img src="images/transparency.png" alt="img-value" />
                 <h6 className="text-center">Transparency by default</h6>
@@ -207,21 +207,21 @@ export default class about extends Component {
             </Col>
           </Row>
           <Row className="core-values-bottom border-top-2">
-            <Col sm={4}>
+            <Col lg={4}>
               <div className="core-values mt-3 border-value">
                 <img src="images/bigger.png" alt="img-value" />
                 <h6 className="text-center">Think Bigger</h6>
                 <p className="text-center">At Email Extract, we think big by taking all the concepts, aspirations, dreams, and goals of our potential customers to develop an effective action plan and turn them into reality.  </p>
               </div>
             </Col>
-            <Col sm={4}>
+            <Col lg={4}>
               <div className="core-values mt-3 border-value">
                 <img src="images/challenge.png" alt="img-value" />
                 <h6 className="text-center">Challenge Everything</h6>
                 <p className="text-center">As being a game-changer in email extraction, we do not take the easy way out. Rather, we create new paths and set records that have never been achieved beforehand.</p>
               </div>
             </Col>
-            <Col sm={4}>
+            <Col lg={4}>
               <div className="core-values mt-3">
                 <img src="images/user.png" alt="img-value" />
                 <h6 className="text-center">Care for our user experience</h6>
@@ -392,7 +392,7 @@ export default class about extends Component {
                 </div>
               </Col>
             </Row>
-            <div className="our-cli-btn text-center"><Link href="/">Request a free demo</Link></div>
+            {/* <div className="our-cli-btn text-center"><Link href="/">Request a free demo</Link></div> */}
           </div>
         </div>
       </div>
@@ -402,6 +402,9 @@ export default class about extends Component {
  </div>
 
                         <section className="free-section-demo-compare">
+                          <br />
+                          <br />
+
                             <Container>
                                 <Freedemo />
                             </Container>

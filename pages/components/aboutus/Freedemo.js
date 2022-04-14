@@ -204,7 +204,7 @@ export class Freedemo extends Component {
                         </Col>
                     </Row>
                     {this.state.formLoading===false
-                ?<div className="col-12" data-aos="fade-up" data-aos-duration={1200}><button className="theme-btn-six lg">Send Message</button></div>
+                ?<div className="" data-aos="fade-up" data-aos-duration={1200}><button className="theme-btn-six lg">Submit</button></div>
                 :<img src='https://swedlook.com/wp-content/uploads/2016/07/585d0331234507.564a1d239ac5e.gif' alt='image' style={{width:'100px'}} />
                 }
                 
