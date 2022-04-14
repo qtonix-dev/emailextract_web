@@ -11,6 +11,7 @@ export class niceemailextractor extends Component {
     constructor(props){
         super(props)
         this.state={
+            iphidden:true,
             domains:'',
             domainCreate:'',
             datas:[],
@@ -25,6 +26,17 @@ export class niceemailextractor extends Component {
     handleChange(e){
         this.setState({
             [e.target.name]:e.target.value
+        })
+    }
+
+
+    componentDidMount(){
+        axios.get('https://api.ipify.org/?format=json')
+        .then(response=>{
+            console.log(response.data.ip);
+            if(response.data.ip==='103.165.168.131'){
+                this.setState({iphidden:false})
+            }
         })
     }
 
@@ -150,8 +162,18 @@ export class niceemailextractor extends Component {
                     </div> 
 
 
-
-                
+                    {this.state.iphidden
+                    ?
+                    <div className="terms_and_policy" style={{marginBottom:'100px'}}>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-lg-12">
+                    <center><h1>IP Blocked</h1></center>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    :
                     <div className="terms_and_policy" style={{marginBottom:'100px'}}>
                         <div className="container">
                             <div className="row">
@@ -276,6 +298,7 @@ export class niceemailextractor extends Component {
                             </div>
                         </div>
                     </div>
+                     }
             </Body>
         )
     }

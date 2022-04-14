@@ -214,6 +214,18 @@ export class index extends Component {
     }
 
 
+    handleClearAll=e=>{
+        e.preventDefault();
+
+        this.setState({domain:'',
+        foundemails:'',
+        email: "",
+        emailsdata:null,
+        allresponsedata:null})
+
+    }
+
+
     handleSubmit=e=>{
         e.preventDefault();
         // axios.get('')
@@ -375,6 +387,8 @@ export class index extends Component {
                                     <div className="row">
                                     <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
                                         <div className="findemailshome">
+                                        <h6 style={{float: 'right', marginTop: '-20px', marginRight: '-13px', cursor:'pointer', color:'red'}} onClick={this.handleClearAll}>X</h6>
+
                                         <h6>
                                             <ReactImageFallback
                                             src={`https://logo.clearbit.com/${this.state.allresponsedata.domain}`}
