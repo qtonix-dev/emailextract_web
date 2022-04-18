@@ -12,6 +12,7 @@ module.exports = {
     // backendURL: 'http://localhost:5000/api',
     // backendURL: 'http://localhost:5000/api',
     backendURL: process.env.DB_BACKENDURL+'/api',
+    backendURL1: process.env.DB_BACKENDURL1+'/api',
     appURL: process.env.APP_URL
   }
 }

@@ -4,22 +4,21 @@ import Body from './components/Body'
 import Faq from "react-faq-component";
 import Slider from "react-slick";
 import ReactImageFallback from "react-image-fallback";
-import { MdVerifiedUser,MdInfoOutline } from "react-icons/md";
 import { toast } from 'react-toastify';
 import axios from 'axios'
 import $ from "jquery";
-// import Loader from "react-loader-spinner";
 import Link from 'next/link'
 import {Animated} from "react-animated-css";
 import Head from 'next/head'
 import Section21 from './components/home/Section21'
 import Section22 from './components/home/Section22'
-
-import { Tab, Row, Col, Nav, Container,Modal,Button, Form } from 'react-bootstrap'
-import { FaViruses, FaHandshake, FaSearch, FaCheck } from "react-icons/fa"
+import { Row, Col, Container } from 'react-bootstrap'
+import { FaViruses, FaHandshake, FaSearch} from "react-icons/fa"
 import { BiSupport } from "react-icons/bi"
 import { AiOutlineFileProtect } from "react-icons/ai"
-import { MdEditNote } from "react-icons/md"
+import { MdEditNote, MdKeyboardArrowDown, MdKeyboardArrowUp, MdVerifiedUser, MdErrorOutline } from "react-icons/md"
+import CheckVerifiedOrNot from './components/home/CheckVerifiedOrNot';
+import Linkfinder from './components/home/Linkfinder';
 
 
     //=======SLIDER=======//
@@ -131,11 +130,7 @@ import { MdEditNote } from "react-icons/md"
 
                     </ul>
                     <p><a>If the Email Finder is not able to find any result after verifying all these elements, you may be required to initiate a manual search</a></p>
-                </p>
-                
-                
-                
-                
+                </p> 
             },
             {
                 title: "Why choose Email Extract Online over other email extract tools?",
@@ -287,7 +282,7 @@ export class index extends Component {
 
 
         }
-        else {
+        else{
             $("#myForm :input").prop('readonly', false);
             toast.error('invalid domain', {
                 position: "top-right",
@@ -298,9 +293,7 @@ export class index extends Component {
                 draggable: true,
                 progress: undefined,
             });
-            
-        this.setState({mainformLoading:false,hiddenContent:false})
-    
+            this.setState({mainformLoading:false,hiddenContent:false})
         }
     }    
         
@@ -406,10 +399,14 @@ export class index extends Component {
 
                                         {this.state.allresponsedata.emails.map((email) => {
                                             return (
+                                                <div>
                                             <p key={email}>
-                                                {email}
-                                                {/* {email.verified?<span className="findemailshome_verified"><MdVerifiedUser /></span>:<span className="findemailshome_notverified"><MdInfoOutline /></span>}   */}
+                                                {email} 
+                                                <CheckVerifiedOrNot email={email} /> 
+                                                
                                             </p>
+                                            <Linkfinder email={email} />
+                                            </div>
                                             );
                                         })}
 
@@ -581,39 +578,6 @@ export class index extends Component {
                                     <></>
                                 )}
 
-                                {/* {this.state.foundemails === "notfound" ? (
-                                    <div className="row">
-                                    <div className="col-xl-7 col-lg-9 col-md-12 m-auto">
-                                        <div className="notfindemailshome">
-                                        <h5>
-                                            Oh no! We couldn&quot;t find any leads for{" "}
-                                            {this.state.domain}.
-                                        </h5>
-                                        <br />
-                                        <p>
-                                            Our trackers are searching the internet for leads of the
-                                            highest quality. Unfortunately, we don&quot;t have any
-                                            for this company yet. But rest assured, we are working
-                                            on it.
-                                        </p>
-                                        <hr />
-                                        <h3 className="addme  font-rubik">
-                                            In the meantime,{" "}
-                                            <Link href="/register">
-                                            <a className="font-rubik">Email Extract Online</a>
-                                            </Link>{" "}
-                                            is completely FREE. Signup right now to get 50 free
-                                            credits per month.
-                                        </h3>
-                                        </div>
-                                    </div>
-                                    </div>
-                                ) : (
-                                    <></>
-                                )} */}
-
-                                
-
                                 <p className="sing-in-call">
                                     50 Free Credits Every Month • GDPR Alligned & CCPA Compligned •
                                     Get Started In Seconds •{" "}
@@ -637,20 +601,10 @@ export class index extends Component {
                                 </div>
                                 </div>
 
-                                {/* <img src="images/shape/68-1.png" alt="" className="shapes shape-one" /> */}
-                                {/* <img src="images/shape/69-1.png" alt="" className="shapes shape-two" /> */}
-                                {/* <img src="images/shape/70-1.png" alt="" className="shapes shape-three" />
-                                                        <img src="images/shape/75-1.png" alt="" className="shapes shape-four" />
-                                                        <img src="images/shape/72-1.png" alt="" className="shapes shape-five" />
-                                                        <img src="images/shape/73-1.png" alt="" className="shapes shape-six" />
-                                                        <img src="images/shape/74-1.png" alt="" className="shapes shape-seven" />
-                                                        <img src="images/shape/75-1.png" alt="" className="shapes shape-eight" />
-                                                        <img src="images/shape/76-1.png" alt="" className="shapes shape-nine" />
-                                                        <img src="images/shape/68-1.png" alt="" className="shapes shape-ten" /> */}
+                                
                             </div>
                             <div className="img-ban-main-new">
-                                {/* <img src="images/banner-right.png" alt="img-email" className="img-ban-main-new-right" />
-                                                        <img src="images/banner-left.png" alt="img-email" className="img-ban-main-new-left" /> */}
+                                
                             </div>
                             </div>
 
@@ -667,49 +621,7 @@ export class index extends Component {
                     
                     <div className="fancy-text-block-nineteen mt-50  mb-20 md-mb-20">
                     <div className="container">
-                        {/* <div className="fancy-text-block-section-main mb-5">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="fancy-text-block-section">
-                                        <div className="row">
-                                            <div className="col-lg-2">
-                                                <img src="images/nums-1.png" alt="img-email" />
-                                            </div>
-                                            <div className="col-lg-10">
-                                                <h4>150,000+</h4>
-                                                <p style={{marginTop:'-19px'}}>companies on board</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4">
-                                    <div className="fancy-text-block-section">
-                                        <div className="row">
-                                            <div className="col-lg-2">
-                                                <img src="images/nums-2.png" alt="img-email" />
-                                            </div>
-                                            <div className="col-lg-10">
-                                                <h4>1M+</h4>
-                                                <p style={{marginTop:'-19px'}}>websites crawled everyday</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4">
-                                    <div className="fancy-text-block-section">
-                                        <div className="row">
-                                            <div className="col-lg-2">
-                                                <img src="images/nums-3.png" alt="img-email" />
-                                            </div>
-                                            <div className="col-lg-10">
-                                                <h4>750,000+</h4>
-                                                <p style={{marginTop:'-19px'}}>leads verified daily</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+                        
                         
                         <div className="row align-items-center container ">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200}>
@@ -736,17 +648,7 @@ export class index extends Component {
                     </div> {/* /.fancy-text-block-nineteen */}
                     
 
-                    {/*
-                        =====================================================
-                            Fancy Feature Eight Main
-                        =====================================================
-                    */}
-
-                                {/*
-                                            =====================================================
-                                                Fancy Feature Eight
-                                            =====================================================
-                                            */}
+  
                                 <div className="fancy-feature-eight">
                                     <div className="container">
                                         <div className="title-style-five text-center mb-40 md-mb-40">
@@ -771,22 +673,7 @@ export class index extends Component {
 
                                 <Section21 />
                                 <Section22 />
-                                {/* <Section23 /> */}
                                 
-                                
-
-                                {/*
-                                            =====================================================
-                                                Fancy Feature Eight
-                                            =====================================================
-                                            */}
-                                
-                                
-                                {/*
-                                            =====================================================
-                                                Useable Tools
-                                            =====================================================
-                                            */}
                                 <div className="useable-tools-section-three mt-50 mb-80 md-mt-50 md-mb-80">
                                     <div className="container">
                                         <div className="row">
@@ -818,11 +705,7 @@ export class index extends Component {
                                 
                                 
                                 
-                                {/* 
-                                =============================================
-                                    Fancy Feature Nineteen New
-                                ============================================== 
-                                */}
+                               
 
                                 <div className="fancy-feature-nineteen-new">
                                     <Container>
@@ -830,11 +713,7 @@ export class index extends Component {
                                     </Container>
                                 </div>
                                 
-                                {/* 
-                                =============================================
-                                    Fancy Feature Nineteen
-                                ============================================== 
-                                */}
+                                
                     <div className="fancy-feature-nineteen mt-70 md-mt-70" id="effect">
                     <div className="container">
                         <div className="row">
@@ -919,14 +798,6 @@ export class index extends Component {
                                             =====================================================
                                             */}
                                 <div className="client-feedback-slider-two mt-40 md-mt-40">
-                                    {/* <img src="images/shape/78-1.png" alt="" className="shapes shape-one" />
-                                    <img src="images/shape/79-1.png" alt="" className="shapes shape-two" />
-                                    <img src="images/shape/80-1.png" alt="" className="shapes shape-three" />
-                                    <img src="images/shape/81-1.png" alt="" className="shapes shape-four" />
-                                    <img src="images/shape/82-1.png" alt="" className="shapes shape-five" />
-                                    <img src="images/shape/83-1.png" alt="" className="shapes shape-six" />
-                                    <img src="images/shape/84-1.png" alt="" className="shapes shape-seven" />
-                                    <img src="images/shape/85-1.png" alt="" className="shapes shape-eight" /> */}
                                     <div className="container">
                                     <div className="title-style-five text-center mb-20 md-mb-20">
                                         <div className="row">
@@ -1019,29 +890,19 @@ export class index extends Component {
                                                     <div className="name font-rubik">Paul Wilson</div>
                                                     <div className="desig">Cybernet</div>
                                                 </div>
-                                        </div> {/* /.bg-wrapper */}
+                                        </div>
                                         </div>
                                     </Slider>
                                         
                                         
                                     </div>
-                                    </div> {/* /.slider-content */}
-                                </div> {/* /.client-feedback-slider-two */}
+                                    </div>
+                                </div> 
                                 
                                
                                 
-                                {/*
-                                            =====================================================
-                                                Faq Classic
-                                            =====================================================
-                                            */}
+                               
                                 <div className="faq-classic with-bg">
-                                    {/* <img src="images/shape/86-1.png" alt="" className="shapes shape-one" />
-                                    <img src="images/shape/87-1.png" alt="" className="shapes shape-two" />
-                                    <img src="images/shape/88-1.png" alt="" className="shapes shape-three" />
-                                    <img src="images/shape/89-1.png" alt="" className="shapes shape-four" />
-                                    <img src="images/shape/90-1.png" alt="" className="shapes shape-five" />
-                                    <img src="images/shape/91-1.png" alt="" className="shapes shape-six" /> */}
                                     <div className="container">
                                     <div className="title-style-five text-center mb-20 md-mb-20">
                                         <div className="row">
