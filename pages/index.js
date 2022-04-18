@@ -175,6 +175,18 @@ export class index extends Component {
     }
 
 
+    static async getInitialProps({query}) {
+        var data ={query};
+            const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e48158360379b`);
+
+        return{
+            seo:response.data.data
+        }
+    }
+
+
+  
+
     onChange(e) {
         this.setState({
           email: e.target.value,
@@ -303,14 +315,18 @@ export class index extends Component {
     
       
     render() {
+        console.log(this.props.seo)
         return (
 
             <Body>
 
                 <Head>
-                    <title>Email Extractors - Scrape Emails From Websites | Email Extract online</title>
-                    <meta name="description" content="Email Extract Online is a web-based software that can be used to scrape email addresses along with the phone numbers of potential clients just with the click of a button" />
-                    <meta name="keywords" content="email extractor online, email extractor from website, scrape emails from website, Scrape Email, online email extractor" />
+                    <title>{this.props.seo.metatitle}</title>
+                    <meta name="description" content={this.props.seo.metadesc} />
+                    <meta name="keywords" content={this.props.seo.metakey} />
+                
+                
+                
                 </Head>
 
             {/* 
