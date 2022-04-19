@@ -66,41 +66,58 @@ export class niceemailextractor extends Component {
             totaldomains:domainCreate.length
         })
 
-        console.log(domainCreate[0])
+        if(domainCreate.length>300){
+            message.warning('Max input 300');
+        }else{
+            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`)
+            // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
+            .then(response=>{
+            
+                var bulkdomainextratdata = this.state.datas;
+                var msdata= response.data.response;
+                bulkdomainextratdata.push(msdata);
 
-        axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`)
-        // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
-        .then(response=>{
-          
-            var bulkdomainextratdata = this.state.datas;
-            var msdata= response.data.response;
-            bulkdomainextratdata.push(msdata);
+                this.setState({
+                    count:this.state.count+1,
+                    datas:bulkdomainextratdata,
+                    status:'Processing...'
+                })
+                this.fetchRecord();
 
-            this.setState({
-                count:this.state.count+1,
-                datas:bulkdomainextratdata,
-                status:'Processing...'
+                this.fetchRecord();
+
+                this.fetchRecord();
+
+                this.fetchRecord();
+
+                this.fetchRecord();
+
+                this.fetchRecord();
+
+                this.fetchRecord();
+
+            }).catch(err=>{
+
+                var bulkdomainextratdata = this.state.datas;
+                var msdata= {
+                    response: true,
+                    domain: domainCreate[this.state.count].domain,
+                    status: "Not Found",
+                    emails: [ ],
+                    tel: [ ]
+                }
+                bulkdomainextratdata.push(msdata);
+
+                this.setState({
+                    count:this.state.count+1,
+                    datas:bulkdomainextratdata,
+                    status:'Processing...'
+                })
+                this.fetchRecord();
             })
-            this.fetchRecord();
-        }).catch(err=>{
+        }
 
-            var bulkdomainextratdata = this.state.datas;
-            var msdata= {
-                response: true,
-                domain: domainCreate[this.state.count].domain,
-                status: "Not Found",
-                emails: [ ],
-                tel: [ ]
-            }
-            bulkdomainextratdata.push(msdata);
-
-            this.setState({
-                count:this.state.count+1,
-                datas:bulkdomainextratdata,
-                status:'Processing...'
-            })
-            this.fetchRecord();
-        })
+        
     }
 
 
