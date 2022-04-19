@@ -73,7 +73,17 @@ export default class pricing extends Component {
       this.changeType=this.changeType.bind(this)
     }
 
-    
+
+    static async getInitialProps({query}) {
+      var data ={query};
+      const responsess = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e48158360379c`);
+    const response = await axios.get(`${process.env.backendURL}/package`);
+
+      return{
+        package:response.data.data,
+        seo:responsess.data.data
+      }
+  }
 
 
     changeType(e){
@@ -258,14 +268,3 @@ export default class pricing extends Component {
 
 
 
-export async function getStaticProps(){
-  const responsess = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e48158360379c`);
-  const response = await axios.get(`${process.env.backendURL}/package`);
-  return {
-    props: {
-      package:response.data.data,
-      seo:responsess.data.data
-    },
-    revalidate: 5,
-  }
-}
