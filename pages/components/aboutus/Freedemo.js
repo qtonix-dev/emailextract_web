@@ -121,7 +121,7 @@ export class Freedemo extends Component {
                             <Form.Group className="mb-3" controlId="formBasicName">
                                 <Form.Label>First Name</Form.Label>
                                 <Form.Control type="text" placeholder="Enter First Name" name="fname" onChange={this.handleChange} />
-                                <h6 className="form_error_message">{this.validator.message('firstname', this.state.fname, 'required')}</h6>
+                                <h6 className="form_error_message">{this.validator.message('firstname', this.state.fname, 'alpha_space|required')}</h6>
 
                             </Form.Group>
                         </div>
@@ -129,7 +129,7 @@ export class Freedemo extends Component {
                             <Form.Group className="mb-3" controlId="formBasicName">
                                 <Form.Label>Last Name</Form.Label>
                                 <Form.Control type="text" placeholder="Enter Last Name" name="lname" onChange={this.handleChange} />
-                                <h6 className="form_error_message">{this.validator.message('firstname', this.state.lname, 'required')}</h6>
+                                <h6 className="form_error_message">{this.validator.message('firstname', this.state.lname, 'alpha_space|required')}</h6>
 
                             </Form.Group>
                         </div>
@@ -138,7 +138,7 @@ export class Freedemo extends Component {
                         <Col sm={12}>
                             <Form.Label>Company Name</Form.Label>
                             <Form.Control className="mb-2" id="inlineFormInput" placeholder="Company Name" name="companyname" onChange={this.handleChange} />
-                            <h6 className="form_error_message">{this.validator.message('companyname', this.state.companyname, 'required')}</h6>
+                            <h6 className="form_error_message">{this.validator.message('companyname', this.state.companyname, 'alpha_num_space|required')}</h6>
 
                         </Col>
                     </Row>
@@ -168,7 +168,7 @@ export class Freedemo extends Component {
                         <Col sm={12}>
                             <Form.Label>Business Email</Form.Label>
                             <Form.Control placeholder="Business Email" className="bemail" name="businessemail" onChange={this.handleChange} />
-                            <h6 className="form_error_message">{this.validator.message('businessemail', this.state.businessemail, 'required')}</h6>
+                            <h6 className="form_error_message">{this.validator.message('businessemail', this.state.businessemail, 'email|required')}</h6>
                                                 
                         </Col>
                     </Row>
@@ -190,7 +190,7 @@ export class Freedemo extends Component {
                         <Col md={12}>
                             <Form.Label>Phone No</Form.Label>
                             <Form.Control type='tel' className="form-control" name="phone" placeholder="Phone no."  onChange={this.handleChange}/>      
-                            <h6 className="form_error_message">{this.validator.message('phone', this.state.phone, 'required')}</h6>
+                            <h6 className="form_error_message">{this.validator.message('phone', this.state.phone, 'phone|required')}</h6>
 
                         </Col>
                     </Row>
