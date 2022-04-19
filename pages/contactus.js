@@ -25,6 +25,15 @@ export class contactus extends Component {
       this.handleChange = this.handleChange.bind(this);
     }
 
+    static async getInitialProps({query}) {
+      var data ={query};
+          const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e4815836037a0`);
+
+      return{
+          seo:response.data.data
+      }
+  }
+
     handleChange(e) {
       this.setState({
         [e.target.name]:e.target.value
@@ -67,9 +76,9 @@ export class contactus extends Component {
         return (
             <Body>
               <Head>
-                <title>Best Extract Email - Online Email Address Extractor From Website Free </title>
-                <meta name="description" content="Ranked as the best free email extractor for the year 2022, try Email Extract Online to scrape unlimited emails and phone numbers of prospectives in seconds from various valid sources" />
-                <meta name="keywords" content="best free email extractor, email address extractor, online email extractor free, email extractor from website, scrape emails from website, extract email from website free" />
+              <title>{this.props.seo.metatitle}</title>
+                    <meta name="description" content={this.props.seo.metadesc} />
+                    <meta name="keywords" content={this.props.seo.metakey} />
               </Head>
               
   {/* 
@@ -121,10 +130,10 @@ export class contactus extends Component {
               <div className="title">Social Media</div>
               <p className="font-rubik">Find on social media</p>
               <ul className="d-flex justify-content-center socialMedia">
-                <li><a href={'https://www.facebook.com/Email-Extract-Online-102299352298570'} target="_blank"><FaFacebookF /></a></li>
-                <li><a href={'https://twitter.com/EmailextractO'} target="_blank"><FaTwitter /></a></li>
-                <li><a href={'https://www.instagram.com/emailextractonline/'} target="_blank"><FaInstagram /></a></li>
-                <li><a href={'https://www.linkedin.com/in/email-extract-online-6514a2227/'} target="_blank"><FaLinkedinIn /></a></li>
+                <li><a href={'https://www.facebook.com/Email-Extract-Online-102299352298570'} target="_blank" rel="noreferrer"><FaFacebookF /></a></li>
+                <li><a href={'https://twitter.com/EmailextractO'} target="_blank" rel="noreferrer"><FaTwitter /></a></li>
+                <li><a href={'https://www.instagram.com/emailextractonline/'} target="_blank" rel="noreferrer"><FaInstagram /></a></li>
+                <li><a href={'https://www.linkedin.com/in/email-extract-online-6514a2227/'} target="_blank" rel="noreferrer"><FaLinkedinIn /></a></li>
               </ul>
             </div> {/* /.address-info */}
           </div>

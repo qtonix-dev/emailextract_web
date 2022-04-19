@@ -5,13 +5,24 @@ import { Tab, Row, Col, Nav, Container } from 'react-bootstrap'
 import Freedemo from './components/aboutus/Freedemo'
 import { FaCheckCircle } from 'react-icons/fa';
 import Link from 'next/link'
-
+import axios from 'axios'
 export default class about extends Component {
+
+  static async getInitialProps({query}) {
+    var data ={query};
+        const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e48158360379d`);
+
+    return{
+        seo:response.data.data
+    }
+}
     render() {
         return (
             <Body>
                 <Head>
-                    <title>About Us</title>
+                <title>{this.props.seo.metatitle}</title>
+                    <meta name="description" content={this.props.seo.metadesc} />
+                    <meta name="keywords" content={this.props.seo.metakey} />
                     
                 </Head>
 

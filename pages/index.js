@@ -92,7 +92,7 @@ import Linkfinder from './components/home/Linkfinder';
             },
             {
                 title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-                content: <p>It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.</p>,
+                content: <p>It&apos;s 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don&apos;t have any access to that as it gets stored in your storage.</p>,
             },
         ],
     };
@@ -173,7 +173,7 @@ export class index extends Component {
         this.handleChange=this.handleChange.bind(this);
          this.onChange = this.onChange.bind(this);
     }
-
+//seo
 
     static async getInitialProps({query}) {
         var data ={query};
@@ -183,6 +183,30 @@ export class index extends Component {
             seo:response.data.data
         }
     }
+
+
+    // static async getInitialProps({query}) {
+        //         var data ={query};
+        //             // const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e48158360379b`);
+        
+                    
+        
+        
+        //             // const res = await fetch(`${process.env.backendURL}/page/viewpagedetails/625d3808272e48158360379b`)
+        //             // const json = await res.json()
+        
+        
+        //             const res = await fetch('https://api.github.com/repos/vercel/next.js')
+        //   const json = await res.json()
+        
+        //             // const resp = res.json();
+        
+        //     //         fetch("https://api.example.com/items")
+        //     //   .then(res => res.json())
+        //         return{
+        //             seo:json
+        //         }
+        //     }
 
 
   
@@ -413,10 +437,10 @@ export class index extends Component {
                                             
                                         </h6>
 
-                                        {this.state.allresponsedata.emails.map((email) => {
+                                        {this.state.allresponsedata.emails.map((email,key) => {
                                             return (
-                                                <div>
-                                            <p key={email}>
+                                                <div key={key}>
+                                            <p>
                                                 {email} 
                                                 <CheckVerifiedOrNot email={email} /> 
                                                 
@@ -429,7 +453,7 @@ export class index extends Component {
                                         {this.state.allresponsedata.emails.length===0
                                         ?
                                         <h5>
-                                            Oh no! We couldn't find any emails for{" "}
+                                            Oh no! We couldn&apos;t find any emails for{" "}
                                             {this.state.domain}.
                                         </h5>
                                         :
@@ -448,7 +472,7 @@ export class index extends Component {
                                                                     <>
                                                                     <span>
                                                                         
-                                                                        <img src="https://img.icons8.com/fluency/30/000000/email.png" />
+                                                                        <img src="https://img.icons8.com/fluency/30/000000/email.png" alt="email" />
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
                                                                     </>
@@ -458,7 +482,7 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.tel.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                        <img src="https://img.icons8.com/fluency/30/000000/call.png" />
+                                                                        <img src="https://img.icons8.com/fluency/30/000000/call.png" alt="email"/>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
                                                                     </>
@@ -469,8 +493,8 @@ export class index extends Component {
                                                                     <>
                                                                     
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.facebook[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluency/30/000000/facebook.png" />
+                                                                    <a href={this.state.allresponsedata.facebook[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluency/30/000000/facebook.png" alt="email" />
                                                                     </a>
                                                                         
                                                                     </span>{" "}
@@ -482,8 +506,8 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.googleplus.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.googleplus[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluent/30/google-plus-squared.png" />
+                                                                    <a href={this.state.allresponsedata.googleplus[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluent/30/google-plus-squared.png" alt="email"/>
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
@@ -494,8 +518,8 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.instagram.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.instagram[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluent/30/instagram-new.png" />
+                                                                    <a href={this.state.allresponsedata.instagram[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluent/30/instagram-new.png" alt="email" />
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
@@ -506,8 +530,8 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.linkedin.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.linkedin[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluency/30/000000/linkedin.png" />
+                                                                    <a href={this.state.allresponsedata.linkedin[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluency/30/000000/linkedin.png" alt="email"/>
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
@@ -518,8 +542,8 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.printrest.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.printrest[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluency/30/000000/pinterest.png" />
+                                                                    <a href={this.state.allresponsedata.printrest[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluency/30/000000/pinterest.png" alt="email"/>
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
@@ -530,8 +554,8 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.skype.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.skype[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluency/30/000000/skype.png" />
+                                                                    <a href={this.state.allresponsedata.skype[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluency/30/000000/skype.png" alt="email" />
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
@@ -544,8 +568,8 @@ export class index extends Component {
 
 
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.twitter[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluency/30/000000/twitter.png" />
+                                                                    <a href={this.state.allresponsedata.twitter[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluency/30/000000/twitter.png" alt="email"/>
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
@@ -556,8 +580,8 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.whatsapp.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.whatsapp[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluency/30/000000/whatsapp.png" />
+                                                                    <a href={this.state.allresponsedata.whatsapp[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluency/30/000000/whatsapp.png" alt="email" />
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;
@@ -568,8 +592,8 @@ export class index extends Component {
                                                                 {this.state.allresponsedata.youtube.length > 0 ? (
                                                                     <>
                                                                     <span>
-                                                                    <a href={this.state.allresponsedata.youtube[0]} target="_blank">
-                                                                    <img src="https://img.icons8.com/fluency/30/000000/youtube.png" />
+                                                                    <a href={this.state.allresponsedata.youtube[0]} target="_blank" rel="noreferrer">
+                                                                    <img src="https://img.icons8.com/fluency/30/000000/youtube.png" alt="email"/>
                                                                     </a>
                                                                     </span>{" "}
                                                                     &nbsp;&nbsp;

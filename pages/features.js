@@ -4,13 +4,26 @@ import Head from 'next/head'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import Freedemo from './components/aboutus/Freedemo'
 import { FaCheck } from "react-icons/fa"
+import axios from 'axios'
 
 export class compare extends Component {
+
+    static async getInitialProps({query}) {
+        var data ={query};
+            const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e4815836037a1`);
+
+        return{
+            seo:response.data.data
+        }
+    }
+
     render() {
         return (
             <Body>
                 <Head>
-                    <title>Features</title>
+                <title>{this.props.seo.metatitle}</title>
+                    <meta name="description" content={this.props.seo.metadesc} />
+                    <meta name="keywords" content={this.props.seo.metakey} />
                 </Head>
                 {/* 
                 =============================================

@@ -81,7 +81,7 @@ export class privacypolicy extends Component {
                     <h3>What information does Email Extract Online collect?</h3>
                     <h4>When you are on our website</h4>
                     <p>
-                      When you're using our website, we track your usage, which
+                      When you&apos;re using our website, we track your usage, which
                       includes statistics such as the total number of pages you
                       visit and the total amount of time you look at them. This
                       information may include but is not limited to IP address,
@@ -214,10 +214,10 @@ export class privacypolicy extends Component {
                     <br />
                     <h4>To improve the User Experience</h4>
                     <p>
-                      We're looking at the usage patterns of our users and
+                      We&apos;re looking at the usage patterns of our users and
                       various statistics to understand what to improve on Email
                       Extract Online. For example, this includes doing A/B
-                      testing on new features. We're also using the data that
+                      testing on new features. We&apos;re also using the data that
                       goes through our services to improve the services
                       themselves. We only use this information to validate data
                       we already have or that is being provided by a user, not

@@ -20,7 +20,7 @@ export const Linkfinder = (props) => {
         // console.log(response.data)
         setData(response.data.datas);
       });
-  }, []);
+  }, [props]);
 
   return (
     <div>
@@ -47,7 +47,7 @@ export const Linkfinder = (props) => {
             data.map((data, key) => {
               return (
                 <p key={key} style={{ fontSize: "12px",marginLeft:'20px' }}>
-                  <a href={data.link} target="_blank" >
+                  <a href={data.link} target="_blank" rel="noreferrer">
                     {data.link}
                   </a>
                 </p>

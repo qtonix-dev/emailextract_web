@@ -12,7 +12,7 @@ export const CheckVerifiedOrNot = (props) => {
             // console.log(response.data)
             setData(response.data)
         })
-    },[])
+    },[props])
 
 
   return (

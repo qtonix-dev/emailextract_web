@@ -7,6 +7,7 @@ import { FaMinus, FaPlus } from "react-icons/fa"
 import Faq from "react-faq-component";
 import { Rating } from 'react-simple-star-rating'
 import Link from 'next/link'
+import axios from 'axios'
 
 
 //=======FAQ=======//
@@ -43,7 +44,7 @@ const data = {
         },
         {
             title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-            content: <p>It's 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don’t have any access to that as it gets stored in your storage.</p>,
+            content: <p>It&apos;s 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don`&apos;`t have any access to that as it gets stored in your storage.`&quot;`</p>,
         },
     ],
 };
@@ -52,8 +53,8 @@ const data1 = {
     rows: [
         {
             title: "How fast is your email extraction tool?",
-            content: <p>It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
-            Note: The performance and speed also depend on your PC as well.</p>,
+            content: <p>`It’s absolutely super-fast and quick, which extracts and verifies emails within seconds on your PC.
+            Note: The performance and speed also depend on your PC as well.`</p>,
         },
         {
             title: "Do you offer a free trial to test the tool before buying it?",
@@ -71,13 +72,13 @@ const data1 = {
         {
             title: "What should I do if the Email Finder doesn't return any result?",
             content: 
-            <p>If the Email Finder can't find the email address, we recommend you to verify the following elements:
+            <p>If the Email Finder can&apos;t find the email address, we recommend you to verify the following elements:
                 
             </p>
         },
         {
             title: "Why choose Email Extract Online over other email extract tools?",
-            content: <p>"We started Email Extract Online because we found that other similar services were charging a lot of money for data that is either publicly available on the internet or not authorized. Our goal is to help YOU find suitable leads and build a million-dollar business, and to do that you need to save time and as much money as you can. We want to bring people together so that they can provide value for each other, and we plan on doing that by providing the best Email Extract Online tool ever."</p>,
+            content: <p>&quot;We started Email Extract Online because we found that other similar services were charging a lot of money for data that is either publicly available on the internet or not authorized. Our goal is to help YOU find suitable leads and build a million-dollar business, and to do that you need to save time and as much money as you can. We want to bring people together so that they can provide value for each other, and we plan on doing that by providing the best Email Extract Online tool ever.&quot;</p>,
         },
     ],
 };
@@ -97,11 +98,23 @@ const config = {
 //=======FAQ=======//
 
 export class compare extends Component {
+    static async getInitialProps({query}) {
+        var data ={query};
+            const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e48158360379f`);
+
+        return{
+            seo:response.data.data
+        }
+    }
+
     render() {
         return (
             <Body>
                 <Head>
-                    <title>Compare</title>
+                <title>{this.props.seo.metatitle}</title>
+                    <meta name="description" content={this.props.seo.metadesc} />
+                    <meta name="keywords" content={this.props.seo.metakey} />
+                
                 </Head>
                 {/* 
                 =============================================
@@ -135,25 +148,25 @@ export class compare extends Component {
                         </div>
                             
                             <Row>
-                                <Col sm={6} md={6} lg={3} className="mt-3">
+                                <Col sm={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjyh4slij00ej4zfzt7jm8v6u-1-2x.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>Gartner Magic Quadrant 2021 - Sales Force Automation</p>
                                     </div>
                                 </Col>
-                                <Col sm={6} md={6} lg={3} className="mt-3">
+                                <Col sm={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksrja4qtaby4anfzxvtvphqg-medal-1.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>G2 Crowd CRM Software Leader 2021</p>
                                     </div>
                                 </Col>
-                                <Col sm={6} md={6} lg={3} className="mt-3">
+                                <Col sm={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksskhytfji37ayfzrfqd5fik-ga-badge.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>GetApp CRM Software Leaders 2021</p>
                                     </div>
                                 </Col>
-                                <Col sm={6} md={6} lg={3} className="mt-3">
+                                <Col sm={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksskj46hji72ayfzdciky9ah-sa-badge.one-half.png" alt="email" className="w-50 text-center" />
                                         <p>Software Advice CRM Front Runners 2021</p>
@@ -177,21 +190,21 @@ export class compare extends Component {
                             
                             <Row>
 
-                                <Col lg={4} className="mt-3">
+                                <Col sm={4} className="mt-3">
                                     <div className="compare-second pt-5 pb-2 px-2 text-center">
                                         <img src="images/prospects.png" alt="email" />
                                         <h4>Free Prospects For Life</h4>
                                         <p>We give 50 credits for free every month for lifetime.</p>
                                     </div>
                                 </Col>
-                                <Col lg={4} className="mt-3">
+                                <Col sm={4} className="mt-3">
                                     <div className="compare-second pt-5 pb-2 mb-5 text-center">
                                         <img src="images/easytouse.png" alt="email" />
                                         <h4>An Easy-to-use Web App</h4>
                                         <p>The best way to reach your prospects during COVID-19 is through our easy-to-use web app.</p>
                                     </div>
                                 </Col>
-                                <Col lg={4} className="mt-3">
+                                <Col sm={4} className="mt-3">
                                     <div className="compare-second pt-5 pb-2 mb-5 text-center">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cjwbrlayh00itsfg065hbnxex-easy-to-setup.svg" alt="email" />
                                         <h4>Highly Scalable</h4>
@@ -206,7 +219,6 @@ export class compare extends Component {
                                 <h2 className="pb-5">What our customers say about us</h2>
                             </div>
                             
-                            
                             <div className="customer-compaire-testimonial">
                             <Carousel variant="dark">
                                 <Carousel.Item>
@@ -215,7 +227,7 @@ export class compare extends Component {
                                     <Card.Body>
                                         <Card.Title>chargebee logo</Card.Title>
                                         <Card.Text>
-                                        “We initially had Salesforce CRM but didn't really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks CRM), the first thing I remember saying is, okay, the interface is clean and simple.”
+                                        “We initially had Salesforce CRM but didn&apos;t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks CRM), the first thing I remember saying is, okay, the interface is clean and simple.”
                                         </Card.Text>
                                         {/* <Button variant="primary">Go somewhere</Button> */}
                                         <h4 className="pb-2">Germain Brion</h4>
@@ -255,10 +267,7 @@ export class compare extends Component {
                             </div>
                         </div>
                         <div className="our-customer-freesales">
-                            <div className="title-style-five">
-                            
-                            <h2 className='text-center'><span>Why Email Extract Online</span> vs Hunter.io vs Prospect.io vs Anymailfindier</h2>
-                            </div>
+                            <h3>Email Extract Online vs Hunter.io vs Prospect.io vs Anymailfindier</h3>
                             <Table striped bordered hover size="sm" responsive="sm">
                                 <thead className="customer-freesales-table">
                                     <tr>
@@ -341,7 +350,7 @@ export class compare extends Component {
                                 </div>
                             </div>
                             <Row className="py-3">
-                                <Col lg={6} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <div className="alternative-section-inner">
                                         <h3>Ease of use</h3>
                                         <p>We understand exactly how frustrating it is when a tool is hard to navigate. Therefore, our team of experienced and knowledgeable engineers and designers has built an intuitive, simple and visually compelling interface that can be used by the users to achieve specified goals with 
@@ -349,15 +358,15 @@ export class compare extends Component {
                             
                                     </div>
                                 </Col>
-                                <Col lg={6} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks0defd0053otsg03163hh6p-fsa-analytics-dashboard.one-half.png" alt="img-email" />
                                 </Col>
                             </Row>
                             <Row className="py-3">
-                                <Col lg={6} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks4ef4yu02zx74fzoovd0bso-104-b.one-half.png" alt="img-email" />
                                 </Col>
-                                <Col lg={6} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <div className="alternative-section-inner">
                                         <h3>24/7 support</h3>
                                         <p>Having a competent, reliable support team that you can depend on at any hour is a game-changer. Email Extract Online offers dependable, on-demand support options including 24/7 technical and remote support to users. Our knowledgeable support team is here for you at any time, regardless of 
@@ -367,7 +376,7 @@ export class compare extends Component {
                             </Row>
                             <Row className="py-3">
                                 
-                                <Col lg={6} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <div className="alternative-section-inner">
                                         <h3>Cheaper</h3>
                                         <p>With the plans generally being substantially cheaper than the competitors, Email Extract Online is a great choice for 
@@ -376,7 +385,7 @@ export class compare extends Component {
                                             for companies that don’t have a dedicated sales department, since it’s affordable and easier to use.</p>
                                     </div>
                                 </Col>
-                                <Col lg={6} className="mt-3">
+                                <Col sm={6} className="mt-3">
                                     <img src="https://website-assets-fw.freshworks.com/attachments/cks0defd0053otsg03163hh6p-fsa-analytics-dashboard.one-half.png" alt="img-email" />
                                 </Col>
                             </Row>

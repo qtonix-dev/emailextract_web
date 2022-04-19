@@ -1,16 +1,25 @@
 import React, { Component } from 'react'
 import Body from './components/Body'
 import Head from 'next/head'
+import axios from 'axios';
 
 export default class gdpr extends Component {
+    static async getInitialProps({query}) {
+        var data ={query};
+            const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e4815836037a2`);
+
+        return{
+            seo:response.data.data
+        }
+    }
     render() {
         return (
             <>  
             <Body>
                 <Head>
-                    <title>Free Online Email Extractor - Email Scraper Pricing</title>
-                    <meta name="description" content="Email Extract Online is a free email scraper that comes with various advanced and useful features to help you extract 100% verified email addresses of different clients in seconds" />
-                    <meta name="keywords" content="free online email extractor, free email scraper, Email Scraper Pricing, email extractor application, email extractor software" />
+                <title>{this.props.seo.metatitle}</title>
+                    <meta name="description" content={this.props.seo.metadesc} />
+                    <meta name="keywords" content={this.props.seo.metakey} />
                 </Head>
                 <div className="fancy-hero-four bg-doc space-fix gdpr-title-main">
                     <div className="bg-wrapper">
