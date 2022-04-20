@@ -84,17 +84,12 @@ export class niceemailextractor extends Component {
                 })
                 this.fetchRecord();
 
-                this.fetchRecord();
-
-                this.fetchRecord();
-
-                this.fetchRecord();
-
-                this.fetchRecord();
-
-                this.fetchRecord();
-
-                this.fetchRecord();
+                // this.fetchRecord();
+                // this.fetchRecord();
+                // this.fetchRecord();
+                // this.fetchRecord();
+                // this.fetchRecord();
+                // this.fetchRecord();
 
             }).catch(err=>{
 
