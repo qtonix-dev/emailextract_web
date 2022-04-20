@@ -98,7 +98,22 @@ export default class login extends Component {
 
                     
                 }else{
-                    this.setState({formLoading:false})
+
+                    if(response.data.status==='inactive'){
+                      this.setState({formLoading:false})
+                    $("#myForm :input").prop('readonly', false);
+                    toast.error('Account Disabled', {
+                      position: "top-right",
+                      autoClose: 5000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      // theme:'colored'
+                    });
+                    }else{
+                      this.setState({formLoading:false})
                     $("#myForm :input").prop('readonly', false);
                     toast.error('Incorrect email and password', {
                       position: "top-right",
@@ -110,6 +125,10 @@ export default class login extends Component {
                       progress: undefined,
                       // theme:'colored'
                     });
+                    }
+
+
+                    
                 }
             })
 
