@@ -191,29 +191,7 @@ export default class forgotpassword extends Component {
                         </div>
                     </form>
 
-                      <div className="form-bottom">
-
-                          <div className="or-sec text-center mb-4">
-                              <a>or</a>
-                          </div>
-
-                          <div className="google-signin mb-3">
-                            <GoogleLogin
-                                  clientId="372190396984-42v070uptnpu15m5i0cie4sggbtphauf.apps.googleusercontent.com"
-                                  buttonText="Sign in with Google"
-                                  onSuccess={this.responseGoogle}
-                                  onFailure={this.responseGoogle}
-                                  className="w-100"
-                            />
-                          </div>  
-                              
-                          <div className="theme-btn-reg mb-4">
-                              <p className="log-sec-new">
-                              Already have an Account ? <Link href='/login'><a>Sign In Now</a></Link>
-                              </p>
-                          </div> 
-                      
-                      </div>
+                     
 
                       <div className="col-12">
                       <p className="text-center font-rubik copyright-text">© 2020-2021 All rights reserved. <Link href="https://emailextractonline.com/">Email Extracter</Link> - #1 Email Finding Tool · Made with <GiSelfLove /> in India</p>
