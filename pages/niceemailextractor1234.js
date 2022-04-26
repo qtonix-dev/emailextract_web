@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Form } from 'react-bootstrap'
 import axios from 'axios'
 import ReactHTMLTableToExcel from 'react-html-table-to-excel'
-
+import { message } from 'antd';
 
 export class niceemailextractor extends Component {
 
