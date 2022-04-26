@@ -144,7 +144,7 @@ export class niceemailextractor extends Component {
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= {
                     response: true,
-                    domain: domainCreate[this.state.count].domain,
+                    domain: this.state.domainCreate[this.state.count].domain,
                     status: "Not Found",
                     emails: [ ],
                     tel: [ ]
