@@ -269,9 +269,10 @@ export class niceemailextractor extends Component {
                                                             {dta.status==='Found'
                                                             ?
                                                             <>
-                                                            {dta.emails.map((em)=>{
+                                                            {/* {dta.emails.map((em)=>{
                                                                 return this.removeDot(em)
-                                                            }).join(', ')}
+                                                            }).join(', ')} */}
+                                                            {dta.emails.join(", ")}
                                                             
                                                             
 
@@ -314,11 +315,11 @@ export class niceemailextractor extends Component {
                                                             {dta.status==='Found'
                                                             ?
                                                             <>
-                                                            {/* {dta.emails.join(", ")} */}
+                                                            {dta.emails.join(", ")}
 
-                                                            {dta.emails.map((em)=>{
+                                                            {/* {dta.emails.map((em)=>{
                                                                 return this.removeDot(em)
-                                                            }).join(', ')}
+                                                            }).join(', ')} */}
                                                             </>
                                                             :
                                                             <>-</>}
