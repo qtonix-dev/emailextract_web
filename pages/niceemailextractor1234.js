@@ -70,7 +70,8 @@ export class niceemailextractor extends Component {
             message.warning('Max input 300');
         }else{
             axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`)
-            // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
+            // axios.get(`http://localhost:5004/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
+            
             .then(response=>{
             
                 var bulkdomainextratdata = this.state.datas;
@@ -125,9 +126,8 @@ export class niceemailextractor extends Component {
         }else{
             
             axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
+            // axios.get(`http://localhost:5004/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
 
-            // axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
-            // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
             
             
             .then(response=>{
@@ -140,6 +140,16 @@ export class niceemailextractor extends Component {
                 })
                 this.fetchRecord();
             })
+        }
+    }
+
+
+
+    removeDot(email){
+        if(email.slice(-1)==='.'){
+            return email.slice(0, -1);
+        }else{
+            return email;
         }
     }
 
@@ -242,13 +252,12 @@ export class niceemailextractor extends Component {
                                                             ?
                                                             <>
                                                             {dta.emails.map((em)=>{
-                                                                return(
-                                                                    <>
-                                                                        {em},&nbsp;
-                                                                    </>
-                                                                )
-                                                                
-                                                            })}
+                                                                return this.removeDot(em)
+                                                            }).join(', ')}
+                                                            
+                                                            
+
+
                                                             </>
                                                             :
                                                             <>-</>}
@@ -280,18 +289,21 @@ export class niceemailextractor extends Component {
                                                 return(
                                                     <tr key={dta.domain}>
                                                         <td>{dta.domain}</td>
-                                                        <td>
+                                                        <td style={{textTransform:'lowercase'}}>
                                                             {dta.status==='Found'
                                                             ?
                                                             <>
+                                                            {dta.status==='Found'
+                                                            ?
+                                                            <>
+                                                            {/* {dta.emails.join(", ")} */}
+
                                                             {dta.emails.map((em)=>{
-                                                                return(
-                                                                    <>
-                                                                        {em},&nbsp;
-                                                                    </>
-                                                                )
-                                                                
-                                                            })}
+                                                                return this.removeDot(em)
+                                                            }).join(', ')}
+                                                            </>
+                                                            :
+                                                            <>-</>}
                                                             </>
                                                             :
                                                             <>-</>}
