@@ -69,7 +69,7 @@ export class niceemailextractor extends Component {
         if(domainCreate.length>300){
             message.warning('Max input 300');
         }else{
-            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`)
+            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`, { timeout: 10000 })
             // axios.get(`http://localhost:5004/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
             
             .then(response=>{
@@ -125,7 +125,7 @@ export class niceemailextractor extends Component {
             })
         }else{
             
-            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
+            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`, { timeout: 10000 })
             // axios.get(`http://localhost:5004/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
 
             
@@ -137,6 +137,24 @@ export class niceemailextractor extends Component {
                 this.setState({
                     count:this.state.count+1,
                     datas:bulkdomainextratdata
+                })
+                this.fetchRecord();
+            }).catch(err=>{
+
+                var bulkdomainextratdata = this.state.datas;
+                var msdata= {
+                    response: true,
+                    domain: domainCreate[this.state.count].domain,
+                    status: "Not Found",
+                    emails: [ ],
+                    tel: [ ]
+                }
+                bulkdomainextratdata.push(msdata);
+
+                this.setState({
+                    count:this.state.count+1,
+                    datas:bulkdomainextratdata,
+                    status:'Processing...'
                 })
                 this.fetchRecord();
             })
