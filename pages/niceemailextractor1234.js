@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { Form } from 'react-bootstrap'
 import axios from 'axios'
 import ReactHTMLTableToExcel from 'react-html-table-to-excel'
-import { message } from 'antd';
 
 export class niceemailextractor extends Component {
 
@@ -28,7 +27,6 @@ export class niceemailextractor extends Component {
             [e.target.name]:e.target.value
         })
     }
-
 
     componentDidMount(){
         // axios.get('https://api.ipify.org/?format=json')
@@ -67,7 +65,7 @@ export class niceemailextractor extends Component {
         })
 
         if(domainCreate.length>300){
-            message.warning('Max input 300');
+            alert('Max input 300')
         }else{
             axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`, { timeout: 10000 })
             // axios.get(`http://localhost:5004/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
@@ -84,13 +82,6 @@ export class niceemailextractor extends Component {
                     status:'Processing...'
                 })
                 this.fetchRecord();
-
-                // this.fetchRecord();
-                // this.fetchRecord();
-                // this.fetchRecord();
-                // this.fetchRecord();
-                // this.fetchRecord();
-                // this.fetchRecord();
 
             }).catch(err=>{
 
