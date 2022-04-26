@@ -176,7 +176,7 @@ export class niceemailextractor extends Component {
                     Fancy Hero Five
                 ============================================== 
                 */}
-                    <div className="fancy-hero-five">
+                    {/* <div className="fancy-hero-five">
                         <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
                         <img src="images/shape/96.svg" alt="" className="shapes shape-two" />
                         <div className="bg-wrapper">
@@ -190,7 +190,7 @@ export class niceemailextractor extends Component {
                             </div>
                             </div>
                         </div> 
-                    </div> 
+                    </div>  */}
 
 
                     {this.state.iphidden
