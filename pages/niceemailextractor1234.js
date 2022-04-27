@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { Form } from 'react-bootstrap'
 import axios from 'axios'
 import ReactHTMLTableToExcel from 'react-html-table-to-excel'
+import _ from 'lodash'
 
 export class niceemailextractor extends Component {
 
@@ -74,6 +75,19 @@ export class niceemailextractor extends Component {
             
                 var bulkdomainextratdata = this.state.datas;
                 var msdata= response.data.response;
+
+
+                // let result = _.find(bulkdomainextratdata, function(obj) {
+                //     if (obj.domain === msdata.domain) {
+                //         return true;
+                //     }
+                // });
+
+                // console.log(result)
+
+
+
+
                 bulkdomainextratdata.push(msdata);
 
                 this.setState({
@@ -164,7 +178,14 @@ export class niceemailextractor extends Component {
 
 
     render() {
-        console.log(this.state.datas)
+        // console.log(this.state.datas)
+
+        // _.uniqBy(data, function (e) {
+        //     return e.id;
+        //   });
+
+        var totaldatas = _.uniqBy(this.state.datas, 'domain');
+       
 
         return (
             <Body>
@@ -252,9 +273,9 @@ export class niceemailextractor extends Component {
                                             ?<></>
                                             :
                                             <>
-                                            {this.state.datas.map((dta)=>{
+                                            {totaldatas.map((dta, key)=>{
                                                 return(
-                                                    <tr key={dta.domain}>
+                                                    <tr key={key}>
                                                         <td>{dta.domain}</td>
                                                         <td>
                                                             {dta.status==='Found'
@@ -295,9 +316,9 @@ export class niceemailextractor extends Component {
                                             ?<></>
                                             :
                                             <>
-                                            {this.state.datas.map((dta)=>{
+                                            {totaldatas.map((dta,key)=>{
                                                 return(
-                                                    <tr key={dta.domain}>
+                                                    <tr key={key}>
                                                         <td>{dta.domain}</td>
                                                         <td style={{textTransform:'lowercase'}}>
                                                             {dta.status==='Found'
