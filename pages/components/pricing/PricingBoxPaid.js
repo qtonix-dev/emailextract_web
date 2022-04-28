@@ -15,7 +15,7 @@ export default function PricingBoxPaid({data}) {
                 <li><AiOutlineCheck /> <b>{data.totalsingledomain}</b> Total Domain Search </li>
                 <li><AiOutlineCheck /> <b>{data.totalemailsearch}</b> Total Email Search </li>
                 <li><AiOutlineCheck /> <b>{data.totalemailverification}</b> Total Email Verification </li>
-                <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract}</b> Bulk Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract===123456789?'Unlimited':data.totalbuldomainkextract}</b> Bulk Domain Search </li>
                 <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>
                 <li><AiOutlineCheck /> Unlimited Results </li>
                 <li><AiOutlineCheck /> Unlimited Storage </li>

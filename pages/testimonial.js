@@ -5,23 +5,29 @@ export class testimonial extends Component {
   state={
     color:['red','green'],
     size:['S','M','L','XL'],
-    datas:['color','size']
+    datas:['color','size'],
+
+
+    
   }
 
 
   componentDidMount(){
     // console.log(this.state.datas)
-    let datas = [['red','green'], ['S','M','L','XL']];
+    // let datas = [['red','green'], ['S','M','L','XL']];
 
-    datas.forEach(element => {
+    // datas.forEach(element => {
 
-      element.forEach(el => {
-      console.log(el)
+    //   element.forEach(el => {
+    //   console.log(el)
 
-      });
+    //   });
 
 
-    });
+    // });
+
+    console.log(this.state)
+
 
 
 

@@ -178,15 +178,8 @@ export class niceemailextractor extends Component {
 
 
     render() {
-        // console.log(this.state.datas)
-
-        // _.uniqBy(data, function (e) {
-        //     return e.id;
-        //   });
-
         var totaldatas = _.uniqBy(this.state.datas, 'domain');
        
-
         return (
             <Body>
                 <Head>
