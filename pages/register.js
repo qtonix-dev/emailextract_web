@@ -307,7 +307,7 @@ export class register extends Component {
                     <div className="form-bottom">
 
                         <div className="conte-sec">
-                            <p>By Clicking &quot;Sign Me Up&quot; you agree to Email Extracter Online&rdquo;s <Link href='/terms-and-condition'>Terms & Condition</Link> & <Link href='/privacy-policy'>Privacy Policy</Link></p>
+                            <p>By Clicking &quot;Sign Me Up&quot; you agree to Email Extracter Online`&apos;s <Link href='/terms-and-condition'>Terms & Condition</Link> & <Link href='/privacy-policy'>Privacy Policy</Link></p>
                         </div>
 
                         {/* <div className="or-sec text-center mb-4">
