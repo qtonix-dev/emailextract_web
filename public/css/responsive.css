@@ -205,7 +205,7 @@
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-
+    
     .logo{
         width: 606px !important;
     }
@@ -468,7 +468,9 @@
     }
 }
 @media (max-width: 991px) {
-    
+    .theme-main-menu .logo img {
+        width: 310px !important;
+    }
     .icon-images-ban ul li {
         width: 30% !important;
     }
@@ -2181,7 +2183,20 @@
         padding: 100px 0 80px;
     }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
+    .test-btn-home a {
+        text-align: center;
+        margin: 0 auto;
+        width: 20% !important;
+        border: 1px solid;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color: #0194f1;
+        color: #fff;
+    }
+
     .navbar .navbar-toggler {
     position: relative;
     left: 10px;
@@ -2245,6 +2260,18 @@
     }
 }
 @media (max-width: 767px) {
+    .test-btn-home a {
+        text-align: center;
+        margin: 0 auto;
+        width: 20% !important;
+        border: 1px solid;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color: #0194f1;
+        color: #fff;
+    }
+
     .fancy-feature-eight .bg-wrapper {
         padding: 0 15px 15px;
     }
@@ -2521,6 +2548,7 @@
 }
 
 @media (max-width: 575px) {
+
     .accordion-style-four .card .card-header button {
         padding-left: 15px;
         font-size: 16px;
@@ -2764,7 +2792,7 @@
         padding-bottom: 10px;
     }
     .fancy-hero-five .heading {
-        font-size: 46px;
+        font-size: 37px;
     }
     .fancy-text-block-seventeen .text-meta {
         font-size: 16px;
@@ -3016,8 +3044,31 @@
         font-size: 35px;
     }
 }
+@media (max-width: 375px) {
+    .test-btn-home a {
+        width: 125px !important;
+        padding: 5px;
+        position: relative;
+        bottom: -25px !important;
+    }
+    .client-feedback-slider-two {
+        padding: 85px 0 100px;
+    }
+}
 
 @media (max-width: 430px) {
+    .test-btn-home a {
+        width: 125px !important;
+        padding: 5px;
+        position: relative;
+        bottom: 165px;
+    }
+    .faq-classic.with-bg {
+        padding: 0px 0 200px;
+        bottom:70px;
+    }
+    
+    
     .compare-section-first h2 {
         font-size: 35px !important;
         text-transform: capitalize;
@@ -3064,5 +3115,11 @@
     }
     .free-liveChart ul li {
         padding: 20px 10px 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .client-feedback-slider-two .slick-slider {
+        height: 285px;
     }
 }
