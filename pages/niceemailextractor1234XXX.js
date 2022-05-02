@@ -181,7 +181,7 @@ export class niceemailextractor extends Component {
         var totaldatas = _.uniqBy(this.state.datas, 'domain');
        
         return (
-            <Body>
+            <>
                 <Head>
                     <title>Fast Email Extractor</title>
                 </Head>
@@ -301,7 +301,6 @@ export class niceemailextractor extends Component {
                                             <tr>
                                             <th scope="col">Domain</th>
                                             <th scope="col">Email</th>
-                                            <th scope="col">Tel</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -332,7 +331,6 @@ export class niceemailextractor extends Component {
                                                             :
                                                             <>-</>}
                                                         </td>
-                                                        <td>-</td>
                                                     </tr>
                                                 )
                                             })}
@@ -347,7 +345,7 @@ export class niceemailextractor extends Component {
                         </div>
                     </div>
                      }
-            </Body>
+            </>
         )
     }
 }
