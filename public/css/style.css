@@ -661,9 +661,9 @@ h6 {
 }
 
 .title-style-seven p {
-	font-size: 22px;
-	color: #000;;
-	padding-top: 22px
+	font-size: 18px;
+	color: #000;
+	padding-top: 22px;
 }
 
 .title-style-eight h2 {
@@ -893,7 +893,7 @@ body .theme-btn-six:hover {
 	color: #fff
 }
 .search-filter-form input {
-	color:#000; !important;
+	color:#000 !important;
 }
 body .theme-btn-six.lg {
     padding: 0 45px;
@@ -7112,7 +7112,6 @@ body .theme-btn-nine:hover {
 
 .theme-menu-three .user-login-button li a {
 	font-size: 18px;
-	font-weight: 600;
 	line-height: 46px;
 	color: #090436;
 	transition: all .3s ease-in-out;
@@ -11595,7 +11594,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 }
 
 .theme-menu-five .right-widget .download-btn.style-two .dropdown-menu {
-	margin: margin: -2px 0 0 0;
+margin: -2px 0 0 0;
 	background: #fff;
 	border: 2px solid #000;
 }
@@ -14493,7 +14492,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
 
 .fancy-feature-eight-main .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	background-color: #fff !important;
-	color: #000; !important;
+	color: #000 !important;
     font-weight: 600;
 }
 .fancy-feature-eight-main .nav-link {

@@ -295,7 +295,7 @@ export default class about extends Component {
     <div className="container">
       <div className="title-style-three text-center mb-20 md-mb-20 sm-mb-30">
         <div className="title-style-five">
-          <h2><span>Our</span> Partners</h2>
+          <h2><span>Our</span> Clients</h2>
         </div>
         
         <h6 className="mt-3 useable-tools-section-h6">Who Are Using Email Extract Online
@@ -360,10 +360,10 @@ export default class about extends Component {
         <div className="container">
           <div className="our-cli">
             <div className="title-style-five">
-              <h2><span>Our</span> Clients</h2>
+              <h2><span>Who Can</span> Use</h2>
             </div>
             
-            <p>Our Linkdin automation tool works best for:</p>
+            <p>Email Extract Automation Tool:</p>
             <Row>
               <Col>
                 <div className="col-sec-de">

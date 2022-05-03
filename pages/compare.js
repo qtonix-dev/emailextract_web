@@ -157,19 +157,19 @@ export class compare extends Component {
                                 <Col sm={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksrja4qtaby4anfzxvtvphqg-medal-1.one-half.png" alt="email" className="w-50 text-center" />
-                                        <p>G2 Crowd CRM Software Leader 2021</p>
+                                        <p>G2 Crowd Email Extract Software Leader 2021</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksskhytfji37ayfzrfqd5fik-ga-badge.one-half.png" alt="email" className="w-50 text-center" />
-                                        <p>GetApp CRM Software Leaders 2021</p>
+                                        <p>GetApp Email Extract Software Leaders 2021</p>
                                     </div>
                                 </Col>
                                 <Col sm={3} className="mt-3">
                                     <div className="compare-first">
                                         <img src="https://website-assets-fw.freshworks.com/attachments/cksskj46hji72ayfzdciky9ah-sa-badge.one-half.png" alt="email" className="w-50 text-center" />
-                                        <p>Software Advice CRM Front Runners 2021</p>
+                                        <p>Software Advice Email Extract Front Runners 2021</p>
                                     </div>
                                 </Col>
                             </Row>
@@ -227,7 +227,7 @@ export class compare extends Component {
                                     <Card.Body>
                                         <Card.Title>chargebee logo</Card.Title>
                                         <Card.Text>
-                                        “We initially had Salesforce CRM but didn&apos;t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks CRM), the first thing I remember saying is, okay, the interface is clean and simple.”
+                                        “We initially had Salesforce Email Extract Online but didn&apos;t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks Email Extract Online), the first thing I remember saying is, okay, the interface is clean and simple.”
                                         </Card.Text>
                                         {/* <Button variant="primary">Go somewhere</Button> */}
                                         <h4 className="pb-2">Germain Brion</h4>
@@ -241,7 +241,7 @@ export class compare extends Component {
                                     <Card.Body>
                                         <Card.Title>chargebee logo</Card.Title>
                                         <Card.Text>
-                                        “We initially had Salesforce CRM but didn’t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks CRM), the first thing I remember saying is, okay, the interface is clean and simple.”
+                                        “We initially had Salesforce Email Extract Online but didn’t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks Email Extract Online), the first thing I remember saying is, okay, the interface is clean and simple.”
                                         </Card.Text>
                                        
                                         <h4 className="pb-2">Germain Brion</h4>
@@ -255,7 +255,7 @@ export class compare extends Component {
                                     <Card.Body>
                                         <Card.Title>chargebee logo</Card.Title>
                                         <Card.Text>
-                                        “We initially had Salesforce CRM but didn’t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks CRM), the first thing I remember saying is, okay, the interface is clean and simple.”
+                                        “We initially had Salesforce Email Extract Online but didn’t really use it. The instance was incredibly complicated because it allows for so much customization that you end up doing nothing. When we explored Freshsales (formerly Freshworks Email Extract Online), the first thing I remember saying is, okay, the interface is clean and simple.”
                                         </Card.Text>
                                         
                                         <h4 className="pb-2">Germain Brion</h4>
@@ -288,21 +288,21 @@ export class compare extends Component {
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Most popular plan price</td>
-                                    <td className="text-center">$49 per 200k emails</td>
+                                    <td className="text-center">$29 per 10k emails</td>
                                     <td className="text-center">$399 per 30,000 emails</td>
                                     <td className="text-center">$149 per 1,000 credits</td>
                                     <td className="text-center">$149 per 10,000 emails</td>
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Price per email</td>
-                                    <td className="text-center">0.00024</td>
+                                    <td className="text-center">0.00029</td>
                                     <td className="text-center">0.0133</td>
                                     <td className="text-center">0.149</td>
                                     <td className="text-center">$0.01 </td>
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Available as</td>
-                                    <td className="text-center">Web app, Mobile app</td>
+                                    <td className="text-center">Web app, Desktop app</td>
                                     <td className="text-center">Web app, Chrome extension</td>
                                     <td className="text-center">Web app, Chrome extension</td>
                                     <td className="text-center">Web app</td>
@@ -323,21 +323,21 @@ export class compare extends Component {
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Data export</td>
-                                    <td className="text-center">CSV, TXT</td>
+                                    <td className="text-center">CSV</td>
                                     <td className="text-center">CSV, TXT</td>
                                     <td className="text-center">CSV</td>
                                     <td className="text-center">CSV</td>
                                     </tr>
                                     <tr>
                                     <td className="sec-left">Charging for duplicates</td>
-                                    <td className="text-center sec-hifen"><FaMinus /></td>
+                                    <td className="text-center">No</td>
                                     <td className="text-center sec-hifen"><FaMinus /></td>
                                     <td className="text-center">Undisclosed</td>
                                     <td className="text-center sec-hifen"><FaMinus /></td>
                                     </tr>
                                 </tbody>
                             </Table>
-                            <p>Note: Data as of 20th November 2020</p>
+                            <p>Note: Data as of 20th November 2021</p>
                             <div className="freesales-btn">
                             <Link href='/register'>Try For Free</Link>
                             <Link href='/'>Feature Comparision</Link>

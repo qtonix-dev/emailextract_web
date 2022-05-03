@@ -54,42 +54,42 @@ export class compare extends Component {
                             <Row>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="images/icon-101.png" alt="img-icon" />
+                                        <img src="https://i.ibb.co/VMY8cf4/icon-101.png" alt="img-icon" />
                                         <h3 className="my-3">Manage leads and deals</h3>
                                         <p>Get more hot leads fed straight into your sales pipelines around the clock from your custom chatbot and web forms</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="images/icon-102.png" alt="img-icon" />
+                                        <img src="https://i.ibb.co/7GZT2GW/icon-102.png" alt="img-icon" />
                                         <h3 className="my-3">Track communications</h3>
                                         <p>Track calls, emails and contact history exactly where you need to and have full visibility and control of your schedule</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="images/icon-103.png" alt="img-icon" />
+                                        <img src="https://i.ibb.co/MV37Ytt/icon-103.png" alt="img-icon" />
                                         <h3 className="my-3">Automate and grow</h3>
                                         <p>Eliminate busywork by automating repetitive administrative tasks and learn from artificial intelligence</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="images/icon-101.png" alt="img-icon" />
+                                        <img src="https://i.ibb.co/VMY8cf4/icon-101.png" alt="img-icon" />
                                         <h3 className="my-3">Insights and reports</h3>
                                         <p>Deep dive into metrics customized for your business and measure company performance against set goals</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="images/icon-102.png" alt="img-icon" />
+                                        <img src="https://i.ibb.co/7GZT2GW/icon-102.png" alt="img-icon" />
                                         <h3 className="my-3">Privacy and security</h3>
                                         <p>Have full transparency and peace of mind on when and how your business data is being used</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="images/icon-103.png" alt="img-icon" />
+                                        <img src="https://i.ibb.co/MV37Ytt/icon-103.png" alt="img-icon" />
                                         <h3 className="my-3">Mobile apps and integrations</h3>
                                         <p>Access Pipedrive from your mobile device and integrate with your favorite sales-boosting apps</p>
                                     </div>

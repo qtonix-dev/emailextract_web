@@ -729,6 +729,7 @@ section.faq-row.styles_faq-row__2YF3c {
     text-transform: capitalize;
     padding: 0 0 40px 0;
     font-weight: 600;
+    color: #090436;
 }
 .our-customer-freesales table td {
     padding: 7px;
@@ -862,7 +863,7 @@ section.faq-row.styles_faq-row__2YF3c {
     font-weight: 700;
     font-size: 36px;
     margin: 25px 0;
-    
+    color: #090436;
     padding: 0 0 30px 0;
     text-transform: capitalize;
 }
@@ -929,9 +930,11 @@ h1.heading.privacy-main-title {
         font-weight: 600 !important;
         font-family: "EEO-medium" !important;
         text-transform: capitalize;
+        color: #090436;
     }
     .tab-content h2 {
         font-size: 42px !important;
+
     }
     p{
         color: #5a5a5a;
@@ -1111,13 +1114,13 @@ h3.addme a {
 .conte-sec p {
     padding-left: 15px;
     margin-top: -10px;
-    color: #cdcdcd;
+    color: #adadad;
     font-size: 14px;
     font-weight: 500;
     line-height: 25px;
 }
 .conte-sec p a {
-    color: #cdcdcd;
+    color: #adadad;
 }
 
 .free-demo-form-list-btn li {
@@ -1359,3 +1362,56 @@ p.copyright-text svg {
         }
     }
 }
+.controls h3 {
+    font-size: 20px;
+    /* font-weight: 500 !important; */
+    margin-top: 15px;
+}
+
+.testimonial-main {
+    margin-bottom: 150px;
+}
+.testimonial_sec {
+    margin-top: 30px;
+    img {
+        width: 50%;
+        margin: 0px auto;
+    }
+    h6 {
+        font-weight: 600;
+        font-style: italic;
+    }
+    .row {
+        margin-bottom: 40px;
+    }
+}
+.test-btn-home {
+    a {
+        text-align: center;
+        margin: 0 auto;
+        width: 10%;
+        border: 1px solid;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color: #0194f1;
+        color: #fff;
+        &:hover {
+        background:linear-gradient( 90deg,#fa9531 0,#ffbd39 100%) !important;
+        }
+    }
+}
+.free-demo-form-sec11 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.privacy-main-first h1 {
+    color: #090436;
+}
+@media screen and (max-width: 600px) {
+    .faq-classic.with-bg {
+        padding: 100px 0 200px;
+        bottom: 70px;
+    }
+  }
