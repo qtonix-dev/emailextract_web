@@ -468,6 +468,15 @@
     }
 }
 @media (max-width: 991px) {
+    .footer-third-section ul li {
+        padding: 5px 12px 0 0 !important;
+    }
+    .heading567 {
+        font-size: 29px !important;
+    }
+    .fancy-feature-nineteen-new-inner {
+        height: 250px !important;
+    }
     .theme-main-menu .logo img {
         width: 310px !important;
     }
@@ -520,16 +529,18 @@
     .our-cli-btn {
         width: 50%;
     }
-
+    .alternative-section-inner h3 {
+        font-size:29px !important;
+    }
     .compare-section-first h2 {
         /* width: 20px; */
-        font-size: 35px;
+        font-size: 29px !important;
     }
     .compare-section-second h2 {
-        font-size: 40px;
+        font-size: 29px !important;
     }
     .our-customer-freesales h3 {
-        font-size: 35px;
+        font-size: 29px !important;
     }
     .fancy-text-block-thirteen {
         padding: 0px 10px;
@@ -579,7 +590,7 @@
         padding-bottom: 8px;
     }
     .title-style-four h2 {
-        font-size: 40px;
+        font-size: 37px;
         line-height: 1.2em;
     }
     .title-style-four h6 {
@@ -1254,7 +1265,7 @@
         font-size: 16px;
     }
     .fancy-hero-four h2 {
-        font-size: 50px;
+        font-size: 37px;
     }
     .fancy-hero-four.space-fix {
         padding: 150px 0 0px;
@@ -2184,6 +2195,7 @@
     }
 }
 
+
 @media (min-width: 768px) and (max-width: 991px) {
     .test-btn-home a {
         text-align: center;
@@ -2510,6 +2522,11 @@
     }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+    .test-btn-home a {
+        position: relative;
+        bottom: 71px;
+        width: 130px !important;
+    }
     .team-section-one .gap,
     .team-section-one .mix {
         width: calc(100% / 2 - (((2 - 1) * 1rem) / 2));
@@ -3041,7 +3058,7 @@
         font-size: 35px;
     }
     .compare-main .title-style-five h2 {
-        font-size: 35px;
+        font-size: 37px;
     }
 }
 @media (max-width: 375px) {
@@ -3060,8 +3077,9 @@
     .test-btn-home a {
         width: 125px !important;
         padding: 5px;
-        position: relative;
-        bottom: 165px;
+        position: absolute;
+        bottom: 75px;
+        left: 120px;
     }
     .faq-classic.with-bg {
         padding: 0px 0 200px;

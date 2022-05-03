@@ -619,7 +619,7 @@ export class index extends Component {
                                 )}
 
                                 <p className="sing-in-call">
-                                    50 Free Credits Every Month • GDPR Alligned & CCPA Compligned •
+                                    50 Free Credits Every Month • GDPR Aligned & CCPA Compligned •
                                     Get Started In Seconds •{" "}
                                     <Link href="/register">
                                     <a className="font-rubik">Sign Up</a>
@@ -838,104 +838,109 @@ export class index extends Component {
                                             =====================================================
                                             */}
                                 <div className="client-feedback-slider-two mt-40 md-mt-40">
-                                    <div className="container">
-                                    <div className="title-style-five text-center mb-20 md-mb-20">
-                                        <div className="row">
-                                        <div className="col-lg-7 col-md-9 m-auto">
-                                            <div className="title-style-five">
-                                                <h2  className="font-rubik"><span>Feedba</span>ck</h2>
+                                        <div className="container">
+                                        <div className="title-style-five text-center mb-20 md-mb-20">
+                                            <div className="row">
+                                            <div className="col-lg-7 col-md-9 m-auto">
+                                                <div className="title-style-five">
+                                                    <h2  className="font-rubik"><span>Feedba</span>ck</h2>
+                                                </div>
+                                                
+                                                <h6>What Our Client Say&nbsp;<span>About Us</span>
+                                                </h6>
                                             </div>
-                                            
-                                            <h6>What Our Client Say&nbsp;<span>About Us</span>
-                                            </h6>
+                                            </div>
                                         </div>
                                         </div>
-                                    </div>
-                                    </div>
-                                    <div className="">
-                                    <div className="container">
+                                        <div className="">
+                                        <div className="container">
 
+                                        
                                     
-                                
 
-                                    <Slider {...settings}>
-                                    <div className="item">
-                                        <div className="bg-wrapper">
-                                            <img src="images/ipaydna.png" alt="img-logo" className="logo" />
-                                            <p className="bg-wrapper-text-sec">Absolutely love it! I would like to<br /> say it is a brilliant tool for marketers like me. 
-                                                I have tried a lot of other ones but only found lots of problems, bugs, incorrect harvesting, 
-                                                constant blockages by servers. Email Extract Online is well programmed and it gets what you 
-                                                really need. Definitely recommend it!</p>
-                                            <div className="text-section-testimonial">
-                                                <div className="name font-rubik">Guan</div>
-                                                <div className="desig">Founder ipaydna</div>
+                                            <Slider {...settings}>
+                                            <div className="item">
+                                                <div className="bg-wrapper">
+                                                    <img src="images/ipaydna.png" alt="img-logo" className="logo" />
+                                                    <p className="bg-wrapper-text-sec">Absolutely love it! I would like to<br /> say it is a brilliant tool for marketers like me. 
+                                                        I have tried a lot of other ones but only found lots of problems, bugs, incorrect harvesting, 
+                                                        constant blockages by servers. Email Extract Online is well programmed and it gets what you 
+                                                        really need. Definitely recommend it!</p>
+                                                    <div className="text-section-testimonial">
+                                                        <div className="name font-rubik">Guan</div>
+                                                        <div className="desig">Founder ipaydna</div>
+                                                    </div>
+                                                    
+                                                </div> {/* /.bg-wrapper */}
+                                                </div>
+                                                <div className="item">
+                                                <div className="bg-wrapper">
+                                                    <img src="images/ibm.png" alt="emailicon" className="logo" />
+                                                    <p className="bg-wrapper-text-sec">A huge thank you to the team<br /> at Email Extract Online. I bought this tool 6 months ago and even after all this time when I reach out for any help they are brilliant. So many online extracting products promise the world and then 
+                                                        fail to deliver - this is a robust tool and a great bunch of people behind it. Highly recommended.</p>
+                                                        <div className="text-section-testimonial">
+                                                            <div className="name font-rubik">Eh Jewel</div>
+                                                            <div className="desig">Senior Developer</div>
+                                                        </div>
+                                                </div> {/* /.bg-wrapper */}
+                                                </div>
+                                                <div className="item">
+                                                <div className="bg-wrapper">
+                                                    <img src="images/ekwb.png" alt="emailicon" className="logo" />
+                                                    <p className="bg-wrapper-text-sec">My name is David, I tried Email<br /> Extract Online and Email Bulk Finder and found both of them to be very useful. The truth is unless you try this tool, you will not know what you are missing out on. I recommend the Email Extract Online tool to small and large businesses - it is profitable 
+                                                        especially when you want to develop reasonable contacts and good relationships with others.</p>
+                                                    <div className="text-section-testimonial">
+                                                    <div className="name font-rubik">Johny Horoscope</div>
+                                                    <div className="desig">EKWB</div>
+                                                    </div>
+                                                    
+                                                </div> {/* /.bg-wrapper */}
+                                                </div>
+                                                <div className="item">
+                                                <div className="bg-wrapper">
+                                                    <img src="images/c2.png" alt="emailicon" className="logo" />
+                                                    <p className="bg-wrapper-text-sec">Email Extract Online is very good<br /> and many thanks to the developers for making such an inexpensive 
+                                                        tool. Very frankly, after using this tool, I started seeing a big increase in my sales. In the past, 
+                                                        I tried many other resources as well as other email harvesters to boost my sales but nothing was as 
+                                                        effective as your product. I found your product 
+                                                        beyond my expectations. Once again I thank you for making such an effective product that really works.</p>
+                                                    <div className="text-section-testimonial">
+                                                    <div className="name font-rubik">Alex Wilson</div>
+                                                    <div className="desig">C2rio</div>
+                                                    </div>
+                                                </div> {/* /.bg-wrapper */}
+                                                </div>
+                                                <div className="item">
+                                                <div className="bg-wrapper">
+                                                    <img src="images/mcdonald.png" alt="emailicon" className="logo" />
+                                                    <p className="bg-wrapper-text-sec">I was looking for the best solution<br /> to extract emails of some prospective clients to promote my services. Finally, I found it: Email Extract Online. 
+                                                        Today I am really pleased with the way this tool works and the benefits, I get from email marketing.</p>
+                                                        <div className="text-section-testimonial">
+                                                        <div className="name font-rubik">Johny Horoscope</div>
+                                                        <div className="desig">Trip Exotica</div>
+                                                        </div>
+                                                </div> {/* /.bg-wrapper */}
+                                                </div>
+                                                <div className="item">
+                                                <div className="bg-wrapper">
+                                                    <img src="images/cybernetm.png" alt="emailicon" className="logo" />
+                                                    <p className="bg-wrapper-text-sec">I bought the Email Extract Online<br /> some time ago, it is so good that I felt like sharing. Email Extract Online is a small investment that can be made by any business but in a short period of time, it can really bring profits for your business. It helps to extract emails with superior potential 
+                                                        for reaching good customers. This software can be the best asset for any business. Highly recommended!</p>
+                                                        <div className="text-section-testimonial">
+                                                            <div className="name font-rubik">Paul Wilson</div>
+                                                            <div className="desig">Cybernet</div>
+                                                        </div>
+                                                </div>
+                                                </div>
+                                            </Slider>
+                                            <div className='test-btn-home'>
+                                                <center>
+                                                    <Link href='/testimonial'>View More</Link>
+                                                </center>
+                                                
                                             </div>
                                             
-                                        </div> {/* /.bg-wrapper */}
                                         </div>
-                                        <div className="item">
-                                        <div className="bg-wrapper">
-                                            <img src="images/ibm.png" alt="emailicon" className="logo" />
-                                            <p className="bg-wrapper-text-sec">A huge thank you to the team<br /> at Email Extract Online. I bought this tool 6 months ago and even after all this time when I reach out for any help they are brilliant. So many online extracting products promise the world and then 
-                                                fail to deliver - this is a robust tool and a great bunch of people behind it. Highly recommended.</p>
-                                                <div className="text-section-testimonial">
-                                                    <div className="name font-rubik">Eh Jewel</div>
-                                                    <div className="desig">Senior Developer</div>
-                                                </div>
-                                        </div> {/* /.bg-wrapper */}
-                                        </div>
-                                        <div className="item">
-                                        <div className="bg-wrapper">
-                                            <img src="images/ekwb.png" alt="emailicon" className="logo" />
-                                            <p className="bg-wrapper-text-sec">My name is David, I tried Email<br /> Extract Online and Email Bulk Finder and found both of them to be very useful. The truth is unless you try this tool, you will not know what you are missing out on. I recommend the Email Extract Online tool to small and large businesses - it is profitable 
-                                                especially when you want to develop reasonable contacts and good relationships with others.</p>
-                                            <div className="text-section-testimonial">
-                                            <div className="name font-rubik">Johny Horoscope</div>
-                                            <div className="desig">EKWB</div>
-                                            </div>
-                                            
-                                        </div> {/* /.bg-wrapper */}
-                                        </div>
-                                        <div className="item">
-                                        <div className="bg-wrapper">
-                                            <img src="images/c2.png" alt="emailicon" className="logo" />
-                                            <p className="bg-wrapper-text-sec">Email Extract Online is very good<br /> and many thanks to the developers for making such an inexpensive 
-                                                tool. Very frankly, after using this tool, I started seeing a big increase in my sales. In the past, 
-                                                I tried many other resources as well as other email harvesters to boost my sales but nothing was as 
-                                                effective as your product. I found your product 
-                                                beyond my expectations. Once again I thank you for making such an effective product that really works.</p>
-                                            <div className="text-section-testimonial">
-                                            <div className="name font-rubik">Alex Wilson</div>
-                                            <div className="desig">C2rio</div>
-                                            </div>
-                                        </div> {/* /.bg-wrapper */}
-                                        </div>
-                                        <div className="item">
-                                        <div className="bg-wrapper">
-                                            <img src="images/mcdonald.png" alt="emailicon" className="logo" />
-                                            <p className="bg-wrapper-text-sec">I was looking for the best solution<br /> to extract emails of some prospective clients to promote my services. Finally, I found it: Email Extract Online. 
-                                                Today I am really pleased with the way this tool works and the benefits, I get from email marketing.</p>
-                                                <div className="text-section-testimonial">
-                                                <div className="name font-rubik">Johny Horoscope</div>
-                                                <div className="desig">Trip Exotica</div>
-                                                </div>
-                                        </div> {/* /.bg-wrapper */}
-                                        </div>
-                                        <div className="item">
-                                        <div className="bg-wrapper">
-                                            <img src="images/cybernetm.png" alt="emailicon" className="logo" />
-                                            <p className="bg-wrapper-text-sec">I bought the Email Extract Online<br /> some time ago, it is so good that I felt like sharing. Email Extract Online is a small investment that can be made by any business but in a short period of time, it can really bring profits for your business. It helps to extract emails with superior potential 
-                                                for reaching good customers. This software can be the best asset for any business. Highly recommended!</p>
-                                                <div className="text-section-testimonial">
-                                                    <div className="name font-rubik">Paul Wilson</div>
-                                                    <div className="desig">Cybernet</div>
-                                                </div>
-                                        </div>
-                                        </div>
-                                    </Slider>
-                                        
-                                        
-                                    </div>
                                     </div>
                                 </div> 
                                 

@@ -121,7 +121,7 @@ export default class pricing extends Component {
                     <div className="row">
                       <div className="col-xl-9 col-lg-11 col-md-10 m-auto">
                         <div className="title-style-seven text-center">
-                          <h2><span>Simple & Transparent</span> Pricing Plans</h2>
+                          <h2 className='heading'><span>Simple & Transparent</span> Pricing Plans</h2>
                           <h6>Find the right solution for your needs</h6>
                           <p>We deliver an analytics experience with no hidden costs or additional products required. Understand the price you pay upfront, with no surprises. Buy our simple, capability-rich packages to upscale your business with verified emails.</p>
                         </div>

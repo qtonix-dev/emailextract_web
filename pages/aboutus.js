@@ -115,7 +115,7 @@ export default class about extends Component {
         <div className="text-wrapper">
           <div className="title-style-three">
             <div className="title-style-five">
-              <h2>
+              <h2 className='heading567'>
                 <span>What is Our</span> Purpose
               </h2>
             </div>  
@@ -152,7 +152,7 @@ export default class about extends Component {
             <div className="row">
               <div className="col-lg-12">
                 <div className="title-style-five">
-                  <h2 className="mb-3">
+                  <h2 className="mb-3 heading567">
                     <span>Our Security</span> Compliance
                   </h2>
                 </div>
@@ -183,7 +183,7 @@ export default class about extends Component {
             <div className="col-lg-125 ml-auto" data-aos="fade-left" data-aos-duration={1200}>
             <div className="title-style-four">
               <div className="title-style-five">
-                <h2>
+                <h2 className='heading567'>
                   <span>Our Core</span> Values
                 </h2>
               </div>

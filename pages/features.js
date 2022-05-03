@@ -98,7 +98,7 @@ export class compare extends Component {
                         </div>
 
                         <section className="follow-feature-section-main">
-                            <h2 className="text-center">Follow up on every deal</h2>
+                            <h2 className="text-center featureHeading">Follow up on every deal</h2>
                             <p className="px-5 py-3 text-center">Whenever you complete an activity, Pipedrive reminds you to schedule your next 
                                 one. You can even automate this process so follow-ups are created for you.</p>
                             <Row>
@@ -129,7 +129,7 @@ export class compare extends Component {
                             </Row>
                         </section>
                         <section className="follow-visual-section py-5">
-                            <h2 className="pb-3 text-center">See all deals in a visual sales pipeline</h2>
+                            <h2 className="pb-3 text-center featureHeading">See all deals in a visual sales pipeline</h2>
                             <Row className="mt-4">
                                 <Col sm={6} className="mt-3">
                                     <img src="https://www-cms.pipedriveassets.com/half-page-images/Pipeline.svg" alt="img-visual" />
@@ -149,7 +149,7 @@ export class compare extends Component {
                             </Row>
                         </section>
                         <section className="work-anywhere">
-                            <h2 className="text-center">Work anywhere, anytime</h2>
+                            <h2 className="text-center featureHeading">Work anywhere, anytime</h2>
                             <Row>
                             <Col sm={6} className="mt-3">
                                 <img src="https://www-cms.pipedriveassets.com/half-page-images/Features-2.png" alt="img-visual" />
@@ -170,7 +170,7 @@ export class compare extends Component {
                             
                         </section>
                         <section className="follow-feature-section-main">
-                            <h2 className="text-center">Bring all sales data to one place</h2>
+                            <h2 className="text-center featureHeading">Bring all sales data to one place</h2>
                             <p className="px-5 py-3 text-center">Pipedrive lets you easily find all the information you need before a meeting or call. Our software is 
                             also packed with automations, integrations and innovations.</p>
                             <Row>
@@ -201,7 +201,7 @@ export class compare extends Component {
                             </Row>
                         </section>
                         <section className="work-anywhere">
-                            <h2 className="text-center">Understand how you and your team are doing</h2>
+                            <h2 className="text-center featureHeading">Understand how you and your team are doing</h2>
                             <Row className="mt-5">
                             <Col sm={6} className="mt-3">
                                 <img src="https://www-cms.pipedriveassets.com/half-page-images/Features-3.png" alt="img-visual" className="w-100" />

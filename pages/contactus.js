@@ -152,7 +152,7 @@ export class contactus extends Component {
               <div className="row controls">
                 <div className="col-md-6" data-aos="fade-right" data-aos-duration={1200}>
                   <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Label>First Name</Form.Label>
+                    <Form.Label>First Name*</Form.Label>
                     <Form.Control type="text" placeholder="Enter First Name" name="fname" value={this.state.fname} onChange={this.handleChange} />
                     <h6 className="form_error_message">{this.validator.message('firstname', this.state.fname, 'required')}</h6>
                   </Form.Group>
@@ -160,7 +160,7 @@ export class contactus extends Component {
                 </div>
                 <div className="col-md-6" data-aos="fade-left" data-aos-duration={1200}>
                   <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Label>Last Name</Form.Label>
+                    <Form.Label>Last Name*</Form.Label>
                     <Form.Control type="text" placeholder="Enter Last Name" name="lname" value={this.state.lname} onChange={this.handleChange} />
                     <h6 className="form_error_message">{this.validator.message('lastname', this.state.lname, 'required')}</h6>
                   </Form.Group>
@@ -169,7 +169,7 @@ export class contactus extends Component {
                 
                 <div className="col-md-6" data-aos="fade-right" data-aos-duration={1200}>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
+                    <Form.Label>Email address*</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" name="email" value={this.state.email} onChange={this.handleChange} />
                     <h6 className="form_error_message">{this.validator.message('email', this.state.email, 'required|email')}</h6>
                   </Form.Group>
@@ -177,7 +177,7 @@ export class contactus extends Component {
 
                 <div className="col-md-6" data-aos="fade-left" data-aos-duration={1200}>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Phone</Form.Label>
+                    <Form.Label>Phone*</Form.Label>
                     <Form.Control type="phone" placeholder="000-000-0000" name="phone" value={this.state.phone} onChange={this.handleChange} />
                     <h6 className="form_error_message">{this.validator.message('phone', this.state.phone, 'required|phone')}</h6>
                   </Form.Group>
@@ -185,7 +185,7 @@ export class contactus extends Component {
 
                 <div className="col-12" data-aos="fade-up" data-aos-duration={1200}>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Your Message</Form.Label>
+                    <Form.Label>Your Message*</Form.Label>
                     <Form.Control as="textarea" placeholder="Your Message" name="message" value={this.state.message} onChange={this.handleChange} rows={5} />
                     <h6 className="form_error_message">{this.validator.message('message', this.state.message, 'required')}</h6>
                   </Form.Group>
