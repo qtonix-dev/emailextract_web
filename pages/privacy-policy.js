@@ -544,6 +544,8 @@ export class privacypolicy extends Component {
             </div>
           </div>
         </div>
+
+        
         {/* <section className="free-section-demo-compare">
                         <Freedemo />
                     </section> */}

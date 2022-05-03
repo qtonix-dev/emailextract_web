@@ -11,8 +11,8 @@ export default function PricingBox({data}) {
               <div className="price">${data.displayprice}</div>
               <div className="pack-details">{data.type==='Monthly'?`BILLED MONTHLY`:`BILLED YEARLY`}</div>
               <ul className="pr-feature">
-                <li><AiOutlineCheck /> <b>{data.totalsingledomain}</b> Total Domain Search </li>
-                <li><AiOutlineCheck /> <b>{data.totalemailsearch}</b> Total Email Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalsingledomain}</b> Single Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalemailsearch}</b> Single Email Search </li>
                 <li><AiOutlineCheck /> <b>{data.totalemailverification}</b> Total Email Verification </li>
                 <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract}</b> Bulk Domain Search </li>
                 <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>

@@ -44,6 +44,7 @@ export default class Header extends Component {
 
 
     render() {
+        console.log(this.state.hideMobileMenu)
         return (
             <>
                         <div className="theme-main-menu sticky-menu theme-menu-three">
