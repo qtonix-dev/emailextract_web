@@ -135,12 +135,12 @@ export class compare extends Component {
                             <h2 className="pb-3 text-center featureHeading">Find real emails</h2>
                             <Row className="mt-4">
                                 <Col sm={6} className="mt-3">
-                                    <img src="https://www-cms.pipedriveassets.com/half-page-images/Pipeline.svg" alt="img-visual" />
+                                    <img src="images/feature2.png" alt="img-visual" />
                                 </Col>
-                                <Col sm={6}>
+                                <Col sm={6} className="align-self-center">
                                     <div className="visual-section-inner mt-3">
-                                        <p>Pipedrive&quot;s visual sales pipeline prompts you to take action, remain 
-                                            organized and stay in control of the complex sales process.</p>
+                                        {/* <p>Pipedrive&quot;s visual sales pipeline prompts you to take action, remain 
+                                            organized and stay in control of the complex sales process.</p> */}
                                         <ul className="visual-section-inner-listing">
                                             <li><img src="images/check-1.png" alt="img-features" /> 
                                                 <h5><b>Verified only</b></h5>
@@ -161,9 +161,9 @@ export class compare extends Component {
                             <h2 className="text-center featureHeading">Accurate and Efficient</h2>
                             <Row>
                            
-                            <Col sm={6} className="mt-3">
+                            <Col sm={6} className="mt-3 align-self-center">
                                     <div className="work-anywhere-section">
-                                        <p>Our mobile Apps let you access your deal and contact information even when you&quot;re on the road.</p>
+                                        {/* <p>Our mobile Apps let you access your deal and contact information even when you&quot;re on the road.</p> */}
                                         <ul className="work-anywhere-listing">
                                             <li>
                                                 <img src="images/check-1.png" alt="img-features" /> 
@@ -188,7 +188,7 @@ export class compare extends Component {
                                     </div>
                             </Col>
                             <Col sm={6} className="mt-3">
-                                <img src="https://www-cms.pipedriveassets.com/half-page-images/Features-2.png" alt="img-visual" />
+                                <img src="images/feature1.png" alt="img-visual" />
                             </Col>
                             </Row>
                             
