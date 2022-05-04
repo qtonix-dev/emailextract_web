@@ -46,7 +46,14 @@ export default class Footer extends Component {
           e.preventDefault();
 
 
-          alert('Success')
+        //   alert('Success')
+        if (this.state.email) {
+            console.log('123')
+            // isValid = false;
+            // errors["email"] = "Please enter your email Address.";
+          }else {
+            console.log('456')
+          }
       }
 
       
