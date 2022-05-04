@@ -95,8 +95,6 @@ export default class login extends Component {
                               window.location.assign(`${process.env.appURL}/securelogincheck/${response.data.user._id}/${response.data.loginid}`);
 
                   }
-
-                    
                 }else{
 
                     if(response.data.status==='inactive'){

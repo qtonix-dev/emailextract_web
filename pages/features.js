@@ -4,26 +4,13 @@ import Head from 'next/head'
 import { Container, Row, Col, Form } from 'react-bootstrap'
 import Freedemo from './components/aboutus/Freedemo'
 import { FaCheck } from "react-icons/fa"
-import axios from 'axios'
 
 export class compare extends Component {
-
-    static async getInitialProps({query}) {
-        var data ={query};
-            const response = await axios.get(`${process.env.backendURL}/page/viewpagedetails/625d3808272e4815836037a1`);
-
-        return{
-            seo:response.data.data
-        }
-    }
-
     render() {
         return (
             <Body>
                 <Head>
-                <title>{this.props.seo.metatitle}</title>
-                    <meta name="description" content={this.props.seo.metadesc} />
-                    <meta name="keywords" content={this.props.seo.metakey} />
+                    <title>Features</title>
                 </Head>
                 {/* 
                 =============================================
@@ -36,16 +23,13 @@ export class compare extends Component {
                     <div className="bg-wrapper">
                         <div className="container">
                         <div className="row">
-                            <div className="col-lg-12 m-auto text-center compare-main feature-main title-style-five">
-                                <div className="title-style-seven text-center">
-                                    <h2 className="heading">
-                                        <span>Generate Leads & Grow  </span>Your Business
-                                        
-                                    </h2>
-                                    <h6>Get the perfect list of your prospects in just one click</h6>
-                                    <p>See for yourself why more than 10,000 companies, both big and small, choose Email Extract Online to engage with the target audience without wasting precious research time and without spending a lot of money as well.</p>
-                                        {/* <p>Let’s be real: software comparison pages like this are usually biased. When bloggers create them, they gravitate towards the option with the best affiliate commissions.</p> */}
-                                </div>
+                            <div className="col-lg-12 m-auto text-center compare-main feature-main">
+                            <h1 className="heading">
+                                <span>Can’t decide between Ahrefs, SEMrush, and Moz?
+                                </span>
+                            </h1>
+                                <p>Let’s be real: software comparison pages like this are usually biased. When bloggers create them, they gravitate towards the option with the best affiliate commissions.</p>
+                                
                             </div>
                         </div>
                         </div>
@@ -57,53 +41,53 @@ export class compare extends Component {
                             <Row>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/VMY8cf4/icon-101.png" alt="img-icon" />
-                                        <h3 className="my-3">Get the perfect list of your prospects in just one click</h3>
-                                        <p>See for yourself why more than 10,000 companies, both big and small, choose Email Extract Online to engage with the target audience without wasting precious research time and without spending a lot of money as well.</p>
+                                        <img src="images/icon-101.png" alt="img-icon" />
+                                        <h3 className="my-3">Manage leads and deals</h3>
+                                        <p>Get more hot leads fed straight into your sales pipelines around the clock from your custom chatbot and web forms</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/7GZT2GW/icon-102.png" alt="img-icon" />
-                                        <h3 className="my-3">Saves your time</h3>
-                                        <p>With this tool, you don’t need to search every webpage and verify them manually. It does the job for you instantly and in real-time while ensuring quality and deliverability. Suitable for all kinds of businesses and freelancers to generate leads and make more ROI.</p>
+                                        <img src="images/icon-102.png" alt="img-icon" />
+                                        <h3 className="my-3">Track communications</h3>
+                                        <p>Track calls, emails and contact history exactly where you need to and have full visibility and control of your schedule</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/MV37Ytt/icon-103.png" alt="img-icon" />
-                                        <h3 className="my-3">Find emails in bulk</h3>
-                                        <p>Apart from an individual email search, our email extract tool helps you find quality and hot leads in bulk with more than 98% accuracy and the more quality leads you to generate, there are more chances of desired conversions.</p>
+                                        <img src="images/icon-103.png" alt="img-icon" />
+                                        <h3 className="my-3">Automate and grow</h3>
+                                        <p>Eliminate busywork by automating repetitive administrative tasks and learn from artificial intelligence</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/VMY8cf4/icon-101.png" alt="img-icon" />
-                                        <h3 className="my-3">Accurate data and Fast results</h3>
-                                        <p>We have a database of over 150M business profiles, 20M company profiles along with B2b accurate data, allowing you to open closed doors and win more sales. Gather valuable intel and skyrocket your close rates with fast results.</p>
+                                        <img src="images/icon-101.png" alt="img-icon" />
+                                        <h3 className="my-3">Insights and reports</h3>
+                                        <p>Deep dive into metrics customized for your business and measure company performance against set goals</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/7GZT2GW/icon-102.png" alt="img-icon" />
-                                        <h3 className="my-3">Increased Open Rate</h3>
-                                        <p>Our Email Extract Online tool extracts email addresses with usernames and phone numbers from web pages in seconds. As a result, you will have an Open Rate that will be higher by 32%, allowing you to increase sales as well as growth.</p>
+                                        <img src="images/icon-102.png" alt="img-icon" />
+                                        <h3 className="my-3">Privacy and security</h3>
+                                        <p>Have full transparency and peace of mind on when and how your business data is being used</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/MV37Ytt/icon-103.png" alt="img-icon" />
-                                        <h3 className="my-3">Highest level of sales</h3>
-                                        <p>Enter any name, job title, domain or verify existing emails related to your business or target audience, and the application will find relevant websites, scan them, and collect email addresses ensuring the highest level of sales to grow your business.</p>
+                                        <img src="images/icon-103.png" alt="img-icon" />
+                                        <h3 className="my-3">Mobile apps and integrations</h3>
+                                        <p>Access Pipedrive from your mobile device and integrate with your favorite sales-boosting apps</p>
                                     </div>
                                 </Col>
                             </Row>
                         </div>
 
                         <section className="follow-feature-section-main">
-                            <h2 className="text-center featureHeading">Over 1,50,000 Happy Clients from Freelancers to Large Enterprises</h2>
-                            {/* <p className="px-5 py-3 text-center">Whenever you complete an activity, Pipedrive reminds you to schedule your next 
-                                one. You can even automate this process so follow-ups are created for you.</p> */}
+                            <h3 className="text-center">Follow up on every deal</h3>
+                            <p className="px-5 py-3 text-center">Whenever you complete an activity, Pipedrive reminds you to schedule your next 
+                                one. You can even automate this process so follow-ups are created for you.</p>
                             <Row>
                                 <Col sm={3} className="mt-3">
                                     <div className="follow-feature-section">
@@ -132,7 +116,7 @@ export class compare extends Component {
                             </Row>
                         </section>
                         <section className="follow-visual-section py-5">
-                            <h2 className="pb-3 text-center featureHeading">Find real emails</h2>
+                            <h3 className="pb-3 text-center">See all deals in a visual sales pipeline</h3>
                             <Row className="mt-4">
                                 <Col sm={6} className="mt-3">
                                     <img src="https://www-cms.pipedriveassets.com/half-page-images/Pipeline.svg" alt="img-visual" />
@@ -142,59 +126,38 @@ export class compare extends Component {
                                         <p>Pipedrive&quot;s visual sales pipeline prompts you to take action, remain 
                                             organized and stay in control of the complex sales process.</p>
                                         <ul className="visual-section-inner-listing">
-                                            <li><img src="images/check-1.png" alt="img-features" /> 
-                                                <h5><b>Verified only</b></h5>
-                                                <span>Unlike other email finders out there, Email Extract Online only shows verified emails that won’t bounce for sure.</span>
-                                            </li>
-                                            <li><img src="images/check-1.png" alt="img-features" />
-                                            <h5><b>No Suspicious Results</b></h5>
-                                            At times, you will find other email finders charging for some “suspicious” results. But Email Extract Online doesn't. The emails are only 100% verified.
-                                             </li>
-                                           
-                                       
+                                            <li><img src="images/check-1.png" alt="img-features" /> Enter, update and find all data in one view</li>
+                                            <li><img src="images/check-1.png" alt="img-features" /> Enter new deals & contacts either on desktop or mobile</li>
+                                            <li><img src="images/check-1.png" alt="img-features" /> Drag-and-drop deals between stages</li>
+                                            <li><img src="images/check-1.png" alt="img-features" /> Connect your email and other tools - create a single data location</li>
                                         </ul>
                                     </div>
                                 </Col>
                             </Row>
                         </section>
                         <section className="work-anywhere">
-                            <h2 className="text-center featureHeading">Accurate and Efficient</h2>
+                            <h3 className="text-center">Work anywhere , anytime</h3>
                             <Row>
-                           
-                            <Col sm={6} className="mt-3">
-                                    <div className="work-anywhere-section">
-                                        <p>Our mobile Apps let you access your deal and contact information even when you are on the road.</p>
-                                        <ul className="work-anywhere-listing">
-                                            <li>
-                                                <img src="images/check-1.png" alt="img-features" /> 
-                                                <h5><b>Mass Searches</b></h5>
-                                                We search billions of web pages to find the right emails and thereafter perform direct server validation.
-                                            </li>
-                                            
-                                            <li>
-                                                <img src="images/check-1.png" alt="img-features" /> 
-                                                <h5><b>Enhanced Database</b></h5>
-                                                We’ve managed to build an exceptional network that gets you excellent results through our efficient finder system, growing database and data partners.
-                                            </li>
-
-                                            <li>
-                                                <img src="images/check-1.png" alt="img-features" /> 
-                                                <h5><b>Upload & Wait</b></h5>
-                                                Upload a file with up to 50,000 entries and we’ll find their emails in a few seconds while you concentrate on other tasks.
-                                            </li>
-
-
-                                        </ul>
-                                    </div>
-                            </Col>
                             <Col sm={6} className="mt-3">
                                 <img src="https://www-cms.pipedriveassets.com/half-page-images/Features-2.png" alt="img-visual" />
+                            </Col>
+                            <Col sm={6} className="mt-3">
+                                    <div className="work-anywhere-section">
+                                        <p>Our mobile Apps let you access your deal and contact information even when you&quot;re on the road.</p>
+                                        <ul className="work-anywhere-listing">
+                                            <li><img src="images/check-1.png" alt="img-features" /> Save call logging activities to your deals</li>
+                                            <li><img src="images/check-1.png" alt="img-features" /> Nearby feature lets you know which clients are near you</li>
+                                            <li><img src="images/check-1.png" alt="img-features" /> Schedule activities wherever you are, even when offline</li>
+                                            <li><img src="images/check-1.png" alt="img-features" /> Take notes on your mobile device during a call or meeting</li>
+                                            <li><img src="images/check-1.png" alt="img-features" /> Take a picture and store it under a deal or contact</li>
+                                        </ul>
+                                    </div>
                             </Col>
                             </Row>
                             
                         </section>
-                        {/* <section className="follow-feature-section-main">
-                            <h2 className="text-center featureHeading">Bring all sales data to one place</h2>
+                        <section className="follow-feature-section-main">
+                            <h3 className="text-center">Bring all sales data to one place</h3>
                             <p className="px-5 py-3 text-center">Pipedrive lets you easily find all the information you need before a meeting or call. Our software is 
                             also packed with automations, integrations and innovations.</p>
                             <Row>
@@ -223,9 +186,9 @@ export class compare extends Component {
                                     </div>
                                 </Col>
                             </Row>
-                        </section> */}
-                        {/* <section className="work-anywhere">
-                            <h2 className="text-center featureHeading">Understand how you and your team are doing</h2>
+                        </section>
+                        <section className="work-anywhere">
+                            <h3 className="text-center">Understand how you and your team are doing</h3>
                             <Row className="mt-5">
                             <Col sm={6} className="mt-3">
                                 <img src="https://www-cms.pipedriveassets.com/half-page-images/Features-3.png" alt="img-visual" className="w-100" />
@@ -244,7 +207,7 @@ export class compare extends Component {
                             </Col>
                             </Row>
                             
-                        </section> */}
+                        </section>
                     </Container>
                         
                     </section>
