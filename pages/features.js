@@ -163,7 +163,7 @@ export class compare extends Component {
                            
                             <Col sm={6} className="mt-3">
                                     <div className="work-anywhere-section">
-                                        <p>Our mobile Apps let you access your deal and contact information even when you&quot;re on the road.</p>
+                                        <p>Our mobile Apps let you access your deal and contact information even when you are on the road.</p>
                                         <ul className="work-anywhere-listing">
                                             <li>
                                                 <img src="images/check-1.png" alt="img-features" /> 
