@@ -156,7 +156,7 @@ export class compare extends Component {
                             </Col>
                             <Col sm={6} className="mt-3">
                                     <div className="work-anywhere-section">
-                                        <p>Our mobile Apps let you access your deal and contact information even when you&quot;re on the road.</p>
+                                        <p>Our mobile Apps let you access your deal and contact information even when you are on the road.</p>
                                         <ul className="work-anywhere-listing">
                                             <li><img src="images/check-1.png" alt="img-features" /> Save call logging activities to your deals</li>
                                             <li><img src="images/check-1.png" alt="img-features" /> Nearby feature lets you know which clients are near you</li>
