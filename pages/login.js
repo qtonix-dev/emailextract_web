@@ -27,7 +27,8 @@ export default class login extends Component {
         formLoading:false,
         isVerified:false,
         type: 'password',
-        eye:true
+        eye:true,
+        ip:''
       }
       this.validator = new SimpleReactValidator();
       this.handleChange=this.handleChange.bind(this);
@@ -37,7 +38,12 @@ export default class login extends Component {
     }
 
     componentDidMount(){
-      
+      axios.get('https://api.ipify.org?format=json')
+      .then(response=>{
+          this.setState({
+            ip:response.data.ip
+          })
+      })
     }
 
     handleChange(e){
