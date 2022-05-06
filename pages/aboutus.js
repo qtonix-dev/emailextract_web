@@ -360,10 +360,10 @@ export default class about extends Component {
         <div className="container">
           <div className="our-cli">
             <div className="title-style-five">
-              <h2><span>Who Can</span> Use</h2>
+              <h2 className='text-center'><span>Who Can</span> Use</h2>
             </div>
             
-            <p>Email Extract Automation Tool:</p>
+            <p className='text-center'>Email Extract Automation Tool:</p>
             <Row>
               <Col>
                 <div className="col-sec-de">

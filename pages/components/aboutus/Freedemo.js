@@ -66,7 +66,7 @@ export class Freedemo extends Component {
               <h3>SCHEDULE A FREE DEMO</h3>
               <p>
                 Is your organization looking for a powerful solution to extract
-                email addresses of your potential prospects from legitimate
+                the email addresses of your potential prospects from legitimate
                 sources? Get to know Email Extract Online in just 30 minutes!
                 Registering for a free demo session with one of our product
                 experts will let you know about all our product features while
