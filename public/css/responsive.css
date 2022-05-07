@@ -549,7 +549,7 @@
         padding: 0 10px;
     }
     .footer-list {
-        width: 215px !important;
+        /* width: 215px !important; */
     }
     .hero-banner-three h1 span {
         font-size: 25px;
