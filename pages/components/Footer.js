@@ -128,7 +128,7 @@ export default class Footer extends Component {
                                     <li><Link href='/aboutus'><a>About</a></Link></li>
                                     <li><Link href='/contactus'><a>Contact</a></Link></li>
                                     <li><Link href='/features'><a>Features</a></Link></li>
-                                    <li><a href="https://stats.uptimerobot.com/LGmErCkNzZ" target={'_blank'}>Status <img src="https://img.icons8.com/material-outlined/10/1fb141/filled-circle--v1.png" alt='status-image' style={{marginTop:'-20px',position:'absolute',marginLeft:'50px'}} /></a></li>
+                                    <li><a href="https://stats.uptimerobot.com/LGmErCkNzZ" rel="noreferrer" target={'_blank'}>Status <img src="https://img.icons8.com/material-outlined/10/1fb141/filled-circle--v1.png" alt='status-image' style={{marginTop:'-20px',position:'absolute',marginLeft:'50px'}} /></a></li>
                                     </ul>
                                 </div> {/* /.footer-list */}
                                 {/* <div className="col-lg-3 col-md-4 address-list" >
