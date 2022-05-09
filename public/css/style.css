@@ -14522,7 +14522,7 @@ margin: -2px 0 0 0;
 }
 .features-section-first-inner h3 {
     font-size: 27px;
-    height: 49px;
+    /* height: 49px; */
 }
 .fancy-feature-nineteen-new-inner img {
     width: 25%;
