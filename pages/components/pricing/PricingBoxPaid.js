@@ -8,24 +8,23 @@ export default function PricingBoxPaid({data}) {
             <div className={`pr-table-wrapper ${data.name==='Growth'?`mybgprice`:``}`}>
               <div className="pack-name" style={{background: '#E3F8EF'}}>{data.name}</div>
               <div className="mypristrike">${data.mainprice}</div>
-
               <div className="price">${data.displayprice}</div>
               <div className="pack-details">{data.type==='Monthly'?`BILLED MONTHLY`:`BILLED YEARLY`}</div>
-              <ul className="pr-feature">
-                <li><AiOutlineCheck /> <b>{data.totalsingledomain===123456789?'Unlimited':data.totalsingledomain}</b> Total Domain Search </li>
-                <li><AiOutlineCheck /> <b>{data.totalemailsearch===123456789?'Unlimited':data.totalemailsearch}</b> Total Email Search </li>
-                <li><AiOutlineCheck /> <b>{data.totalemailverification===123456789?'Unlimited':data.totalemailverification}</b> Total Email Verification </li>
-                <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract===123456789?'Unlimited':data.totalbuldomainkextract}</b> Bulk Domain Search </li>
-                <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>
-                <li><AiOutlineCheck /> Unlimited Results </li>
-                <li><AiOutlineCheck /> Unlimited Storage </li>
-                <li><AiOutlineCheck /> {data.displayspeed}x Speed  </li>
-                <li><AiOutlineCheck /> CSV Exporting  </li>
-                <li><AiOutlineCheck /> Techinical Support  </li>
-              </ul>
-              <Link href='/login'><a className="trial-button">Try it Free</a></Link>
+                <ul className="pr-feature">
+                  <li><AiOutlineCheck /> <b>{data.totalsingledomain===123456789?'Unlimited':data.totalsingledomain}</b> Total Domain Search </li>
+                  <li><AiOutlineCheck /> <b>{data.totalemailsearch===123456789?'Unlimited':data.totalemailsearch}</b> Total Email Search </li>
+                  <li><AiOutlineCheck /> <b>{data.totalemailverification===123456789?'Unlimited':data.totalemailverification}</b> Total Email Verification </li>
+                  <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract===123456789?'Unlimited':data.totalbuldomainkextract}</b> Bulk Domain Search </li>
+                  <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>
+                  <li><AiOutlineCheck /> Unlimited Results </li>
+                  <li><AiOutlineCheck /> Unlimited Storage </li>
+                  <li><AiOutlineCheck /> {data.displayspeed}x Speed  </li>
+                  <li><AiOutlineCheck /> CSV Exporting  </li>
+                  <li><AiOutlineCheck /> Techinical Support  </li>
+                </ul>
+                <Link href='/login'><a className="trial-button">Try it Free</a></Link>
               <br />
-            </div> {/* /.pr-table-wrapper */}
+            </div>
           </div>
     )
 }

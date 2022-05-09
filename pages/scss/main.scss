@@ -490,8 +490,8 @@ section.work-anywhere h3 {
 //     color: #fff !important;
 // }
 .features-section-first-inner h3 {
-    font-size: 23px;
-    height: 49px;
+    font-size: 27px;
+    // height: 49px;
 }
 
 .compare-first img {
@@ -1005,7 +1005,7 @@ th.text-center.sec-middle {
 } 
 .alternative-section-inner p {
     font-size: 18px;
-    
+    text-align: justify;
 
 }
 section.faq-row  {
@@ -1422,3 +1422,12 @@ p.copyright-text svg {
 p.log-sec-new a {
     color: #0495f9 !important;
 }
+
+.features-section-first-inner img {
+    height: 100px;
+    /* margin-bottom: 20px; */
+}
+// .features-section-first-inner h3 {
+//     font-size: 27px !;
+//     height: 120px !important;
+// }
