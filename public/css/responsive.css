@@ -1467,11 +1467,14 @@
         font-size: 15px;
     }
     .fancy-short-banner-four .title h2 {
-        font-size: 35px;
+        font-size: 37px !important;
     }
     .fancy-short-banner-four .form-wrapper form {
         height: 60px;
         margin-top: 40px;
+    }
+    .free-demo-form-left h3 {
+        font-size: 27px;
     }
     .theme-footer-three .bottom-footer-content p {
         padding-left: 0;
@@ -3054,9 +3057,9 @@
     .react-datepicker__input-container input {
         margin-bottom: 8px;
     }
-    .compare-section-first h2 {
+    /* .compare-section-first h2 {
         font-size: 35px;
-    }
+    } */
     .compare-main .title-style-five h2 {
         font-size: 37px;
     }
@@ -3087,21 +3090,21 @@
     }
     
     
-    .compare-section-first h2 {
+    /* .compare-section-first h2 {
         font-size: 35px !important;
         text-transform: capitalize;
-    }
-    .compare-main .title-style-five h2 {
+    } */
+    /* .compare-main .title-style-five h2 {
         font-size: 35px;
-    }
-    .compare-section-second h2 {
+    } */
+    /* .compare-section-second h2 {
         font-size: 35px;
-    }
+    } */
     .our-customer-freesales h3 {
-        font-size: 35px !important;
+        font-size: 27px !important;
     }
     .alternative-section .title-style-five h2 {
-        font-size: 35px !important;
+        font-size: 37px !important;
     }
     .theme-main-menu .logo {
         max-width: 350px;
@@ -3120,7 +3123,7 @@
         padding-left: 0;
     }
     .clientSliderThree p {
-        font-size: 22px;
+        font-size: 18px;
     }
     .navbar-toggler .navbar-toggler-right button {
         color:linear-gradient(90deg,#fa9531 0,#ffbd39 100%) !important;

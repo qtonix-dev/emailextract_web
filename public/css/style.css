@@ -5336,7 +5336,7 @@ body .theme-btn-nine:hover {
 }
 
 .fancy-text-block-twelve .text-wrapper .sub-text {
-
+	text-align: justify;
     font-size: 18px;
     line-height: 1.60em;
     color: #000;
@@ -5489,6 +5489,7 @@ body .theme-btn-nine:hover {
     line-height: 1.60em;
     color: #000;
     padding-top: 15px;
+	text-align: justify;
 }
 
 .fancy-text-block-fourteen .text-wrapper .sub-text {
@@ -7921,6 +7922,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
     color: #000;
     padding-top: 15px;
     padding-right: 50px;
+	text-align: justify;
 }
 
 .fancy-hero-five .sub-heading.space-xs {
@@ -7948,6 +7950,7 @@ background: linear-gradient(34deg, rgba(2,0,36,1) 0%, rgba(6,86,172,1) 0%, rgba(
     line-height: 1.60em;
     color: #000;
 	padding-bottom:0px;
+	text-align: justify;
 }
 
 .fancy-text-block-eighteen {
@@ -13911,6 +13914,7 @@ margin: -2px 0 0 0;
 .terms_and_policy .tab-content p {
 	    /* line-height: 34px; */
 		margin-bottom: 15px;
+		text-align: justify;
 }
 
 .terms_and_policy .tab-content p a {
@@ -14509,12 +14513,16 @@ margin: -2px 0 0 0;
 }
 .free-demo-form-left h3 {
 	margin-left: 5px;
-    font-size: 22px;
+    font-size: 27px;
     text-align: center;
     font-weight: 700;
     margin-top: -50px;
     margin-bottom: 20px;
     text-transform: capitalize;
+}
+.features-section-first-inner h3 {
+    font-size: 27px;
+    height: 49px;
 }
 .fancy-feature-nineteen-new-inner img {
     width: 25%;
@@ -14551,7 +14559,7 @@ p.bg-wrapper-text-sec {
 }
 .free-demo-form-right p {
     font-size: 12px;
-	color: #cacaca;
+	color: #b2b2b2;
 }
 .free-demo-form-right .form-select {
     font-size: 12px !important;
