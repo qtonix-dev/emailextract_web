@@ -653,6 +653,89 @@ export class index extends Component {
 
 
 
+                                {/*
+			=====================================================
+				Integrated Apps
+			=====================================================
+			*/}
+<div className="integrated-apps mt-50 mb-100">
+  <div className="container">
+    <div className="row">
+      <div className="col-xl-9 m-auto">
+      <div className="title-style-five text-center">
+                                                            <h2><span>
+What exactly we extract
+</span></h2>
+                                                        </div>
+      </div>
+      <div className="col-xl-8 m-auto mt-3">
+        <div className='row'>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/email.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/call.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/facebook.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/google-plus-squared.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/instagram-new.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/linkedin.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/pinterest.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/skype.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/twitter.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/whatsapp.png" alt="email" />
+                </center>
+            </div>
+            <div className='col-2 col-lg'>
+                <center>
+                    <img src="https://img.icons8.com/fluency/50/000000/youtube.png" alt="email" />
+                </center>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> {/* /.integrated-apps */}
+
+
+
+
+
+
                                         {/* 
                     =============================================
                         Fancy Text Block Nineteen
