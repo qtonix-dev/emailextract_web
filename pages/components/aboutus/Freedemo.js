@@ -44,11 +44,18 @@ export class Freedemo extends Component {
 
       axios.post(`${process.env.backendURL}/webapi/bookfreedemo`,this.state)
         .then(response=>{
-          this.setState({formLoading:false,showMessages:true,fname:'',
+          this.setState({formLoading:false,showMessages:true,
+          fname:'',
           lname:'',
-          email:'',
           phone:'',
-          message:'',})
+          message:'',
+          companyname:'',
+          companysize:'',
+          country:'',
+          businessemail:'',
+          date:'',
+          time:''
+         })
         })
 
 
@@ -124,7 +131,7 @@ export class Freedemo extends Component {
                         <div className="col-md-6" data-aos="fade-right" data-aos-duration={1200}>
                             <Form.Group className="mb-3" controlId="formBasicName">
                                 <Form.Label>First Name</Form.Label>
-                                <Form.Control type="text" placeholder="Enter First Name" name="fname" onChange={this.handleChange} />
+                                <Form.Control type="text" placeholder="Enter First Name" name="fname" value={this.state.fname} onChange={this.handleChange} />
                                 <h6 className="form_error_message">{this.validator.message('firstname', this.state.fname, 'alpha_space|required')}</h6>
 
                             </Form.Group>
@@ -132,7 +139,7 @@ export class Freedemo extends Component {
                         <div className="col-md-6" data-aos="fade-right" data-aos-duration={1200}>
                             <Form.Group className="mb-3" controlId="formBasicName">
                                 <Form.Label>Last Name</Form.Label>
-                                <Form.Control type="text" placeholder="Enter Last Name" name="lname" onChange={this.handleChange} />
+                                <Form.Control type="text" placeholder="Enter Last Name" name="lname" value={this.state.lname} onChange={this.handleChange} />
                                 <h6 className="form_error_message">{this.validator.message('firstname', this.state.lname, 'alpha_space|required')}</h6>
 
                             </Form.Group>
@@ -141,7 +148,7 @@ export class Freedemo extends Component {
                     <Row>
                         <Col sm={12}>
                             <Form.Label>Company Name</Form.Label>
-                            <Form.Control className="mb-2" id="inlineFormInput" placeholder="Company Name" name="companyname" onChange={this.handleChange} />
+                            <Form.Control className="mb-2" id="inlineFormInput" placeholder="Company Name" name="companyname" value={this.state.companyname} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('companyname', this.state.companyname, 'alpha_num_space|required')}</h6>
 
                         </Col>
@@ -149,7 +156,7 @@ export class Freedemo extends Component {
                     <Row>
                         <Col sm={12}>
                             <Form.Label>Company Size</Form.Label>
-                            <Form.Control className="mb-2" id="inlineFormInput" placeholder="Company Size" name="companysize" onChange={this.handleChange} />
+                            <Form.Control className="mb-2" id="inlineFormInput" placeholder="Company Size" name="companysize" value={this.state.companysize} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('companysize', this.state.companysize, 'required')}</h6>
 
                         </Col>
@@ -157,7 +164,7 @@ export class Freedemo extends Component {
                     <Row>
                         <Col sm={12} className="mb-2">
                             <Form.Label>Select Country</Form.Label>
-                            <Form.Select aria-label="Floating label select example" name='country' onChange={this.handleChange}>
+                            <Form.Select aria-label="Floating label select example" name='country' value={this.state.country} onChange={this.handleChange}>
                                 <option value="">Select</option>
                                 <option>India</option>
                                 <option>Usa</option>
@@ -171,7 +178,7 @@ export class Freedemo extends Component {
                     <Row className="mb-2">
                         <Col sm={12}>
                             <Form.Label>Business Email</Form.Label>
-                            <Form.Control placeholder="Business Email" className="bemail" name="businessemail" onChange={this.handleChange} />
+                            <Form.Control placeholder="Business Email" className="bemail" name="businessemail" value={this.state.businessemail} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('businessemail', this.state.businessemail, 'email|required')}</h6>
                                                 
                         </Col>
@@ -179,13 +186,13 @@ export class Freedemo extends Component {
                     <Row>
                         <Col sm={6}>
                             <Form.Label>Date</Form.Label>
-                            <Form.Control type="date" className="form-control" name="date" onChange={this.handleChange} />
+                            <Form.Control type="date" className="form-control" name="date" value={this.state.date} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('date', this.state.date, 'required')}</h6>
 
                         </Col>
                         <Col sm={6}>
                             <Form.Label>Time</Form.Label>
-                            <Form.Control type="time" id="appt" name="time" className="form-control" onChange={this.handleChange} />
+                            <Form.Control type="time" id="appt" name="time" className="form-control" value={this.state.time} onChange={this.handleChange} />
                             <h6 className="form_error_message">{this.validator.message('time', this.state.time, 'required')}</h6>
 
                         </Col>
@@ -193,7 +200,7 @@ export class Freedemo extends Component {
                     <Row className="g-2 mt-1">
                         <Col md={12}>
                             <Form.Label>Phone No</Form.Label>
-                            <Form.Control type='tel' className="form-control" name="phone" placeholder="Phone no."  onChange={this.handleChange}/>      
+                            <Form.Control type='tel' className="form-control" name="phone" placeholder="Phone no." value={this.state.phone} onChange={this.handleChange}/>      
                             <h6 className="form_error_message">{this.validator.message('phone', this.state.phone, 'phone|required')}</h6>
 
                         </Col>
