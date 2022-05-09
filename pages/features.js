@@ -57,42 +57,42 @@ export class compare extends Component {
                             <Row>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/VMY8cf4/icon-101.png" alt="img-icon" />
+                                        <img src="images/checklist.png" alt="img-icon" />
                                         <h3 className="my-3">Get the perfect list of your prospects in just one click</h3>
                                         <p>See for yourself why more than 10,000 companies, both big and small, choose Email Extract Online to engage with the target audience without wasting precious research time and without spending a lot of money as well.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/7GZT2GW/icon-102.png" alt="img-icon" />
+                                        <img src="images/time.png" alt="img-icon" />
                                         <h3 className="my-3">Saves your time</h3>
                                         <p>With this tool, you don’t need to search every webpage and verify them manually. It does the job for you instantly and in real-time while ensuring quality and deliverability. Suitable for all kinds of businesses and freelancers to generate leads and make more ROI.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/MV37Ytt/icon-103.png" alt="img-icon" />
+                                        <img src="images/email.png" alt="img-icon" />
                                         <h3 className="my-3">Find emails in bulk</h3>
                                         <p>Apart from an individual email search, our email extract tool helps you find quality and hot leads in bulk with more than 98% accuracy and the more quality leads you to generate, there are more chances of desired conversions.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/VMY8cf4/icon-101.png" alt="img-icon" />
+                                        <img src="images/increase.png" alt="img-icon" />
                                         <h3 className="my-3">Accurate data and Fast results</h3>
                                         <p>We have a database of over 150M business profiles, 20M company profiles along with B2b accurate data, allowing you to open closed doors and win more sales. Gather valuable intel and skyrocket your close rates with fast results.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/7GZT2GW/icon-102.png" alt="img-icon" />
+                                        <img src="images/results.png" alt="img-icon" />
                                         <h3 className="my-3">Increased Open Rate</h3>
                                         <p>Our Email Extract Online tool extracts email addresses with usernames and phone numbers from web pages in seconds. As a result, you will have an Open Rate that will be higher by 32%, allowing you to increase sales as well as growth.</p>
                                     </div>
                                 </Col>
                                 <Col sm={4}>
                                     <div className="features-section-first-inner">
-                                        <img src="https://i.ibb.co/MV37Ytt/icon-103.png" alt="img-icon" />
+                                        <img src="images/sales.png" alt="img-icon" />
                                         <h3 className="my-3">Highest level of sales</h3>
                                         <p>Enter any name, job title, domain or verify existing emails related to your business or target audience, and the application will find relevant websites, scan them, and collect email addresses ensuring the highest level of sales to grow your business.</p>
                                     </div>
