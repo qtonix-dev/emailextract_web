@@ -11,10 +11,10 @@ export default function PricingBox({data}) {
               <div className="price">${data.displayprice}</div>
               <div className="pack-details">{data.type==='Monthly'?`BILLED MONTHLY`:`BILLED YEARLY`}</div>
               <ul className="pr-feature">
-                <li><AiOutlineCheck /> <b>{data.totalsingledomain}</b> Single Domain Search </li>
-                <li><AiOutlineCheck /> <b>{data.totalemailsearch}</b> Single Email Search </li>
-                <li><AiOutlineCheck /> <b>{data.totalemailverification}</b> Total Email Verification </li>
-                <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract}</b> Bulk Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalsingledomain===123456789?'Unlimited':data.totalsingledomain}</b> Single Domain Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalemailsearch===123456789?'Unlimited':data.totalemailsearch}</b> Single Email Search </li>
+                <li><AiOutlineCheck /> <b>{data.totalemailverification===123456789?'Unlimited':data.totalemailverification}</b> Total Email Verification </li>
+                <li><AiOutlineCheck /> <b>{data.totalbuldomainkextract===123456789?'Unlimited':data.totalbuldomainkextract}</b> Bulk Domain Search </li>
                 <li><AiOutlineCheck /> <b>{data.bulkuploaddomainatatime}</b> Bulk Domain Upload  </li>
                 <li><AiOutlineCheck /> Unlimited Results </li>
                 <li><AiOutlineCheck /> Unlimited Storage </li>
