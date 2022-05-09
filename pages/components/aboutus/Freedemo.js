@@ -44,7 +44,11 @@ export class Freedemo extends Component {
 
       axios.post(`${process.env.backendURL}/webapi/bookfreedemo`,this.state)
         .then(response=>{
-          this.setState({formLoading:false,showMessages:true})
+          this.setState({formLoading:false,showMessages:true,fname:'',
+          lname:'',
+          email:'',
+          phone:'',
+          message:'',})
         })
 
 
