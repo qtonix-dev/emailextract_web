@@ -20,7 +20,6 @@ import { FiEyeOff } from "react-icons/fi";
 export default class login extends Component {
 
 
-
     constructor(props){
       super(props)
       this.state={
@@ -105,17 +104,30 @@ export default class login extends Component {
 
                     if(response.data.status==='inactive'){
                       this.setState({formLoading:false})
-                    $("#myForm :input").prop('readonly', false);
-                    toast.error('Account Disabled', {
-                      position: "top-right",
-                      autoClose: 5000,
-                      hideProgressBar: false,
-                      closeOnClick: true,
-                      pauseOnHover: true,
-                      draggable: true,
-                      progress: undefined,
-                      // theme:'colored'
-                    });
+                      $("#myForm :input").prop('readonly', false);
+                      toast.error('Account Disabled', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        // theme:'colored'
+                      });
+                    }else if(response.data.status==='alreadyloggedin'){
+                      this.setState({formLoading:false})
+                      $("#myForm :input").prop('readonly', false);
+                      toast.error('Already loggedin somewhere', {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        // theme:'colored'
+                      });
                     }else{
                       this.setState({formLoading:false})
                     $("#myForm :input").prop('readonly', false);
