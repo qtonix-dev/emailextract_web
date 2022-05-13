@@ -44,7 +44,7 @@ const data = {
         },
         {
             title: "How protected are my emails, which I upload on your software, or do you share with any 3rd party?",
-            content: <p>It&apos;s 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don`&apos;`t have any access to that as it gets stored in your storage.`&quot;`</p>,
+            content: <p>It&apos;s 100% protected and safe. Any emails you upload into our software can only be accessed by you after login, and we don&apos;t have any access to that as it gets stored in your storage.</p>,
         },
     ],
 };

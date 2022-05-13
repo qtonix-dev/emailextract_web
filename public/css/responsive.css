@@ -3143,4 +3143,10 @@
     .client-feedback-slider-two .slick-slider {
         height: 285px;
     }
+    @media (max-width: 400px){
+        .blob{
+            top:135px;
+        }
+    }
+
 }

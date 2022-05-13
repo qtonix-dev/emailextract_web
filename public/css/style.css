@@ -6480,9 +6480,15 @@ body .theme-btn-nine:hover {
 }
 
 .user-data-page .form-wrapper .copyright-text {
-	font-size: 16px
+	font-size: 16px;
+	width: 80%;
+	margin: 0 auto;
 }
-
+.user-data-page .form-wrapper .copyright-text1 {
+	font-size: 16px;
+	width: 80%;
+	margin: 0 auto;
+}
 .user-data-form .input-group-meta {
 	height: 55px;
 	position: relative
@@ -14595,4 +14601,35 @@ p.bg-wrapper-text-sec {
     left: 0;
     bottom: 12px;
     z-index: -1;
+}
+
+.blob {
+	background: #3bd671;
+    border-radius: 50%;
+    margin: 10px;
+    height: 14px;
+    width: 14px;
+    box-shadow: 0 0 0 0 #3bd671;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    left: 55px;
+    position: absolute;
+    top: 146px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: #3bd671;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
