@@ -14607,14 +14607,14 @@ p.bg-wrapper-text-sec {
 	background: #3bd671;
     border-radius: 50%;
     margin: 10px;
-    height: 14px;
-    width: 14px;
+    height: 10px;
+    width: 10px;
     box-shadow: 0 0 0 0 #3bd671;
     transform: scale(1);
     animation: pulse 2s infinite;
-    left: 55px;
+    left: 57px;
     position: absolute;
-    top: 146px;
+    top: 148px;
 }
 
 @keyframes pulse {

@@ -118,7 +118,7 @@ export default class Footer extends Component {
                                     <li><Link href='/aboutus'><a>About</a></Link></li>
                                     <li><Link href='/contactus'><a>Contact</a></Link></li>
                                     <li><Link href='/features'><a>Features</a></Link></li>
-                                    <li><a href="https://stats.uptimerobot.com/LGmErCkNzZ" rel="noreferrer" target={'_blank'} className='img-back'>Status </a></li>
+                                    <li><a href="https://stats.uptimerobot.com/LGmErCkNzZ" rel="noreferrer" target={'_blank'} className='img-back'><span style={{color:'#3bd671'}}>Status</span></a></li>
                                     
                                     <div className='blob'></div>
                                     </ul>
