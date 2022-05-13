@@ -664,8 +664,8 @@ export class index extends Component {
       <div className="col-xl-9 m-auto">
       <div className="title-style-five text-center">
                                                             <h2><span>
-What exactly we extract
-</span></h2>
+What exactly</span> we extract
+</h2>
                                                         </div>
       </div>
       <div className="col-xl-8 m-auto mt-3">
