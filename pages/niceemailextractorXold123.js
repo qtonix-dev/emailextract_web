@@ -66,8 +66,8 @@ export class niceemailextractor extends Component {
             totaldomains:domainCreate.length
         })
 
-        if(domainCreate.length>300){
-            message.warning('Max input 300');
+        if(domainCreate.length>1000){
+            message.warning('Max input 1000');
         }else{
             axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`)
             // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
