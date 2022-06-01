@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Form } from 'react-bootstrap'
 import axios from 'axios'
 import ReactHTMLTableToExcel from 'react-html-table-to-excel'
-
+import _ from 'lodash'
 
 export class niceemailextractor extends Component {
 
@@ -157,7 +157,7 @@ export class niceemailextractor extends Component {
                     Fancy Hero Five
                 ============================================== 
                 */}
-                    <div className="fancy-hero-five">
+                    {/* <div className="fancy-hero-five">
                         <img src="images/shape/95.svg" alt="" className="shapes shape-one" />
                         <img src="images/shape/96.svg" alt="" className="shapes shape-two" />
                         <div className="bg-wrapper">
@@ -171,7 +171,7 @@ export class niceemailextractor extends Component {
                             </div>
                             </div>
                         </div> 
-                    </div> 
+                    </div>  */}
 
 
                     {this.state.iphidden
@@ -233,7 +233,7 @@ export class niceemailextractor extends Component {
                                             ?<></>
                                             :
                                             <>
-                                            {this.state.datas.map((dta)=>{
+                                            {_.uniqBy(this.state.datas,'domain').map((dta)=>{
                                                 return(
                                                     <tr key={dta.domain}>
                                                         <td>{dta.domain}</td>
@@ -269,7 +269,7 @@ export class niceemailextractor extends Component {
                                             ?<></>
                                             :
                                             <>
-                                            {this.state.datas.map((dta)=>{
+                                            {_.uniqBy(this.state.datas,'domain').map((dta)=>{
                                                 return(
                                                     <tr key={dta.domain}>
                                                         <td>{dta.domain}</td>
