@@ -206,9 +206,11 @@ export class niceemailextractor extends Component {
                                     
                                     <h4>Status: {this.state.status}</h4>
                                     <h4>Total Domains: {this.state.totaldomains}</h4>
-                                    <h4>Total Fetched: {this.state.count}</h4>
+                                    {/* <h4>Total Fetched: {this.state.count}</h4> */}
+                                    <h4>Total Fetched: {_.uniqBy(this.state.datas,'domain').length}</h4>
+                                    
 
-
+                            
                                     <hr/>
                                     <br />
 
