@@ -17,7 +17,8 @@ export class niceemailextractor extends Component {
             datas:[],
             totaldomains:0,
             count:0,
-            status:'Waiting'
+            status:'Waiting',
+            click:0,
         }
         this.handleChange=this.handleChange.bind(this);
         this.fetchRecord=this.fetchRecord.bind(this);
@@ -66,8 +67,8 @@ export class niceemailextractor extends Component {
             totaldomains:domainCreate.length
         })
 
-        if(domainCreate.length>1000){
-            message.warning('Max input 1000');
+        if(domainCreate.length>300){
+            alert('max 300')
         }else{
             axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${domainCreate[this.state.count].domain}/deep/no/no`)
             // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${domainCreate[this.state.count].domain}`)
@@ -79,6 +80,7 @@ export class niceemailextractor extends Component {
 
                 this.setState({
                     count:this.state.count+1,
+                    click:this.state.click+1,
                     datas:bulkdomainextratdata,
                     status:'Processing...'
                 })
@@ -124,7 +126,7 @@ export class niceemailextractor extends Component {
             })
         }else{
             
-            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`)
+            axios.get(`https://server-2-bulkextract-getinfo-mi83t.ondigitalocean.app/extract/${this.state.domainCreate[this.state.count].domain}/deep/no/no`,{timeout:7000})
 
             // axios.get(`https://sample-nodejs-thup9.ondigitalocean.app/server_2_-bulkextract---getinfo/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
             // axios.get(`http://emailex-env.eba-x8v3h6jr.ap-south-1.elasticbeanstalk.com/extract/${this.state.domainCreate[this.state.count].domain}`,{timeout:7000})
@@ -132,6 +134,9 @@ export class niceemailextractor extends Component {
             
             .then(response=>{
                 var bulkdomainextratdata = this.state.datas;
+                console.log(bulkdomainextratdata)
+
+
                 var msdata= response.data.response;
                 bulkdomainextratdata.push(msdata);
                 this.setState({
@@ -139,7 +144,30 @@ export class niceemailextractor extends Component {
                     datas:bulkdomainextratdata
                 })
                 this.fetchRecord();
-            })
+            }).catch((err) => {
+                
+
+
+                 var bulkdomainextratdata = this.state.datas;
+                var msdata= {
+                    response: true,
+                    domain: this.state.domainCreate[this.state.count].domain,
+                    status: "Not Found",
+                    emails: [ ],
+                    tel: [ ]
+                }
+                bulkdomainextratdata.push(msdata);
+
+                this.setState({
+                    count:this.state.count+1,
+                    datas:bulkdomainextratdata,
+                    status:'Processing...'
+                })
+                this.fetchRecord();
+
+
+            
+            });
         }
     }
 
@@ -198,7 +226,7 @@ export class niceemailextractor extends Component {
                                             
                                             </Form.Group>
                                         </div>
-                                        <div className="col-12" data-aos="fade-up" data-aos-duration={1200}><button className="theme-btn-six lg" type="submit">Extract</button></div>
+                                        <div className="col-12" data-aos="fade-up" data-aos-duration={1200}><button className="theme-btn-six lg" type="submit">Extract {this.state.click}</button></div>
                                     </form>
                                 </div>
                                 <div className="col-lg-12 mt-3 p-4">
